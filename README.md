@@ -176,3 +176,4 @@ file in the repo.
 - **Phase 2:** polite `httpclient` with raw snapshots, the `StateAdapter` protocol, and
   fixture-backed VA/NJ/TX adapters feeding `civic ingest`; source seeding.
 - **Phase 3:** deployment cron wrapper; per-client CSV packaging profiles.
+Org pilot 2026-10-14T15:50Z
