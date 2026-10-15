@@ -177,3 +177,4 @@ file in the repo.
   fixture-backed VA/NJ/TX adapters feeding `civic ingest`; source seeding.
 - **Phase 3:** deployment cron wrapper; per-client CSV packaging profiles.
 Org pilot 2026-10-14T15:50Z
+Org pilot A2 2026-10-15T07:46Z
