@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "BP-REG",
+    "url": "https://ballotpedia.org/Voter_registration_deadlines,_2026",
+    "title": "2026 registration calendar",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VOTE-REG",
+    "url": "https://www.vote.org/voter-registration-deadlines/",
+    "title": "Registration rules by state",
+    "publisher": "Vote.org",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-MAIL",
+    "url": "https://ballotpedia.org/Absentee/mail-in_ballot_request_deadlines,_2026",
+    "title": "2026 mail ballot request calendar",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-EARLY",
+    "url": "https://ballotpedia.org/Early_voting_dates,_2026",
+    "title": "2026 early voting calendar",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-RETURN",
+    "url": "https://ballotpedia.org/Absentee/mail-in_ballot_return_deadlines,_2026",
+    "title": "2026 ballot return calendar",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NPR-REG",
+    "url": "https://apps.npr.org/voter-registration-2026-mail/",
+    "title": "Registration guide",
+    "publisher": "NPR",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-07-14",
+    "note": "Fetched October 20; editorial revision is July 14, not October 20."
+  },
+  {
+    "id": "DDHQ-TOP",
+    "url": "https://votes.decisiondeskhq.com/forecast/2026",
+    "title": "Chamber forecast",
+    "publisher": "Decision Desk HQ",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "DDHQ-H",
+    "url": "https://votes.decisiondeskhq.com/forecast/2026/house",
+    "title": "House forecast",
+    "publisher": "Decision Desk HQ",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "DDHQ-S",
+    "url": "https://votes.decisiondeskhq.com/forecast/2026/senate",
+    "title": "Senate ratings",
+    "publisher": "Decision Desk HQ",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "DDHQ-G",
+    "url": "https://votes.decisiondeskhq.com/forecast/2026/governor",
+    "title": "Governor ratings",
+    "publisher": "Decision Desk HQ",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "DDHQ-METHOD",
+    "url": "https://votes.decisiondeskhq.com/races/2026-11-03/ohio-us-senate-special-election-general/forecast",
+    "title": "Race forecast methodology",
+    "publisher": "Decision Desk HQ",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "POL",
+    "url": "https://www.poliwave.com/us/fed/projection",
+    "title": "Correlated midterm forecast",
+    "publisher": "Poliwave",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Separate publisher; shared polling inputs can correlate models. Publisher says this model has not been historically calibrated."
+  },
+  {
+    "id": "CB-S",
+    "url": "https://centerforpolitics.org/crystalball/2026-senate/",
+    "title": "Senate ratings",
+    "publisher": "UVA Center for Politics",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-14",
+    "note": "Map inspected visually and cross-checked against the 270toWin structured map capture."
+  },
+  {
+    "id": "CB-S-TEXT",
+    "url": "https://sabatoscrystalball.substack.com/p/five-senate-rating-changes-as-close",
+    "title": "Senate path to control",
+    "publisher": "UVA Center for Politics",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-14",
+    "note": null
+  },
+  {
+    "id": "CB-G",
+    "url": "https://centerforpolitics.org/crystalball/2026-governor/",
+    "title": "Governor ratings",
+    "publisher": "UVA Center for Politics",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-06",
+    "note": "Map inspected visually through the original publisher\u2019s October 6 article image."
+  },
+  {
+    "id": "CB-G-TEXT",
+    "url": "https://sabatoscrystalball.substack.com/p/four-rating-changes-headlined-by",
+    "title": "Alaska and Oregon changes",
+    "publisher": "UVA Center for Politics",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-06",
+    "note": null
+  },
+  {
+    "id": "CB-H",
+    "url": "https://centerforpolitics.org/crystalball/2026-house/",
+    "title": "House ratings landing page",
+    "publisher": "UVA Center for Politics",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Landing page says October 20; the accessible 270toWin mirror still says October 8. Do not call mirror ratings current October 20 ratings."
+  },
+  {
+    "id": "CB-H-MIRROR",
+    "url": "https://www.270towin.com/2026-house-election/table/crystal-ball-2026-house-forecast/",
+    "title": "House ratings mirror",
+    "publisher": "270toWin / UVA",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-08",
+    "note": "Historical comparison only. Mirror map timestamp is October 11; underlying ratings label is October 8."
+  },
+  {
+    "id": "SILVER",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "title": "FLIPR landing page",
+    "publisher": "Silver Bulletin",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Public text only; paywalled chamber forecast numbers were not retrieved."
+  },
+  {
+    "id": "SILVER-GENERIC",
+    "url": "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls",
+    "title": "Generic ballot average",
+    "publisher": "Silver Bulletin",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Chart shows 50.5\u201341.5; editorial paragraph still carries an October 16 signoff. These are distinct from the likely-voter adjusted FLIPR average."
+  },
+  {
+    "id": "FORBES",
+    "url": "https://www.forbes.com/sites/saradorn/2026/10/20/hottest-2026-midterm-races-democrats-brown-cooper-ahead-in-ohio-north-carolina-senate-races-updated-daily/",
+    "title": "Key Senate polls roundup",
+    "publisher": "Forbes",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Cross-check of reported poll results, not an independent second survey."
+  },
+  {
+    "id": "ELON",
+    "url": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/10/Elon-Poll-news-release-10-20-26.pdf",
+    "title": "North Carolina poll release",
+    "publisher": "Elon University",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Use date printed in PDF body. PDF metadata retains an old title."
+  },
+  {
+    "id": "MARIST-OH",
+    "url": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-october-2026/",
+    "title": "Ohio Senate and governor poll",
+    "publisher": "Marist",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "MARIST-IA",
+    "url": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-iowa-october-2026/",
+    "title": "Iowa Senate and governor poll",
+    "publisher": "Marist",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-15",
+    "note": null
+  },
+  {
+    "id": "UH",
+    "url": "https://www.uh.edu/hobby/texas2026/index.php",
+    "title": "Texas Votes 2026",
+    "publisher": "University of Houston",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-19",
+    "note": null
+  },
+  {
+    "id": "SUFFOLK-ME",
+    "url": "https://www.suffolk.edu/-/media/suffolk/documents/academics/research-at-suffolk/suprc/polls/other-states/2026/10_14_2026_maine_statewide_marginals.pdf?la=en&hash=7FCED62D765CBEF2DB2EFD7ADF0213034C981FE0",
+    "title": "Maine survey toplines",
+    "publisher": "Suffolk University",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-14",
+    "note": "Fieldwork and error now confirmed in the original publisher\u2019s Other States methodology."
+  },
+  {
+    "id": "FOX-MI",
+    "url": "https://www.foxnews.com/politics/fox-news-poll-michigan-voters-split-between-el-sayed-rogers",
+    "title": "Michigan Senate poll",
+    "publisher": "Fox News / Beacon / Shaw",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-09-30",
+    "note": null
+  },
+  {
+    "id": "KSTP",
+    "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
+    "title": "Minnesota polling coverage",
+    "publisher": "KSTP / SurveyUSA",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-15",
+    "note": "Use the original SurveyUSA PDF, not the embedded chart template, for percentages, fieldwork and sample metadata."
+  },
+  {
+    "id": "BLS",
+    "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+    "title": "September CPI release",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-14",
+    "note": null
+  },
+  {
+    "id": "AP-CPI",
+    "url": "https://apnews.com/article/cpi-inflation-consumer-prices-affordability-3985019a54c82421e6112fb57baba048",
+    "title": "September inflation report",
+    "publisher": "Associated Press",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-14",
+    "note": null
+  },
+  {
+    "id": "FEC",
+    "url": "https://www.fec.gov/help-candidates-and-committees/dates-and-deadlines/2026-reporting-dates/2026-quarterly-filers/",
+    "title": "2026 quarterly reporting calendar",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "DOWNBALLOT",
+    "url": "https://www.the-downballot.com/p/the-downballots-3q-2026-senate-and",
+    "title": "Q3 fundraising report guide",
+    "publisher": "The Downballot",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-16",
+    "note": "No candidate dollar totals imported without primary filing-level reconciliation."
+  },
+  {
+    "id": "UF",
+    "url": "https://election.lab.ufl.edu/early-vote/2026-early-voting/",
+    "title": "2026 early vote tracker",
+    "publisher": "UF Election Lab",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "National total is single-source in this collection. The page specifies attribution and noncommercial reuse terms. Link to tracker; do not import its dataset as a commercial feed without permission."
+  },
+  {
+    "id": "BP-SENATE",
+    "url": "https://ballotpedia.org/United_States_Senate_elections,_2026",
+    "title": "Senate election scope",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "USA",
+    "url": "https://www.usa.gov/midterm-elections",
+    "title": "Congressional and midterm elections",
+    "publisher": "USAGov",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "HOME",
+    "url": "https://midtermwatch.com/",
+    "title": "Homepage snapshot",
+    "publisher": "Midterm Watch",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-10",
+    "note": null
+  },
+  {
+    "id": "SITE-DATA",
+    "url": "https://midtermwatch.com/data/",
+    "title": "Data page snapshot",
+    "publisher": "Midterm Watch",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-10",
+    "note": null
+  },
+  {
+    "id": "SITE-METHOD",
+    "url": "https://midtermwatch.com/methodology/",
+    "title": "Current publication standard",
+    "publisher": "Midterm Watch",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VOTEGOV-IL",
+    "url": "https://vote.gov/register/illinois",
+    "title": "Illinois registration",
+    "publisher": "Vote.gov",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2025-09-12",
+    "note": null
+  },
+  {
+    "id": "VOTEGOV-HI",
+    "url": "https://vote.gov/register/hawaii",
+    "title": "Hawaii registration",
+    "publisher": "Vote.gov",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2024-11-18",
+    "note": null
+  },
+  {
+    "id": "OFF-AL",
+    "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+    "title": "Alabama official election information",
+    "publisher": "Alabama election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-AK",
+    "url": "https://www.elections.alaska.gov/calendar/",
+    "title": "Alaska official election information",
+    "publisher": "Alaska election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-AZ",
+    "url": "https://azsos.gov/sites/default/files/docs/HB2022-Primary-Date-Change-2025-2026-calendar-05052026.pdf",
+    "title": "Arizona official election information",
+    "publisher": "Arizona election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-AR",
+    "url": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._6-2025_.pdf",
+    "title": "Arkansas official election information",
+    "publisher": "Arkansas election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-CA",
+    "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+    "title": "California official election information",
+    "publisher": "California election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-CO",
+    "url": "https://www.coloradosos.gov/pubs/elections/calendars/2026ElectionCalendar.pdf",
+    "title": "Colorado official election information",
+    "publisher": "Colorado election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-CT",
+    "url": "https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-elections/2026-election-calendar-122325.pdf?rev=db830eb4fb3d4480b702b89d28624a47&hash=582E11FA0973B22BF1B03EC57E2F6F77",
+    "title": "Connecticut official election information",
+    "publisher": "Connecticut election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-DE",
+    "url": "https://elections.delaware.gov/voter/votereg.shtml#how",
+    "title": "Delaware official election information",
+    "publisher": "Delaware election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-DC",
+    "url": "https://dcboe.org/elections/2026-elections",
+    "title": "District of Columbia official election information",
+    "publisher": "District of Columbia election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-FL",
+    "url": "https://dos.fl.gov/elections/for-voters/election-dates/",
+    "title": "Florida official election information",
+    "publisher": "Florida election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-GA",
+    "url": "https://sos.ga.gov/sites/default/files/forms/2026%20Calendar.pdf",
+    "title": "Georgia official election information",
+    "publisher": "Georgia election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-HI",
+    "url": "https://elections.hawaii.gov/about-us/calendar/",
+    "title": "Hawaii official election information",
+    "publisher": "Hawaii election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-ID",
+    "url": "https://archive.voteidaho.gov/download/2026-election-calendar.pdf?_gl=1*jpjwhs*_ga*MTUwNDg4NzkwOC4xNzY0NzExMjI4*_ga_20546Y1CC5*czE3NjQ3MTEyMjgkbzEkZzEkdDE3NjQ3MTE1MjEkajEyJGwwJGgw",
+    "title": "Idaho official election information",
+    "publisher": "Idaho election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-IL",
+    "url": "https://www.elections.il.gov/Main/CalendarEventsAll.aspx",
+    "title": "Illinois official election information",
+    "publisher": "Illinois election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-IN",
+    "url": "https://www.in.gov/counties/clarkcountyclerkofcourts/voting-and-elections/files/2026-Indiana-Election-Calendar.pdf",
+    "title": "Indiana official election information",
+    "publisher": "Indiana election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-IA",
+    "url": "https://sos.iowa.gov/elections/pdf/candidates/primcandguide.pdf",
+    "title": "Iowa official election information",
+    "publisher": "Iowa election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-KS",
+    "url": "https://sos.ks.gov/elections/important-election-dates.html",
+    "title": "Kansas official election information",
+    "publisher": "Kansas election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-KY",
+    "url": "https://elect.ky.gov/Resources/Documents/2026%20Election%20Calendar%20Final%20Version%2010_6_2025.pdf",
+    "title": "Kentucky official election information",
+    "publisher": "Kentucky election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-LA",
+    "url": "https://www.sos.la.gov/media/p31j4zkc/elections-calendar-2026.pdf",
+    "title": "Louisiana official election information",
+    "publisher": "Louisiana election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-ME",
+    "url": "https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide",
+    "title": "Maine official election information",
+    "publisher": "Maine election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MD",
+    "url": "https://elections.maryland.gov/elections/2026/2026_Election_Calendar.pdf",
+    "title": "Maryland official election information",
+    "publisher": "Maryland election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MA",
+    "url": "https://www.sec.state.ma.us/divisions/elections/recent-updates/upcoming-elections.htm",
+    "title": "Massachusetts official election information",
+    "publisher": "Massachusetts election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MI",
+    "url": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/Election-Administrators/Election-Dates.pdf",
+    "title": "Michigan official election information",
+    "publisher": "Michigan election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MN",
+    "url": "https://www.sos.mn.gov/election-administration-campaigns/elections-calendar/",
+    "title": "Minnesota official election information",
+    "publisher": "Minnesota election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MS",
+    "url": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
+    "title": "Mississippi official election information",
+    "publisher": "Mississippi election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MO",
+    "url": "https://www.sos.mo.gov/elections/calendar/2026cal",
+    "title": "Missouri official election information",
+    "publisher": "Missouri election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-MT",
+    "url": "https://sosmt.gov/elections/calendars/",
+    "title": "Montana official election information",
+    "publisher": "Montana election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Stable official hub for the 2026 calendar and voter/candidate dates; replaces a temporary download-token URL."
+  },
+  {
+    "id": "OFF-NE",
+    "url": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+    "title": "Nebraska official election information",
+    "publisher": "Nebraska election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-NV",
+    "url": "https://www.nvsos.gov/home/showpublisheddocument/17306/639040036715470000",
+    "title": "Nevada official election information",
+    "publisher": "Nevada election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VOTEGOV-NV",
+    "url": "https://vote.gov/register/nevada",
+    "title": "Nevada registration",
+    "publisher": "Vote.gov",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2024-11-18",
+    "note": "Online cutoff conflicts with 2026 secondary sources."
+  },
+  {
+    "id": "OFF-NH",
+    "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/political-calendar-2026-2027-tops-pages-of-calendar-landscape_0.pdf",
+    "title": "New Hampshire official election information",
+    "publisher": "New Hampshire election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-NJ",
+    "url": "https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-general-election-0109.pdf",
+    "title": "New Jersey official election information",
+    "publisher": "New Jersey election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-NM",
+    "url": "https://www.sos.nm.gov/wp-content/uploads/2026/01/2026-Primary-Candidate-Guide-Updated.pdf",
+    "title": "New Mexico official election information",
+    "publisher": "New Mexico election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-NY",
+    "url": "https://elections.ny.gov/system/files/documents/2025/12/2026-political-calendar-quad-fold-12.9.2025-final.pdf",
+    "title": "New York official election information",
+    "publisher": "New York election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-NC",
+    "url": "https://www.ncsbe.gov/voting/upcoming-election",
+    "title": "North Carolina official election information",
+    "publisher": "North Carolina election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-ND",
+    "url": "https://www.sos.nd.gov/elections/voter/elections-currentpast",
+    "title": "North Dakota official election information",
+    "publisher": "North Dakota election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VOTEGOV-ND",
+    "url": "https://vote.gov/register/north-dakota",
+    "title": "North Dakota registration",
+    "publisher": "Vote.gov",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2024-07-30",
+    "note": null
+  },
+  {
+    "id": "OFF-OH",
+    "url": "https://www.ohiosos.gov/assets/election-calendar-2026.pdf",
+    "title": "Ohio official election information",
+    "publisher": "Ohio election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-OK",
+    "url": "https://oklahoma.gov/content/dam/ok/en/elections/dates-and-deadlines/2026-voter-information-calendar.pdf",
+    "title": "Oklahoma official election information",
+    "publisher": "Oklahoma election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-OR",
+    "url": "https://sos.oregon.gov/elections/Documents/current-elections-calendar.pdf",
+    "title": "Oregon official election information",
+    "publisher": "Oregon election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-PA",
+    "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-and-elections/running-for-office/2026/2026-general-election-calendar.pdf",
+    "title": "Pennsylvania official election information",
+    "publisher": "Pennsylvania election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-RI",
+    "url": "https://elections.ri.gov/elections/upcoming-elections",
+    "title": "Rhode Island official election information",
+    "publisher": "Rhode Island election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-SC",
+    "url": "https://scvotes.gov/wp-content/uploads/2026/01/2026-Election-Calendar-Draft-scVOTES_.pdf",
+    "title": "South Carolina official election information",
+    "publisher": "South Carolina election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-SD",
+    "url": "https://sdsos.gov/elections-voting/assets/2026%20Documents/2026ElectionCALENDAR.pdf",
+    "title": "South Dakota official election information",
+    "publisher": "South Dakota election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-TN",
+    "url": "https://sos.tn.gov/elections/calendar",
+    "title": "Tennessee official election information",
+    "publisher": "Tennessee election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-TX",
+    "url": "https://www.sos.state.tx.us/elections/voter/important-election-dates.shtml",
+    "title": "Texas official election information",
+    "publisher": "Texas election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-UT",
+    "url": "https://vote.utah.gov/wp-content/uploads/2026/01/2026-Utah-Election-Calendar.pdf",
+    "title": "Utah official election information",
+    "publisher": "Utah election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-VT",
+    "url": "https://sos.vermont.gov/elections/voters/registration/",
+    "title": "Vermont official election information",
+    "publisher": "Vermont election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-VA",
+    "url": "https://www.elections.virginia.gov/casting-a-ballot/calendars-schedules/upcoming-elections.html",
+    "title": "Virginia official election information",
+    "publisher": "Virginia election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-WA",
+    "url": "https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlines",
+    "title": "Washington official election information",
+    "publisher": "Washington election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-WV",
+    "url": "https://sos.wv.gov/media/467/download?inline",
+    "title": "West Virginia official election information",
+    "publisher": "West Virginia election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-WI",
+    "url": "https://elections.wi.gov/sites/default/files/documents/2026_2027%20Election%20Calendar_0.pdf",
+    "title": "Wisconsin official election information",
+    "publisher": "Wisconsin election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OFF-WY",
+    "url": "https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf",
+    "title": "Wyoming official election information",
+    "publisher": "Wyoming election authority",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "COOK-H",
+    "url": "https://www.cookpolitical.com/ratings/house-race-ratings",
+    "title": "All 435 CPR House ratings",
+    "publisher": "Cook Political Report",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-16",
+    "note": "Original publisher inspected; 270toWin mirror checked against it. Ratings are attributed assessments, not facts about future results."
+  },
+  {
+    "id": "HOUSE-270",
+    "url": "https://www.270towin.com/2026-house-election/cook-political-report-2026-house-ratings",
+    "title": "District metadata and featured candidates",
+    "publisher": "270toWin",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-19",
+    "note": "Names were compared with Ballotpedia. Stale candidates and placeholder party counts are not treated as ballot names."
+  },
+  {
+    "id": "BP-H-SCOPE",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections,_2026",
+    "title": "2026 House election and redistricting context",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VOTE-MAIL",
+    "url": "https://www.vote.org/absentee-ballot-deadlines/",
+    "title": "Mail application and return rules",
+    "publisher": "Vote.org",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VOTE-EARLY",
+    "url": "https://www.vote.org/early-voting-calendar/",
+    "title": "Early/absentee in-person voting rules",
+    "publisher": "Vote.org",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-HOURS",
+    "url": "https://ballotpedia.org/State_Poll_Opening_and_Closing_Times_(2026)",
+    "title": "2026 poll opening and closing rules",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Local and small-precinct exceptions are retained; default hours are not a guarantee for an individual location."
+  },
+  {
+    "id": "VOTECLOCK",
+    "url": "https://voteclock.org/polling-hours-by-state-2026",
+    "title": "2026 polling-hour cross-check",
+    "publisher": "VoteClock",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-15",
+    "note": null
+  },
+  {
+    "id": "GP-HOURS",
+    "url": "https://www.thegreenpapers.com/G26/closing.phtml?format=ga",
+    "title": "2026 general-election closing times",
+    "publisher": "The Green Papers",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Media-oriented national schedule; use local election authorities for an individual polling place."
+  },
+  {
+    "id": "CT-GUIDE",
+    "url": "https://portal.ct.gov/-/media/sots/electionservices/voter_guide/2026/2026_voter_guide_final.pdf",
+    "title": "2026 voter guide and no-excuse absentee voting",
+    "publisher": "Connecticut Secretary of the State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "CT-TOWN",
+    "url": "https://www.norwalkct.gov/349/Important-Dates-Deadlines",
+    "title": "2026 registration and voting deadlines",
+    "publisher": "City of Norwalk",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OK-REG-RULE",
+    "url": "https://www.oklahoma.gov/elections/voter-registration/register-to-vote.html",
+    "title": "Registration submission rule",
+    "publisher": "Oklahoma State Election Board",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NV-SDR",
+    "url": "https://www.clarkcountynv.gov/government/departments/elections/services/voter_registration/sdr",
+    "title": "Online and in-person same-day registration",
+    "publisher": "Clark County Election Department",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2023-09-10",
+    "note": "Rule cross-checked with the 2026 county calendar; publication age is disclosed."
+  },
+  {
+    "id": "NV-2026",
+    "url": "https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3Aa5950eb8-cb6d-404e-a533-b4856da8aa86/original/as/2026-dates.pdf",
+    "title": "2026 registration phases and calendar",
+    "publisher": "Clark County Election Department",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2025-11-26",
+    "note": null
+  },
+  {
+    "id": "AK-VOTE",
+    "url": "https://www.elections.alaska.gov/absentee-and-early-voting/",
+    "title": "Absentee application and return instructions",
+    "publisher": "Alaska Division of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "KS-VOTE",
+    "url": "https://sos.ks.gov/elections/advance-voting-information.html",
+    "title": "Advance voting and current injunction",
+    "publisher": "Kansas Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Current notice says the postmark grace period remains in effect for the general election; older static calendar differs."
+  },
+  {
+    "id": "KS-STATUTE",
+    "url": "https://www.kslegislature.gov/li/b2025_26/statute/025_000_0000_chapter/025_011_0000_article/025_011_0022_section/025_011_0022_k/",
+    "title": "Advance application filing requirements",
+    "publisher": "Kansas Legislature",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "DC-CURRENT",
+    "url": "https://www.dcboe.org/",
+    "title": "2026 general-election dates and hours",
+    "publisher": "DC Board of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "TN-VOTE",
+    "url": "https://sos.tn.gov/elections/guides/guide-to-absentee-voting",
+    "title": "Absentee eligibility, request and mail-only return",
+    "publisher": "Tennessee Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NY-GUIDE",
+    "url": "https://elections.ny.gov/system/files/documents/2026/02/standard-english.pdf",
+    "title": "2026 voting deadline card",
+    "publisher": "New York State Board of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "RI-PORTAL",
+    "url": "https://mailballot.sos.ri.gov/",
+    "title": "2026 mail application deadline",
+    "publisher": "Rhode Island Department of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "RI-RULE",
+    "url": "https://vote.sos.ri.gov/Voter/VotebyMail",
+    "title": "Mail application and emergency route",
+    "publisher": "Rhode Island Department of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "MN-PDF",
+    "url": "https://kstp.com/wp-content/uploads/2026/10/Poll-Races-1.pdf",
+    "title": "SurveyUSA poll 28052 original tables",
+    "publisher": "SurveyUSA / KSTP",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-13",
+    "note": null
+  },
+  {
+    "id": "NC-TOPLINES",
+    "url": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/10/Elon-University-Poll-topline-methodology-10_20_26.pdf",
+    "title": "Elon poll toplines and methodology",
+    "publisher": "Elon University",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "ME-METHOD",
+    "url": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/other-states",
+    "title": "October 14 Maine survey methodology",
+    "publisher": "Suffolk University",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-14",
+    "note": null
+  },
+  {
+    "id": "OH-TABLES",
+    "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/10/Marist-Poll_OH-NOS-and-Tables_202610191215zz9hjdV2l.pdf",
+    "title": "Ohio survey methodology and tables",
+    "publisher": "Marist",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": null
+  },
+  {
+    "id": "IA-TABLES",
+    "url": "https://maristpoll.marist.edu/wp-content/uploads/2026/10/Marist-Poll_Iowa_NOS-and-Tables_202610131230@3bcy%5Ew.pdf",
+    "title": "Iowa survey methodology and tables",
+    "publisher": "Marist",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-15",
+    "note": null
+  },
+  {
+    "id": "LA-FORMAT",
+    "url": "https://www.sos.la.gov/elections-voting/how-candidates-are-elected",
+    "title": "2026 House open primary and Senate closed-primary rules",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "LA-DATES",
+    "url": "https://www.sos.la.gov/elections-voting/election-dates",
+    "title": "November and conditional December election dates",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GA-CALENDAR",
+    "url": "https://sos.ga.gov/sites/default/files/forms/2026%20Elections%20Calendar_0.pdf",
+    "title": "2026 general and runoff calendar",
+    "publisher": "Georgia Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GA-COUNTY",
+    "url": "https://co.camden.ga.us/Calendar.aspx?EID=4424",
+    "title": "Conditional December 1 general runoff",
+    "publisher": "Camden County, Georgia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "MS-CALENDAR",
+    "url": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
+    "title": "2026 election and runoff calendar",
+    "publisher": "Mississippi Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "MS-GUIDE",
+    "url": "https://sos.ms.gov/sites/default/files/elections/2026%20Mississippi%20Voter%20Information%20Guide.pdf",
+    "title": "2026 voter information guide",
+    "publisher": "Mississippi Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-AK",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_election_in_Alaska,_2026",
+    "title": "Alaska 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-AL",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Alabama,_2026",
+    "title": "Alabama 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-AR",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Arkansas,_2026",
+    "title": "Arkansas 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-AZ",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Arizona,_2026",
+    "title": "Arizona 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-CA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_California,_2026",
+    "title": "California 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-CO",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Colorado,_2026",
+    "title": "Colorado 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-CT",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Connecticut,_2026",
+    "title": "Connecticut 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-DE",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_election_in_Delaware,_2026",
+    "title": "Delaware 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-FL",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Florida,_2026",
+    "title": "Florida 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-GA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Georgia,_2026",
+    "title": "Georgia 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-HI",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Hawaii,_2026",
+    "title": "Hawaii 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-IA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Iowa,_2026",
+    "title": "Iowa 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-ID",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Idaho,_2026",
+    "title": "Idaho 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-IL",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Illinois,_2026",
+    "title": "Illinois 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-IN",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Indiana,_2026",
+    "title": "Indiana 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-KS",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Kansas,_2026",
+    "title": "Kansas 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-KY",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Kentucky,_2026",
+    "title": "Kentucky 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-LA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Louisiana,_2026",
+    "title": "Louisiana 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Massachusetts,_2026",
+    "title": "Massachusetts 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MD",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Maryland,_2026",
+    "title": "Maryland 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-ME",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Maine,_2026",
+    "title": "Maine 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MI",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Michigan,_2026",
+    "title": "Michigan 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MN",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Minnesota,_2026",
+    "title": "Minnesota 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-1",
+    "url": "https://ballotpedia.org/Missouri%27s_1st_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-2",
+    "url": "https://ballotpedia.org/Missouri%27s_2nd_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-3",
+    "url": "https://ballotpedia.org/Missouri%27s_3rd_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-4",
+    "url": "https://ballotpedia.org/Missouri%27s_4th_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-5",
+    "url": "https://ballotpedia.org/Missouri%27s_5th_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-6",
+    "url": "https://ballotpedia.org/Missouri%27s_6th_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-7",
+    "url": "https://ballotpedia.org/Missouri%27s_7th_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MO-8",
+    "url": "https://ballotpedia.org/Missouri%27s_8th_Congressional_District_election,_2026",
+    "title": "Missouri 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MS",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Mississippi,_2026",
+    "title": "Mississippi 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-MT",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Montana,_2026",
+    "title": "Montana 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NC",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_North_Carolina,_2026",
+    "title": "North Carolina 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-ND",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_election_in_North_Dakota,_2026",
+    "title": "North Dakota 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NE",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Nebraska,_2026",
+    "title": "Nebraska 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NH",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_New_Hampshire,_2026",
+    "title": "New Hampshire 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NJ",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_New_Jersey,_2026",
+    "title": "New Jersey 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NM",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_New_Mexico,_2026",
+    "title": "New Mexico 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NV",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Nevada,_2026",
+    "title": "Nevada 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-NY",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_New_York,_2026",
+    "title": "New York 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-OH",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Ohio,_2026",
+    "title": "Ohio 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-OK",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Oklahoma,_2026",
+    "title": "Oklahoma 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-OR",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Oregon,_2026",
+    "title": "Oregon 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-PA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Pennsylvania,_2026",
+    "title": "Pennsylvania 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-RI",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Rhode_Island,_2026",
+    "title": "Rhode Island 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-SC",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_South_Carolina,_2026",
+    "title": "South Carolina 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-SD",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_election_in_South_Dakota,_2026",
+    "title": "South Dakota 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-TN",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Tennessee,_2026",
+    "title": "Tennessee 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-TX",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Texas,_2026",
+    "title": "Texas 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-UT",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Utah,_2026",
+    "title": "Utah 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-VA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Virginia,_2026",
+    "title": "Virginia 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-VT",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_election_in_Vermont,_2026",
+    "title": "Vermont 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-WA",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Washington,_2026",
+    "title": "Washington 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-WI",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Wisconsin,_2026",
+    "title": "Wisconsin 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-WV",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_West_Virginia,_2026",
+    "title": "West Virginia 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-H-WY",
+    "url": "https://ballotpedia.org/United_States_House_of_Representatives_election_in_Wyoming,_2026",
+    "title": "Wyoming 2026 House candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GP-TX",
+    "url": "https://www.thegreenpapers.com/G26/TX",
+    "title": "2026 Texas candidate identities",
+    "publisher": "The Green Papers",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GP-IN",
+    "url": "https://www.thegreenpapers.com/G26/IN",
+    "title": "2026 Indiana candidate identities",
+    "publisher": "The Green Papers",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GP-AZ",
+    "url": "https://www.thegreenpapers.com/G26/AZ",
+    "title": "2026 Arizona candidate identities",
+    "publisher": "The Green Papers",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GP-CO",
+    "url": "https://www.thegreenpapers.com/G26/CO",
+    "title": "2026 Colorado candidate identities",
+    "publisher": "The Green Papers",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "FL-CANDIDATE",
+    "url": "https://dos.elections.myflorida.com/candidates/CanDetail.asp?account=91278",
+    "title": "Brent Andersen qualified candidate record",
+    "publisher": "Florida Division of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "LA-CANDIDATES-5",
+    "url": "https://voterportal.sos.la.gov/CandidateInquiry/ParishCandidate/Print?electionDate=11%2F03%2F2026&electionId=344&parishId=60&parishName=WASHINGTON",
+    "title": "November 3 District 5 qualified candidates",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "LA-CANDIDATES-6",
+    "url": "https://voterportal.sos.la.gov/CandidateInquiry/ParishCandidate/Print?electionDate=11%2F03%2F2026&electionId=344&parishId=4&parishName=ASCENSION",
+    "title": "November 3 District 6 qualified candidates",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "LA-CANDIDATES-3",
+    "url": "https://voterportal.sos.la.gov/CandidateInquiry/ParishCandidate/Print?electionDate=11%2F03%2F2026&electionId=344&parishId=28&parishName=LAFAYETTE",
+    "title": "November 3 District 3 qualified candidates",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "UVA-AG",
+    "url": "https://centerforpolitics.org/crystalball/democratic-outlook-brightens-in-races-for-vital-state-ag-posts/",
+    "title": "Jacobson attorney general assessment",
+    "publisher": "UVA Center for Politics / Louis Jacobson",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-08-20",
+    "note": "Periodic contributor assessment, not a regular formal Crystal Ball model. Source date remains August 20."
+  },
+  {
+    "id": "UVA-SOS",
+    "url": "https://centerforpolitics.org/crystalball/sec-state-sept26-upadate/",
+    "title": "Jacobson secretary of state assessment",
+    "publisher": "UVA Center for Politics / Louis Jacobson",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-09-09",
+    "note": "Periodic contributor assessment; not a new October 20 rating."
+  },
+  {
+    "id": "HORIZON",
+    "url": "https://99chambers.app/offices",
+    "title": "Statewide-office candidate and forecast comparison",
+    "publisher": "99chambers / Horizon",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Use qualitative categories only. This package has not validated this publisher\u2019s calibration; its numerical probabilities are not adopted. Two columns on that page are from the same publisher."
+  },
+  {
+    "id": "BP-AG",
+    "url": "https://ballotpedia.org/Attorney_General_elections,_2026",
+    "title": "2026 attorney general candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-SOS",
+    "url": "https://ballotpedia.org/Secretary_of_State_elections,_2026",
+    "title": "2026 secretary of state candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BP-LT",
+    "url": "https://ballotpedia.org/Lieutenant_gubernatorial_elections,_2026",
+    "title": "2026 lieutenant governor candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "MD-AG-PRIMARY",
+    "url": "https://elections.maryland.gov/elections/2026/primary_results/gen_detail_results_2026_3_1_Republican_P.html",
+    "title": "Certified Republican attorney general nominee",
+    "publisher": "Maryland State Board of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NCSL",
+    "url": "https://www.ncsl.org/about-state-legislatures/state-partisan-composition",
+    "title": "State partisan composition",
+    "publisher": "National Conference of State Legislatures",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-06",
+    "note": "Numeric party majorities and governing coalitions are different concepts."
+  },
+  {
+    "id": "UVA-LEG",
+    "url": "https://centerforpolitics.org/crystalball/the-key-state-legislative-races-gop-plays-defense-in-midwest-and-elsewhere/",
+    "title": "Jacobson October legislative assessment",
+    "publisher": "UVA Center for Politics / Louis Jacobson",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-16",
+    "note": "Periodic contributor assessment based on interviews. Its Likely category also flags possible minority-party gains or supermajority changes."
+  },
+  {
+    "id": "BP-LEG",
+    "url": "https://ballotpedia.org/State_legislative_elections,_2026",
+    "title": "2026 legislative election scope",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "BOLTS",
+    "url": "https://boltsmag.org/whats-on-the-ballot/guide-to-2026-general-election/",
+    "title": "2026 down-ballot election guide",
+    "publisher": "Bolts",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-01",
+    "note": "Issue-focused editorial outlet; used for contest importance and independently cross-checked identities, not as a neutral probability model."
+  },
+  {
+    "id": "BP-COURTS",
+    "url": "https://ballotpedia.org/State_supreme_court_elections,_2026",
+    "title": "State supreme court election scope",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "COURT-NC",
+    "url": "https://ballotpedia.org/North_Carolina_Supreme_Court_elections,_2026",
+    "title": "North Carolina Supreme Court candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "COURT-OH",
+    "url": "https://ballotpedia.org/Ohio_Supreme_Court_elections,_2026",
+    "title": "Ohio Supreme Court candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "COURT-MI",
+    "url": "https://ballotpedia.org/Michigan_Supreme_Court_elections,_2026",
+    "title": "Michigan Supreme Court candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "COURT-MT",
+    "url": "https://ballotpedia.org/Montana_Supreme_Court_elections,_2026",
+    "title": "Montana Supreme Court candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "COURT-WA",
+    "url": "https://ballotpedia.org/Washington_Supreme_Court_elections,_2026",
+    "title": "Washington Supreme Court candidates",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NC-JPOLL",
+    "url": "https://votes.decisiondeskhq.com/polls/general-ballot-test/2026-nc-state-supreme-court/north-carolina/lv-rv-adults",
+    "title": "North Carolina Supreme Court polling",
+    "publisher": "Decision Desk HQ",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NC-CF",
+    "url": "https://carolinaforward.org/blog/the-october-2026-carolina-forward-poll/",
+    "title": "October judicial polling direction",
+    "publisher": "Carolina Forward",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-13",
+    "note": "Advocacy sponsor; wording and exact individual-poll figures were not adopted as a neutral forecast."
+  },
+  {
+    "id": "NC-JGUIDE",
+    "url": "https://www.ncsbe.gov/voting/upcoming-election/judicial-voter-guide-2026-general-election",
+    "title": "2026 judicial voter guide",
+    "publisher": "North Carolina State Board of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "OH-JBALLOT",
+    "url": "https://www.boe.ohio.gov/abmt/oh12/20261103/X058___2_MFLD_1.html",
+    "title": "November 3 accessible official ballot",
+    "publisher": "Ohio county board of elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "MI-JGUIDE",
+    "url": "https://www.michiganpublic.org/politics-government/2026-10-09/michigan-supreme-court-candidates-2026",
+    "title": "All six Supreme Court candidates",
+    "publisher": "Michigan Public",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-09",
+    "note": null
+  },
+  {
+    "id": "WA-JGUIDE",
+    "url": "https://www.nwprogressive.org/weblog/2026/10/washington-state-supreme-court-elections-visualizer-updated-with-news-section-bar-association-ratings-and-real-time-pdc-data.html",
+    "title": "Five Supreme Court general-election matchups",
+    "publisher": "Northwest Progressive Institute",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-12",
+    "note": "Advocacy organization; used only to corroborate candidate identity and contest structure against Ballotpedia."
+  },
+  {
+    "id": "BP-MEASURES",
+    "url": "https://ballotpedia.org/2026_ballot_measures",
+    "title": "Certified 2026 statewide measures",
+    "publisher": "Ballotpedia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "CA-MEASURES",
+    "url": "https://voterguide.sos.ca.gov/propositions/",
+    "title": "2026 propositions",
+    "publisher": "California Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "MO-MEASURES",
+    "url": "https://www.sos.mo.gov/petitions/2026BallotMeasures",
+    "title": "Certified November 3 ballot titles",
+    "publisher": "Missouri Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "NV-MEASURES",
+    "url": "https://cltr.douglascountynv.gov/elections/2026-election-information/2026_general_election/state_ballot_questions",
+    "title": "Questions 6 and 7, second passage",
+    "publisher": "Douglas County Clerk-Treasurer, Nevada",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "ID-MEASURES",
+    "url": "https://voteidaho.gov/idaho-general-election/",
+    "title": "2026 certified ballot questions",
+    "publisher": "Idaho Secretary of State",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "VA-MEASURES",
+    "url": "https://www.elections.virginia.gov/election-law/proposed-constitutional-amendment-question-1/",
+    "title": "Question 1 reproductive freedom amendment",
+    "publisher": "Virginia Department of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "CO-MEASURES",
+    "url": "https://content.leg.colorado.gov/sites/default/files/2026-bluebook-english-accessible_1.pdf",
+    "title": "2026 Blue Book",
+    "publisher": "Colorado Legislative Council",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-09-10",
+    "note": null
+  },
+  {
+    "id": "AK-MEASURES",
+    "url": "https://www.elections.alaska.gov/election/2026/General/OEPbooks/2026%20Alaska%20General%20VP_Region%201_ENG_web.pdf",
+    "title": "2026 official election pamphlet, Region I",
+    "publisher": "Alaska Division of Elections",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GA-FULTON",
+    "url": "https://fultoncountyga.gov/inside-fulton-county/fulton-county-departments/registration-and-elections/election-key-dates",
+    "title": "2026 general/runoff deadlines",
+    "publisher": "Fulton County, Georgia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "GA-PUTNAM",
+    "url": "https://ber.putnam-ga.gov/election-info/election-calendar/",
+    "title": "2026 calendar and federal runoff registration",
+    "publisher": "Putnam County, Georgia",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "LA-JEFFERSON",
+    "url": "https://www.jeffparish.gov/637/Election-Information",
+    "title": "Current 2026 fall election table",
+    "publisher": "Jefferson Parish Registrar of Voters",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Louisiana special-category return times are not imported from this summary; the current state instructions control."
+  },
+  {
+    "id": "LA-POWER",
+    "url": "https://powercoalition.org/wp-content/uploads/2025/08/2026-Election-Calendar-With-Special-Elections-3.pdf",
+    "title": "2026 calendar cross-check",
+    "publisher": "Power Coalition for Equity & Justice",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": null
+  },
+  {
+    "id": "FEC-TALARICO",
+    "url": "https://www.fec.gov/data/candidate/S6TX00479/?cycle=2026",
+    "title": "James Talarico authorized-committee totals",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "OpenFEC candidate totals and individual authorized-committee totals reconciled. Financial coverage ends September 30; this is not current cash or Q3-only fundraising."
+  },
+  {
+    "id": "FEC-PAXTON",
+    "url": "https://www.fec.gov/data/candidate/S6TX00388/?cycle=2026",
+    "title": "Ken Paxton authorized-committee totals",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "OpenFEC candidate totals and individual authorized-committee totals reconciled. Financial coverage ends September 30; this is not current cash or Q3-only fundraising."
+  },
+  {
+    "id": "FEC-C00919084",
+    "url": "https://www.fec.gov/data/committee/C00919084/?cycle=2026",
+    "title": "TALARICO FOR TEXAS committee totals",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Committee-level OpenFEC total used in aggregate reconciliation."
+  },
+  {
+    "id": "FEC-C00901918",
+    "url": "https://www.fec.gov/data/committee/C00901918/?cycle=2026",
+    "title": "KEN PAXTON FOR SENATE committee totals",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Committee-level OpenFEC total used in aggregate reconciliation."
+  },
+  {
+    "id": "FEC-C00930446",
+    "url": "https://www.fec.gov/data/committee/C00930446/?cycle=2026",
+    "title": "PAXTON FOR TX SENATE REPUBLICAN NOMINEE FUND 2026 committee totals",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-10-20",
+    "source_updated": null,
+    "note": "Committee-level OpenFEC total used in aggregate reconciliation."
+  },
+  {
+    "id": "PACHAND-FIN",
+    "url": "https://pachand.com/races/senate-tx-2026",
+    "title": "Texas Senate fundraising comparison",
+    "publisher": "Pachand",
+    "retrieved_on": "2026-10-20",
+    "source_updated": "2026-10-20",
+    "note": "Cross-checks rounded receipts and cash. The page headline uses the latest filing date in its full field; individual FEC coverage dates control the two candidate rows here."
+  }
+]

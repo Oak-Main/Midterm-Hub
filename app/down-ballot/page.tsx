@@ -1,0 +1,6 @@
+import Link from 'next/link';
+import { downBallotSections, pageMetadata } from '@/lib/refresh';
+import { EditionNote } from '@/components/edition-note';
+import { BreadcrumbData } from '@/components/structured-data';
+export const metadata = pageMetadata('2026 down-ballot elections', 'Key state executive races, legislatures, courts and ballot measures with evidence and uncertainty.', '/down-ballot/');
+export default function DownBallot() { return <article className="mx-auto max-w-6xl px-5 py-14 lg:px-8"><BreadcrumbData name="Down-ballot elections" path="/down-ballot/" /><h1 className="font-serif text-5xl font-bold">Beyond Congress</h1><p className="mt-5 max-w-3xl text-lg text-muted-foreground">A national watchlist of consequential state contests. Coverage is selected; it does not represent every local election or every judicial seat.</p><EditionNote /><div className="grid gap-5 md:grid-cols-2">{downBallotSections.map(item => <section key={item.slug} className="border bg-card p-7"><h2 className="font-serif text-3xl"><Link className="editorial-link" href={`/down-ballot/${item.slug}/`}>{item.title}</Link></h2><p className="mt-4 text-muted-foreground">{item.description}</p></section>)}</div></article>; }

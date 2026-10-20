@@ -1,42 +1,6 @@
-import type { Metadata } from "next";
-import { Database, Download, FileJson2, Sheet, CalendarDays } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { data, elections } from "@/lib/data";
-import { downloadHref, downloads, formatBytes } from "@/lib/downloads";
-
-export const metadata: Metadata = { title: "Open election data", description: "Download and inspect Midterm Watch election records and provenance metadata." };
-
-const icons = { JSON: FileJson2, CSV: Sheet, ICS: CalendarDays } as const;
-
-export default function DataPage() {
-  const stats: [number, string][] = [
-    [elections.length, "records"],
-    [new Set(elections.map((e) => e.state)).size, "jurisdictions"],
-    [new Set(elections.map((e) => e.source_url)).size, "source documents"],
-  ];
-  return <div className="mx-auto max-w-6xl px-5 py-16 lg:px-8">
-    <p className="rule-label">Open data / {data.edition}</p>
-    <h1 className="mt-3 font-serif text-5xl font-bold">Built to be inspected.</h1>
-    <p className="mt-5 max-w-2xl text-lg text-muted-foreground">The same reviewed records that power this site are available in portable formats. Every row retains its source URL and confidence.</p>
-    <div className="mt-12 grid gap-5 md:grid-cols-3">
-      {downloads.map((file) => {
-        const Icon = icons[file.format];
-        return <section key={file.name} className="border bg-card p-6">
-          <Icon className="text-secondary" aria-hidden="true" />
-          <h2 className="mt-5 font-serif text-2xl font-bold">{file.format}</h2>
-          <p className="mt-2 text-sm text-muted-foreground">{file.description}</p>
-          <Button asChild className="mt-6"><a href={downloadHref(file.name)} download><Download aria-hidden="true" /> Download {file.format}</a></Button>
-          <p className="mt-4 font-mono text-xs text-muted-foreground">{file.records} {file.format === "ICS" ? "upcoming elections" : "records"} · {formatBytes(file.bytes)}</p>
-          <p className="mt-1 break-all font-mono text-[11px] text-muted-foreground">SHA-256 {file.sha256}</p>
-        </section>;
-      })}
-    </div>
-    <div className="mt-12 grid gap-px bg-border md:grid-cols-3">
-      {stats.map(([n, l]) => <div key={l} className="bg-primary p-7 text-primary-foreground"><strong className="font-serif text-4xl text-secondary">{n}</strong><span className="block rule-label text-primary-foreground/70">{l}</span></div>)}
-    </div>
-    <div className="mt-12 flex gap-4 border-l-4 border-secondary bg-card p-6">
-      <Database className="shrink-0 text-secondary" aria-hidden="true" />
-      <p className="text-sm text-muted-foreground">Generated {new Date(data.generated_at).toLocaleString("en-US", { dateStyle: "long", timeStyle: "short" })}. Each file is rebuilt from the same reviewed records on every release, and the SHA-256 above lets you check a download against this page. The calendar lists only elections on or after that date.</p>
-    </div>
-  </div>;
-}
+import { StructuredData, BreadcrumbData } from '@/components/structured-data';
+import { EditionNote } from '@/components/edition-note';
+import { downloadHref, downloads, formatBytes } from '@/lib/downloads';
+import { canonicalOrigin, pageMetadata, refresh, refreshDownloads } from '@/lib/refresh';
+export const metadata = pageMetadata('Download 2026 election research and voting data', 'Download all 435 House races, current voting guides, the source register and civil-date calendar with file hashes and explicit scope.', '/data/');
+export default function DataPage() { return <article className="mx-auto max-w-7xl px-5 py-14 lg:px-8"><BreadcrumbData name="Open data" path="/data/" /><StructuredData value={{ '@context': 'https://schema.org', '@type': 'Dataset', name: 'Midterm Watch — October 20, 2026 election research', description: 'All 435 House rating comparisons, other national races, selected down-ballot watchlists and 51 method-specific voting guides. Forecasts are attributed pre-election judgments.', url: canonicalOrigin + '/data/', dateModified: refresh.as_of_date, temporalCoverage: '2026', creator: { '@type': 'Organization', name: 'Oak and Main Developers' }, distribution: refreshDownloads.map(file => ({ '@type': 'DataDownload', name: file.name, encodingFormat: file.format === 'JSON' ? 'application/json' : file.format === 'CSV' ? 'text/csv' : 'text/calendar', contentUrl: canonicalOrigin + '/downloads/' + file.name })) }} /><h1 className="font-serif text-5xl font-bold">Built to be inspected.</h1><EditionNote /><p className="mb-8 max-w-3xl text-lg">The current research collections and voting guides are available below. Schema 2.0 keeps calendar facts, poll observations, attributed forecasts and editorial outlooks distinct. Featured candidates are not exhaustive certified ballots.</p><div className="grid gap-5 md:grid-cols-2">{refreshDownloads.map(file => <section className="border bg-card p-6" key={file.name}><h2 className="font-serif text-2xl font-bold">{file.format} · {file.records} {file.name.includes('house') ? 'House races' : file.format === 'ICS' ? 'reminders' : file.name.includes('sources') ? 'source entries' : file.name.includes('voting') ? 'state guides' : 'House records plus other collections'}</h2><p className="mt-4 text-sm">{file.description}</p><a className="editorial-link mt-5 inline-block min-h-11 py-2 font-bold" href={downloadHref(file.name)} download>Download {file.name}</a><p className="mt-3 text-xs text-muted-foreground">{formatBytes(file.bytes)}</p><p className="mt-2 break-all font-mono text-xs">SHA-256 {file.sha256}</p></section>)}</div><details className="mt-12 border-t pt-6"><summary className="cursor-pointer font-bold">Historical calendar exports · original record provenance</summary><p className="my-5 max-w-3xl text-sm">These original calendar files retain historical records, source-check dates and the older scalar deadline schema. Use the current voting-guide downloads above for November 3 instructions; these archive files do not supersede them.</p><ul className="space-y-5">{downloads.map(file => <li key={file.name}><a className="editorial-link" href={downloadHref(file.name)} download>Archived calendar {file.format}: {file.name}</a><p className="mt-1 break-all font-mono text-xs">SHA-256 {file.sha256}</p></li>)}</ul></details></article>; }

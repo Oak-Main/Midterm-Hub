@@ -1,0 +1,1124 @@
+[
+  {
+    "state": "AL",
+    "name": "Alabama",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "AK",
+    "name": "Alaska",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "AZ",
+    "name": "Arizona",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "AR",
+    "name": "Arkansas",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "CA",
+    "name": "California",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "CO",
+    "name": "Colorado",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-26",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-26",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "CT",
+    "name": "Connecticut",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-16",
+        "status": "cross_checked",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-16",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "DE",
+    "name": "Delaware",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-10",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-10",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-10",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "DC",
+    "name": "District of Columbia",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "FL",
+    "name": "Florida",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "GA",
+    "name": "Georgia",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "HI",
+    "name": "Hawaii",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-26",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "ID",
+    "name": "Idaho",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "IL",
+    "name": "Illinois",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-06",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-18",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "IN",
+    "name": "Indiana",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "IA",
+    "name": "Iowa",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "KS",
+    "name": "Kansas",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "KY",
+    "name": "Kentucky",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "LA",
+    "name": "Louisiana",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "ME",
+    "name": "Maine",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MD",
+    "name": "Maryland",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MA",
+    "name": "Massachusetts",
+    "action": "Check the registration deadline for your method.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-24",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-24",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-24",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MI",
+    "name": "Michigan",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MN",
+    "name": "Minnesota",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MS",
+    "name": "Mississippi",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MO",
+    "name": "Missouri",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-07",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-07",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-07",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "MT",
+    "name": "Montana",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NE",
+    "name": "Nebraska",
+    "action": "The mail and online cutoffs have passed; in-person registration remains available through October 23.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-16",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-16",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NV",
+    "name": "Nevada",
+    "action": "Online or in-person same-day registration remains available through Election Day. Registration on or after October 21 requires voting in person; check the Nevada ID and residence rules.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-06",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-11-03",
+        "status": "cross_checked",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NH",
+    "name": "New Hampshire",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": null,
+        "status": "municipality_specific",
+        "type": ""
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NJ",
+    "name": "New Jersey",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NM",
+    "name": "New Mexico",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-06",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-06",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NY",
+    "name": "New York",
+    "action": "Check the registration deadline for your method.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-24",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-24",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-24",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "NC",
+    "name": "North Carolina",
+    "action": "Same-day registration is available during early voting through October 31; it is generally unavailable on Election Day.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-31",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-09",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-09",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "ND",
+    "name": "North Dakota",
+    "action": "Voter registration is not required; eligibility and identification rules still apply.",
+    "routes": {
+      "in_person": {
+        "date": null,
+        "status": "registration_not_required",
+        "type": ""
+      },
+      "mail": {
+        "date": null,
+        "status": "registration_not_required",
+        "type": ""
+      },
+      "online": {
+        "date": null,
+        "status": "registration_not_required",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "OH",
+    "name": "Ohio",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "OK",
+    "name": "Oklahoma",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-09",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-09",
+        "status": "cross_checked",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-09",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "OR",
+    "name": "Oregon",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "PA",
+    "name": "Pennsylvania",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "RI",
+    "name": "Rhode Island",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "SC",
+    "name": "South Carolina",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-02",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-04",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "SD",
+    "name": "South Dakota",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "TN",
+    "name": "Tennessee",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "TX",
+    "name": "Texas",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-05",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "UT",
+    "name": "Utah",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "VT",
+    "name": "Vermont",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "VA",
+    "name": "Virginia",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-23",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "WA",
+    "name": "Washington",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-26",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": "2026-10-26",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "WV",
+    "name": "West Virginia",
+    "action": "The ordinary registration deadline has passed.",
+    "routes": {
+      "in_person": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-13",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "WI",
+    "name": "Wisconsin",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-14",
+        "status": "cross_checked_date",
+        "type": "postmarked"
+      },
+      "online": {
+        "date": "2026-10-14",
+        "status": "cross_checked_date",
+        "type": ""
+      }
+    }
+  },
+  {
+    "state": "WY",
+    "name": "Wyoming",
+    "action": "In-person registration remains available through Election Day; location, identification and ballot rules apply.",
+    "routes": {
+      "in_person": {
+        "date": "2026-11-03",
+        "status": "cross_checked_date",
+        "type": ""
+      },
+      "mail": {
+        "date": "2026-10-19",
+        "status": "cross_checked_date",
+        "type": "received"
+      },
+      "online": {
+        "date": null,
+        "status": "not_offered",
+        "type": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,7 @@
+*.json text eol=lf
+*.html text eol=lf
+*.tsx text eol=lf
+*.ts text eol=lf
+*.mjs text eol=lf
+public/downloads/*.csv -text
+public/downloads/*.ics -text

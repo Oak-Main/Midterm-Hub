@@ -1,0 +1,2289 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Midterm Watch//2026 dated voting reference//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Midterm Watch — October 20 edition
+BEGIN:VEVENT
+UID:8003990fb29e52ee@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Alabama — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Statewide poll hours use Central time\; con
+ firm the local clock-time equivalent and polling location with the elect
+ ion authority.\nordinary domestic voters\; local sites/hours and special
+  categories require the linked authority
+URL:https://www.sos.alabama.gov/sites/default/files/election-2026/2026-Vo
+ terGuide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AL-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Alabama — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.alabama.gov/sites/default/files/election-2026/2026-Vo
+ terGuide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AL-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Alabama — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.sos.alabama.gov/sites/default/files/election-2026/2026-Vo
+ terGuide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AL-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Alabama — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.alabama.gov/sites/default/files/election-2026/2026-Vo
+ terGuide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:30dcca9c60cc51ae@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Alaska — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Alaska is divided between the Alaska and Ha
+ waii-Aleutian time zones.\nordinary domestic voters\; local sites/hours 
+ and special categories require the linked authority
+URL:https://www.elections.alaska.gov/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:AK-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Alaska — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.alaska.gov/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:AK-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Alaska — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.elections.alaska.gov/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:AK-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Alaska — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.alaska.gov/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:5dca68fbbea3221a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Arizona — November election
+DESCRIPTION:6 a.m. to 7 p.m.. Arizona generally observes Mountain Standar
+ d Time. However\, the Navajo Nation observes Daylight Saving Time. Becau
+ se of this\, Mountain Daylight Time is sometimes observed in Arizona.\no
+ rdinary domestic voters\; local sites/hours and special categories requi
+ re the linked authority
+URL:https://azsos.gov/sites/default/files/docs/HB2022-Primary-Date-Change
+ -2025-2026-calendar-05052026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AZ-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Arizona — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://azsos.gov/sites/default/files/docs/HB2022-Primary-Date-Change
+ -2025-2026-calendar-05052026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AZ-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Arizona — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://azsos.gov/sites/default/files/docs/HB2022-Primary-Date-Change
+ -2025-2026-calendar-05052026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AZ-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Arizona — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://azsos.gov/sites/default/files/docs/HB2022-Primary-Date-Change
+ -2025-2026-calendar-05052026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:44c594be06a5521e@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Arkansas — November election
+DESCRIPTION:7:30 a.m. to 7:30 p.m.. Local time. Check the assigned pollin
+ g place for applicable exceptions.\nordinary domestic voters\; local sit
+ es/hours and special categories require the linked authority
+URL:https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar
+ _Rev._6-2025_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AR-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Arkansas — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar
+ _Rev._6-2025_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:AR-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Arkansas — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar
+ _Rev._6-2025_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:ac2c1a098cca9ba4@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:California — November election
+DESCRIPTION:7 a.m. to 8 p.m.. California conducts its elections largely b
+ y mail.\nordinary domestic voters\; local sites/hours and special catego
+ ries require the linked authority
+URL:https://www.sos.ca.gov/elections/upcoming-elections/general-election-
+ november-3-2026/key-dates-deadlines
+END:VEVENT
+BEGIN:VEVENT
+UID:CA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:California — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.ca.gov/elections/upcoming-elections/general-election-
+ november-3-2026/key-dates-deadlines
+END:VEVENT
+BEGIN:VEVENT
+UID:CA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:California — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.ca.gov/elections/upcoming-elections/general-election-
+ november-3-2026/key-dates-deadlines
+END:VEVENT
+BEGIN:VEVENT
+UID:CA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:California — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.ca.gov/elections/upcoming-elections/general-election-
+ november-3-2026/key-dates-deadlines
+END:VEVENT
+BEGIN:VEVENT
+UID:af0088b451e4e9b7@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Colorado — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Colorado conducts its elections largely by 
+ mail.\nordinary domestic voters\; local sites/hours and special categori
+ es require the linked authority
+URL:https://www.coloradosos.gov/pubs/elections/calendars/2026ElectionCale
+ ndar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:CO-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Colorado — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.coloradosos.gov/pubs/elections/calendars/2026ElectionCale
+ ndar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:CO-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Colorado — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.coloradosos.gov/pubs/elections/calendars/2026ElectionCale
+ ndar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:CO-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Colorado — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.coloradosos.gov/pubs/elections/calendars/2026ElectionCale
+ ndar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:e8d01ef932e108bf@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Connecticut — November election
+DESCRIPTION:6 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-el
+ ections/2026-election-calendar-122325.pdf?rev=db830eb4fb3d4480b702b89d28
+ 624a47&hash=582E11FA0973B22BF1B03EC57E2F6F77
+END:VEVENT
+BEGIN:VEVENT
+UID:CT-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Connecticut — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-el
+ ections/2026-election-calendar-122325.pdf?rev=db830eb4fb3d4480b702b89d28
+ 624a47&hash=582E11FA0973B22BF1B03EC57E2F6F77
+END:VEVENT
+BEGIN:VEVENT
+UID:CT-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Connecticut — mail registration route
+DESCRIPTION:postmarked. Postmark rule confirmed in current official instr
+ uctions\; conflicting generic secondary wording was not used.\nIn-person
+  registration remains available through Election Day\; location\, identi
+ fication and ballot rules apply.\nCivil date only\; confirm local cutoff
+  and eligibility with the authority.
+URL:https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-el
+ ections/2026-election-calendar-122325.pdf?rev=db830eb4fb3d4480b702b89d28
+ 624a47&hash=582E11FA0973B22BF1B03EC57E2F6F77
+END:VEVENT
+BEGIN:VEVENT
+UID:CT-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Connecticut — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-el
+ ections/2026-election-calendar-122325.pdf?rev=db830eb4fb3d4480b702b89d28
+ 624a47&hash=582E11FA0973B22BF1B03EC57E2F6F77
+END:VEVENT
+BEGIN:VEVENT
+UID:a7e39751c0dcc473@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Delaware — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://elections.delaware.gov/voter/votereg.shtml#how
+END:VEVENT
+BEGIN:VEVENT
+UID:DE-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Delaware — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.delaware.gov/voter/votereg.shtml#how
+END:VEVENT
+BEGIN:VEVENT
+UID:DE-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Delaware — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://elections.delaware.gov/voter/votereg.shtml#how
+END:VEVENT
+BEGIN:VEVENT
+UID:DE-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:Delaware — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.delaware.gov/voter/votereg.shtml#how
+END:VEVENT
+BEGIN:VEVENT
+UID:0421deebb9bc32b0@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:District of Columbia — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://dcboe.org/elections/2026-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:DC-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:District of Columbia — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://dcboe.org/elections/2026-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:DC-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:District of Columbia — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://dcboe.org/elections/2026-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:DC-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:District of Columbia — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://dcboe.org/elections/2026-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:2f3103a2c1704428@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Florida — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Florida is divided between the Eastern and 
+ Central time zones.\nordinary domestic voters\; local sites/hours and sp
+ ecial categories require the linked authority
+URL:https://dos.fl.gov/elections/for-voters/election-dates/
+END:VEVENT
+BEGIN:VEVENT
+UID:FL-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Florida — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://dos.fl.gov/elections/for-voters/election-dates/
+END:VEVENT
+BEGIN:VEVENT
+UID:FL-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Florida — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://dos.fl.gov/elections/for-voters/election-dates/
+END:VEVENT
+BEGIN:VEVENT
+UID:FL-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Florida — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://dos.fl.gov/elections/for-voters/election-dates/
+END:VEVENT
+BEGIN:VEVENT
+UID:ae9f36da2d07e1e9@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Georgia — November election
+DESCRIPTION:7 a.m. to 7 p.m.. In cities with populations of 300\,000 or m
+ ore\, polling places remain open until 8 p.m. for municipal general elec
+ tions.\nordinary domestic voters\; local sites/hours and special categor
+ ies require the linked authority
+URL:https://sos.ga.gov/sites/default/files/forms/2026%20Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:GA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Georgia — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.ga.gov/sites/default/files/forms/2026%20Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:GA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Georgia — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://sos.ga.gov/sites/default/files/forms/2026%20Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:GA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Georgia — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.ga.gov/sites/default/files/forms/2026%20Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:1740fc79debed87a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Hawaii — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Hawaii conducts its elections largely by ma
+ il.\nordinary domestic voters\; local sites/hours and special categories
+  require the linked authority
+URL:https://elections.hawaii.gov/about-us/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:HI-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Hawaii — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.hawaii.gov/about-us/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:HI-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Hawaii — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.hawaii.gov/about-us/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:HI-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Hawaii — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.hawaii.gov/about-us/calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:770fd3b87e2ec427@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Idaho — November election
+DESCRIPTION:8 a.m. to 8 p.m.. Polling places may open at 7 a.m. at the di
+ scretion of the county clerk. Idaho is divided between the Mountain and 
+ Pacific time zones.\nordinary domestic voters\; local sites/hours and sp
+ ecial categories require the linked authority
+URL:https://archive.voteidaho.gov/download/2026-election-calendar.pdf?_gl
+ =1*jpjwhs*_ga*MTUwNDg4NzkwOC4xNzY0NzExMjI4*_ga_20546Y1CC5*czE3NjQ3MTEyMj
+ gkbzEkZzEkdDE3NjQ3MTE1MjEkajEyJGwwJGgw
+END:VEVENT
+BEGIN:VEVENT
+UID:ID-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Idaho — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://archive.voteidaho.gov/download/2026-election-calendar.pdf?_gl
+ =1*jpjwhs*_ga*MTUwNDg4NzkwOC4xNzY0NzExMjI4*_ga_20546Y1CC5*czE3NjQ3MTEyMj
+ gkbzEkZzEkdDE3NjQ3MTE1MjEkajEyJGwwJGgw
+END:VEVENT
+BEGIN:VEVENT
+UID:ID-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Idaho — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://archive.voteidaho.gov/download/2026-election-calendar.pdf?_gl
+ =1*jpjwhs*_ga*MTUwNDg4NzkwOC4xNzY0NzExMjI4*_ga_20546Y1CC5*czE3NjQ3MTEyMj
+ gkbzEkZzEkdDE3NjQ3MTE1MjEkajEyJGwwJGgw
+END:VEVENT
+BEGIN:VEVENT
+UID:ID-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Idaho — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://archive.voteidaho.gov/download/2026-election-calendar.pdf?_gl
+ =1*jpjwhs*_ga*MTUwNDg4NzkwOC4xNzY0NzExMjI4*_ga_20546Y1CC5*czE3NjQ3MTEyMj
+ gkbzEkZzEkdDE3NjQ3MTE1MjEkajEyJGwwJGgw
+END:VEVENT
+BEGIN:VEVENT
+UID:3dbd6b80d1615e6e@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Illinois — November election
+DESCRIPTION:6 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.elections.il.gov/Main/CalendarEventsAll.aspx
+END:VEVENT
+BEGIN:VEVENT
+UID:IL-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Illinois — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.il.gov/Main/CalendarEventsAll.aspx
+END:VEVENT
+BEGIN:VEVENT
+UID:IL-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:Illinois — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.il.gov/Main/CalendarEventsAll.aspx
+END:VEVENT
+BEGIN:VEVENT
+UID:IL-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Illinois — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.il.gov/Main/CalendarEventsAll.aspx
+END:VEVENT
+BEGIN:VEVENT
+UID:0c5500b812343bb1@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Indiana — November election
+DESCRIPTION:6 a.m. to 6 p.m.. Indiana is divided between the Eastern and 
+ Central time zones.\nordinary domestic voters\; local sites/hours and sp
+ ecial categories require the linked authority
+URL:https://www.in.gov/counties/clarkcountyclerkofcourts/voting-and-elect
+ ions/files/2026-Indiana-Election-Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:IN-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Indiana — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.in.gov/counties/clarkcountyclerkofcourts/voting-and-elect
+ ions/files/2026-Indiana-Election-Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:IN-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Indiana — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.in.gov/counties/clarkcountyclerkofcourts/voting-and-elect
+ ions/files/2026-Indiana-Election-Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:IN-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Indiana — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.in.gov/counties/clarkcountyclerkofcourts/voting-and-elect
+ ions/files/2026-Indiana-Election-Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:a68173209426fdea@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Iowa — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://sos.iowa.gov/elections/pdf/candidates/primcandguide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:IA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Iowa — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.iowa.gov/elections/pdf/candidates/primcandguide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:IA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Iowa — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.iowa.gov/elections/pdf/candidates/primcandguide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:IA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Iowa — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.iowa.gov/elections/pdf/candidates/primcandguide.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:99358c2f425c36d9@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Kansas — November election
+DESCRIPTION:7 a.m. to 7 p.m.. County schedules can differ within statutor
+ y limits. Polls must stay open for at least 12 consecutive hours\; confi
+ rm the county schedule and applicable time zone.\nordinary domestic vote
+ rs\; local sites/hours and special categories require the linked authori
+ ty
+URL:https://sos.ks.gov/elections/important-election-dates.html
+END:VEVENT
+BEGIN:VEVENT
+UID:KS-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Kansas — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.ks.gov/elections/important-election-dates.html
+END:VEVENT
+BEGIN:VEVENT
+UID:KS-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Kansas — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://sos.ks.gov/elections/important-election-dates.html
+END:VEVENT
+BEGIN:VEVENT
+UID:KS-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Kansas — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.ks.gov/elections/important-election-dates.html
+END:VEVENT
+BEGIN:VEVENT
+UID:2465346bcb2ec77a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Kentucky — November election
+DESCRIPTION:6 a.m. to 6 p.m.. Kentucky is divided between the Eastern and
+  Central time zones.\nordinary domestic voters\; local sites/hours and s
+ pecial categories require the linked authority
+URL:https://elect.ky.gov/Resources/Documents/2026%20Election%20Calendar%2
+ 0Final%20Version%2010_6_2025.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:KY-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Kentucky — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://elect.ky.gov/Resources/Documents/2026%20Election%20Calendar%2
+ 0Final%20Version%2010_6_2025.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:KY-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Kentucky — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://elect.ky.gov/Resources/Documents/2026%20Election%20Calendar%2
+ 0Final%20Version%2010_6_2025.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:KY-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Kentucky — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://elect.ky.gov/Resources/Documents/2026%20Election%20Calendar%2
+ 0Final%20Version%2010_6_2025.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:b3d94b336ca36a8a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Louisiana — November election
+DESCRIPTION:6 a.m.–8 p.m. on Tuesday\, November 3\; Saturday runoff hou
+ rs differ.. Local time. Check the assigned polling place for applicable 
+ exceptions.\nordinary domestic voters\; local sites/hours and special ca
+ tegories require the linked authority
+URL:https://www.sos.la.gov/media/p31j4zkc/elections-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:LA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Louisiana — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.la.gov/media/p31j4zkc/elections-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:LA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Louisiana — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.sos.la.gov/media/p31j4zkc/elections-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:LA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Louisiana — online registration route
+DESCRIPTION:. October 13 in the 2026 official calendar\; the generic Vote
+ .org twenty-day formula differs and is not used for this field.\nThe ord
+ inary registration deadline has passed.\nCivil date only\; confirm local
+  cutoff and eligibility with the authority.
+URL:https://www.sos.la.gov/media/p31j4zkc/elections-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:62b20c445a45d265@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Maine — November election
+DESCRIPTION:Opening set locally\; close 8 p.m.. Polling places in municip
+ alities with populations less than 500 may open between 6 a.m. and 10 a.
+ m.\; those in municipalities with populations of 500 or more may open be
+ tween 6 a.m. and 8 a.m. All polling places close at 8 p.m.\nordinary dom
+ estic voters\; local sites/hours and special categories require the link
+ ed authority
+URL:https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide
+END:VEVENT
+BEGIN:VEVENT
+UID:ME-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Maine — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide
+END:VEVENT
+BEGIN:VEVENT
+UID:ME-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Maine — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide
+END:VEVENT
+BEGIN:VEVENT
+UID:ME-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Maine — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide
+END:VEVENT
+BEGIN:VEVENT
+UID:b90b3ee1411a4040@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Maryland — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://elections.maryland.gov/elections/2026/2026_Election_Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MD-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Maryland — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.maryland.gov/elections/2026/2026_Election_Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MD-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Maryland — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.maryland.gov/elections/2026/2026_Election_Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MD-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Maryland — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.maryland.gov/elections/2026/2026_Election_Calendar.
+ pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:481927c1382ce933@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Massachusetts — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Municipalities can open polling places as e
+ arly as 5:45 a.m. All polling places are required to remain open for at 
+ least 13 hours.\nordinary domestic voters\; local sites/hours and specia
+ l categories require the linked authority
+URL:https://www.sec.state.ma.us/divisions/elections/recent-updates/upcomi
+ ng-elections.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:MA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Massachusetts — in person registration route
+DESCRIPTION:. \nCheck the registration deadline for your method.\nCivil d
+ ate only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sec.state.ma.us/divisions/elections/recent-updates/upcomi
+ ng-elections.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:MA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Massachusetts — mail registration route
+DESCRIPTION:postmarked. \nCheck the registration deadline for your method
+ .\nCivil date only\; confirm local cutoff and eligibility with the autho
+ rity.
+URL:https://www.sec.state.ma.us/divisions/elections/recent-updates/upcomi
+ ng-elections.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:MA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Massachusetts — online registration route
+DESCRIPTION:. \nCheck the registration deadline for your method.\nCivil d
+ ate only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sec.state.ma.us/divisions/elections/recent-updates/upcomi
+ ng-elections.htm
+END:VEVENT
+BEGIN:VEVENT
+UID:9deda1284c83919a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Michigan — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Michigan is divided between the Eastern and
+  Central time zones.\nordinary domestic voters\; local sites/hours and s
+ pecial categories require the linked authority
+URL:https://www.michigan.gov/sos/-/media/Project/Websites/sos/Election-Ad
+ ministrators/Election-Dates.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MI-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Michigan — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.michigan.gov/sos/-/media/Project/Websites/sos/Election-Ad
+ ministrators/Election-Dates.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MI-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Michigan — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.michigan.gov/sos/-/media/Project/Websites/sos/Election-Ad
+ ministrators/Election-Dates.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MI-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Michigan — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.michigan.gov/sos/-/media/Project/Websites/sos/Election-Ad
+ ministrators/Election-Dates.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:fb89569b604ee1fb@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Minnesota — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Municipalities with fewer than 500 register
+ ed voters can open polling places as late as 10 a.m.\nordinary domestic 
+ voters\; local sites/hours and special categories require the linked aut
+ hority
+URL:https://www.sos.mn.gov/election-administration-campaigns/elections-ca
+ lendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:MN-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Minnesota — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.mn.gov/election-administration-campaigns/elections-ca
+ lendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:MN-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Minnesota — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.mn.gov/election-administration-campaigns/elections-ca
+ lendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:MN-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Minnesota — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.mn.gov/election-administration-campaigns/elections-ca
+ lendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:3797282158f8d62f@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Mississippi — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.sos.ms.gov/content/documents/elections/2026%20Elections%2
+ 0Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MS-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Mississippi — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.ms.gov/content/documents/elections/2026%20Elections%2
+ 0Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:MS-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Mississippi — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.sos.ms.gov/content/documents/elections/2026%20Elections%2
+ 0Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:e5172fe801db3b7f@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Missouri — November election
+DESCRIPTION:6 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.sos.mo.gov/elections/calendar/2026cal
+END:VEVENT
+BEGIN:VEVENT
+UID:MO-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Missouri — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.mo.gov/elections/calendar/2026cal
+END:VEVENT
+BEGIN:VEVENT
+UID:MO-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Missouri — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.sos.mo.gov/elections/calendar/2026cal
+END:VEVENT
+BEGIN:VEVENT
+UID:MO-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Missouri — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.mo.gov/elections/calendar/2026cal
+END:VEVENT
+BEGIN:VEVENT
+UID:b74d541b6ce4741a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Montana — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Polling places having fewer than 400 regist
+ ered voters are open from at least noon to 8 p.m.\, or until all registe
+ red voters in any precinct have voted\, at which time that precinct's po
+ lling place has to be closed immediately.\nordinary domestic voters\; lo
+ cal sites/hours and special categories require the linked authority
+URL:https://sosmt.gov/elections/calendars/
+END:VEVENT
+BEGIN:VEVENT
+UID:MT-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Montana — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://sosmt.gov/elections/calendars/
+END:VEVENT
+BEGIN:VEVENT
+UID:MT-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Montana — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://sosmt.gov/elections/calendars/
+END:VEVENT
+BEGIN:VEVENT
+UID:0c143d47b8d67f55@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Nebraska — November election
+DESCRIPTION:8 a.m. to 8 p.m. (Central time zone)\; 7 a.m. to 7 p.m. (Moun
+ tain time zone). Local time. Check the assigned polling place for applic
+ able exceptions.\nordinary domestic voters\; local sites/hours and speci
+ al categories require the linked authority
+URL:https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_
+ Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NE-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Nebraska — in person registration route
+DESCRIPTION:. \nThe mail and online cutoffs have passed\; in-person regis
+ tration remains available through October 23.\nCivil date only\; confirm
+  local cutoff and eligibility with the authority.
+URL:https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_
+ Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NE-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Nebraska — mail registration route
+DESCRIPTION:postmarked. \nThe mail and online cutoffs have passed\; in-pe
+ rson registration remains available through October 23.\nCivil date only
+ \; confirm local cutoff and eligibility with the authority.
+URL:https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_
+ Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NE-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Nebraska — online registration route
+DESCRIPTION:. \nThe mail and online cutoffs have passed\; in-person regis
+ tration remains available through October 23.\nCivil date only\; confirm
+  local cutoff and eligibility with the authority.
+URL:https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_
+ Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:f154e42fbce56b7f@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Nevada — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Nevada conducts its elections largely by ma
+ il.\nordinary domestic voters\; local sites/hours and special categories
+  require the linked authority
+URL:https://www.nvsos.gov/home/showpublisheddocument/17306/63904003671547
+ 0000
+END:VEVENT
+BEGIN:VEVENT
+UID:NV-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Nevada — in person registration route
+DESCRIPTION:. \nOnline or in-person same-day registration remains availab
+ le through Election Day. Registration on or after October 21 requires vo
+ ting in person\; check the Nevada ID and residence rules.\nCivil date on
+ ly\; confirm local cutoff and eligibility with the authority.
+URL:https://www.nvsos.gov/home/showpublisheddocument/17306/63904003671547
+ 0000
+END:VEVENT
+BEGIN:VEVENT
+UID:NV-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:Nevada — mail registration route
+DESCRIPTION:postmarked. \nOnline or in-person same-day registration remai
+ ns available through Election Day. Registration on or after October 21 r
+ equires voting in person\; check the Nevada ID and residence rules.\nCiv
+ il date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.nvsos.gov/home/showpublisheddocument/17306/63904003671547
+ 0000
+END:VEVENT
+BEGIN:VEVENT
+UID:NV-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Nevada — online registration route
+DESCRIPTION:. Online same-day registration continues through Election Day
+ . From October 21\, use the in-person voting route\; new registrants vot
+ e provisionally subject to verification. Nevada ID and residence require
+ ments apply. October 20 is the end of the extended-online phase that sti
+ ll provides a mailed ballot.\nOnline or in-person same-day registration 
+ remains available through Election Day. Registration on or after October
+  21 requires voting in person\; check the Nevada ID and residence rules.
+ \nCivil date only\; confirm local cutoff and eligibility with the author
+ ity.
+URL:https://www.nvsos.gov/home/showpublisheddocument/17306/63904003671547
+ 0000
+END:VEVENT
+BEGIN:VEVENT
+UID:7fe40f2715f6e61f@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:New Hampshire — November election
+DESCRIPTION:Hours set by municipality\; close no earlier than 7 p.m.. Pol
+ ls must open at 11 a.m. or earlier and cannot close before 7:00 p.m.\nor
+ dinary domestic voters\; local sites/hours and special categories requir
+ e the linked authority
+URL:https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents
+ /sonh/political-calendar-2026-2027-tops-pages-of-calendar-landscape_0.pd
+ f
+END:VEVENT
+BEGIN:VEVENT
+UID:NH-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:New Hampshire — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents
+ /sonh/political-calendar-2026-2027-tops-pages-of-calendar-landscape_0.pd
+ f
+END:VEVENT
+BEGIN:VEVENT
+UID:25d07b77505031a8@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:New Jersey — November election
+DESCRIPTION:6 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-gener
+ al-election-0109.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NJ-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:New Jersey — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-gener
+ al-election-0109.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NJ-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:New Jersey — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-gener
+ al-election-0109.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NJ-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:New Jersey — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.nj.gov/state/elections/assets/pdf/chrons/2026-chron-gener
+ al-election-0109.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:fc1866c67b88090c@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:New Mexico — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.sos.nm.gov/wp-content/uploads/2026/01/2026-Primary-Candid
+ ate-Guide-Updated.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NM-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:New Mexico — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.nm.gov/wp-content/uploads/2026/01/2026-Primary-Candid
+ ate-Guide-Updated.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NM-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:New Mexico — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.nm.gov/wp-content/uploads/2026/01/2026-Primary-Candid
+ ate-Guide-Updated.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NM-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:New Mexico — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.nm.gov/wp-content/uploads/2026/01/2026-Primary-Candid
+ ate-Guide-Updated.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:e8bfd276f9615154@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:New York — November election
+DESCRIPTION:6 a.m. to 9 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://elections.ny.gov/system/files/documents/2025/12/2026-politica
+ l-calendar-quad-fold-12.9.2025-final.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NY-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:New York — in person registration route
+DESCRIPTION:. \nCheck the registration deadline for your method.\nCivil d
+ ate only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.ny.gov/system/files/documents/2025/12/2026-politica
+ l-calendar-quad-fold-12.9.2025-final.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NY-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:New York — mail registration route
+DESCRIPTION:received. \nCheck the registration deadline for your method.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://elections.ny.gov/system/files/documents/2025/12/2026-politica
+ l-calendar-quad-fold-12.9.2025-final.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:NY-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:New York — online registration route
+DESCRIPTION:. \nCheck the registration deadline for your method.\nCivil d
+ ate only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.ny.gov/system/files/documents/2025/12/2026-politica
+ l-calendar-quad-fold-12.9.2025-final.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:41981dedc4c142f3@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:North Carolina — November election
+DESCRIPTION:6:30 a.m. to 7:30 p.m.. The hours can be extended if polling 
+ times are delayed or interrupted by more than 15 minutes.\nordinary dome
+ stic voters\; local sites/hours and special categories require the linke
+ d authority
+URL:https://www.ncsbe.gov/voting/upcoming-election
+END:VEVENT
+BEGIN:VEVENT
+UID:NC-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:North Carolina — in person registration route
+DESCRIPTION:. \nSame-day registration is available during early voting th
+ rough October 31\; it is generally unavailable on Election Day.\nCivil d
+ ate only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.ncsbe.gov/voting/upcoming-election
+END:VEVENT
+BEGIN:VEVENT
+UID:NC-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:North Carolina — mail registration route
+DESCRIPTION:postmarked. \nSame-day registration is available during early
+  voting through October 31\; it is generally unavailable on Election Day
+ .\nCivil date only\; confirm local cutoff and eligibility with the autho
+ rity.
+URL:https://www.ncsbe.gov/voting/upcoming-election
+END:VEVENT
+BEGIN:VEVENT
+UID:NC-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:North Carolina — online registration route
+DESCRIPTION:. \nSame-day registration is available during early voting th
+ rough October 31\; it is generally unavailable on Election Day.\nCivil d
+ ate only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.ncsbe.gov/voting/upcoming-election
+END:VEVENT
+BEGIN:VEVENT
+UID:97518b12fbf3749b@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:North Dakota — November election
+DESCRIPTION:Hours set locally\; closing ranges from 7 to 9 p.m.. North Da
+ kota is divided between the Central and Mountain time zones.\nordinary d
+ omestic voters\; local sites/hours and special categories require the li
+ nked authority
+URL:https://www.sos.nd.gov/elections/voter/elections-currentpast
+END:VEVENT
+BEGIN:VEVENT
+UID:2c820dc4fa28d5f4@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Ohio — November election
+DESCRIPTION:6:30 a.m. to 7:30 p.m.. Local time. Check the assigned pollin
+ g place for applicable exceptions.\nordinary domestic voters\; local sit
+ es/hours and special categories require the linked authority
+URL:https://www.ohiosos.gov/assets/election-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OH-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Ohio — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.ohiosos.gov/assets/election-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OH-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Ohio — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.ohiosos.gov/assets/election-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OH-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Ohio — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.ohiosos.gov/assets/election-calendar-2026.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:2ce2b11ac6581d07@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Oklahoma — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://oklahoma.gov/content/dam/ok/en/elections/dates-and-deadlines/
+ 2026-voter-information-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OK-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Oklahoma — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://oklahoma.gov/content/dam/ok/en/elections/dates-and-deadlines/
+ 2026-voter-information-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OK-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Oklahoma — mail registration route
+DESCRIPTION:postmarked. Postmark rule confirmed in current official instr
+ uctions\; conflicting generic secondary wording was not used.\nThe ordin
+ ary registration deadline has passed.\nCivil date only\; confirm local c
+ utoff and eligibility with the authority.
+URL:https://oklahoma.gov/content/dam/ok/en/elections/dates-and-deadlines/
+ 2026-voter-information-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OK-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Oklahoma — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://oklahoma.gov/content/dam/ok/en/elections/dates-and-deadlines/
+ 2026-voter-information-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:5a5d0cbe7c84f5f1@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Oregon — November election
+DESCRIPTION:Ballot drop deadline: 8 p.m. local time\; election-office hou
+ rs vary.. Oregon conducts its elections largely by mail. Oregon is divid
+ ed between the Mountain and Pacific time zones.\nordinary domestic voter
+ s\; local sites/hours and special categories require the linked authorit
+ y
+URL:https://sos.oregon.gov/elections/Documents/current-elections-calendar
+ .pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OR-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Oregon — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.oregon.gov/elections/Documents/current-elections-calendar
+ .pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OR-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Oregon — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://sos.oregon.gov/elections/Documents/current-elections-calendar
+ .pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:OR-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Oregon — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.oregon.gov/elections/Documents/current-elections-calendar
+ .pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:ae2df4c4d0c9f875@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Pennsylvania — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-a
+ nd-elections/running-for-office/2026/2026-general-election-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:PA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Pennsylvania — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-a
+ nd-elections/running-for-office/2026/2026-general-election-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:PA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Pennsylvania — mail registration route
+DESCRIPTION:received. \nThe ordinary registration deadline has passed.\nC
+ ivil date only\; confirm local cutoff and eligibility with the authority
+ .
+URL:https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-a
+ nd-elections/running-for-office/2026/2026-general-election-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:PA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Pennsylvania — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-a
+ nd-elections/running-for-office/2026/2026-general-election-calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:4a72496d5087dfa5@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Rhode Island — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Opening times for the presidential preferen
+ ce primary and the statewide primary elections can be later than 7 a.m.\
+ nordinary domestic voters\; local sites/hours and special categories req
+ uire the linked authority
+URL:https://elections.ri.gov/elections/upcoming-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:RI-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Rhode Island — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.ri.gov/elections/upcoming-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:RI-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Rhode Island — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://elections.ri.gov/elections/upcoming-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:RI-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Rhode Island — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.ri.gov/elections/upcoming-elections
+END:VEVENT
+BEGIN:VEVENT
+UID:4e275a7dcd5eb15a@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:South Carolina — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://scvotes.gov/wp-content/uploads/2026/01/2026-Election-Calendar
+ -Draft-scVOTES_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:SC-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:South Carolina — in person registration route
+DESCRIPTION:. Ordinary office cutoff\; special availability can depend on
+  county opening hours.\nThe ordinary registration deadline has passed.\n
+ Civil date only\; confirm local cutoff and eligibility with the authorit
+ y.
+URL:https://scvotes.gov/wp-content/uploads/2026/01/2026-Election-Calendar
+ -Draft-scVOTES_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:SC-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:South Carolina — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://scvotes.gov/wp-content/uploads/2026/01/2026-Election-Calendar
+ -Draft-scVOTES_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:SC-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:South Carolina — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://scvotes.gov/wp-content/uploads/2026/01/2026-Election-Calendar
+ -Draft-scVOTES_.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:3dc08d24d18ad74e@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:South Dakota — November election
+DESCRIPTION:7 a.m. to 7 p.m.. South Dakota is divided between the Central
+  and Mountain time zones.\nordinary domestic voters\; local sites/hours 
+ and special categories require the linked authority
+URL:https://sdsos.gov/elections-voting/assets/2026%20Documents/2026Electi
+ onCALENDAR.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:SD-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:South Dakota — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sdsos.gov/elections-voting/assets/2026%20Documents/2026Electi
+ onCALENDAR.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:SD-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:South Dakota — mail registration route
+DESCRIPTION:received. \nThe ordinary registration deadline has passed.\nC
+ ivil date only\; confirm local cutoff and eligibility with the authority
+ .
+URL:https://sdsos.gov/elections-voting/assets/2026%20Documents/2026Electi
+ onCALENDAR.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:57f7b4682a86fe6c@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Tennessee — November election
+DESCRIPTION:Opening set by county\; close 7 p.m. Central / 8 p.m. Eastern
+ . At least 15 days prior to the election\, each county determines the op
+ ening time for polling places in that county. Polling places in the East
+ ern time zone close at 8 p.m.\, while polling places in the Central time
+  zone close at 7 p.m.\nordinary domestic voters\; local sites/hours and 
+ special categories require the linked authority
+URL:https://sos.tn.gov/elections/calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:TN-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Tennessee — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.tn.gov/elections/calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:TN-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Tennessee — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://sos.tn.gov/elections/calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:TN-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Tennessee — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.tn.gov/elections/calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:281e31b4764561af@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Texas — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Texas is divided between the Central and Mo
+ untain time zones.\nordinary domestic voters\; local sites/hours and spe
+ cial categories require the linked authority
+URL:https://www.sos.state.tx.us/elections/voter/important-election-dates.
+ shtml
+END:VEVENT
+BEGIN:VEVENT
+UID:TX-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Texas — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.state.tx.us/elections/voter/important-election-dates.
+ shtml
+END:VEVENT
+BEGIN:VEVENT
+UID:TX-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:Texas — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://www.sos.state.tx.us/elections/voter/important-election-dates.
+ shtml
+END:VEVENT
+BEGIN:VEVENT
+UID:45dbd4ead8b8de48@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Utah — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Utah conducts its elections largely by mail
+ .\nordinary domestic voters\; local sites/hours and special categories r
+ equire the linked authority
+URL:https://vote.utah.gov/wp-content/uploads/2026/01/2026-Utah-Election-C
+ alendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:UT-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Utah — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://vote.utah.gov/wp-content/uploads/2026/01/2026-Utah-Election-C
+ alendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:UT-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Utah — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://vote.utah.gov/wp-content/uploads/2026/01/2026-Utah-Election-C
+ alendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:UT-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Utah — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://vote.utah.gov/wp-content/uploads/2026/01/2026-Utah-Election-C
+ alendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:1505a0276fd96edb@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Vermont — November election
+DESCRIPTION:Opening set locally\; close 7 p.m.. Vermont conducts its elec
+ tions largely by mail.\nordinary domestic voters\; local sites/hours and
+  special categories require the linked authority
+URL:https://sos.vermont.gov/elections/voters/registration/
+END:VEVENT
+BEGIN:VEVENT
+UID:VT-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Vermont — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.vermont.gov/elections/voters/registration/
+END:VEVENT
+BEGIN:VEVENT
+UID:VT-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Vermont — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.vermont.gov/elections/voters/registration/
+END:VEVENT
+BEGIN:VEVENT
+UID:VT-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Vermont — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.vermont.gov/elections/voters/registration/
+END:VEVENT
+BEGIN:VEVENT
+UID:c6271fa0ceb3c1e7@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Virginia — November election
+DESCRIPTION:6 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://www.elections.virginia.gov/casting-a-ballot/calendars-schedul
+ es/upcoming-elections.html
+END:VEVENT
+BEGIN:VEVENT
+UID:VA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Virginia — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.virginia.gov/casting-a-ballot/calendars-schedul
+ es/upcoming-elections.html
+END:VEVENT
+BEGIN:VEVENT
+UID:VA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Virginia — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.virginia.gov/casting-a-ballot/calendars-schedul
+ es/upcoming-elections.html
+END:VEVENT
+BEGIN:VEVENT
+UID:VA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Virginia — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.elections.virginia.gov/casting-a-ballot/calendars-schedul
+ es/upcoming-elections.html
+END:VEVENT
+BEGIN:VEVENT
+UID:843be40f79e5c908@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Washington — November election
+DESCRIPTION:Ballot drop deadline: 8 p.m. local time\; election-office hou
+ rs vary.. Washington conducts its elections largely by mail.\nordinary d
+ omestic voters\; local sites/hours and special categories require the li
+ nked authority
+URL:https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlin
+ es
+END:VEVENT
+BEGIN:VEVENT
+UID:WA-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Washington — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlin
+ es
+END:VEVENT
+BEGIN:VEVENT
+UID:WA-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Washington — mail registration route
+DESCRIPTION:received. \nIn-person registration remains available through 
+ Election Day\; location\, identification and ballot rules apply.\nCivil 
+ date only\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlin
+ es
+END:VEVENT
+BEGIN:VEVENT
+UID:WA-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Washington — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://www.sos.wa.gov/elections/elections-calendar/dates-and-deadlin
+ es
+END:VEVENT
+BEGIN:VEVENT
+UID:f5d6893c1f767416@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:West Virginia — November election
+DESCRIPTION:6:30 a.m. to 7:30 p.m.. Local time. Check the assigned pollin
+ g place for applicable exceptions.\nordinary domestic voters\; local sit
+ es/hours and special categories require the linked authority
+URL:https://sos.wv.gov/media/467/download?inline
+END:VEVENT
+BEGIN:VEVENT
+UID:WV-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:West Virginia — in person registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.wv.gov/media/467/download?inline
+END:VEVENT
+BEGIN:VEVENT
+UID:WV-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:West Virginia — mail registration route
+DESCRIPTION:postmarked. \nThe ordinary registration deadline has passed.\
+ nCivil date only\; confirm local cutoff and eligibility with the authori
+ ty.
+URL:https://sos.wv.gov/media/467/download?inline
+END:VEVENT
+BEGIN:VEVENT
+UID:WV-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:West Virginia — online registration route
+DESCRIPTION:. \nThe ordinary registration deadline has passed.\nCivil dat
+ e only\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.wv.gov/media/467/download?inline
+END:VEVENT
+BEGIN:VEVENT
+UID:ae829a2a8988d088@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Wisconsin — November election
+DESCRIPTION:7 a.m. to 8 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://elections.wi.gov/sites/default/files/documents/2026_2027%20El
+ ection%20Calendar_0.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:WI-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Wisconsin — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.wi.gov/sites/default/files/documents/2026_2027%20El
+ ection%20Calendar_0.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:WI-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Wisconsin — mail registration route
+DESCRIPTION:postmarked. \nIn-person registration remains available throug
+ h Election Day\; location\, identification and ballot rules apply.\nCivi
+ l date only\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.wi.gov/sites/default/files/documents/2026_2027%20El
+ ection%20Calendar_0.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:WI-registration-online-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Wisconsin — online registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://elections.wi.gov/sites/default/files/documents/2026_2027%20El
+ ection%20Calendar_0.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:73e06e32fa98dc44@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Wyoming — November election
+DESCRIPTION:7 a.m. to 7 p.m.. Local time. Check the assigned polling plac
+ e for applicable exceptions.\nordinary domestic voters\; local sites/hou
+ rs and special categories require the linked authority
+URL:https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:WY-registration-in_person-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Wyoming — in person registration route
+DESCRIPTION:. \nIn-person registration remains available through Election
+  Day\; location\, identification and ballot rules apply.\nCivil date onl
+ y\; confirm local cutoff and eligibility with the authority.
+URL:https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:WY-registration-mail-2026@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Wyoming — mail registration route
+DESCRIPTION:received. October 19 in the official calendar\; do not substi
+ tute the October 20 date implied by Vote.org’s generic fourteen-day fo
+ rmula.\nIn-person registration remains available through Election Day\; 
+ location\, identification and ballot rules apply.\nCivil date only\; con
+ firm local cutoff and eligibility with the authority.
+URL:https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:da691886f7a6ce57@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:GA — conditional runoff
+DESCRIPTION:Contests requiring a general-election runoff\nStatewide: star
+ ts as soon as possible\, no later than November 23\, through November 25
+ . Some counties\, including Fulton\, schedule a November 21 start\; use 
+ the local calendar.\nReceived by close of polls December 1\; early-votin
+ g drop boxes can close earlier.
+URL:https://sos.ga.gov/sites/default/files/forms/2026%20Elections%20Calen
+ dar_0.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:b7d3d9575f9d794c@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:MS — conditional runoff
+DESCRIPTION:Eligible general/special nonpartisan contests\, if needed\; n
+ ot a Senate general-election runoff rule\nNo general early voting. For q
+ ualifying absentee voters\, in-person absentee voting ends at noon Novem
+ ber 28.\nMail: postmark by December 1\; delivery within five business da
+ ys\, by December 8. Eligibility and permitted return method still apply.
+URL:https://www.sos.ms.gov/content/documents/elections/2026%20Elections%2
+ 0Calendar.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:09415b40828a4a01@midtermwatch.com
+DTSTAMP:20261020T202241Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:LA — conditional runoff
+DESCRIPTION:U.S. House/open-primary contests without a November majority\
+ ; not a Senate runoff\nNovember 28–December 5\, excluding Sunday Novem
+ ber 29\, 8:30 a.m.–6 p.m.\nMost voters: received by the registrar by 4
+ :30 p.m. December 11. Special categories differ.
+URL:https://www.sos.la.gov/elections-voting/how-candidates-are-elected
+END:VEVENT
+END:VCALENDAR
