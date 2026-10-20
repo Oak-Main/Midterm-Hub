@@ -1,5 +1,23 @@
 # Deploying midtermwatch.com
 
+## Current October 20, 2026 edition
+
+The public domain is served by the Vercel `midterm-hub` Next.js project. The
+canonical origin is `https://www.midtermwatch.com`; the apex redirects there.
+Use `npm ci` and `npm run build`, with Python requirements installed as configured
+in `vercel.json`. The build validates the preserved calendar and the dated
+`content/refresh/` collections, then exports every current route into `out/`.
+The Pages workflow uses that same export.
+
+See `docs/refresh-2026-10-20.md` for data boundaries, verification requirements,
+publisher disclosures and the previous production rollback candidate.
+
+The instructions below document the older standalone Python calendar builder.
+That builder does not include the current race, forecast and voting-guide refresh
+and must not replace the current production edition.
+
+## Legacy calendar-only builder
+
 The site is a hermetic static build. One command produces the whole thing:
 
 ```bash

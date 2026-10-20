@@ -75,5 +75,6 @@ test("null deadlines preserve New Hampshire's municipal timing and distinguish N
   );
   assert.equal(nullDeadlineLabel("ND"), "North Dakota does not require voter registration");
   assert.equal(nullDeadlineLabel("XX"), "Registration deadline pending in this edition");
-  assert.match(component, /NH registration timing varies by municipality \(6–13 days before Election Day\)/);
+  assert.match(component, /No later dated route or locally variable timing/);
+  assert.match(component, /NH pre-election registration timing varies by municipality/);
 });

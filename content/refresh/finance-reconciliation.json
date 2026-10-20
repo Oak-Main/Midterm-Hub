@@ -1,0 +1,113 @@
+{
+  "candidate_totals": [
+    {
+      "id": "S6TX00479",
+      "candidate": "James Talarico",
+      "party": "D",
+      "office": "Texas Senate",
+      "cycle": 2026,
+      "coverage_start": "2025-09-08",
+      "coverage_end": "2026-09-30",
+      "authorized_committee_ids": [
+        "C00919084"
+      ],
+      "receipts_usd": 128772835.42,
+      "disbursements_usd": 114178603.57,
+      "cash_on_hand_usd": 14594231.85,
+      "display_rounding": "nearest dollar",
+      "source_ids": [
+        "FEC-TALARICO",
+        "GP-TX",
+        "PACHAND-FIN",
+        "FEC-C00919084"
+      ],
+      "receipts_source_ids": [
+        "FEC-TALARICO",
+        "GP-TX"
+      ],
+      "disbursements_source_ids": [
+        "FEC-TALARICO",
+        "GP-TX"
+      ],
+      "cash_source_ids": [
+        "FEC-TALARICO",
+        "PACHAND-FIN"
+      ],
+      "verification": "Exact committee sums reconcile with OpenFEC candidate totals; rounded figures match the secondary publications.",
+      "note": "FEC authorized-committee aggregates include reported transfers; they are not a measure of unique new donations, outside spending, or current cash.",
+      "auxiliary_committee_note": null
+    },
+    {
+      "id": "S6TX00388",
+      "candidate": "Ken Paxton",
+      "party": "R",
+      "office": "Texas Senate",
+      "cycle": 2026,
+      "coverage_start": "2025-04-01",
+      "coverage_end": "2026-09-30",
+      "authorized_committee_ids": [
+        "C00901918",
+        "C00930446"
+      ],
+      "receipts_usd": 19497809.76,
+      "disbursements_usd": 14572704.29,
+      "cash_on_hand_usd": 4925105.47,
+      "display_rounding": "nearest dollar",
+      "source_ids": [
+        "FEC-PAXTON",
+        "GP-TX",
+        "PACHAND-FIN",
+        "FEC-C00901918",
+        "FEC-C00930446"
+      ],
+      "receipts_source_ids": [
+        "FEC-PAXTON",
+        "GP-TX"
+      ],
+      "disbursements_source_ids": [
+        "FEC-PAXTON",
+        "GP-TX"
+      ],
+      "cash_source_ids": [
+        "FEC-PAXTON",
+        "PACHAND-FIN"
+      ],
+      "verification": "Exact committee sums reconcile with OpenFEC candidate totals; rounded figures match the secondary publications.",
+      "note": "FEC authorized-committee aggregates include reported transfers; they are not a measure of unique new donations, outside spending, or current cash.",
+      "auxiliary_committee_note": "An auxiliary authorized nominee fund filed a termination report with zero ending cash. The principal committee reported October Quarterly; the candidate aggregate’s last-report label must not be read as the principal campaign terminating."
+    }
+  ],
+  "committee_checks": [
+    {
+      "committee_id": "C00919084",
+      "committee_name": "TALARICO FOR TEXAS",
+      "coverage_start_date": "2025-09-08T00:00:00",
+      "coverage_end_date": "2026-09-30T00:00:00",
+      "receipts": 128772835.42,
+      "disbursements": 114178603.57,
+      "last_cash_on_hand_end_period": 14594231.85,
+      "last_report_type_full": "OCTOBER QUARTERLY"
+    },
+    {
+      "committee_id": "C00901918",
+      "committee_name": "KEN PAXTON FOR SENATE",
+      "coverage_start_date": "2025-04-01T00:00:00",
+      "coverage_end_date": "2026-09-30T00:00:00",
+      "receipts": 19489694.89,
+      "disbursements": 14564589.42,
+      "last_cash_on_hand_end_period": 4925105.47,
+      "last_report_type_full": "OCTOBER QUARTERLY"
+    },
+    {
+      "committee_id": "C00930446",
+      "committee_name": "PAXTON FOR TX SENATE REPUBLICAN NOMINEE FUND 2026",
+      "coverage_start_date": "2025-07-01T00:00:00",
+      "coverage_end_date": "2026-09-30T00:00:00",
+      "receipts": 8114.87,
+      "disbursements": 8114.87,
+      "last_cash_on_hand_end_period": 0.0,
+      "last_report_type_full": "TERMINATION REPORT"
+    }
+  ],
+  "excluded_committee_type": "Leadership PACs and unrelated joint/outside committees are not added to authorized-committee totals."
+}

@@ -5,24 +5,24 @@ import { importFromRepo } from './resolve-repo.mjs';
 
 const payload = JSON.parse(readFileSync(new URL('../../generated/elections.json', import.meta.url)));
 const elections = payload.elections;
-const BASE = 'https://midtermwatch.com';
+const BASE = 'https://www.midtermwatch.com';
 
 const { default: sitemap } = await importFromRepo('../../app/sitemap.ts');
 const { default: robots } = await importFromRepo('../../app/robots.ts');
 
-test('the sitemap publishes exactly the five standing pages under the canonical host', () => {
+test('the sitemap publishes standing pages under the verified www canonical host', () => {
   const urls = sitemap().map((entry) => entry.url);
   for (const path of ['/states/', '/methodology/', '/data/', '/about/']) {
     assert.ok(urls.includes(BASE + path), `expected ${BASE}${path} in the sitemap`);
   }
-  assert.equal(urls[0], BASE);
+  assert.equal(urls[0], BASE + '/');
   assert.ok(urls.every((url) => url.startsWith(BASE)), 'no sitemap entry may point off the canonical host');
 });
 
 test('every state and election record is discoverable, once, through the sitemap', () => {
   const entries = sitemap();
   const urls = entries.map((entry) => entry.url);
-  assert.equal(urls.length, 5 + new Set(elections.map((e) => e.state)).size + elections.length);
+  assert.equal(urls.length, 19 + 435 + new Set(elections.map((e) => e.state)).size + elections.length);
   assert.equal(new Set(urls).size, urls.length, 'the sitemap must not repeat a URL');
 
   for (const code of new Set(elections.map((e) => e.state))) {

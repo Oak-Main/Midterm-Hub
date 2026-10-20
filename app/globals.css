@@ -38,3 +38,27 @@
 .editorial-link{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px;text-decoration-thickness:2px}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important}}
 @media print{header,footer,.no-print{display:none!important}body{background:#fff;color:#000}.print-break,figure{break-inside:avoid}figure img{filter:grayscale(100%)}a{text-decoration:none}a[href^="http"]::after{content:" (" attr(href) ")";font-size:9pt}}
+
+
+/* Dated research content, inheriting the established site palette and fonts. */
+.refresh-content { min-width: 0; line-height: 1.7; overflow-wrap: anywhere; }
+.refresh-content p { margin: 1rem 0; max-width: 85ch; }
+.refresh-content h2 { margin: 2.2rem 0 1rem; font-family: var(--font-fraunces), Georgia, serif; font-size: 1.8rem; font-weight: 700; line-height: 1.2; }
+.refresh-content h3 { margin: 1.5rem 0 .75rem; font-size: 1.25rem; font-weight: 700; }
+.refresh-content a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+.refresh-content .sources { font-size: .8rem; }
+.refresh-content .table-wrap { max-width: 100%; overflow: auto; max-height: 42rem; margin: 1.5rem 0; border: 1px solid var(--border); }
+.refresh-content table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.refresh-content th, .refresh-content td { padding: .85rem; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; min-width: 7rem; }
+.refresh-content th { background: var(--card); position: sticky; top: 0; z-index: 1; }
+.refresh-content caption { text-align: left; padding: .8rem; background: var(--muted); font-weight: 600; }
+.refresh-content .rating { display: inline-block; border: 1px solid currentColor; padding: .1rem .4rem; white-space: nowrap; font-weight: 700; }
+.refresh-content .controls { margin: 1.5rem 0; display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+.refresh-content .controls label { width: 100%; font-weight: 700; }
+.refresh-content input { border: 1px solid var(--border); padding: .75rem; background: var(--card); min-height: 44px; width: min(100%, 32rem); }
+.refresh-content output { font-size: .85rem; }
+a:focus-visible, input:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; }
+.refresh-content details { margin: 1rem 0; border: 1px solid var(--border); padding: 1rem; }
+.refresh-content summary { cursor: pointer; min-height: 44px; font-weight: 700; }
+@media (max-width: 700px) { .refresh-content th, .refresh-content td { padding: .65rem; } .refresh-content table { font-size: .85rem; } }
+@media print { .refresh-content .table-wrap { overflow: visible; max-height: none; } .refresh-content th { position: static; } .refresh-content .controls { display: none; } }

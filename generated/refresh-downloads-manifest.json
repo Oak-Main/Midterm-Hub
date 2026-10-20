@@ -1,0 +1,45 @@
+{
+  "as_of_date": "2026-10-20",
+  "files": [
+    {
+      "name": "midterm-watch-refresh-2026-10-20.json",
+      "format": "JSON",
+      "records": 435,
+      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections.",
+      "bytes": 1257927,
+      "sha256": "893cd9bc0d1b85c6db25816c0ab12650bcdaba7938703e39d461d11b7abf96ca"
+    },
+    {
+      "name": "midterm-watch-sources-2026-10-20.json",
+      "format": "JSON",
+      "records": 231,
+      "description": "Source URLs, source vintages, research dates and limitations.",
+      "bytes": 71870,
+      "sha256": "187a3bf1ebf70725ba00a3f071cb78d1e8aa88053dfd5762ba7424eb5de33934"
+    },
+    {
+      "name": "midterm-watch-house-2026-10-20.csv",
+      "format": "CSV",
+      "records": 435,
+      "description": "All 435 House districts, featured candidates, two producer ratings and the transparent editorial comparison.",
+      "bytes": 129206,
+      "sha256": "211a17cc878431a2429e713cdbed41d35d78516fc574b497ec4fcf164611fd31"
+    },
+    {
+      "name": "midterm-watch-voting-2026-10-20.csv",
+      "format": "CSV",
+      "records": 51,
+      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON.",
+      "bytes": 46646,
+      "sha256": "d539579169092c2025358959f814a61153dc08e935b3ae088010b2151297f846"
+    },
+    {
+      "name": "midterm-watch-voting-2026-10-20.ics",
+      "format": "ICS",
+      "records": 196,
+      "description": "All-day civil-date reminders for general elections, registration routes and conditional runoffs. Instructions and local cutoffs remain in event descriptions; this is not a polling-place schedule.",
+      "bytes": 96414,
+      "sha256": "6ef9c5e072d57a9c76bfbe69b1208d441817d9440269083950ddfc57afb4dd55"
+    }
+  ]
+}

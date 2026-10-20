@@ -1,0 +1,86 @@
+[
+  {
+    "id": "CT-registration-receipt",
+    "status": "resolved",
+    "resolution": "Resolved: current state voter guide and municipal notices confirm October 16 postmark; same-day registration is a separate in-person route.",
+    "original_severity": "P0"
+  },
+  {
+    "id": "NV-online",
+    "status": "resolved",
+    "resolution": "Resolved: online same-day registration continues through November 3, but late registrants must vote in person. A generic five-days-before rule was not used.",
+    "original_severity": "P0"
+  },
+  {
+    "id": "OK-registration-receipt",
+    "status": "resolved",
+    "resolution": "Resolved: state registration instructions and Ballotpedia confirm the October 9 postmark rule.",
+    "original_severity": "P0"
+  },
+  {
+    "id": "AK-mail-rule",
+    "status": "resolved",
+    "resolution": "Resolved: October 24 application receipt, not merely postmark; separate electronic-delivery deadlines are explained.",
+    "original_severity": "P0"
+  },
+  {
+    "id": "KS-mail-rule",
+    "status": "resolved",
+    "resolution": "Resolved: applications must be filed by October 27. Current official guidance retains the court-ordered ballot postmark grace period; older static calendar wording was superseded.",
+    "original_severity": "P0"
+  },
+  {
+    "id": "MN-poll-metadata",
+    "status": "resolved",
+    "resolution": "Resolved using original SurveyUSA PDF: fieldwork October 8\u201312, original release October 13, 718 likely voters, 45\u201342.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "ME-fieldwork",
+    "status": "resolved",
+    "resolution": "Resolved using Suffolk methodology: October 8\u201311; 500 likely voters; \u00b14.4 points.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "NC-LV-metadata",
+    "status": "resolved",
+    "resolution": "Resolved using original toplines: 561 likely voters; \u00b14.9 credibility interval, distinct from 800 adults and \u00b14.03.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "house-mirror-stale",
+    "status": "resolved",
+    "resolution": "Resolved by replacing the stale UVA House mirror with the original October 16 Cook ratings and checking all 435 districts against DDHQ.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "uf-national-total",
+    "status": "excluded_from_public_claims",
+    "resolution": "Closed by exclusion: no national early-vote count is asserted or imported. A single-source number is not needed for a defensible forecast, and is not relabeled verified.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "finance-totals",
+    "status": "resolved",
+    "resolution": "Resolved for the published finance scope: both Texas Senate nominees\u2019 2026 authorized-committee receipts, disbursements and cash through September 30 reconcile with OpenFEC and secondary figures. Three committee records were summed; an auxiliary-fund termination label was distinguished from the principal committee. Unreconciled figures elsewhere remain excluded.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "remaining-voting-fields",
+    "status": "resolved",
+    "resolution": "Resolved for the published ordinary-domestic calendar: all 51 request, in-person voting, return and poll-hour summaries compared across source documents; local variation is explicit. Unverified uniform opening times and portal availability are not asserted.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "runoff-records",
+    "status": "resolved",
+    "resolution": "Resolved: all three conditional dates and office scopes rechecked; Louisiana House versus Senate systems distinguished.",
+    "original_severity": "P1"
+  },
+  {
+    "id": "downballot-predictions",
+    "status": "resolved",
+    "resolution": "Resolved: legislative, executive, judicial and measure watch entries added. Unsupported court/measure winner probabilities are explicitly unforecasted.",
+    "original_severity": "P2"
+  }
+]

@@ -7,7 +7,7 @@
     "data": "node scripts/run-data.mjs",
     "predev": "npm run data",
     "dev": "next dev",
-    "prebuild": "npm run data",
+    "prebuild": "npm run data && node scripts/validate-refresh.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",

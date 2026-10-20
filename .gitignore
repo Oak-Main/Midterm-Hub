@@ -36,6 +36,8 @@ htmlcov/
 
 # Next.js and local package/tool caches
 node_modules/
+out/
+.eslintcache
 .next/
 *.tsbuildinfo
 next-env.d.ts
