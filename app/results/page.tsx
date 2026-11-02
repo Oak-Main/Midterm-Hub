@@ -49,7 +49,7 @@ export default function Results() {
               <td>{row.closes.map(close => <span key={close.zone + close.area} className="block">{close.et}</span>)}</td></>}
           <td><span className="block text-xs font-bold">{tagLabels[row.tag]}</span>{sourceList(row)}</td>
         </tr>)}</tbody></table></div>
-      {/* KEVYN-WRITE: one sentence explaining rows that say "Check the [state] election office": the closing time could not be confirmed from two official sources before publication | facts: rows tagged UNVERIFIED or CONFLICT in content/election-night/poll-close-2026.json */}
+      {/* KEVYN-WRITE: one sentence explaining rows that say "Check the [state] election office": no single official statewide closing time could be confirmed for that state or area before publication | facts: New Hampshire, RSA 659:4 sets only an earliest close of 7 p.m. (https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm); Alaska's Aleutian Islands west of 169°30′ W are in the Hawaii-Aleutian zone (49 CFR 71.12, https://www.ecfr.gov/current/title-49/subtitle-A/part-71/section-71.12) and no official page stated their close; rows tagged UNVERIFIED or with unverified_areas in content/election-night/poll-close-2026.json */}
     </section>
 
     <section id="official-results" className="refresh-content mt-6">
