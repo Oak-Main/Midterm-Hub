@@ -44,7 +44,7 @@ export default function Results() {
           <th scope="row">{row.name}</th>
           {row.tag === 'UNVERIFIED' || row.tag === 'CONFLICT'
             ? <td colSpan={2}><a href={row.election_office_url} rel="noopener noreferrer">{`Check the ${row.name} election office`}</a></td>
-            : <><td>{row.closes.map(close => <span key={close.zone + close.area} className="block">{`${clockLabel(close.local_time)} ${zoneLabel(close.zone)}`}{row.closes.length > 1 && close.utc === row.all_polls_closed_utc && !row.unverified_areas?.length && <strong className="block text-xs">All polls closed</strong>}</span>)}
+            : <><td>{row.closes.map((close, index) => <span key={close.zone + close.area} className="block">{`${clockLabel(close.local_time)} ${zoneLabel(close.zone)}`}{index === row.closes.length - 1 && row.closes.length > 1 && !row.unverified_areas?.length && <strong className="block text-xs">All polls closed</strong>}</span>)}
                 {row.unverified_areas?.map(area => <span key={area} className="mt-1 block text-xs">{`${area}: `}<a href={row.election_office_url} rel="noopener noreferrer">{`Check the ${row.name} election office`}</a></span>)}</td>
               <td>{row.closes.map(close => <span key={close.zone + close.area} className="block">{close.et}</span>)}</td></>}
           <td><span className="block text-xs font-bold">{tagLabels[row.tag]}</span>{sourceList(row)}</td>
