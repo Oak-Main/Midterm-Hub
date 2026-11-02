@@ -6,16 +6,16 @@
       "format": "JSON",
       "records": 435,
       "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026.",
-      "bytes": 1258545,
-      "sha256": "d5ee6c56d9f4f9fff0733039a8aa00a55121768031bd70251dcdb19d17970bd9"
+      "bytes": 1259159,
+      "sha256": "895dabce9ba552e4383e148b5cf616e4f1942d9f06fa57c2c366cb7bdcdea0da"
     },
     {
       "name": "midterm-watch-sources-2026-10-20.json",
       "format": "JSON",
-      "records": 234,
+      "records": 236,
       "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates.",
-      "bytes": 73090,
-      "sha256": "0a52bbd57c80c6233664a9c464a28b47ec44c4d02c5e9fa4fab49e69a0c07cda"
+      "bytes": 73994,
+      "sha256": "3fdaa8e024befc9f1ad3406fc4f1906d57152d54ee138babd2bcf134da749013"
     },
     {
       "name": "midterm-watch-house-2026-10-20.csv",
@@ -29,9 +29,9 @@
       "name": "midterm-watch-voting-2026-10-20.csv",
       "format": "CSV",
       "records": 51,
-      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON.",
-      "bytes": 46646,
-      "sha256": "d539579169092c2025358959f814a61153dc08e935b3ae088010b2151297f846"
+      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON. Minnesota ballot-return correction dated November 2, 2026.",
+      "bytes": 46987,
+      "sha256": "108a5a0ee75c6c61ded318857f1cc96c4ca8b3333d62f4e0cc2c7036dca8b74a"
     },
     {
       "name": "midterm-watch-voting-2026-10-20.ics",

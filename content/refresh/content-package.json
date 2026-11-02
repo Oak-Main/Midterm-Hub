@@ -5581,16 +5581,22 @@
         },
         "source_ids": [
           "BP-RETURN",
-          "VOTE-MAIL"
+          "VOTE-MAIL",
+          "MN-SOS-2026-RETURN",
+          "MN-SOS-RETURN-PROCESS"
         ],
         "verification_status": "cross_checked",
         "note": "Ordinary domestic ballots; submission method matters. See the detailed instruction below.",
-        "instruction": "The election authority must have the ballot by 8 p.m. on Nov 3; an Election Day postmark alone does not meet this receipt deadline.",
+        "instruction": "Updated Nov 2, 2026: An absentee ballot dropped off by the voter or another person must reach the issuing election office by 5 p.m. on Nov 3. Absentee ballots returned by mail, ballots returned through the separate agent-delivery process, and ballots from mail-ballot precincts are due by 8 p.m. on Nov 3. Confirm the return method and local instructions with the election authority.",
         "rule_type": "received",
         "instruction_source_ids": [
           "BP-RETURN",
-          "VOTE-MAIL"
-        ]
+          "VOTE-MAIL",
+          "MN-SOS-2026-RETURN",
+          "MN-SOS-RETURN-PROCESS"
+        ],
+        "instruction_previous_superseded": "The election authority must have the ballot by 8 p.m. on Nov 3; an Election Day postmark alone does not meet this receipt deadline.",
+        "instruction_corrected_on": "2026-11-02"
       },
       "voting_note": "In-person absentee voting starts September 18; direct-to-counter early voting begins October 16. Both pre-election routes end November 2. A mail request made close to Election Day may not leave enough delivery time.",
       "voting_note_source_ids": [

@@ -2104,5 +2104,23 @@
     "retrieved_on": "2026-11-02",
     "source_updated": "2026-11-02",
     "note": "Observed Senate estimate: 52 Democratic / 48 Republican; pre-election forecast, not a result or call. The linked live page may change."
+  },
+  {
+    "id": "MN-SOS-2026-RETURN",
+    "url": "https://sos.mn.gov/about-the-office/news-room/728-961-ballots-accepted-in-first-six-weeks-of-voting-for-november-3-election/",
+    "title": "November 3, 2026 absentee and mail-ballot return deadlines",
+    "publisher": "Minnesota Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": "2026-10-30",
+    "note": "Distinguishes the 5 p.m. in-person absentee deadline from 8 p.m. mailed, mail-precinct and agent-delivery deadlines."
+  },
+  {
+    "id": "MN-SOS-RETURN-PROCESS",
+    "url": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/return-your-ballot/",
+    "title": "Return your ballot",
+    "publisher": "Minnesota Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Explains self or third-party drop-off, the separate agent-delivery process and mail-voting precincts."
   }
 ]
