@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { formatDate, stateHref, stateNames } from "@/lib/data";
-import { localCalendarDate } from "@/lib/calendar";
+import { calendarDayStatus, localCalendarDate } from "@/lib/calendar";
 import { DEADLINE_BANDS, NULL_DEADLINE_HATCH, tileFill } from "@/lib/deadline-cartogram.mjs";
 import registrationIndex from "@/generated/registration-index.json";
 import { registrationAction } from "@/lib/registration-action.mjs";
@@ -14,14 +14,10 @@ import { cn } from "@/lib/utils";
  * voice is the wire-service results board — typography, ruled rows, tabular
  * numerals — with every figure traceable to generated/elections.json. */
 
-const DAY_MS = 86_400_000;
-const civilDaysUntil = (today: string, date: string) =>
-  Math.round((Date.parse(`${date}T12:00:00Z`) - Date.parse(`${today}T12:00:00Z`)) / DAY_MS);
-
-// Build date for matching server/client first paint, then the visitor's device
-// date — the same contract UpcomingElections uses.
-function useToday(initialDate: string) {
-  const [today, setToday] = useState(initialDate);
+// A static research date cannot safely stand in for the current calendar date.
+// Render a neutral first paint, then use the visitor's device date.
+function useToday() {
+  const [today, setToday] = useState<string | null>(null);
   useEffect(() => {
     const refresh = () => setToday(localCalendarDate());
     refresh();
@@ -35,31 +31,36 @@ function useToday(initialDate: string) {
   return today;
 }
 
-export function CountdownMasthead({ date, eyebrow, caption, initialDate, className }: {
-  date: string; eyebrow: string; caption: string; initialDate: string; className?: string;
+export function CountdownMasthead({ date, eyebrow, caption, className }: {
+  date: string; eyebrow: string; caption: string; className?: string;
 }) {
-  const today = useToday(initialDate);
-  const days = civilDaysUntil(today, date);
+  const today = useToday();
+  const status = calendarDayStatus(today, date);
   return (
     <figure className={cn("paper-grid flex h-full flex-col justify-center border bg-card", className)}>
       <div className="flex flex-col gap-6 px-6 py-10 md:px-10 md:py-12">
         <p className="rule-label text-secondary">{eyebrow}</p>
         <div className="flex flex-wrap items-end gap-x-8 gap-y-4 border-y py-6">
-          {days < 0 ? (
+          {status.phase === "unknown" ? (
             <>
               <strong className="font-serif text-5xl font-bold leading-none md:text-7xl">{formatDate(date, true)}</strong>
-              <span className="font-mono text-sm text-muted-foreground">{formatDate(date)}</span>
+              <span className="font-mono text-sm text-muted-foreground">Election date · {formatDate(date)}</span>
+            </>
+          ) : status.phase === "before" ? (
+            <>
+              <strong className="font-serif text-7xl font-bold leading-none tabular-nums md:text-8xl">{status.days}</strong>
+              <span className="rule-label">{status.days === 1 ? "day" : "days"} until<br />{formatDate(date, true)}</span>
+              <span className="font-mono text-sm text-muted-foreground md:ml-auto">{formatDate(date)}</span>
             </>
           ) : (
             <>
-              <strong className="font-serif text-7xl font-bold leading-none tabular-nums md:text-8xl">{days}</strong>
-              <span className="rule-label">days until<br />{formatDate(date, true)}</span>
-              <span className="font-mono text-sm text-muted-foreground md:ml-auto">{formatDate(date)}</span>
+              <strong className="font-serif text-5xl font-bold leading-none md:text-7xl">{status.phase === "today" ? "Election day" : "Election date passed"}</strong>
+              <span className="font-mono text-sm text-muted-foreground">{formatDate(date)}</span>
             </>
           )}
         </div>
         <figcaption className="max-w-2xl text-sm leading-relaxed text-muted-foreground">{caption}</figcaption>
-        <p className="font-mono text-xs text-muted-foreground">Edition built {formatDate(initialDate)}. Once scripts load, your device date refreshes this count.</p>
+        <p className="font-mono text-xs text-muted-foreground">Calendar status uses your device date, not local poll-closing times. Check current instructions with the election authority.</p>
       </div>
     </figure>
   );
@@ -80,7 +81,8 @@ function registrationTiles(today: string): Map<string, Tile> {
 }
 
 export function RegistrationCartogram({ initialDate }: { initialDate: string }) {
-  const today = useToday(initialDate);
+  const today = useToday();
+  if (!today) return <p className="text-sm leading-relaxed">Open the <Link href="/states/" className="editorial-link">state voting guides</Link> for registration information from the {formatDate(initialDate)} research edition and official sources. The map uses your device date when available.</p>;
   const tiles = registrationTiles(today);
   return (
     <div>
@@ -123,7 +125,7 @@ export function RegistrationCartogram({ initialDate }: { initialDate: string }) 
         <span><i className="mr-2 inline-block size-3 border bg-primary" />No registration required (ND)</span>
       </div>
       <p className="mt-3 max-w-3xl text-xs leading-relaxed text-muted-foreground">
-        Each tile uses the next dated registration route still available in this edition. The accessible label lists methods and dates; open the state guide for eligibility, receipt or postmark rules, required ID and local locations. A passed mail date does not close a later valid route.
+        Each tile tracks the next dated registration route for November 3 in this edition. The accessible label lists methods and dates; open the state guide for eligibility, receipt or postmark rules, required ID and local locations. A passed mail date does not close a later valid route. Later elections and conditional runoffs may have separate registration deadlines; open the state guide.
       </p>
     </div>
   );
@@ -141,7 +143,7 @@ export function DeadlineBoard({ initialDate }: { initialDate: string }) {
             <h2 id="deadline-board-heading" className="mt-3 text-balance font-serif text-4xl font-bold md:text-5xl">Find the registration route that applies to you.</h2>
           </div>
           <p className="max-w-2xl text-pretty text-primary-foreground/75 md:justify-self-end">
-            All 50 states and DC have method-specific guides for November 3. Online, mail and in-person registration can have different deadlines. North Dakota does not require voter registration.
+            All 50 states and DC have method-specific guides for November 3. Online, mail and in-person registration can have different deadlines. North Dakota does not require voter registration. Runoffs, if needed, have separate rules.
           </p>
         </div>
         <div className="mt-10 border bg-card p-6 text-foreground md:p-8">

@@ -5,17 +5,17 @@
       "name": "midterm-watch-refresh-2026-10-20.json",
       "format": "JSON",
       "records": 435,
-      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections.",
-      "bytes": 1257927,
-      "sha256": "893cd9bc0d1b85c6db25816c0ab12650bcdaba7938703e39d461d11b7abf96ca"
+      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026.",
+      "bytes": 1258545,
+      "sha256": "d5ee6c56d9f4f9fff0733039a8aa00a55121768031bd70251dcdb19d17970bd9"
     },
     {
       "name": "midterm-watch-sources-2026-10-20.json",
       "format": "JSON",
-      "records": 231,
-      "description": "Source URLs, source vintages, research dates and limitations.",
-      "bytes": 71870,
-      "sha256": "187a3bf1ebf70725ba00a3f071cb78d1e8aa88053dfd5762ba7424eb5de33934"
+      "records": 234,
+      "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates.",
+      "bytes": 73090,
+      "sha256": "0a52bbd57c80c6233664a9c464a28b47ec44c4d02c5e9fa4fab49e69a0c07cda"
     },
     {
       "name": "midterm-watch-house-2026-10-20.csv",

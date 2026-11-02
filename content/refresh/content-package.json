@@ -37128,16 +37128,24 @@
       "source_ids": [
         "GA-CALENDAR",
         "GA-FULTON",
-        "GA-PUTNAM"
+        "GA-PUTNAM",
+        "GA-SOS-2026-RUNOFF",
+        "GA-GOV-2026-RUNOFF"
       ],
       "publishable": true,
       "existing_calendar_id": "da691886f7a6ce57",
       "registration_state_local": "2026-10-05",
       "registration_federal": "2026-11-02",
-      "early_voting_note": "Statewide: starts as soon as possible, no later than November 23, through November 25. Some counties, including Fulton, schedule a November 21 start; use the local calendar.",
+      "early_voting_note": "Advance voting begins as soon as possible and no later than November 23. Official sources differ on the last day; check the county election authority for its dates and hours.",
       "absentee_request_date": "2026-11-20",
       "ordinary_absentee_return": "Received by close of polls December 1; early-voting drop boxes can close earlier.",
-      "election_day_hours": "7 a.m.\u20137 p.m. local time"
+      "election_day_hours": "7 a.m.\u20137 p.m. local time",
+      "early_voting_note_previous_superseded": "Statewide: starts as soon as possible, no later than November 23, through November 25. Some counties, including Fulton, schedule a November 21 start; use the local calendar.",
+      "early_voting_note_correction": "Corrected November 2, 2026: Georgia.gov lists November 23\u201325, while the Secretary of State calendar lists November 27 as the last day. Do not assert a uniform November 25 ending.",
+      "early_voting_note_source_ids": [
+        "GA-SOS-2026-RUNOFF",
+        "GA-GOV-2026-RUNOFF"
+      ]
     },
     {
       "state": "MS",

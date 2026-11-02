@@ -1,0 +1,25 @@
+# Election-day accuracy pass — November 2, 2026
+
+This is a focused check of the November 3 election date, selected voting rules, the conditional runoff records, and the site's dated forecast presentation. It is not a fresh verification of every field in all 51 voting guides. Those guides and the October 20 polling and race-rating collections retain their original research dates unless an individual correction says otherwise. Voters should use their state and local election authorities for current rules, locations, eligibility, and hours.
+
+## Source checks
+
+- The [Federal Election Commission](https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/) identifies November 3 as the federal general election date.
+- [California](https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026): election-day conditional registration is available at county offices or in-person voting locations; polls are 7 a.m.–8 p.m. The [Secretary of State's return guidance](https://www.sos.ca.gov/elections/voting-resources/voting-california/election-dates-and-resources) distinguishes a November 3 postmark with November 10 receipt from delivery by close of polls.
+- [North Carolina](https://www.ncsbe.gov/news/press-releases/2026/10/30/10-tips-election-day-voters-2026-general-election): 6:30 a.m.–7:30 p.m.; ordinary absentee ballots must be received by 7:30 p.m. November 3. Election-day registration is generally unavailable, with specific eligibility exceptions.
+- [Ohio](https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-11-02): 6:30 a.m.–7:30 p.m.; ordinary absentee ballots must be received by the county board by 7:30 p.m. and cannot be returned to an election-day polling location.
+- [Pennsylvania](https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot): ordinary completed mail ballots must be received by 8 p.m. November 3; a postmark alone is insufficient.
+- [Florida](https://dos.fl.gov/elections/for-voters/voting/vote-by-mail): ordinary vote-by-mail ballots must be received by 7 p.m. local time on Election Day; specified overseas exceptions differ.
+- [Texas](https://www.sos.state.tx.us/elections/laws/advisory2026-21-november-3-election-law-calendar.shtml): polls are 7 a.m.–7 p.m. A qualifying timely postmarked domestic mail ballot can arrive by 5 p.m. November 4; unmarked envelopes and other delivery methods have different requirements.
+- [Arizona](https://azsos.gov/news/1082): ordinary early ballots must be received by 7 p.m. Election Day; Arizona is not a postmark state.
+- [Colorado](https://coloradosos.gov/pubs/elections/calendars/2026ElectionCalendar.pdf): ordinary ballots must be received by the county clerk by 7 p.m. Election Day; military and overseas rules differ.
+- [Michigan](https://www.michigan.gov/sos/elections/voting): in-person registration extends through November 3, with the applicable residency documentation rules.
+- [Georgia](https://sos.ga.gov/2026-elections-calendar-summary-0): if a December 1 runoff is required, October 5 applies to state/local contests and November 2 to federal contests. The [Secretary of State's detailed calendar](https://sos.ga.gov/2026-elections-calendar) lists November 27 as the last day of advance voting. The [Georgia.gov event page](https://georgia.gov/events/2026-11-23/general-election-runoff-early-voting) instead lists November 23–25. The guide no longer presents November 25 as a uniform statewide closing date and directs readers to the county; the previous wording and both source IDs remain in the research record.
+- [Mississippi](https://www.sos.ms.gov/sites/default/files/publications/Election%20Calendar_2026.pdf) lists December 1 as the general runoff date if needed. Its [voter information guide](https://sos.ms.gov/sites/default/files/elections/2026%20Mississippi%20Voter%20Information%20Guide.pdf) describes the 30-day registration rule. The existing November 2 conditional-runoff cutoff and office limitations remain visible; verify the contest and eligibility with the election authority.
+- [Louisiana](https://www.sos.la.gov/elections-voting/election-dates) lists November 12 for in-person/mail registration and November 21 online for the December 12 election. U.S. House contests proceed to the later election only if required; do not characterize this as a Senate runoff.
+
+## Forecast boundary
+
+The [Princeton Election Consortium](https://election.princeton.edu/forecasts/) showed a 52 Democratic / 48 Republican Senate estimate on November 2. This separately attributed pre-election snapshot is not an election result or a race call, and the linked page can change. The earlier DDHQ and Poliwave snapshots and the seven Senate polls remain dated October 20; they were not refreshed or combined into a new model.
+
+The site does not ingest live vote totals or issue election calls. The date display uses the visitor's device calendar after hydration and has a neutral static fallback; it does not infer whether a particular polling place is open or closed.

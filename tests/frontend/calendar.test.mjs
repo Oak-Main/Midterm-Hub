@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { upcomingElections, localCalendarDate } from '../../lib/calendar.ts';
+import { calendarDayStatus, upcomingElections, localCalendarDate } from '../../lib/calendar.ts';
 import { stateHref } from '../../lib/navigation.ts';
 import proxy from '../../cloudflare/src/worker.js';
 
@@ -21,6 +21,16 @@ test('date boundary includes today, sorts independent of input, then expires', (
   assert.deepEqual(upcomingElections(records, '2026-11-05'), []);
   assert.equal(records[0].id, 'later');
   assert.equal(localCalendarDate(new Date(2026, 0, 2, 23, 59)), '2026-01-02');
+});
+
+test('election-day status does not use a stale static date and changes across November 3–4', () => {
+  const date = '2026-11-03';
+  assert.deepEqual(calendarDayStatus(null, date), { phase: 'unknown', days: null });
+  assert.deepEqual(calendarDayStatus('2026-11-02', date), { phase: 'before', days: 1 });
+  assert.deepEqual(calendarDayStatus('2026-11-03', date), { phase: 'today', days: 0 });
+  assert.deepEqual(calendarDayStatus('2026-11-04', date), { phase: 'past', days: -1 });
+  // A calendar day cannot establish whether any particular poll is open.
+  assert.equal(calendarDayStatus('2026-11-03', date).phase, 'today');
 });
 
 test('every recorded state uses the lowercase generated route', () => {

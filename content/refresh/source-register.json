@@ -2077,5 +2077,32 @@
     "retrieved_on": "2026-10-20",
     "source_updated": "2026-10-20",
     "note": "Cross-checks rounded receipts and cash. The page headline uses the latest filing date in its full field; individual FEC coverage dates control the two candidate rows here."
+  },
+  {
+    "id": "GA-SOS-2026-RUNOFF",
+    "url": "https://sos.ga.gov/2026-elections-calendar",
+    "title": "2026 election calendar and highlights",
+    "publisher": "Georgia Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Secretary of State calendar lists November 27 as the last day of advance voting for a December runoff."
+  },
+  {
+    "id": "GA-GOV-2026-RUNOFF",
+    "url": "https://georgia.gov/events/2026-11-23/general-election-runoff-early-voting",
+    "title": "General election runoff early voting",
+    "publisher": "Georgia.gov",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "The state government event page lists November 23\u201325; confirm the county schedule because official sources differ."
+  },
+  {
+    "id": "PEC-2026-NOV02",
+    "url": "https://election.princeton.edu/forecasts/",
+    "title": "November 2, 2026 national election forecast snapshot",
+    "publisher": "Princeton Election Consortium",
+    "retrieved_on": "2026-11-02",
+    "source_updated": "2026-11-02",
+    "note": "Observed Senate estimate: 52 Democratic / 48 Republican; pre-election forecast, not a result or call. The linked live page may change."
   }
 ]
