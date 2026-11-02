@@ -5,17 +5,17 @@
       "name": "midterm-watch-refresh-2026-10-20.json",
       "format": "JSON",
       "records": 435,
-      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections.",
-      "bytes": 1257927,
-      "sha256": "893cd9bc0d1b85c6db25816c0ab12650bcdaba7938703e39d461d11b7abf96ca"
+      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026.",
+      "bytes": 1259377,
+      "sha256": "5f12fcbfb8802e1b66c7fd1047afe5ff27cbe4f05532cf43500ca26bb3e9c0c1"
     },
     {
       "name": "midterm-watch-sources-2026-10-20.json",
       "format": "JSON",
-      "records": 231,
-      "description": "Source URLs, source vintages, research dates and limitations.",
-      "bytes": 71870,
-      "sha256": "187a3bf1ebf70725ba00a3f071cb78d1e8aa88053dfd5762ba7424eb5de33934"
+      "records": 252,
+      "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates.",
+      "bytes": 80724,
+      "sha256": "40ad3e705e2b284f6ef9b353f658f5110883d6f56513e67c3ebee9a06be2ac99"
     },
     {
       "name": "midterm-watch-house-2026-10-20.csv",
@@ -29,9 +29,9 @@
       "name": "midterm-watch-voting-2026-10-20.csv",
       "format": "CSV",
       "records": 51,
-      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON.",
-      "bytes": 46646,
-      "sha256": "d539579169092c2025358959f814a61153dc08e935b3ae088010b2151297f846"
+      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON. Minnesota ballot-return correction dated November 2, 2026.",
+      "bytes": 47160,
+      "sha256": "c29afab01acc9df4c131430878f10e32ca9bdbef758ac0b4170981a6751e5712"
     },
     {
       "name": "midterm-watch-voting-2026-10-20.ics",
@@ -40,6 +40,14 @@
       "description": "All-day civil-date reminders for general elections, registration routes and conditional runoffs. Instructions and local cutoffs remain in event descriptions; this is not a polling-place schedule.",
       "bytes": 96414,
       "sha256": "6ef9c5e072d57a9c76bfbe69b1208d441817d9440269083950ddfc57afb4dd55"
+    },
+    {
+      "name": "midterm-watch-pec-forecast-2026-11-02.json",
+      "format": "JSON",
+      "records": 1,
+      "description": "Captured November 2 Princeton Election Consortium forecast excerpt, observation time and provenance limitations.",
+      "bytes": 614,
+      "sha256": "dde6add090e5311b04ff823469207216ef53376ff604f5a5dd0d92074fb60f3c"
     }
   ]
 }

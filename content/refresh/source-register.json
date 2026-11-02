@@ -2077,5 +2077,196 @@
     "retrieved_on": "2026-10-20",
     "source_updated": "2026-10-20",
     "note": "Cross-checks rounded receipts and cash. The page headline uses the latest filing date in its full field; individual FEC coverage dates control the two candidate rows here."
+  },
+  {
+    "id": "GA-SOS-2026-RUNOFF",
+    "url": "https://sos.ga.gov/2026-elections-calendar",
+    "title": "2026 election calendar and highlights",
+    "publisher": "Georgia Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Secretary of State calendar lists November 27 as the last day of advance voting for a December runoff."
+  },
+  {
+    "id": "GA-GOV-2026-RUNOFF",
+    "url": "https://georgia.gov/events/2026-11-23/general-election-runoff-early-voting",
+    "title": "General election runoff early voting",
+    "publisher": "Georgia.gov",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "The state government event page lists November 23\u201325; confirm the county schedule because official sources differ."
+  },
+  {
+    "id": "PEC-2026-NOV02",
+    "url": "https://election.princeton.edu/forecasts/",
+    "title": "November 2, 2026 national election forecast snapshot",
+    "publisher": "Princeton Election Consortium",
+    "retrieved_on": "2026-11-02",
+    "source_updated": "2026-11-02",
+    "note": "Pre-election model estimate, not a result or call; the captured excerpt records the observation and its limitations.",
+    "snapshot_path": "/downloads/midterm-watch-pec-forecast-2026-11-02.json",
+    "snapshot_sha256": "dde6add090e5311b04ff823469207216ef53376ff604f5a5dd0d92074fb60f3c"
+  },
+  {
+    "id": "MN-SOS-2026-RETURN",
+    "url": "https://sos.mn.gov/about-the-office/news-room/728-961-ballots-accepted-in-first-six-weeks-of-voting-for-november-3-election/",
+    "title": "November 3, 2026 absentee and mail-ballot return deadlines",
+    "publisher": "Minnesota Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": "2026-10-30",
+    "note": "Distinguishes the 5 p.m. in-person absentee deadline from 8 p.m. mailed, mail-precinct and agent-delivery deadlines."
+  },
+  {
+    "id": "MN-SOS-RETURN-PROCESS",
+    "url": "https://www.sos.mn.gov/elections-voting/other-ways-to-vote/return-your-ballot/",
+    "title": "Return your ballot",
+    "publisher": "Minnesota Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Explains self or third-party drop-off, the separate agent-delivery process and mail-voting precincts."
+  },
+  {
+    "id": "E26-FEC",
+    "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+    "title": "Federal election and voting information",
+    "publisher": "Federal Election Commission",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-CA-GENERAL",
+    "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026",
+    "title": "November 3, 2026 General Election",
+    "publisher": "California Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-CA-RETURN",
+    "url": "https://www.sos.ca.gov/elections/voting-resources/voting-california/election-dates-and-resources",
+    "title": "Election dates and ballot return",
+    "publisher": "California Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-NC",
+    "url": "https://www.ncsbe.gov/news/press-releases/2026/10/30/10-tips-election-day-voters-2026-general-election",
+    "title": "Election Day guidance for the 2026 general election",
+    "publisher": "North Carolina State Board of Elections",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-OH",
+    "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-11-02",
+    "title": "Election Day reminders",
+    "publisher": "Ohio Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-PA",
+    "url": "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot",
+    "title": "Mail-in and absentee ballot information",
+    "publisher": "Pennsylvania Department of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-FL",
+    "url": "https://dos.fl.gov/elections/for-voters/voting/vote-by-mail",
+    "title": "Vote-by-mail return guidance",
+    "publisher": "Florida Division of Elections",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-TX",
+    "url": "https://www.sos.state.tx.us/elections/laws/advisory2026-21-november-3-election-law-calendar.shtml",
+    "title": "November 3, 2026 election law calendar",
+    "publisher": "Texas Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-AZ",
+    "url": "https://azsos.gov/news/1082",
+    "title": "Ballot return timing",
+    "publisher": "Arizona Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-CO",
+    "url": "https://coloradosos.gov/pubs/elections/calendars/2026ElectionCalendar.pdf",
+    "title": "2026 elections calendar",
+    "publisher": "Colorado Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-MI",
+    "url": "https://www.michigan.gov/sos/elections/voting",
+    "title": "How to vote in Michigan",
+    "publisher": "Michigan Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-GA-SUMMARY",
+    "url": "https://sos.ga.gov/2026-elections-calendar-summary-0",
+    "title": "2026 elections calendar summary",
+    "publisher": "Georgia Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-MS-CALENDAR",
+    "url": "https://www.sos.ms.gov/sites/default/files/publications/Election%20Calendar_2026.pdf",
+    "title": "2026 election calendar",
+    "publisher": "Mississippi Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-MS-GUIDE",
+    "url": "https://sos.ms.gov/sites/default/files/elections/2026%20Mississippi%20Voter%20Information%20Guide.pdf",
+    "title": "2026 voter information guide",
+    "publisher": "Mississippi Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "E26-LA",
+    "url": "https://www.sos.la.gov/elections-voting/election-dates",
+    "title": "2026 election dates",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "GA-FULTON-20261102",
+    "url": "https://fultoncountyga.gov/inside-fulton-county/fulton-county-departments/registration-and-elections/election-key-dates",
+    "title": "Election key dates including possible runoff early voting",
+    "publisher": "Fulton County Registration and Elections",
+    "retrieved_on": "2026-11-02",
+    "source_updated": null,
+    "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
   }
 ]

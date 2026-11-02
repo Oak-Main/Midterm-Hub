@@ -5581,16 +5581,22 @@
         },
         "source_ids": [
           "BP-RETURN",
-          "VOTE-MAIL"
+          "VOTE-MAIL",
+          "MN-SOS-2026-RETURN",
+          "MN-SOS-RETURN-PROCESS"
         ],
         "verification_status": "cross_checked",
         "note": "Ordinary domestic ballots; submission method matters. See the detailed instruction below.",
-        "instruction": "The election authority must have the ballot by 8 p.m. on Nov 3; an Election Day postmark alone does not meet this receipt deadline.",
+        "instruction": "Updated Nov 2, 2026: An absentee ballot dropped off by the voter or another person must reach the issuing election office by 5 p.m. on Nov 3. Absentee ballots returned by mail, ballots returned through the separate agent-delivery process, and ballots from mail-ballot precincts must be received by 8 p.m. on Nov 3; a postmark alone is not sufficient. Confirm the return method and local instructions with the election authority.",
         "rule_type": "received",
         "instruction_source_ids": [
           "BP-RETURN",
-          "VOTE-MAIL"
-        ]
+          "VOTE-MAIL",
+          "MN-SOS-2026-RETURN",
+          "MN-SOS-RETURN-PROCESS"
+        ],
+        "instruction_previous_superseded": "The election authority must have the ballot by 8 p.m. on Nov 3; an Election Day postmark alone does not meet this receipt deadline.",
+        "instruction_corrected_on": "2026-11-02"
       },
       "voting_note": "In-person absentee voting starts September 18; direct-to-counter early voting begins October 16. Both pre-election routes end November 2. A mail request made close to Election Day may not leave enough delivery time.",
       "voting_note_source_ids": [
@@ -37128,16 +37134,26 @@
       "source_ids": [
         "GA-CALENDAR",
         "GA-FULTON",
-        "GA-PUTNAM"
+        "GA-PUTNAM",
+        "GA-SOS-2026-RUNOFF",
+        "GA-GOV-2026-RUNOFF",
+        "GA-FULTON-20261102"
       ],
       "publishable": true,
       "existing_calendar_id": "da691886f7a6ce57",
       "registration_state_local": "2026-10-05",
       "registration_federal": "2026-11-02",
-      "early_voting_note": "Statewide: starts as soon as possible, no later than November 23, through November 25. Some counties, including Fulton, schedule a November 21 start; use the local calendar.",
+      "early_voting_note": "Advance voting begins as soon as possible and no later than November 23. Official sources differ on the last day; check the county election authority for its dates and hours. Fulton County lists November 21 as its first early-voting day for a possible runoff; confirm the local schedule.",
       "absentee_request_date": "2026-11-20",
       "ordinary_absentee_return": "Received by close of polls December 1; early-voting drop boxes can close earlier.",
-      "election_day_hours": "7 a.m.\u20137 p.m. local time"
+      "election_day_hours": "7 a.m.\u20137 p.m. local time",
+      "early_voting_note_previous_superseded": "Statewide: starts as soon as possible, no later than November 23, through November 25. Some counties, including Fulton, schedule a November 21 start; use the local calendar.",
+      "early_voting_note_correction": "Corrected November 2, 2026: Georgia.gov lists November 23\u201325, while the Secretary of State calendar lists November 27 as the last day. Do not assert a uniform November 25 ending.",
+      "early_voting_note_source_ids": [
+        "GA-SOS-2026-RUNOFF",
+        "GA-GOV-2026-RUNOFF",
+        "GA-FULTON-20261102"
+      ]
     },
     {
       "state": "MS",

@@ -27,3 +27,24 @@ test('no registration and the historical election state are explicit', () => {
   assert.match(registrationAction(state('NV'), '2026-10-20').label, /in person/i);
   assert.match(registrationAction(state('CA'), '2026-11-04').label, /later election/);
 });
+
+test('November 3 routes and November 4 transition do not suppress conditional runoffs', () => {
+  assert.equal(registrationAction(state('CA'), '2026-11-03').days, 0);
+  assert.match(registrationAction(state('CA'), '2026-11-03').label, /in.person.*2026-11-03/i);
+  assert.match(registrationAction(state('CA'), '2026-11-03').label, /does not establish that a location is open/i);
+  assert.equal(registrationAction(state('PA'), '2026-11-03').days, null);
+  assert.match(registrationAction(state('GA'), '2026-11-02').label, /conditional runoffs have separate registration dates/i);
+  assert.match(registrationAction(state('MS'), '2026-11-02').label, /conditional runoffs have separate registration dates/i);
+  assert.doesNotMatch(registrationAction(state('MS'), '2026-11-03').label, /closes November 2/i);
+  for (const code of ['GA', 'MS', 'LA']) {
+    const result = registrationAction(state(code), '2026-11-04');
+    assert.equal(result.days, null, code);
+    assert.match(result.label, /separately dated conditional-runoff information/i, code);
+    assert.match(result.label, /state guide.*election authority/i, code);
+  }
+  assert.match(registrationAction(state('LA'), '2026-11-04').label, /state guide.*election authority/i);
+  assert.equal(registrationAction(state('ND'), '2026-11-04').noRegistration, true);
+  for (const row of index.filter(item => item.state !== 'ND')) {
+    assert.equal(registrationAction(row, '2026-11-04').days, null, row.state);
+  }
+});
