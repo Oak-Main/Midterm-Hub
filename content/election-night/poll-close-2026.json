@@ -1,0 +1,2082 @@
+{
+  "election_date": "2026-11-03",
+  "time_basis": {
+    "text": "Tuesday, November 3, 2026 is on standard time: daylight saving time ends at 2 a.m. on the first Sunday of November (November 1, 2026). Eastern standard time is UTC-5.",
+    "sources": [
+      {
+        "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap6-subchapIX-sec260a.htm",
+        "publisher": "15 U.S.C. 260a (govinfo.gov)",
+        "retrieved_at": "2026-11-02",
+        "quote": "ending at 2 o'clock antemeridian on the first Sunday of November of each year"
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap6-subchapIX-sec261.htm",
+        "publisher": "15 U.S.C. 261 (govinfo.gov)",
+        "retrieved_at": "2026-11-02",
+        "quote": "the standard time of the first zone shall be Coordinated Universal Time retarded by 4 hours; that of the second zone retarded by 5 hours"
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap6-subchapIX-sec263.htm",
+        "publisher": "15 U.S.C. 263 (govinfo.gov)",
+        "retrieved_at": "2026-11-02",
+        "quote": "that of the second zone shall be known and designated as eastern standard time"
+      },
+      {
+        "url": "https://www.ecfr.gov/current/title-49/subtitle-A/part-71/section-71.12",
+        "publisher": "49 CFR 71.12 (eCFR)",
+        "retrieved_at": "2026-11-02",
+        "quote": "in the State of Alaska, that part of the Aleutian Islands that is west of 169 degrees 30 minutes west longitude"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "state": "AL",
+      "name": "Alabama",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:00",
+          "area": "Eastern time zone",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        },
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "7:00 p.m. Eastern / 7:00 p.m. Central; all polls closed 8:00 p.m. ET",
+      "notes": "Matches existing data (7 a.m. to 7 p.m.). Same SOS voter guide also says: 'polling places located in the Eastern Time Zone may be open from 7 A.M. to 7 P.M. Eastern Time' (hedged 'may'; no counties named, so the second close entry is area-limited and unnamed). The SOS election-night page (www2.alabamavotes.gov) also states 'Polls close at 7:00 p.m. CST.' (same publisher as SOS). Statute text (Code of Alabama 17-9-6, alison.legislature.state.al.us) could not be retrieved as plain text (JS app / paged API), so statute was not used as a source. Mobile County guide: any voter in line at 7:00 PM may vote (ignored per brief). | Eastern time zone: polling places located in the Eastern Time Zone (SOS voter guide says these 'may' run 7 A.M. to 7 P.M. Eastern Time; guide names no counties) | Central time zone: statewide",
+      "source_url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
+          "publisher": "Alabama Secretary of State (2026 Voter Guide, PDF)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Alabama polling places are open from 7 A.M. to 7 P.M. on Election Day."
+        },
+        {
+          "url": "https://www.shelbyal.com/1106/Shelby-County-Election",
+          "publisher": "Shelby County, Alabama (county government election page, Nov 3, 2026 General Election)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls are open from 7 a.m. until 7 p.m."
+        },
+        {
+          "url": "https://probate.mobilecountyal.gov/uploads/PollWorkerGuide-WebVersion.pdf",
+          "publisher": "Probate Court of Mobile County, Alabama (2026 poll worker guide, PDF)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "from before the precinct opens at 7:00 A.M. until after it closes at 7:00 P.M."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.alabama.gov/alabama-votes/voter/upcoming-elections"
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "closes": [
+        {
+          "zone": "America/Anchorage",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T05:00:00Z",
+          "et": "12:00 a.m. ET, Nov 4"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T05:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 8 p.m.). Calendar entry is dated 11/03/2026 and cites AS 15.15.020. Corroborating pages from the SAME publisher (not counted as independent): 2026 General media packet (https://www.elections.alaska.gov/doc/mp/2026/MediaPacket-2026-General.%20V3.pdf: 'Polling Places are open from 7am to 8pm') and A-to-Z poll worker manual ('At 8:00 pm, declare the polls closed'). Statute text (AS 15.15.080) on akleg.gov timed out via curl, returned 403 to WebFetch and was refused in the browser pane, so no independent statute/county source; Municipality of Anchorage Clerk page defers the Nov 3 election to the State Division of Elections. The page states electronic-transmission ballot deadline as '8:00 p.m. Alaska Time' but does not say how the far-western Aleutians (Hawaii-Aleutian zone) are handled, so only one close entry is recorded; existing data notes Alaska spans two zones.",
+      "source_url": "https://www.elections.alaska.gov/calendar/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.elections.alaska.gov/calendar/",
+          "publisher": "Alaska Division of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "General Election Day. Polls open from 7a.m. – 8p.m."
+        }
+      ],
+      "tag": "SINGLE-SOURCE",
+      "election_office_url": "https://www.elections.alaska.gov/voter-information/",
+      "unverified_areas": [
+        "Aleutian Islands west of 169°30′ W (Hawaii-Aleutian time zone)"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona",
+      "closes": [
+        {
+          "zone": "America/Phoenix",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (6 a.m. to 7 p.m.). azsos.gov returns 403 to curl and WebFetch; the SOS page was read in the browser pane. SOS page also says 'Polling locations will be open from 6:00 a.m. to 7:00 p.m. on Election Day.' Pima County calendar entry reads 'Tue, Nov 3, 2026, 6:00 a.m. MST - Tue, Nov 3, 2026, 7:00 p.m. MST'. Statute and SOS pages give no time zone; zone recorded as America/Phoenix (statewide MST per county page). Existing data's Navajo Nation Daylight Time remark was not verified from an official page (not found on pages opened).",
+      "source_url": "https://azsos.gov/elections/about-elections/elections-procedures/election-day-operations",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://azsos.gov/elections/about-elections/elections-procedures/election-day-operations",
+          "publisher": "Arizona Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls close at 7:00 p.m. on Election Day. A.R.S. § 16-565(A)."
+        },
+        {
+          "url": "https://www.azleg.gov/ars/16/00565.htm",
+          "publisher": "Arizona Legislature (A.R.S. 16-565)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall be opened in every precinct at 6:00 a.m. on the day of election and shall be closed at 7:00 p.m."
+        },
+        {
+          "url": "https://www.pima.gov/elections",
+          "publisher": "Pima County Elections Department",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Vote Centers will be open from 6 a.m. to 7 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://azsos.gov/elections/about-elections/elections-procedures/election-day-operations"
+    },
+    {
+      "state": "AR",
+      "name": "Arkansas",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:30",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:30:00Z",
+          "et": "8:30 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:30:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7:30 a.m. to 7:30 p.m.). SOS calendar quote is the entry 'November 3, 2026 - Tuesday GENERAL ELECTION, NONPARTISAN RUNOFF ELECTION, AND ANNUAL SCHOOL RUNOFF ELECTION' citing Ark. Code 7-5-304(a). SOS voter page also says 'Vote at your poll on Election Day from 7:30 a.m. to 7:30 p.m.' (https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas). Washington County page lists 'Election Day Vote Center Information, November 3, 2026, Hours: 7:30 a.m. to 7:30 p.m.' (read via browser pane; 403 to curl). Time zone is local Central (all of Arkansas).",
+      "source_url": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._7-2026_.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.arkansas.gov/uploads/elections/2026_Election_Calendar_Rev._7-2026_.pdf",
+          "publisher": "Arkansas Secretary of State (2026 Election Dates, Rev. 7-2026)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls open 7:30 am to 7:30 pm"
+        },
+        {
+          "url": "https://www.washingtoncountyar.gov/government/departments-a-e/election-commission/november-3-2026-general-election-information",
+          "publisher": "Washington County (AR) Election Commission",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Hours: 7:30 a.m. to 7:30 p.m."
+        },
+        {
+          "url": "https://sbec.arkansas.gov/wp-content/uploads/2026-Poll-Worker-Training-Presentation-11-26.pdf",
+          "publisher": "Arkansas State Board of Election Commissioners (2026 poll worker training)",
+          "kind": "other_official",
+          "retrieved_at": "2026-11-02",
+          "quote": "Keep open continuously until 7:30pm"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.arkansas.gov/elections/voter-information/"
+    },
+    {
+      "state": "CA",
+      "name": "California",
+      "closes": [
+        {
+          "zone": "America/Los_Angeles",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T04:00:00Z",
+          "et": "11:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T04:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 8 p.m.). California is a vote-by-mail state: every registered voter is mailed a ballot; the 8:00 p.m. close applies to polling places and vote centers on Nov 3 (the SOS key-dates page lists 'Voter's Choice Act counties to open Vote Centers' on Oct 23/24). Statute text: 'The polls shall be open at 7 a.m. of the day of any election, and shall be kept open until 8 p.m. of the same day, when the polls shall be closed, except as provided in Sections 4005 and 14401.' leginfo returns 403 to curl; statute was read in the browser pane. No ballot-deposit deadline recorded beyond what the SOS page states.",
+      "source_url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026/key-dates-deadlines",
+          "publisher": "California Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day - Polls shall be open throughout the state from 7:00 a.m. to 8:00 p.m."
+        },
+        {
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=14212",
+          "publisher": "California Legislative Information (Elections Code 14212)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "shall be kept open until 8 p.m. of the same day, when the polls shall be closed"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.ca.gov/elections/upcoming-elections/general-election-november-3-2026"
+    },
+    {
+      "state": "CO",
+      "name": "Colorado",
+      "closes": [
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 7 p.m.). Colorado is an all-mail state: in-person voting is at voter service and polling centers 7 a.m. to 7 p.m., and ballots must be returned to a drop box/center or received by the county clerk by 7:00 PM. Same-publisher corroboration: SOS 2026 calendar PDF '(Polls open 7:00am to 7:00pm)' and SOS press release of 2026-11-02 ('After polls officially close at 7:00 PM on Election Day'). Statute (C.R.S. 1-7-101) not opened.",
+      "source_url": "https://coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://coloradosos.gov/pubs/elections/FAQs/ElectionDay.html",
+          "publisher": "Colorado Secretary of State (Election Day FAQs)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "The deadline to vote in-person is 7:00 PM on Election Day."
+        },
+        {
+          "url": "https://www.larimer.gov/sites/default/files/2026ge-election-notice.pdf",
+          "publisher": "Larimer County (CO) Clerk & Recorder (2026 General Election legal notice)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "a General Election will be held on Tuesday, November 3, 2026, between the hours of 7 AM and 7 PM."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html"
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (6 a.m. to 8 p.m.). Statute is Sec. 9-174(a); voters in line at 8:00 p.m. may vote (ignored per brief).",
+      "source_url": "https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-elections/2026-election-calendar-122325.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://portal.ct.gov/-/media/sots/electionservices/calendars/2026-elections/2026-election-calendar-122325.pdf",
+          "publisher": "Connecticut Secretary of the State (2026 election calendar, PDF)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "5. Election - November 3, 2026 (6:00 a.m. - 8:00 p.m.)"
+        },
+        {
+          "url": "https://www.cga.ct.gov/current/pub/chap_146.htm",
+          "publisher": "Connecticut General Assembly (C.G.S. 9-174)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls on the day of such election shall remain open for voting from six o'clock a.m. until eight o'clock p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://portal.ct.gov/sots/election-services/calendars/election-calendars"
+    },
+    {
+      "state": "DE",
+      "name": "Delaware",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 8 p.m.). Statute heading is '4947. Time and manner of closing election.' Same-publisher corroboration: 2026 State Election Calendar PDF 'Polls open from 7 a.m. to 8 p.m.' (https://elections.delaware.gov/public/calendar/pdfs/2026ElectionCalendar.pdf). news.delaware.gov voting alert (Oct 30) was reset by the server and not opened. Some state hosts reset connections on first try; retried successfully.",
+      "source_url": "https://elections.delaware.gov/elections/general/general.html",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elections.delaware.gov/elections/general/general.html",
+          "publisher": "Delaware Department of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling Places are open from 7 a.m. until 8 p.m. on General Election Day, November 3, 2026."
+        },
+        {
+          "url": "https://delcode.delaware.gov/title15/title15.pdf",
+          "publisher": "Delaware Code Online (15 Del. C. 4947, Title 15 PDF)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The election shall be continued open until 8:00 p.m. when it shall be closed."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.delaware.gov/elections/general/general.html"
+    },
+    {
+      "state": "DC",
+      "name": "District of Columbia",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 8 p.m.). Page heading: '2026 General Election Day Vote Centers'; voters may use any Vote Center. Statute subsection is 1-1001.10(b)(1), with an exception for court-ordered extensions (ignored per brief).",
+      "source_url": "https://www.dcboe.org/voters/find-out-where-to-vote/election-day-vote-centers",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.dcboe.org/voters/find-out-where-to-vote/election-day-vote-centers",
+          "publisher": "District of Columbia Board of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Tuesday, November 3, 2026, from 7:00 a.m. to 8:00 p.m."
+        },
+        {
+          "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.10",
+          "publisher": "Council of the District of Columbia (D.C. Official Code 1-1001.10)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall be open from 7:00 a.m. to 8:00 p.m. on election day"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://dcboe.org/voters/find-out-where-to-vote/election-day-vote-centers"
+    },
+    {
+      "state": "FL",
+      "name": "Florida",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:00",
+          "area": "Eastern time zone",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        },
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "7:00 p.m. Eastern / 7:00 p.m. Central; all polls closed 8:00 p.m. ET",
+      "notes": "Matches existing data (7 a.m. to 7 p.m.). Both sources set 7:00 p.m. by local clock; statute ties it to the customary time in standard use in the county seat, so Central-zone Panhandle counties close at 7:00 p.m. Central (8:00 p.m. Eastern). Which counties are Central is not stated on either page. Full statute clause continues: '...in standard use in the county seat of the locality.' Voters in line at 7:00 p.m. may vote (ignored per brief). | Eastern time zone: Eastern-time counties (most of the state) | Central time zone: Central-time counties (Panhandle); official pages say 'local time' and do not name the counties",
+      "source_url": "https://dos.fl.gov/elections/for-voters/voting/election-day-voting/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://dos.fl.gov/elections/for-voters/voting/election-day-voting/",
+          "publisher": "Florida Department of State, Division of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls are open on Election Day, from 7 a.m. until 7 p.m. (local time)."
+        },
+        {
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0100/Sections/0100.011.html",
+          "publisher": "Florida Legislature (Florida Statutes 100.011)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "shall be kept open until 7:00 p.m., of the same day, and the time shall be regulated by the customary time"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://dos.fl.gov/elections/for-voters/voting/election-day-voting/"
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:00:00Z",
+      "split_zone_note": "",
+      "notes": "The Secretary of State site (sos.ga.gov) returned 403 to curl and WebFetch (bot protection), so no sos.ga.gov page was opened; the state source is the State of Georgia portal georgia.gov (its 2026 general-election page also says 'Polls are open from 7 a.m. to 7 p.m.' and lists SOS contacts), the second is the Fulton County notice for the Nov 3, 2026 general election. The O.C.G.A. statute text was not opened. Matches existing site data (7 a.m. to 7 p.m.). The existing-data note about 8 p.m. closing in cities of 300,000+ concerns municipal elections and was not checked; no 2026 general-election page opened mentions it. Voters in line at 7 p.m. may still vote (ignored per brief).",
+      "source_url": "https://georgia.gov/vote-in-person-election-day",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://georgia.gov/vote-in-person-election-day",
+          "publisher": "State of Georgia official portal (georgia.gov)",
+          "kind": "other_official",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling places are open on Election Day from 7:00 a.m. to 7:00 p.m."
+        },
+        {
+          "url": "https://www.fultoncountyga.gov/inside-fulton-county/fulton-county-departments/registration-and-elections",
+          "publisher": "Fulton County Registration and Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls will be open from 7:00 a.m. until 7:00 p.m. on Election Day, November 3, 2026."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.ga.gov/"
+    },
+    {
+      "state": "HI",
+      "name": "Hawaii",
+      "closes": [
+        {
+          "zone": "Pacific/Honolulu",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T05:00:00Z",
+          "et": "12:00 a.m. ET, Nov 4"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T05:00:00Z",
+      "split_zone_note": "",
+      "notes": "All-mail state. 19:00 is the close of voting: voter service centers (in-person voting, same-day registration) are open 7:00 a.m. to 7:00 p.m. on Nov 3 and voters must be in line by 7 PM; voted mail ballots must be received by 7:00 p.m. (postmarks not accepted); places of deposit (drop boxes) are open until 7:00 p.m. Nov 3 (elections.hawaii.gov/voter-service-centers-and-places-of-deposit/, same publisher as the news release). HRS 11-109 and 11-131 tie voting hours to the 'closing hour of voting' defined in 11-1. County election sites (hawaiicounty.gov, kauai.gov) returned 403 to curl and were not used. Matches existing site data (7 a.m. to 7 p.m.).",
+      "source_url": "https://elections.hawaii.gov/news-release/voter-service-centers-open-october-20/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elections.hawaii.gov/news-release/voter-service-centers-open-october-20/",
+          "publisher": "Hawaii Office of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Voting closes at 7:00 PM on Election Day, Tuesday, November 3, 2026."
+        },
+        {
+          "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0011/HRS_0011-0001.htm",
+          "publisher": "Hawaii Revised Statutes (capitol.hawaii.gov), HRS 11-1",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "\"Closing hour of voting\" means 7:00 p.m. Hawaii Standard Time on election day."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.hawaii.gov/voting/"
+    },
+    {
+      "state": "ID",
+      "name": "Idaho",
+      "closes": [
+        {
+          "zone": "America/Boise",
+          "local_time": "20:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T03:00:00Z",
+          "et": "10:00 p.m. ET"
+        },
+        {
+          "zone": "America/Los_Angeles",
+          "local_time": "20:00",
+          "area": "Pacific time zone",
+          "utc": "2026-11-04T04:00:00Z",
+          "et": "11:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T04:00:00Z",
+      "split_zone_note": "8:00 p.m. Mountain / 8:00 p.m. Pacific; all polls closed 11:00 p.m. ET",
+      "notes": "Idaho Code 34-1101: polls open 8:00 A.M. (the county clerk may open at 7:00 A.M. for a general election) and close at 8:00 P.M., or earlier if all registered electors of that precinct have voted; 8:00 P.M. is therefore the latest close. voteidaho.gov confirms Idaho has two time zones (for registration deadlines it states 5 PM local time); neither source says in so many words that 8 p.m. is local clock time in each zone, which is the assumed reading. Matches existing site data (8 a.m. to 8 p.m.; optional 7 a.m. opening). | Mountain time zone: Mountain-time portion of Idaho | Pacific time zone: Pacific-time portion of Idaho (official pages do not name the counties)",
+      "source_url": "https://voteidaho.gov/casting-your-ballot/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://voteidaho.gov/casting-your-ballot/",
+          "publisher": "Idaho Secretary of State (voteidaho.gov)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Visit your voting location (polling place) on Election Day between 8 a.m. to 8 p.m."
+        },
+        {
+          "url": "https://legislature.idaho.gov/statutesrules/idstat/Title34/T34CH11/SECT34-1101/",
+          "publisher": "Idaho Legislature, Idaho Code 34-1101",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "remain open until all registered electors of that precinct have appeared and voted or until 8:00 P.M. of the same day, whichever comes first."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://voteidaho.gov/casting-your-ballot/"
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Also stated on elections.il.gov/ElectionOperations/ElectionDayVoting.aspx ('Polling places are open from 6:00 a.m. - 7:00 p.m. on Election Day', same publisher as the Voter's Guide). Three independent publishers agree (ISBE, statute, Chicago BOE). Matches existing site data (6 a.m. to 7 p.m.).",
+      "source_url": "https://votersguide.elections.il.gov/FAQs",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://votersguide.elections.il.gov/FAQs",
+          "publisher": "Illinois State Board of Elections (Voter's Guide)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "This year's General Election takes place on November 3rd, 2026. The polls will be open from 6:00 AM to 7:00 PM."
+        },
+        {
+          "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/001000050K17-1.htm",
+          "publisher": "Illinois General Assembly, 10 ILCS 5/17-1",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "continued open until 7:00 p.m. of the same day, at which time the polls shall be closed;"
+        },
+        {
+          "url": "https://chicagoelections.gov/voting/election-day-voting",
+          "publisher": "Chicago Board of Election Commissioners",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "At your precinct polling place from 6:00am to 7:00pm"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.il.gov/electiondayhome.aspx"
+    },
+    {
+      "state": "IN",
+      "name": "Indiana",
+      "closes": [
+        {
+          "zone": "America/Indiana/Indianapolis",
+          "local_time": "18:00",
+          "area": "Eastern time zone",
+          "utc": "2026-11-03T23:00:00Z",
+          "et": "6:00 p.m. ET"
+        },
+        {
+          "zone": "America/Chicago",
+          "local_time": "18:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:00:00Z",
+      "split_zone_note": "6:00 p.m. Eastern / 6:00 p.m. Central; all polls closed 7:00 p.m. ET",
+      "notes": "The brochure entry is 'Tuesday, November 3, 2026 GENERAL ELECTION DAY' (page 1 of the PDF); the county page lists it under 'Tuesday, November 3'. The IED 2026 Election Day Handbook (same publisher as the brochure) says 'The polls must remain open continuously from 6:00 a.m. to 6:00 p.m. prevailing local time.' Indiana Code 3-11-8-3 was not opened (iga.in.gov is a JavaScript app). Matches existing site data (6 a.m. to 6 p.m.). | Eastern time zone: Eastern-time counties | Central time zone: Central-time counties (official pages say 'prevailing local time' and do not name the counties)",
+      "source_url": "https://www.in.gov/sos/elections/files/2026-Calendar-Brochure.FINAL-VERSION.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.in.gov/sos/elections/files/2026-Calendar-Brochure.FINAL-VERSION.pdf",
+          "publisher": "Indiana Election Division / Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls are open 6:00 a.m. to 6:00 p.m., prevailing local time."
+        },
+        {
+          "url": "https://delawarecounty.in.gov/voting-and-elections/",
+          "publisher": "Delaware County, Indiana (voting and elections)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day. Polls are open from 6:00 a.m.–6:00 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/"
+    },
+    {
+      "state": "IA",
+      "name": "Iowa",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "sos.iowa.gov and voterready.iowa.gov returned 403 to both curl and WebFetch (bot protection), so no Secretary of State page could be opened; the two sources are the statute and a county auditor/election office page. Iowa Code 49.73 lets the commissioner open certain benefited-district/unincorporated-area polls at noon but fixes the close at 8:00 p.m. for all elections. Matches existing site data (7 a.m. to 8 p.m.).",
+      "source_url": "https://www.legis.iowa.gov/docs/code/49.73.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.legis.iowa.gov/docs/code/49.73.pdf",
+          "publisher": "Iowa Legislature, Iowa Code 49.73 (2026 Code)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polling places shall be closed at 8:00 p.m. for all elections."
+        },
+        {
+          "url": "https://blackhawkcountyelections.iowa.gov/elections/info/2026_general_election_2026_11_03/",
+          "publisher": "Black Hawk County Elections (Iowa)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls will be open from 7:00 a.m. to 8:00 p.m. on Tuesday, November 3, 2026."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.iowa.gov/"
+    },
+    {
+      "state": "KS",
+      "name": "Kansas",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "20:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        },
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "8:00 p.m. Central / 7:00 p.m. Mountain; all polls closed 9:00 p.m. ET",
+      "notes": "Closing is set locally within a statutory window, so the LATEST permitted close is recorded. K.S.A. 25-106(a), Central-zone counties: default 7:00 a.m.-7:00 p.m.; if the county election officer sets other hours they must be at least 12 continuous hours, open no earlier than 6:00 a.m. and close between 7:00 p.m. and 8:00 p.m. (latest 20:00 CT). K.S.A. 25-106(b), Mountain-zone counties: default 6:00 a.m.-6:00 p.m., close between 6:00 p.m. and 7:00 p.m. MT (latest 19:00 MT); this Mountain-zone variant appears only in the statute (the SOS page describes the Central rule and does not mention it), so the 19:00 MT close is single-source. Sedgwick County (Central) uses the default 7 a.m.-7 p.m. DIFFERS from existing site data, which shows only the default 7 p.m. close; the existing note on county schedules is consistent with the statute. | Central time zone: Central-time counties: latest permitted close (default 19:00) | Mountain time zone: Mountain-time counties: latest permitted close (default 18:00); statute only, counties not named",
+      "source_url": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_001_0006.html",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_001_0006.html",
+          "publisher": "Kansas Office of Revisor of Statutes, K.S.A. 25-106",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "ending not later than 8:00 p.m. and ending not earlier than 7:00 p.m."
+        },
+        {
+          "url": "https://sos.ks.gov/elections/voter-information.html",
+          "publisher": "Kansas Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "State law allow counties to open polling locations as early as 6:00 a.m. and close as late as 8:00 p.m."
+        },
+        {
+          "url": "https://www.sedgwickcounty.org/communications/news-releases/media-advisory-for-2026-general-election-nov-3/",
+          "publisher": "Sedgwick County Election Office (Kansas)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "109 polling locations across Sedgwick County open from 7 a.m.-7 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.ks.gov/elections/voter-information.html"
+    },
+    {
+      "state": "KY",
+      "name": "Kentucky",
+      "closes": [
+        {
+          "zone": "America/Kentucky/Louisville",
+          "local_time": "18:00",
+          "area": "Eastern time zone",
+          "utc": "2026-11-03T23:00:00Z",
+          "et": "6:00 p.m. ET"
+        },
+        {
+          "zone": "America/Chicago",
+          "local_time": "18:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:00:00Z",
+      "split_zone_note": "6:00 p.m. Eastern / 6:00 p.m. Central; all polls closed 7:00 p.m. ET",
+      "notes": "The SBE 2026 election calendar PDF (same publisher as the FAQ) also lists 'General Election Day ... Polls open 6 a.m. to 6 p.m., prevailing time' for Tuesday 11/3. Voters in line at 6 p.m. may still vote (ignored per brief). Matches existing site data (6 a.m. to 6 p.m.). | Eastern time zone: Eastern-time counties | Central time zone: Central-time counties (official pages say 'prevailing time' / 'local time' and do not name the counties)",
+      "source_url": "https://elect.ky.gov/Frequently-Asked-Questions/Pages/Election-Day-Information.aspx",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elect.ky.gov/Frequently-Asked-Questions/Pages/Election-Day-Information.aspx",
+          "publisher": "Kentucky State Board of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls are open from 6:00 AM to 6:00 PM local time"
+        },
+        {
+          "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=27563",
+          "publisher": "Kentucky Legislature, KRS 118.035",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "shall remain open until each voter who is waiting in line at the polls at 6 p.m., prevailing time, has voted"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elect.ky.gov/Frequently-Asked-Questions/Pages/Election-Day-Information.aspx"
+    },
+    {
+      "state": "LA",
+      "name": "Louisiana",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "The SOS election-dates page titles Nov 3, 2026 'U.S. Senate General/Open U.S. Representative Primary/Open Primary Election' (it is the open general-election date for party-primary offices; a Dec 12, 2026 election follows), so it is Louisiana's Election Day contest rather than a plain general. R.S. 18:541(B) (regularly scheduled congressional primary elections and elections held at the same time) gives the 6:00 a.m. opening; 18:541(A) also fixes the close at 8:00 p.m. Voters in line at 8 p.m. may vote (ignored). Matches existing site data (6 a.m.-8 p.m. on Tuesday Nov 3).",
+      "source_url": "https://www.sos.la.gov/elections-voting/election-dates",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.la.gov/elections-voting/election-dates",
+          "publisher": "Louisiana Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "On election day, the polls are open from 6 a.m.-8 p.m."
+        },
+        {
+          "url": "https://legis.la.gov/Legis/Law.aspx?d=81634",
+          "publisher": "Louisiana Legislature, R.S. 18:541",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall open at 6:00 a.m. on election day and shall close at 8 p.m. on election day."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.la.gov/elections-voting/election-dates"
+    },
+    {
+      "state": "ME",
+      "name": "Maine",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Closing is fixed at 8 p.m.; opening is flexible (no earlier than 6 a.m. and no later than 8 a.m., or 10 a.m. in municipalities under 500 population). 21-A M.R.S. 626(2) lets municipalities of population less than 100 close after all registered voters have voted (earlier), so 20:00 is the latest close. Matches existing site data (close 8 p.m.).",
+      "source_url": "https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide",
+          "publisher": "Maine Secretary of State, Bureau of Corporations, Elections & Commissions",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "All voting places close at 8:00 p.m. on Election Day."
+        },
+        {
+          "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec626.html",
+          "publisher": "Maine Legislature, 21-A M.R.S. 626",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls must be closed at 8 p.m. on election day"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.maine.gov/sos/elections-voting/state-of-maine-voter-guide"
+    },
+    {
+      "state": "MD",
+      "name": "Maryland",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing site data (7 a.m. to 8 p.m.). The 2026 election calendar PDF (same publisher as the state board) also lists 8 pm for General Election Day. Voters in line at 8 pm may still vote (ignored per brief).",
+      "source_url": "https://elections.maryland.gov/voting/index.html",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elections.maryland.gov/voting/index.html",
+          "publisher": "Maryland State Board of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "All election day polling places are open continuously from 7 am until 8 pm on November 3, 2026."
+        },
+        {
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=10-301&enactments=false",
+          "publisher": "Maryland General Assembly (Election Law 10-301)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "On an election day, a polling place shall be open from 7 a.m. until 8 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.maryland.gov/voting/index.html"
+    },
+    {
+      "state": "MA",
+      "name": "Massachusetts",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "The statute also says 'At state elections the polls shall not be closed before eight o'clock in the evening', so 8 pm is both the floor and the ceiling at a state election. Municipalities may open as early as 5:45 a.m. (state page). The sec.state.ma.us page returns an Incapsula redirect loop to curl; I opened it in the Claude Browser pane (real browser) and copied the quote from the page text. Matches existing site data.",
+      "source_url": "https://www.sec.state.ma.us/divisions/elections/voter-resources/when-where-how-do-i-vote.htm",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sec.state.ma.us/divisions/elections/voter-resources/when-where-how-do-i-vote.htm",
+          "publisher": "Massachusetts Secretary of the Commonwealth, Elections Division",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling places are open from 7 a.m. to 8 p.m. for all state primaries and elections."
+        },
+        {
+          "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter54/Section64",
+          "publisher": "Massachusetts Legislature (M.G.L. c.54 s.64)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls shall in no case be kept open after eight o'clock in the evening."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sec.state.ma.us/divisions/elections/voter-resources/when-where-how-do-i-vote.htm"
+    },
+    {
+      "state": "MI",
+      "name": "Michigan",
+      "closes": [
+        {
+          "zone": "America/Detroit",
+          "local_time": "20:00",
+          "area": "Eastern time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        },
+        {
+          "zone": "America/Menominee",
+          "local_time": "20:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "8:00 p.m. Eastern / 8:00 p.m. Central; all polls closed 9:00 p.m. ET",
+      "notes": "Matches existing site data. The second-zone entry rests on the zone split, not on an official page naming it (both pages only say 'local time'). The statute gives the open time as 7 o'clock in the forenoon. | Eastern time zone: statewide (Eastern Time areas) | Central time zone: areas on Central Time; same 8 p.m. local clock time (the cited official pages say 'local time' and do not name the counties)",
+      "source_url": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day",
+          "publisher": "Michigan Department of State (Secretary of State), Bureau of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Voters can visit their assigned polling place on Election Day from 7 a.m. to 8 p.m. local time."
+        },
+        {
+          "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-720",
+          "publisher": "Michigan Legislature (MCL 168.720)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "shall be continuously open until 8 o'clock in the afternoon and no longer"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.michigan.gov/sos/elections/voting/vote-on-election-day"
+    },
+    {
+      "state": "MN",
+      "name": "Minnesota",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "I could not open any Minnesota Secretary of State page: sos.mn.gov sits behind a Radware captcha for curl, WebFetch and the browser pane, and I did not attempt to bypass it. Tag therefore rests on the statute plus Hennepin County (a county office). The election_office_url below is the SOS 'Voting hours' page that a search listed but that I did not open. Statute subd. 1a/1b only allow a LATER OPENING (no later than 10 a.m.) for small towns (under 500 inhabitants, outside the metro area) and unorganized territories, never an earlier close. Existing site data says 'fewer than 500 registered voters'; the statute says 'inhabitants' per the decennial census. Otherwise matches (7 a.m. to 8 p.m.).",
+      "source_url": "https://www.hennepincounty.gov/services/elections/election-day-voting",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.hennepincounty.gov/services/elections/election-day-voting",
+          "publisher": "Hennepin County Elections (MN)",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Hennepin County polling places are open from 7 a.m. to 8 p.m. on primary and election days."
+        },
+        {
+          "url": "https://www.revisor.mn.gov/statutes/cite/204C.05",
+          "publisher": "Minnesota Office of the Revisor of Statutes (Minn. Stat. 204C.05 subd. 1)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the hours for voting in every precinct in the state shall begin at 7:00 a.m. and shall extend continuously until 8:00 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.mn.gov/elections-voting/election-day-voting/voting-hours/"
+    },
+    {
+      "state": "MS",
+      "name": "Mississippi",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "State source is the SOS release dated Mon Oct 26, 2026 for the Nov 3 General Election. The county quote is from the Marion County 2026 election calendar row for Tuesday, November 3, 2026 (pdftotext raw order; in layout mode the row is split across lines). I did not open a Mississippi statute on an official site. Matches existing site data.",
+      "source_url": "https://www.sos.ms.gov/news/election-day-reminders-2026-general-election",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.ms.gov/news/election-day-reminders-2026-general-election",
+          "publisher": "Mississippi Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls will open at 7:00 a.m. and close at 7:00 p.m."
+        },
+        {
+          "url": "https://circuitclerkmarioncountyms.gov/ballots/2026_election_calendar.pdf",
+          "publisher": "Marion County (MS) Circuit Clerk",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "General Election - Polling places open 7 am - 7 pm"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.ms.gov/elections-voting"
+    },
+    {
+      "state": "MO",
+      "name": "Missouri",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "The state page text is upper case in the page source. Voters in line at 7 pm may still vote (ignored per brief). Matches existing site data.",
+      "source_url": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
+          "publisher": "Missouri Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "POLLING PLACES ARE OPEN FROM 6:00 AM TO 7:00 PM ON ELECTION DAY."
+        },
+        {
+          "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.407",
+          "publisher": "Missouri Revisor of Statutes (RSMo 115.407)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The election judges shall open the polls at six o'clock in the morning and keep them open until seven o'clock in the evening."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote"
+    },
+    {
+      "state": "MT",
+      "name": "Montana",
+      "closes": [
+        {
+          "zone": "America/Denver",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T03:00:00Z",
+          "et": "10:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T03:00:00Z",
+      "split_zone_note": "",
+      "notes": "The calendar entry is dated November 3, 2026 'General Election Day'. Exceptions in 13-1-106: polling places with fewer than 400 electors may open as late as noon and close at 8 pm or earlier once all electors have voted; if a school election shares the polling place, the school-election hours apply. A June 2026 primary-day SOS release on sosmt.gov also says 'Polls will close at 8 p.m.' (same publisher as votemt.gov). sosmt.gov blocks curl with a Cloudflare challenge; votemt.gov and the legislature pages opened by curl. Matches existing site data.",
+      "source_url": "https://votemt.gov/voter-calendar/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://votemt.gov/voter-calendar/",
+          "publisher": "Montana Secretary of State (votemt.gov Voter Calendar)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "For polling place elections polls must be open 7 am to 8 pm except as provided in 13-1-106"
+        },
+        {
+          "url": "https://mca.legmt.gov/bills/mca/title_0130/chapter_0010/part_0010/section_0060/0130-0010-0010-0060.html",
+          "publisher": "Montana Legislature (MCA 13-1-106)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "polling places must be open from 7 a.m. to 8 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://votemt.gov/voter-calendar/"
+    },
+    {
+      "state": "NE",
+      "name": "Nebraska",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "20:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        },
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "8:00 p.m. Central / 7:00 p.m. Mountain; all polls closed 9:00 p.m. ET",
+      "notes": "Calendar row is dated 3-Nov (Statewide General Election Day) and cites 32-908. The statute puts the Mountain Standard/Daylight area at 7 a.m. to 7 p.m. and the Central area at 8 a.m. to 8 p.m. Two publishers: state calendar PDF and the Legislature's statute page. Matches existing site data. | Central time zone: Central Time portion of the state | Mountain time zone: Mountain Time portion of the state (the sources do not name the counties)",
+      "source_url": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/2026_Election_Calendar.pdf",
+          "publisher": "Nebraska Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "8 PM CT (7 PM MT) - Polls close."
+        },
+        {
+          "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-908",
+          "publisher": "Nebraska Legislature (Neb. Rev. Stat. 32-908)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall open at 8 a.m. and close at 8 p.m. of the same day"
+        },
+        {
+          "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=32-908",
+          "publisher": "Nebraska Legislature (Neb. Rev. Stat. 32-908)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall open at 7 a.m. and close at 7 p.m. of the same day"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.nebraska.gov/elections"
+    },
+    {
+      "state": "NV",
+      "name": "Nevada",
+      "closes": [
+        {
+          "zone": "America/Los_Angeles",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T03:00:00Z",
+          "et": "10:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T03:00:00Z",
+      "split_zone_note": "",
+      "notes": "Three publishers agree. The state FAQ sentence is written about the NVEASE absentee portal and was worded for the 2026 primary, but it states the polls close at 7:00 p.m. The same FAQ also says 'If a voter is in line at a polling location by 7pm local time, they will be allowed to vote.' The Clark notice is the Registrar's certification that the 2026 General Election is Tuesday, November 3, 2026. NRS 293.305 only covers voters already in line at closing. Nevada runs in-person polling places plus mail ballots; in-person voting and drop-off at vote centers or polling places ends at 7 pm on Election Day, and mailed ballots only need a postmark by Election Day. nvsos.gov blocks curl with Incapsula, so I opened it in the browser pane. Matches existing site data.",
+      "source_url": "https://www.nvsos.gov/elections/election-resources/faqs",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nvsos.gov/elections/election-resources/faqs",
+          "publisher": "Nevada Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "will be closed on election day at 7:00 p.m. when the polls close"
+        },
+        {
+          "url": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+          "publisher": "Nevada Legislature (NRS 293.273)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls must open at 7 a.m. and close at 7 p.m."
+        },
+        {
+          "url": "https://www.clarkcountynv.gov/adobe/assets/urn:aaid:aem:dde8b423-5fd3-4635-a9e5-653e57b5491d/original/as/Notice-Gen-Election-26G.pdf",
+          "publisher": "Clark County (NV) Registrar of Voters",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls will be open from 7:00 a.m. until 7:00 p.m. on said date."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.nvsos.gov/elections/election-information/2026-election-information"
+    },
+    {
+      "state": "NH",
+      "name": "New Hampshire",
+      "closes": [],
+      "all_polls_closed_utc": null,
+      "split_zone_note": "",
+      "notes": "A single statewide final close cannot be established from an official page. RSA 659:4 (and 659:4-a for town ballot questions) sets only a floor: polls open no later than 11 a.m. and close no earlier than 7 p.m., with the city council fixing hours in cities. No statutory latest time exists, and RSA 659:3 lets voters at a polling place vote to close early once everyone on the checklist has voted. Municipal practice varies: Hampton posts 7 am to 8 pm for Nov 3, 2026, Dover posts 7 a.m. to 7 p.m. So 20:00 ET is at least the latest known close, but I could not prove no town closes later. Recommended display: 'Closes no earlier than 7 p.m.; many places close at 8 p.m.; check your town clerk.' The sos.nh.gov pages I opened in the browser pane (At the Polls on Election Day, the 2026-2027 Political Calendar page) do not state polling hours; the Political Calendar PDF the existing data cites returns 403 to curl and I could not read it, so no state-office quote is available. Existing site data (hours set by municipality, close no earlier than 7 p.m.) is consistent with the statute.",
+      "source_url": "https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm",
+          "publisher": "New Hampshire General Court (RSA 659:4)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "shall close not earlier than 7 o'clock in the evening"
+        },
+        {
+          "url": "https://www.hamptonnh.gov/284/Elections",
+          "publisher": "Town of Hampton (NH) Town Clerk / Elections",
+          "kind": "other_official",
+          "retrieved_at": "2026-11-02",
+          "quote": "polls are open from 7 am to 8 pm"
+        },
+        {
+          "url": "https://www.dover.nh.gov/government/open-government/election-information/2026-general-election/",
+          "publisher": "City of Dover (NH)",
+          "kind": "other_official",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls will be open from 7 a.m. to 7 p.m."
+        }
+      ],
+      "tag": "UNVERIFIED",
+      "election_office_url": "https://www.sos.nh.gov/elections/register-vote/polls-election-day"
+    },
+    {
+      "state": "NJ",
+      "name": "New Jersey",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (6 a.m. to 8 p.m.). Morris County page returned 403 to curl and timed out in the browser pane; it was opened via WebFetch only. Statute R.S. 19:15-2 was not opened as codified law (the NJ statutes index is script-rendered); an introduced 2026 bill, A556 on pub.njleg.gov, quotes the current 19:15-2 as closing at [8:00] and proposes 9:00 P.M. That is a proposal, not enacted law (status not confirmed), and both the 2026 state flyer and Morris County still say 8:00 p.m. Voters in line at closing may vote (ignored per brief).",
+      "source_url": "https://nj.gov/state/elections/assets/pdf/flyer-how-to-vote/2026-11-how-to-vote-english.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://nj.gov/state/elections/assets/pdf/flyer-how-to-vote/2026-11-how-to-vote-english.pdf",
+          "publisher": "New Jersey Department of State, Division of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Vote in person at your polling place, from 6:00 a.m. to 8:00 p.m. on Election Day, Tuesday, November 3."
+        },
+        {
+          "url": "https://www.morriscountynj.gov/Government/Voting-and-Elections/Election-Day-Polling-Places",
+          "publisher": "Morris County (NJ) Clerk / Board of Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day Polling places will be open from 6:00am – 8:00pm."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.nj.gov/state/elections/vote.shtml"
+    },
+    {
+      "state": "NM",
+      "name": "New Mexico",
+      "closes": [
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 7 p.m.). The two SOS documents count as one publisher; Sandoval County is the independent second. Not relied on: the sos.nm.gov/voting-and-elections page carries stale hotline text that says 'Election Day, November 2'.",
+      "source_url": "https://www.sos.nm.gov/2026/10/29/new-mexico-secretary-of-states-office-issues-election-advisory-in-light-of-recent-extreme-weather-events/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.nm.gov/2026/10/29/new-mexico-secretary-of-states-office-issues-election-advisory-in-light-of-recent-extreme-weather-events/",
+          "publisher": "New Mexico Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling locations will also be open on Election Day, November 3, from 7:00 am to 7:00 pm."
+        },
+        {
+          "url": "https://www.sos.nm.gov/wp-content/uploads/2026/06/2026-Important-General-Election-Dates.pdf",
+          "publisher": "New Mexico Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling locations will be open from 7:00 a.m. to 7:00 p.m."
+        },
+        {
+          "url": "https://www.sandovalcountynm.gov/countyclerk/bureau-of-elections/elections/voting-options/polling-sites/",
+          "publisher": "Sandoval County (NM) Clerk, Bureau of Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day: Tuesday, November 3, 2026 | Hours of Operation: 7:00 a.m. – 7:00 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.nm.gov/voting-and-elections/"
+    },
+    {
+      "state": "NY",
+      "name": "New York",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "21:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (6 a.m. to 9 p.m.). Statute page returned 403 to curl; text read in the browser pane. Voters in line at 9 p.m. may vote (ignored per brief).",
+      "source_url": "https://elections.ny.gov/election-information",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elections.ny.gov/election-information",
+          "publisher": "New York State Board of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "November 3, 2026 General Election Polls open 6:00am - 9:00pm"
+        },
+        {
+          "url": "https://www.vote.nyc/election/general-election-2026",
+          "publisher": "New York City Board of Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day is Tuesday, November 3, 2026. Polls are open from 6am to 9pm."
+        },
+        {
+          "url": "https://www.nysenate.gov/legislation/laws/ELN/8-100",
+          "publisher": "New York State Senate (NY Election Law s.8-100.2)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the general election from six o'clock in the morning until nine o'clock in the evening"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.ny.gov/election-information"
+    },
+    {
+      "state": "NC",
+      "name": "North Carolina",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:30",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:30:00Z",
+          "et": "7:30 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:30:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (6:30 a.m. to 7:30 p.m.). Former G.S. 163-166.01 was recodified as 163-166.25 (S.L. 2023-140). The statute lets the State Board extend closing if polls open late or are interrupted more than 15 minutes, and voters in line at 7:30 p.m. may vote; both ignored per brief.",
+      "source_url": "https://www.ncsbe.gov/voting/vote-person-election-day",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.ncsbe.gov/voting/vote-person-election-day",
+          "publisher": "North Carolina State Board of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling places will be open from 6:30 a.m. to 7:30 p.m. on Election Day."
+        },
+        {
+          "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_163/GS_163-166.25.html",
+          "publisher": "North Carolina General Assembly (G.S. 163-166.25)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "On election day, the voting place shall be open at 6:30 A.M. and shall be closed at 7:30 P.M."
+        },
+        {
+          "url": "https://www.guilfordcountync.gov/government/board-elections/election-day-voting",
+          "publisher": "Guilford County (NC) Board of Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "All voting in the General ends in Guilford County at 7:30 p.m. on Tuesday, November 3, 2026."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.ncsbe.gov/voting/vote-person-election-day"
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "21:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T03:00:00Z",
+          "et": "10:00 p.m. ET"
+        },
+        {
+          "zone": "America/Denver",
+          "local_time": "21:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T04:00:00Z",
+          "et": "11:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T04:00:00Z",
+      "split_zone_note": "9:00 p.m. Central / 9:00 p.m. Mountain; all polls closed 11:00 p.m. ET",
+      "notes": "Not a single statewide time. NDCC 16.1-01-03: polls open at nine a.m. or earlier (not before seven a.m.) and stay open until seven p.m. or a later hour, not later than nine p.m., as designated per precinct by the city or county governing body. The SOS 2026 General Election media guide says 'Poll Hours are determined by county commissions and vary by county' and points to vote.nd.gov/myvotinginfo for the county list (not opened). Recorded the LATEST permitted close, 21:00 local; the earliest a precinct may close is 19:00. ND spans Central and Mountain time; I list both zones but the sources do not name the Mountain-time counties. Matches existing data (closing 7 to 9 p.m.). Voters in line at closing may vote (ignored). | Central time zone: latest permitted closing time; each precinct closes between 19:00 and 21:00 as set by its city or county governing body (Central time) | Mountain time zone: latest permitted closing time, same 19:00-21:00 window (Mountain-time part of ND); the sources I opened do not list which counties",
+      "source_url": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
+          "publisher": "North Dakota Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Close between 7 p.m. and 9 p.m. (local time)"
+        },
+        {
+          "url": "https://ndlegis.gov/cencode/t16-1c01.pdf",
+          "publisher": "North Dakota Legislative Assembly (NDCC 16.1-01-03)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "remain open continuously until seven p.m. or a later hour, not later than nine p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/where-do-i-vote"
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:30",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:30:00Z",
+          "et": "7:30 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:30:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (6:30 a.m. to 7:30 p.m.). ohiosos.gov returns 403 to curl and WebFetch; the SOS press release and the statute were read in the browser pane. The SOS Week in Review of 2026-10-30 also says 'Polls close at 7:30 p.m.'. Voters waiting in line at 7:30 p.m. may vote (ignored per brief).",
+      "source_url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-11-02",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.ohiosos.gov/office/media-center/categories/press-releases/2026-11-02",
+          "publisher": "Ohio Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "thousands of polling locations across Ohio will be open from 6:30 a.m. to 7:30 p.m."
+        },
+        {
+          "url": "https://codes.ohio.gov/ohio-revised-code/section-3501.32",
+          "publisher": "Ohio Laws (ORC 3501.32)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "at six-thirty a.m. and shall be closed by proclamation at seven-thirty p.m."
+        },
+        {
+          "url": "https://boe.cuyahogacounty.gov/",
+          "publisher": "Cuyahoga County (OH) Board of Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "All voters must cast their ballot at their assigned polling location on Election Day (Tuesday, Nov. 3, 6:30 a.m.-7:30 p.m.)."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.ohiosos.gov/elections"
+    },
+    {
+      "state": "OK",
+      "name": "Oklahoma",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 7 p.m.). The State Election Board homepage and next-election page also say 7 a.m. to 7 p.m. (same publisher). Statute (26 O.S.) not opened. Voters in line at 7 p.m. may vote (ignored).",
+      "source_url": "https://oklahoma.gov/elections/newsroom/2026/october/state-election-board-offers-tips--reminders-for-november-3-gener.html",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://oklahoma.gov/elections/newsroom/2026/october/state-election-board-offers-tips--reminders-for-november-3-gener.html",
+          "publisher": "Oklahoma State Election Board",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls are open from 7 a.m. to 7 p.m. on Election Day."
+        },
+        {
+          "url": "https://www.wagonercounty.ok.gov/338/Election-Dates-Early-Voting-Information",
+          "publisher": "Wagoner County (OK) Election Board",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day Voting is at your assigned polling location from 7am-7pm"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://oklahoma.gov/elections.html"
+    },
+    {
+      "state": "OR",
+      "name": "Oregon",
+      "closes": [
+        {
+          "zone": "America/Boise",
+          "local_time": "20:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T03:00:00Z",
+          "et": "10:00 p.m. ET"
+        },
+        {
+          "zone": "America/Los_Angeles",
+          "local_time": "20:00",
+          "area": "Pacific time zone",
+          "utc": "2026-11-04T04:00:00Z",
+          "et": "11:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T04:00:00Z",
+      "split_zone_note": "8:00 p.m. Mountain / 8:00 p.m. Pacific; all polls closed 11:00 p.m. ET",
+      "notes": "All-mail state: recorded the Election Day ballot-deposit deadline, not a poll close. Ballots mailed with an Election Day postmark may arrive up to 7 days later (ORS 254.470); not part of the deadline recorded. The SOS page also says county elections offices are open 7 a.m. - 8 p.m. on Election Day, and the SOS drop-site list (FINAL 10/30/2026) says 'All drop sites are open until 8 PM Election Day'. Electors in line at 8 p.m. are treated as having begun voting (ORS 254.470(12)), ignored per brief. Malheur County is the Mountain-time area; I put it on America/Boise because the brief asks for one close per zone, but no opened page states the zone. Matches existing data (8 p.m. drop deadline). | Mountain time zone: Malheur County (Mountain time): Malheur County Clerk says drop boxes close 8:00 pm; its page does not name a time zone | Pacific time zone: statewide: last time to return a ballot to a drop box or county elections office on Election Day (all-mail state; there are no polling places)",
+      "source_url": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sos.oregon.gov/elections/pages/current-election.aspx",
+          "publisher": "Oregon Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Last day to return ballots using a drop box : November 3 at 8 p.m."
+        },
+        {
+          "url": "https://multco.us/news/news-release-helpful-guide-ranked-choice-voting-election-day-approaches-ballots-due-8-pm-nov-3",
+          "publisher": "Multnomah County (OR) Elections",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "voted ballots must be received by 8 p.m. on Election Day, Tuesday, Nov. 3, 2026"
+        },
+        {
+          "url": "https://www.malheurco.org/county-clerk/election-information/",
+          "publisher": "Malheur County (OR) Clerk",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Return voted ballots in an official ballot drop box no later than 8:00 pm, Tuesday, November 03, 2026"
+        },
+        {
+          "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors254.html",
+          "publisher": "Oregon Legislature (ORS 254.470)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "At 8 p.m. on election day, electors who are at the county clerks office, a place of deposit designated under subsection (1)"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.oregon.gov/elections/pages/current-election.aspx"
+    },
+    {
+      "state": "PA",
+      "name": "Pennsylvania",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 8 p.m.). The DOS Upcoming Elections page (pa.gov/agencies/vote/elections/upcoming-elections) also says polls are open 7 A.M. - 8 P.M. (same publisher). Allegheny page returned 403 to curl; read in the browser pane. Election Code statute not opened. Voters in line by 8 p.m. may vote (ignored).",
+      "source_url": "https://www.pa.gov/agencies/dos/newsroom/-important-information-ahead-of-2026-election-",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.pa.gov/agencies/dos/newsroom/-important-information-ahead-of-2026-election-",
+          "publisher": "Pennsylvania Department of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls will be open across the Commonwealth from 7 a.m. to 8 p.m."
+        },
+        {
+          "url": "https://www.alleghenycounty.us/Events-Directory/Elections/General-Election-Day",
+          "publisher": "Allegheny County (PA) Elections Division",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling places are open from 7:00 am to 8:00 pm"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.pa.gov/agencies/vote/elections/upcoming-elections"
+    },
+    {
+      "state": "RI",
+      "name": "Rhode Island",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "",
+      "notes": "Matches existing data (7 a.m. to 8 p.m.). The Board table lists all 39 municipalities closing at 8 p.m.; only New Shoreham opens later (9 a.m.). The Board of Elections and the Department of State are separate state agencies. Voters in line at 8 p.m. may vote (ignored).",
+      "source_url": "https://elections.ri.gov/polling-hours",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elections.ri.gov/polling-hours",
+          "publisher": "Rhode Island Board of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Muncipality Open Close Special Note Barrington 7 a.m. 8 p.m."
+        },
+        {
+          "url": "https://vote.sos.ri.gov/Forms/Elections/Guides/2026ElecCal.pdf",
+          "publisher": "Rhode Island Department of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls in all cities and towns in Rhode Island will remain open for voting until 8 p.m."
+        },
+        {
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE17/17-18/17-18-11.htm",
+          "publisher": "Rhode Island General Assembly (R.I. Gen. Laws 17-18-11)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "Elective meetings in all cities and towns shall be continuously kept open for voting until 8 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.ri.gov/elections/upcoming-elections"
+    },
+    {
+      "state": "SC",
+      "name": "South Carolina",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:00:00Z",
+      "split_zone_note": "",
+      "notes": "SC Code 7-13-60 (Hours polls open); SC Election Commission also says anyone in line at 7:00 p.m. may vote (ignored per brief). Matches existing data (7 a.m. to 7 p.m.).",
+      "source_url": "https://scvotes.gov/voters/how-to-vote/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://scvotes.gov/voters/how-to-vote/",
+          "publisher": "South Carolina State Election Commission",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling places are open from 7:00 a.m. to 7:00 p.m. on Election Day."
+        },
+        {
+          "url": "https://www.scstatehouse.gov/code/t07c013.php",
+          "publisher": "South Carolina Legislature (SC Code of Laws 7-13-60)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls must be opened at seven o'clock a.m. and closed at seven o'clock p.m. the day of election"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://scvotes.gov/voters/"
+    },
+    {
+      "state": "SD",
+      "name": "South Dakota",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        },
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "7:00 p.m. Central / 7:00 p.m. Mountain; all polls closed 9:00 p.m. ET",
+      "notes": "SDCL 12-2-3 says 7 p.m. 'standard time or daylight savings time, whichever is in effect', i.e. local time; SOS says 'local time'. Neither page names which counties are Mountain, so area text is generic. Statute text was read from the sdlegislature.gov statute feed (the human page is a JS app). Matches existing data. | Central time zone: Central-zone portion of the state (local time) | Mountain time zone: Mountain-zone portion of the state (local time)",
+      "source_url": "https://sdsos.gov/elections-voting/voting/default.aspx",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sdsos.gov/elections-voting/voting/default.aspx",
+          "publisher": "South Dakota Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls are open from 7 a.m. to 7 p.m. local time."
+        },
+        {
+          "url": "https://sdlegislature.gov/Statutes/12-2-3",
+          "publisher": "South Dakota Legislature (SDCL 12-2-3)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall be opened at the hour of seven a.m. and remain continuously open until seven p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sdsos.gov/elections-voting/voting/default.aspx"
+    },
+    {
+      "state": "TN",
+      "name": "Tennessee",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "20:00",
+          "area": "Eastern time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        },
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T01:00:00Z",
+      "split_zone_note": "8:00 p.m. Eastern / 7:00 p.m. Central; all polls closed 8:00 p.m. ET",
+      "notes": "Same closing rule appears in the TN SOS Aug 6, 2026 election press release ('All polls close at 8 p.m. EDT / 7 p.m. CDT'). Opening time varies by county (7-9 a.m. per the SOS Nov 3 PDF). PDF footnote: Marion County has polling places in both Eastern and Central zones. Knox County (Eastern) and Davidson County (Central) pages confirm one close per zone. Matches existing data. | Eastern time zone: Eastern-zone polling places | Central time zone: Central-zone polling places",
+      "source_url": "https://sos-prod.tnsosgovfiles.com/s3fs-public/document/2026-11-03%20Poll%20Opening%20by%20County.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sos-prod.tnsosgovfiles.com/s3fs-public/document/2026-11-03%20Poll%20Opening%20by%20County.pdf",
+          "publisher": "Tennessee Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "All polls close at 8:00 p.m. Eastern / 7:00 p.m. Central."
+        },
+        {
+          "url": "https://www.knoxcounty.org/election/",
+          "publisher": "Knox County Election Commission",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls open 8 a.m. to 8 p.m."
+        },
+        {
+          "url": "https://www.nashville.gov/departments/elections",
+          "publisher": "Davidson County Election Commission",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls are open from 7 a.m. to 7 p.m. on Election Day."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.tn.gov/elections"
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "19:00",
+          "area": "Central time zone",
+          "utc": "2026-11-04T01:00:00Z",
+          "et": "8:00 p.m. ET"
+        },
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Mountain time zone",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "7:00 p.m. Central / 7:00 p.m. Mountain; all polls closed 9:00 p.m. ET",
+      "notes": "El Paso County is the Mountain-zone county named by an official page; the SOS statement is statewide. A March 2026 El Paso court-ordered extension is unrelated to Nov 3 and ignored per brief. The Texas statute site (statutes.capitol.texas.gov) is a JS app that curl cannot read, so the statute was not used. Matches existing data. | Central time zone: Central-zone portion of the state | Mountain time zone: El Paso County (Mountain zone)",
+      "source_url": "https://www.sos.state.tx.us/elections/voter/index.shtml",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.state.tx.us/elections/voter/index.shtml",
+          "publisher": "Texas Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day is Tuesday, November 3, 2026. Polls are open from 7 a.m. - 7 p.m."
+        },
+        {
+          "url": "https://www.harrisvotes.com/",
+          "publisher": "Harris County Clerk's Office Elections Department",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day NOV 3 -- 7AM - 7PM"
+        },
+        {
+          "url": "https://epcountyvotestx.gov/see-more/news-and-press-releases/election-day-is-tomorrow-tuesday-november-3-2026",
+          "publisher": "El Paso County Elections Department",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "A total of 123 Election Day Vote Centers will be open throughout El Paso County from 7:00 a.m. to 7:00 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.state.tx.us/elections/voter/index.shtml"
+    },
+    {
+      "state": "UT",
+      "name": "Utah",
+      "closes": [
+        {
+          "zone": "America/Denver",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T03:00:00Z",
+          "et": "10:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T03:00:00Z",
+      "split_zone_note": "",
+      "notes": "Utah is mostly vote-by-mail; recorded value is the Election Day vote-center/polling place close and the ballot drop-box and receipt deadline, which are the same 8:00 p.m. The state page also says mail ballots must be received by 8:00 p.m. Statute section 20A-1-302 last amended 2006. Salt Lake County page is general Election Day vote center guidance, not Nov 3 specific. Matches existing data.",
+      "source_url": "https://le.utah.gov/xcode/Title20A/Chapter1/C20A-1-S302_1800010118000101.html",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://le.utah.gov/xcode/Title20A/Chapter1/C20A-1-S302_1800010118000101.html",
+          "publisher": "Utah State Legislature (Utah Code 20A-1-302)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls at all elections on the date of the election shall open at 7 a.m. and shall remain open until 8 p.m."
+        },
+        {
+          "url": "https://slco.org/clerk/elections/vote-in-person/",
+          "publisher": "Salt Lake County Clerk",
+          "kind": "county_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Vote Centers are open from 7:00 am - 8:00 pm."
+        },
+        {
+          "url": "https://vote.utah.gov/learn-about-voting-by-mail-and-absentee-voting/",
+          "publisher": "Utah Lieutenant Governor's Office (vote.utah.gov)",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "You can also drop your ballot off at a drop box location before 8:00 p.m. on Election Day."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://vote.utah.gov/"
+    },
+    {
+      "state": "VT",
+      "name": "Vermont",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:00:00Z",
+      "split_zone_note": "",
+      "notes": "Opening is set by each town's board of civil authority (between 5:00 a.m. and 10:00 a.m.), but the CLOSE is fixed statewide at 7:00 p.m. by 17 V.S.A. 2561(a); no local window on closing. Matches existing data.",
+      "source_url": "https://sos.vermont.gov/elections/voters/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sos.vermont.gov/elections/voters/",
+          "publisher": "Vermont Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "All polls in Vermont open between 5 and 10 a.m. and close at 7 p.m."
+        },
+        {
+          "url": "https://legislature.vermont.gov/statutes/fullchapter/17/051",
+          "publisher": "Vermont General Assembly (17 V.S.A. 2561)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls in all polling places shall close at 7:00 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.vermont.gov/elections/voters/"
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:00:00Z",
+          "et": "7:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:00:00Z",
+      "split_zone_note": "",
+      "notes": "Statute excepts central absentee voter precincts (24.2-712(G)); those are not regular polling places. Matches existing data.",
+      "source_url": "https://www.elections.virginia.gov/casting-a-ballot/",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.elections.virginia.gov/casting-a-ballot/",
+          "publisher": "Virginia Department of Elections",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polling places are open from 6:00 a.m. to 7:00 p.m. on Election Day."
+        },
+        {
+          "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter6/section24.2-603/",
+          "publisher": "Virginia Code Commission / Legislative Information System (Va. Code 24.2-603)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "the polls shall be open at each polling place at 6:00 a.m. on the day of the election and closed at 7:00 p.m."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.elections.virginia.gov/casting-a-ballot/"
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "closes": [
+        {
+          "zone": "America/Los_Angeles",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T04:00:00Z",
+          "et": "11:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T04:00:00Z",
+      "split_zone_note": "",
+      "notes": "All-mail state: recorded value is the 8:00 p.m. Election Day deadline to deposit a ballot in a drop box or return it to the county auditor (the SOS dates page also says in-person registration is open until 8:00 p.m. on Election Day). Mailed ballots postmarked by Election Day are also counted. Matches existing data.",
+      "source_url": "https://www.sos.wa.gov/elections/voters",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.sos.wa.gov/elections/voters",
+          "publisher": "Washington Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Deposit your ballot in an official drop box by 8 p.m. on Election Day."
+        },
+        {
+          "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.40.091",
+          "publisher": "Washington State Legislature (RCW 29A.40.091)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "return the ballot to the county auditor no later than 8:00 p.m. the day of the election or primary"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://www.sos.wa.gov/elections/voters"
+    },
+    {
+      "state": "WV",
+      "name": "West Virginia",
+      "closes": [
+        {
+          "zone": "America/New_York",
+          "local_time": "19:30",
+          "area": "Statewide",
+          "utc": "2026-11-04T00:30:00Z",
+          "et": "7:30 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T00:30:00Z",
+      "split_zone_note": "",
+      "notes": "W. Va. Code 3-1-31(b). Matches existing data.",
+      "source_url": "https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sos.wv.gov/elections/voter-information/elections-frequently-asked-questions-faqs",
+          "publisher": "West Virginia Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Election Day: 6:30 a.m. to 7:30 p.m. at your polling place."
+        },
+        {
+          "url": "https://code.wvlegislature.gov/3-1-31/",
+          "publisher": "West Virginia Legislature (W. Va. Code 3-1-31)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "6:30 in the morning and be closed at 7:30 in the evening"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.wv.gov/elections"
+    },
+    {
+      "state": "WI",
+      "name": "Wisconsin",
+      "closes": [
+        {
+          "zone": "America/Chicago",
+          "local_time": "20:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "The WEC statement is from its Aug 11, 2026 primary release (no Nov 3 release was up on Nov 2); the rule is statutory and statewide. WEC's Nov 3, 2026 calendar event also lists 'Deadline (8:00 p.m.) for all absentee ballots to be delivered to the polling place' (https://elections.wi.gov/event/deadline-all-absentee-ballots-be-delivered-polling-place-or-central-count-location-1). elections.wi.gov returns 403 to plain curl but 200 with browser Accept headers. Matches existing data.",
+      "source_url": "https://elections.wi.gov/news/reminders-ahead-august-11-2026-partisan-primary",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://elections.wi.gov/news/reminders-ahead-august-11-2026-partisan-primary",
+          "publisher": "Wisconsin Elections Commission",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "On Election Day, polls are open from 7 a.m. to 8 p.m."
+        },
+        {
+          "url": "https://docs.legis.wisconsin.gov/statutes/statutes/6/iii/78",
+          "publisher": "Wisconsin State Legislature (Wis. Stat. 6.78)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "The polls at every election shall be open from 7 a.m. until 8 p.m."
+        },
+        {
+          "url": "https://city.milwaukee.gov/election",
+          "publisher": "City of Milwaukee Election Commission",
+          "kind": "other_official",
+          "retrieved_at": "2026-11-02",
+          "quote": "General Election: Tuesday, November 3, 2026, 7:00 AM to 8:00 PM"
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://elections.wi.gov/voters"
+    },
+    {
+      "state": "WY",
+      "name": "Wyoming",
+      "closes": [
+        {
+          "zone": "America/Denver",
+          "local_time": "19:00",
+          "area": "Statewide",
+          "utc": "2026-11-04T02:00:00Z",
+          "et": "9:00 p.m. ET"
+        }
+      ],
+      "all_polls_closed_utc": "2026-11-04T02:00:00Z",
+      "split_zone_note": "",
+      "notes": "SOS 2026 calendar lists the Nov 3, 2026 General Election as '(7am-7pm)' and cites W.S. 22-2-104; the closing rule itself is W.S. 22-13-101. Matches existing data.",
+      "source_url": "https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf",
+      "retrieved_at": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://sos.wyo.gov/Elections/Docs/2026/2026_Election_Calendar.pdf",
+          "publisher": "Wyoming Secretary of State",
+          "kind": "state_election_office",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls open 7:00 am - 7:00pm."
+        },
+        {
+          "url": "https://wyoleg.gov/statutes/compress/title22.pdf",
+          "publisher": "Wyoming Legislature (W.S. 22-13-101)",
+          "kind": "statute",
+          "retrieved_at": "2026-11-02",
+          "quote": "Polls shall be open at seven (7:00) a.m. and close at seven (7:00) p.m., local time."
+        }
+      ],
+      "tag": "VERIFIED-2+",
+      "election_office_url": "https://sos.wyo.gov/Elections/Voting.aspx"
+    }
+  ]
+}

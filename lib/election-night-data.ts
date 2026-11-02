@@ -1,0 +1,18 @@
+import statusPayload from '@/content/election-night/status.json';
+import pollClosePayload from '@/content/election-night/poll-close-2026.json';
+import officialResultsPayload from '@/content/election-night/official-results.json';
+import { officialResultsProblems, pollCloseProblems, readStatus, type OfficialResultsRow, type PollCloseRow } from '@/lib/election-night';
+
+// Invalid election-night data fails the build, so a bad status flip or table
+// edit never replaces the deployed edition.
+export const electionStatus = readStatus(statusPayload);
+export const pollClose = pollClosePayload as { election_date: string; time_basis: { text: string; sources: { url: string; publisher: string; retrieved_at: string }[] }; rows: PollCloseRow[] };
+export const officialResults = officialResultsPayload as { rows: OfficialResultsRow[] };
+
+const problems = [...pollCloseProblems(pollClose.rows), ...officialResultsProblems(officialResults.rows)];
+if (problems.length) throw new Error(`Election-night data is not publishable:\n${problems.join('\n')}`);
+
+/** Pages whose content follows status.json; their sitemap date moves with each flip. */
+export const electionNightPaths = new Set(['/', '/results/']);
+const contentChanged = '2026-11-02T00:00:00Z';
+export const electionNightModified = new Date(Math.max(Date.parse(contentChanged), Date.parse(electionStatus.updated_at)));
