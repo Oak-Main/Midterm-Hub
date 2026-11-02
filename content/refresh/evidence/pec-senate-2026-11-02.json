@@ -1,0 +1,12 @@
+{
+  "source_id": "PEC-2026-NOV02",
+  "source_url": "https://election.princeton.edu/forecasts/",
+  "publisher": "Princeton Election Consortium",
+  "source_date": "2026-11-02",
+  "observed_at_utc": "2026-11-02T23:17:32.033Z",
+  "capture_method": "Web search service page-text extraction; source reported crawled today, exact crawl time not supplied.",
+  "excerpt": "Senate: 52 Dem | 48 Rep",
+  "democratic_seats": 52,
+  "republican_seats": 48,
+  "limitation": "Dated pre-election model estimate, not election results or calls. This is a captured excerpt, not an independent archival copy of the full source page."
+}

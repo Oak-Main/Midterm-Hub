@@ -10,7 +10,8 @@ test('Minnesota return guidance distinguishes 5 p.m. hand delivery from 8 p.m. e
   assert.equal(record.instruction_corrected_on, '2026-11-02');
   assert.match(record.instruction_previous_superseded, /by 8 p\.m\. on Nov 3/);
   assert.match(record.instruction, /dropped off by the voter or another person.*5 p\.m\. on Nov 3/);
-  assert.match(record.instruction, /agent-delivery process.*mail-ballot precincts.*8 p\.m\. on Nov 3/);
+  assert.match(record.instruction, /Absentee ballots returned by mail, ballots returned through the separate agent-delivery process, and ballots from mail-ballot precincts must be received by 8 p\.m\. on Nov 3/);
+  assert.match(record.instruction, /postmark alone is not sufficient/);
   assert.ok(record.instruction_source_ids.includes('MN-SOS-2026-RETURN'));
   for (const path of ['../../content/refresh/fragments/states/mn.html', '../../content/refresh/fragments/voting-deadlines.html']) {
     const html = read(path);
@@ -20,4 +21,5 @@ test('Minnesota return guidance distinguishes 5 p.m. hand delivery from 8 p.m. e
   const row = read('../../public/downloads/midterm-watch-voting-2026-10-20.csv').split('\n').find(line => line.startsWith('MN,'));
   assert.ok(row.includes(record.instruction));
   assert.match(row, /sos\.mn\.gov\/elections-voting\/other-ways-to-vote\/return-your-ballot/);
+  assert.match(row, /sos\.mn\.gov\/about-the-office\/news-room\/728-961-ballots-accepted-in-first-six-weeks-of-voting-for-november-3-election/);
 });
