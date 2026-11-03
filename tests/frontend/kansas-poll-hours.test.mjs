@@ -39,6 +39,7 @@ test('Kansas polling hours distinguish time-zone defaults and direct voters to t
   assert.ok(event.includes('Mountain default: 6 a.m. to 6 p.m.'));
   assert.ok(event.includes('within statutory limits'));
   assert.ok(event.includes('12 consecutive hours'));
+  assert.ok(event.includes("Confirm your county's schedule and time zone."));
   assert.ok(event.includes('www.kslegislature.gov/b2025_26/laws/'));
   assert.ok(event.includes('www.sos.ks.gov/elections/voter-information.html'));
 });
