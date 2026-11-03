@@ -22,11 +22,14 @@ test('the sitemap publishes standing pages under the apex canonical host', () =>
 test('every state and election record is discoverable, once, through the sitemap', () => {
   const entries = sitemap();
   const urls = entries.map((entry) => entry.url);
-  assert.equal(urls.length, 19 + 435 + new Set(elections.map((e) => e.state)).size + elections.length);
+  const jurisdictions = new Set(elections.map((e) => e.state));
+  // Standing pages + House districts + state guides + per-state results pages + election records.
+  assert.equal(urls.length, 19 + 435 + 2 * jurisdictions.size + elections.length);
   assert.equal(new Set(urls).size, urls.length, 'the sitemap must not repeat a URL');
 
-  for (const code of new Set(elections.map((e) => e.state))) {
+  for (const code of jurisdictions) {
     assert.ok(urls.includes(`${BASE}/states/${code.toLowerCase()}/`), `missing state route for ${code}`);
+    assert.ok(urls.includes(`${BASE}/results/${code.toLowerCase()}/`), `missing results route for ${code}`);
   }
   for (const election of elections) {
     assert.ok(

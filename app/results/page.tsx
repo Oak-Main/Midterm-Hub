@@ -1,12 +1,13 @@
 import type { ReactNode } from 'react';
+import Link from 'next/link';
 import { pageMetadata } from '@/lib/refresh';
 import { BreadcrumbData } from '@/components/structured-data';
 import { JumpToState } from '@/components/jump-to-state';
 import { electionStatus, officialResults, pollClose } from '@/lib/election-night-data';
 import { clockLabel, dayLabel, editionLabels, sortByClose, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 
-// KEVYN-WRITE: replacement meta description naming poll-closing times and official results links | facts: this page lists 51 poll-closing rows and 51 election-authority results links (content/election-night/*.json)
-export const metadata = pageMetadata('2026 election result status', 'How Midterm Watch distinguishes pre-election forecasts, counting, projections, certification and corrections.', '/results/');
+// KEVYN-WRITE: meta title and description naming poll-closing times, official results links and the per-state pages | facts: this page lists 51 poll-closing rows and 51 election-authority results links (content/election-night/*.json); per-state pages at /results/[state]/
+export const metadata = pageMetadata('2026 election results status: poll closing times and official results', 'Every state\'s poll closing times for Tuesday, November 3, 2026 and its official election-authority results page — plus a per-state results page for all 50 states and DC. No live counts or calls are published here.', '/results/');
 
 // One sentence per edition state, rendered inside the status banner.
 const statusSentence: Record<EditionState, ReactNode> = {
@@ -41,7 +42,7 @@ export default function Results() {
       <div className="table-wrap" role="region" tabIndex={0} aria-label="Poll-closing times by state, sorted by Eastern time"><table><caption>Final statewide poll closing, Tuesday, November 3, 2026, earliest Eastern time first</caption>
         <thead><tr><th scope="col">State</th><th scope="col">Polls close (local)</th><th scope="col">Eastern time</th><th scope="col">Source</th></tr></thead>
         <tbody>{rows.map(row => <tr key={row.state} id={`close-${row.state.toLowerCase()}`} tabIndex={-1} data-tag={row.tag}>
-          <th scope="row">{row.name}</th>
+          <th scope="row"><Link href={`/results/${row.state.toLowerCase()}/`}>{row.name}</Link></th>
           {row.tag === 'UNVERIFIED' || row.tag === 'CONFLICT'
             ? <td colSpan={2}><a href={row.election_office_url} rel="noopener noreferrer">{`Check the ${row.name} election office`}</a></td>
             : <><td>{row.closes.map((close, index) => <span key={close.zone + close.area} className="block">{`${clockLabel(close.local_time)} ${zoneLabel(close.zone)}`}{index === row.closes.length - 1 && row.closes.length > 1 && !row.unverified_areas?.length && <strong className="block text-xs">All polls closed</strong>}</span>)}
@@ -54,11 +55,12 @@ export default function Results() {
 
     <section id="official-results" className="refresh-content mt-6">
       <h2>Official results links</h2>
-      {/* KEVYN-WRITE: one or two sentences: each link opens the election authority's own results page; a page marked pending was the authority's results landing page when checked because its 2026 general page was not yet posted | facts: content/election-night/official-results.json (final URL after redirects, HTTP status, checked_at per row) */}
+      {/* KEVYN-WRITE: each state name links its per-state results page (closing times and the authority link); each outbound link opens the election authority's own results page; a page marked pending was the authority's results landing page when checked because its 2026 general page was not yet posted | facts: content/election-night/official-results.json (final URL after redirects, HTTP status, checked_at per row); /results/[state]/ routes */}
+      <p className="mt-2">Each state name opens its per-state results page; the third column opens the election authority directly.</p>
       <div className="table-wrap" role="region" tabIndex={0} aria-label="Official election results pages by state"><table><caption>Election authority results pages, checked {dayLabel(results.map(row => row.checked_at).sort().at(-1) ?? '2026-11-02')}</caption>
         <thead><tr><th scope="col">State</th><th scope="col">Election authority</th><th scope="col">Results page</th></tr></thead>
         <tbody>{results.map(row => <tr key={row.state} id={`results-${row.state.toLowerCase()}`} data-pending={row.pending}>
-          <th scope="row">{row.name}</th><td>{row.authority}</td>
+          <th scope="row"><Link href={`/results/${row.state.toLowerCase()}/`}>{row.name}</Link></th><td>{row.authority}</td>
           <td><a href={row.url} rel="noopener noreferrer">{new URL(row.url).hostname}</a>{row.pending && <span className="block text-xs font-bold">2026 results page pending</span>}</td>
         </tr>)}</tbody></table></div>
     </section>
