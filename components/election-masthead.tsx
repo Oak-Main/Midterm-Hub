@@ -7,7 +7,9 @@ import { localCalendarDate } from "@/lib/calendar";
 import { ELECTION_DATE, mastheadPhase, type EditionState } from "@/lib/election-night";
 import { cn } from "@/lib/utils";
 
-export type RunoffLink = { state: string; name: string; date: string; text: string; href: string };
+export type RunoffLink = { state: string; name: string; date: string; href: string };
+// The home page's RunoffNotice section lists each runoff's registration routes.
+const runoffRegistrationHref = "#runoff-notice-heading";
 
 // No date on the static first paint: the build date cannot stand in for the
 // visitor's. After hydration the device date ends the countdown on November 4
@@ -73,14 +75,12 @@ export function ElectionMasthead({ state, runoffs, countdownCaption, className }
             {runoffs.length > 0 && (
               <div>
                 <p className="rule-label">Possible runoffs · registration</p>
-                {/* KEVYN-WRITE: one sentence saying some states hold a runoff if no candidate meets the threshold and registration routes for it are below | facts: content/refresh/content-package.json conditional_runoffs (GA Dec 1, MS Dec 1, LA Dec 12) with source_ids GA-CALENDAR, MS and LA Secretary of State calendars */}
-                <ul className="mt-2 flex flex-col gap-3">
+                {/* The registration routes themselves are in the page's RunoffNotice section. */}
+                <ul className="mt-2 flex flex-col gap-2">
                   {runoffs.map((runoff) => (
-                    <li key={runoff.state}>
-                      <Link className="editorial-link font-bold" href={runoff.href}>{runoff.name} · {formatDate(runoff.date)}</Link>
-                      <span className="mt-1 block text-muted-foreground">{runoff.text}</span>
-                    </li>
+                    <li key={runoff.state}><Link className="editorial-link font-bold" href={runoff.href}>{`${runoff.name} · ${formatDate(runoff.date)}`}</Link></li>
                   ))}
+                  <li><a className="editorial-link" href={runoffRegistrationHref}>Runoff registration dates</a></li>
                 </ul>
               </div>
             )}

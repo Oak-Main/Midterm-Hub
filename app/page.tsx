@@ -9,10 +9,9 @@ import { RefreshContent } from '@/components/refresh-content';
 import { StructuredData } from '@/components/structured-data';
 import { canonicalOrigin, downBallotSections, guideFor, pageMetadata, refresh, refreshHtml } from '@/lib/refresh';
 import { electionStatus } from '@/lib/election-night-data';
-import { runoffRegistrationText } from '@/lib/runoff-registration.mjs';
 
 export const metadata = pageMetadata('2026 midterm elections: races, forecasts and voting guides', 'All 435 House races, 35 Senate contests, 36 governor races and method-specific voting guides. Research edition October 20, 2026.', '/');
-const runoffs = refresh.conditional_runoffs.map(row => ({ state: row.state, name: guideFor(row.state)?.name ?? row.state, date: row.date, text: runoffRegistrationText(row), href: `/states/${row.state.toLowerCase()}/` }));
+const runoffs = refresh.conditional_runoffs.map(row => ({ state: row.state, name: guideFor(row.state)?.name ?? row.state, date: row.date, href: `/states/${row.state.toLowerCase()}/` }));
 export default function Home() {
   return <>
     <StructuredData value={{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Midterm Watch', url: canonicalOrigin + '/', description: 'A source-linked reference for the 2026 US midterm elections.' }} />
