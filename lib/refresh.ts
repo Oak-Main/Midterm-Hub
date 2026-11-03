@@ -7,7 +7,7 @@ import downloadPayload from '@/generated/refresh-downloads-manifest.json';
 export const refresh = payload;
 export const refreshSources = sourcePayload;
 export const refreshDownloads = downloadPayload.files;
-export const canonicalOrigin = 'https://www.midtermwatch.com';
+export const canonicalOrigin = 'https://midtermwatch.com';
 export const refreshModified = new Date(refresh.research_cutoff_utc);
 export const houseDistricts = refresh.house_races.map(row => row.district.toLowerCase());
 export const guideFor = (state: string) => refresh.state_registration_records.find(row => row.state === state.toUpperCase());

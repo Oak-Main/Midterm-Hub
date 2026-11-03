@@ -3,7 +3,7 @@
 ## Current October 20, 2026 edition
 
 The public domain is served by the Vercel `midterm-hub` Next.js project. The
-canonical origin is `https://www.midtermwatch.com`; the apex redirects there.
+canonical origin is the apex, `https://midtermwatch.com`; the Cloudflare Worker 308s `www` to it.
 Use `npm ci` and `npm run build`, with Python requirements installed as configured
 in `vercel.json`. The build validates the preserved calendar and the dated
 `content/refresh/` collections, then exports every current route into `out/`.
