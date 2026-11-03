@@ -25,4 +25,12 @@ test('Kansas polling hours distinguish time-zone defaults and direct voters to t
   const row = read('../../public/downloads/midterm-watch-voting-2026-10-20.csv').split('\n').find(line => line.startsWith('KS,'));
   assert.ok(row.includes(record.value));
   assert.ok(row.includes(record.note));
+  assert.ok(row.includes('www.kslegislature.gov/b2025_26/laws/025_000_0000_chapter/'));
+  assert.ok(row.includes('www.sos.ks.gov/elections/voter-information.html'));
+  const calendar = read('../../public/downloads/midterm-watch-voting-2026-10-20.ics').replace(/\r?\n[ \t]/g, '');
+  const event = calendar.split('BEGIN:VEVENT').find(item => item.includes('SUMMARY:Kansas — November election'));
+  assert.ok(event.includes('Central default: 7 a.m. to 7 p.m.'));
+  assert.ok(event.includes('Mountain default: 6 a.m. to 6 p.m.'));
+  assert.ok(event.includes('www.kslegislature.gov/b2025_26/laws/'));
+  assert.ok(event.includes('www.sos.ks.gov/elections/voter-information.html'));
 });
