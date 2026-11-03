@@ -7,6 +7,7 @@ export default defineConfig([
   ...nextTs,
   globalIgnores([
     ".next/**",
+    ".pytest_cache/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

@@ -7,7 +7,7 @@ import { electionStatus, officialResults, pollClose } from '@/lib/election-night
 import { clockLabel, dayLabel, editionLabels, sortByClose, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 
 // KEVYN-WRITE: meta title and description naming poll-closing times, official results links and the per-state pages | facts: this page lists 51 poll-closing rows and 51 election-authority results links (content/election-night/*.json); per-state pages at /results/[state]/
-export const metadata = pageMetadata('2026 election results status: poll closing times and official results', 'Every state\'s poll closing times for Tuesday, November 3, 2026 and its official election-authority results page — plus a per-state results page for all 50 states and DC. No live counts or calls are published here.', '/results/');
+export const metadata = { twitter: { card: 'summary_large_image' as const }, ...pageMetadata('2026 election results status: poll closing times and official results', 'Every state\'s poll closing times for Tuesday, November 3, 2026 and its official election-authority results page — plus a per-state results page for all 50 states and DC. No live counts or calls are published here.', '/results/') };
 
 // One sentence per edition state, rendered inside the status banner.
 const statusSentence: Record<EditionState, ReactNode> = {
