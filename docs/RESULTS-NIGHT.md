@@ -38,8 +38,9 @@ RSA 659:4 sets only an earliest close (7 p.m.); towns choose later times.
 
 Kansas and North Dakota set hours locally within a statutory window; the table
 shows the latest permitted close (K.S.A. 25-106: 8 p.m. Central, 7 p.m. Mountain;
-NDCC 16.1-01-03: 9 p.m.). Kansas differs from the October 20 voting guide, which
-shows the 7 p.m. default.
+NDCC 16.1-01-03: 9 p.m.). The Kansas voting guide, corrected on `main`
+(`docs/kansas-poll-hours-2026-11-03.md`), shows the same statute's defaults
+(7 p.m. Central, 6 p.m. Mountain); counties may close later, up to these limits.
 
 ## The switch: `content/election-night/status.json`
 
