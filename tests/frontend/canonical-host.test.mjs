@@ -11,6 +11,9 @@ const root = fileURLToPath(new URL('../../', import.meta.url));
 const WWW = 'www.midtermwatch.com';
 const REDIRECT_SOURCE = /^\s*(?:https?:\/\/)?www\.midtermwatch\.com\S*\s+https:\/\/midtermwatch\.com\S*\s+30[178]!?\s*$/;
 const BINARY = /\.(?:png|jpe?g|gif|webp|avif|ico|woff2?|ttf|otf|pdf|zip)$/i;
+// Compare whole host-like tokens, so the www host is found wherever it appears.
+const HOST_TOKENS = /[a-z0-9-]+(?:\.[a-z0-9-]+)+/gi;
+const namesWww = line => (line.match(HOST_TOKENS) ?? []).some(token => token.toLowerCase() === WWW);
 
 function walk(dir) {
   return readdirSync(dir).flatMap(name => {
@@ -25,7 +28,7 @@ function wwwMentions(dir) {
     if (BINARY.test(path)) continue;
     const lines = readFileSync(path, 'utf8').split('\n');
     lines.forEach((line, index) => {
-      if (line.includes(WWW) && !REDIRECT_SOURCE.test(line)) hits.push(`${path.slice(root.length)}:${index + 1}`);
+      if (namesWww(line) && !REDIRECT_SOURCE.test(line)) hits.push(`${path.slice(root.length)}:${index + 1}`);
     });
   }
   return hits;
@@ -41,6 +44,15 @@ test('the redirect-source exception admits only a www -> apex redirect rule', ()
   assert.ok(REDIRECT_SOURCE.test('https://www.midtermwatch.com/* https://midtermwatch.com/:splat 308'));
   assert.ok(!REDIRECT_SOURCE.test('<link rel="canonical" href="https://www.midtermwatch.com/"/>'));
   assert.ok(!REDIRECT_SOURCE.test('https://midtermwatch.com/* https://www.midtermwatch.com/:splat 308'));
+});
+
+test('the www matcher finds the host in URLs, JSON and prose, and ignores the apex', () => {
+  for (const line of ['<link rel="canonical" href="https://www.midtermwatch.com/"/>', '"url":"https://WWW.midtermwatch.com/results/"', 'served from www.midtermwatch.com.']) {
+    assert.ok(namesWww(line), line);
+  }
+  for (const line of ['<link rel="canonical" href="https://midtermwatch.com/"/>', 'https://midterm-hub.vercel.app/']) {
+    assert.ok(!namesWww(line), line);
+  }
 });
 
 // out/ is only meaningful straight after `npm run build` in this checkout: the
