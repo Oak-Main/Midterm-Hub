@@ -2268,5 +2268,23 @@
     "retrieved_on": "2026-11-02",
     "source_updated": null,
     "note": "Source checked for the focused November 2 election-day pass; it does not imply all guide fields were refreshed."
+  },
+  {
+    "id": "KS-HOURS-LAW-20261103",
+    "url": "https://www.kslegislature.gov/b2025_26/laws/025_000_0000_chapter/025_001_0000_article/025_001_0006_section/025_001_0006_k/",
+    "title": "Kansas Statutes 25-106: hours of voting by time zone",
+    "publisher": "Kansas Legislature",
+    "retrieved_on": "2026-11-03",
+    "source_updated": null,
+    "note": "Checked November 3 UTC. Defaults are 7 a.m.-7 p.m. Central and 6 a.m.-6 p.m. Mountain; county election officers may set different hours within statutory limits."
+  },
+  {
+    "id": "KS-HOURS-SOS-20261103",
+    "url": "https://www.sos.ks.gov/elections/voter-information.html",
+    "title": "Voter information and county polling hours",
+    "publisher": "Kansas Secretary of State",
+    "retrieved_on": "2026-11-03",
+    "source_updated": null,
+    "note": "Checked November 3 UTC. Directs voters to verify county hours; the state statute gives the distinct Mountain-time default."
   }
 ]
