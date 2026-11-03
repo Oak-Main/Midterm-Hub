@@ -17,7 +17,7 @@ const closeSentence = (row: NonNullable<ReturnType<typeof rowFor>>): string => {
   if (row.tag === 'UNVERIFIED' || row.closes.length === 0) return `${row.name} closing times vary by locality; check the ${row.name} election office`;
   return row.closes.length === 1
     ? `${row.name} polls close ${row.closes[0].et}`
-    : `${row.closes.map(close => `${close.et} (${close.area.toLowerCase()})`).join('; ')}, all polls closed ${row.closes[row.closes.length - 1].et}`;
+    : `${row.name} polls close ${row.closes.map(close => `${close.et} (${close.area.toLowerCase()})`).join('; ')}`;
 };
 
 const authorityShort = (authority: string) => authority.split('(')[0].trim();
