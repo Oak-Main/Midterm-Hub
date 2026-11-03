@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { BreadcrumbData } from '@/components/structured-data';
 import { electionStatus, officialResults, pollClose } from '@/lib/election-night-data';
-import { clockLabel, dayLabel, editionLabels, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
+import { clockLabel, dayLabel, pollSourceKey, resultsDescription, editionLabels, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 import { electionHref, forState, states } from '@/lib/data';
 import { pageMetadata } from '@/lib/refresh';
 
@@ -13,15 +13,6 @@ export function generateStaticParams() { return states.map(([state]) => ({ state
 const rowFor = (code: string) => pollClose.rows.find(row => row.state === code.toUpperCase());
 const resultsRowFor = (code: string) => officialResults.rows.find(row => row.state === code.toUpperCase());
 
-const closeSentence = (row: NonNullable<ReturnType<typeof rowFor>>): string => {
-  if (row.tag === 'UNVERIFIED' || row.closes.length === 0) return `${row.name} closing times vary by locality; check the ${row.name} election office`;
-  return row.closes.length === 1
-    ? `${row.name} polls close ${row.closes[0].et}`
-    : `${row.name} polls close ${row.closes.map(close => `${close.et} (${close.area.toLowerCase()})`).join('; ')}`;
-};
-
-const authorityShort = (authority: string) => authority.split('(')[0].trim();
-
 // KEVYN-WRITE: per-state results route metadata — answer-first with the state's final poll close and its official results authority | facts: content/election-night/poll-close-2026.json rows[].closes[].et (final row) and official-results.json rows[].authority
 export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> {
   const { state } = await params;
@@ -29,14 +20,14 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   const results = resultsRowFor(state);
   if (!row || !results) return { title: 'State not found' };
   const title = `${row.name} 2026 election results: poll closing and official results`;
-  const description = `${row.name}'s polls close ${closeSentence(row).replace(`${row.name} polls close `, '')} on Tuesday, November 3, 2026. Official ${row.name} election results come from the ${authorityShort(results.authority)} — direct link below.`;
-  return { ...pageMetadata(title, description.slice(0, 300), `/results/${state.toLowerCase()}/`), twitter: { card: 'summary_large_image' } };
+  const description = resultsDescription(row, results.authority);
+  return { ...pageMetadata(title, description, `/results/${state.toLowerCase()}/`), twitter: { card: 'summary_large_image' } };
 }
 
 // KEVYN-WRITE: status banner sentence per edition state, scoped to one state | facts: edition_state from content/election-night/status.json; poll-close-2026.json row for this state
 const statusSentence: Record<EditionState, (name: string) => string> = {
-  awaiting_polls: (name) => `${name} polls have not opened yet; the times below are the official closing schedule for Tuesday, November 3.`,
-  election_day: (name) => `${name} polls are open today and close at the times below; official results follow from the ${name} election authority.`,
+  awaiting_polls: (name) => `${name} polls have not opened yet; the schedule below shows sourced closing times and election-office fallbacks for November 3.`,
+  election_day: (name) => `${name} Election Day closing information is below; official results follow from the ${name} election authority.`,
   counting: (name) => `${name} polls have closed and election authorities are counting; the official results link below is the source of counts.`,
   post_election: (name) => `${name} counting and certification continue under the state's schedule; the official results link below stays current.`,
 };
@@ -70,7 +61,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
     <section id="poll-closing" className="refresh-content mt-6">
       <h2>Poll closing in {row.name}, November 3</h2>
       {/* KEVYN-WRITE: closing-time table for this state only — local time, zone and Eastern time per closing wave, with per-row sources | facts: content/election-night/poll-close-2026.json rows[state] closes[] and sources[] */}
-      <div className="table-wrap" role="region" tabIndex={0} aria-label={`${row.name} poll closing times`}><table><caption>{`Final ${row.name} poll closing, Tuesday, November 3, 2026`}</caption>
+      <div className="table-wrap" role="region" tabIndex={0} aria-label={`${row.name} poll closing times`}><table><caption>{`${row.name} poll-closing information for the November 3, 2026 election`}</caption>
         <thead><tr><th scope="col">Area</th><th scope="col">Polls close (local)</th><th scope="col">Eastern time</th><th scope="col">Source</th></tr></thead>
         <tbody><tr data-tag={row.tag}>
           {row.tag === 'UNVERIFIED' || row.tag === 'CONFLICT'
@@ -79,7 +70,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
                 {row.unverified_areas?.map(area => <span key={area} className="mt-1 block text-xs">{`${area}: `}<a href={row.election_office_url} rel="noopener noreferrer">{`Check the ${row.name} election office`}</a></span>)}</th>
               <td>{row.closes.map(close => <span key={close.zone + close.area} className="block">{clockLabel(close.local_time)}</span>)}</td>
               <td>{row.closes.map(close => <span key={close.zone + close.area} className="block">{close.et}</span>)}</td></>}
-          <td><span className="block text-xs font-bold">{tagLabels[row.tag]}</span>{row.sources.map(source => <span key={source.url} className="block"><a href={source.url} rel="noopener noreferrer">{source.publisher}</a> · retrieved {dayLabel(source.retrieved_at)}</span>)}</td>
+          <td><span className="block text-xs font-bold">{tagLabels[row.tag]}</span>{row.sources.map(source => <span key={pollSourceKey(source)} className="block"><a href={source.url} rel="noopener noreferrer">{source.publisher}</a> · retrieved {dayLabel(source.retrieved_at)}</span>)}</td>
         </tr></tbody></table></div>
       {row.split_zone_note && <p className="mt-3 text-sm text-muted-foreground">{row.split_zone_note}</p>}
     </section>
@@ -87,7 +78,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
     <section id="official-results" className="refresh-content mt-6">
       <h2>Official {row.name} results</h2>
       {/* KEVYN-WRITE: the election authority's own results page for this state, with the date it was last checked | facts: content/election-night/official-results.json rows[state] authority, url, checked_at, pending */}
-      <p>The authority publishing {row.name}&rsquo;s official results is the {results.authority}.{results.pending ? ' Its dedicated 2026 results page had not been posted when last checked; the link opens the authority&rsquo;s results landing page.' : ''}</p>
+      <p>The authority publishing {row.name}&rsquo;s official results is the {results.authority}.{results.pending ? ' Its dedicated 2026 results page had not been posted when last checked; the link opens the authority’s results landing page.' : ''}</p>
       <p className="mt-3"><a className="editorial-link" href={results.url} rel="noopener noreferrer">{`Open official ${row.name} results`}</a> <span className="text-sm text-muted-foreground">· checked {dayLabel(results.checked_at)}</span></p>
     </section>
 

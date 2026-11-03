@@ -1,13 +1,21 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { pollSourceKey, resultsDescription } from '../../lib/election-night.ts';
 import { readFileSync, existsSync } from 'node:fs';
 
 // Per-state results pages are generated from content/election-night data.
-// The data invariants below run everywhere (CI never builds); the render
-// checks run only when a static export is present (local post-build, the
-// Pages workflow, or after `next build`).
+// Data and copy invariants run on clean checkouts. Render checks require a
+// local build; CI explicitly builds and requires the complete static export.
 const read = (path) => readFileSync(new URL(`../../out/${path}`, import.meta.url), 'utf8');
-const hasExport = existsSync(new URL('../../out/results/al/index.html', import.meta.url));
+const buildIdFile = new URL('../../.next/BUILD_ID', import.meta.url);
+const buildId = existsSync(buildIdFile) ? readFileSync(buildIdFile, 'utf8').trim() : null;
+const hasExport = Boolean(buildId) && existsSync(new URL(`../../out/_next/static/${buildId}`, import.meta.url));
+if (process.env.REQUIRE_STATIC_EXPORT === '1') {
+  assert.ok(hasExport, 'Run npm run build before export regression tests');
+  for (const { state } of JSON.parse(readFileSync(new URL('../../content/election-night/poll-close-2026.json', import.meta.url))).rows) {
+    assert.ok(existsSync(new URL(`../../out/results/${state.toLowerCase()}/index.html`, import.meta.url)), `${state} export required`);
+  }
+}
 
 const pollClose = JSON.parse(readFileSync(new URL('../../content/election-night/poll-close-2026.json', import.meta.url)));
 const official = JSON.parse(readFileSync(new URL('../../content/election-night/official-results.json', import.meta.url)));
@@ -78,4 +86,51 @@ test('all 51 state results pages exported', { skip: !hasExport }, () => {
 test('sitemap includes every state results URL', { skip: !hasExport }, () => {
   const xml = read('sitemap.xml');
   for (const row of pollClose.rows) assert.ok(xml.includes(`/results/${row.state.toLowerCase()}/`), `${row.state} in sitemap`);
+});
+
+test('search descriptions preserve uncertainty without malformed prefixes', () => {
+  for (const code of ['NH', 'AK']) {
+    const description = resultsDescription(pollRow(code), officialRow(code).authority);
+    assert.match(description, new RegExp(`check the ${pollRow(code).name} election office`));
+    assert.doesNotMatch(description, /polls close|\d:\d\d/);
+  }
+  for (const row of [
+    { ...pollRow('HI'), tag: 'CONFLICT' },
+    { ...pollRow('HI'), closes: [] },
+  ]) assert.match(resultsDescription(row, 'Election office'), /not confirmed here; check/);
+});
+
+test('Hawaii and split-zone descriptions separate election date from ET close date', () => {
+  const hi = resultsDescription(pollRow('HI'), officialRow('HI').authority);
+  assert.match(hi, /For the November 3, 2026 election: Hawaii polls close 12:00 a.m. ET, Nov 4\./);
+  assert.doesNotMatch(hi, /Nov 4.*on .*November 3/);
+  const tx = resultsDescription(pollRow('TX'), officialRow('TX').authority);
+  for (const close of pollRow('TX').closes) assert.ok(tx.includes(close.et));
+  assert.match(tx, /No live counts or calls here/);
+});
+
+test('Nebraska citations sharing a statutory URL have distinct keys', () => {
+  const sources = pollRow('NE').sources;
+  assert.ok(new Set(sources.map(source => source.url)).size < sources.length);
+  assert.equal(new Set(sources.map(pollSourceKey)).size, sources.length);
+});
+
+test('every exported state has matching search and social descriptions and normal pending copy', { skip: !hasExport }, () => {
+  for (const row of pollClose.rows) {
+    const html = read(`results/${row.state.toLowerCase()}/index.html`);
+    const expected = resultsDescription(row, officialRow(row.state).authority);
+    const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+    for (const attr of ['name="description"', 'property="og:description"', 'name="twitter:description"']) {
+      assert.ok(html.includes(`${attr} content="${escape(expected)}"`), `${row.state} ${attr}`);
+    }
+    assert.doesNotMatch(html, /&amp;rsquo;/, `${row.state} must not show an entity literally`);
+    if (officialRow(row.state).pending) assert.ok(html.includes('authority’s results landing page.'));
+    assert.ok(html.includes('No live results or election calls are published here.'));
+  }
+  const hub = read('results/index.html');
+  assert.match(hub, /times where verified, election-office fallbacks elsewhere/);
+  const xml = read('sitemap.xml');
+  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+  assert.equal(urls.length, 630);
+  assert.equal(new Set(urls).size, 630);
 });

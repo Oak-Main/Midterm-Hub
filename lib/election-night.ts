@@ -51,6 +51,22 @@ export type PollCloseRow = {
   unverified_areas?: string[];
 };
 
+/** Search copy follows the table's uncertainty rules, including partial coverage. */
+export function pollCloseSentence(row: PollCloseRow): string {
+  if (row.tag === 'UNVERIFIED' || row.tag === 'CONFLICT' || !row.closes.length || row.unverified_areas?.length) {
+    return `A statewide poll-closing time is not confirmed here; check the ${row.name} election office.`;
+  }
+  const times = row.closes.map(close => row.closes.length === 1 ? close.et : `${close.et} (${close.area.toLowerCase()})`).join('; ');
+  return `${row.name} polls close ${times}.`;
+}
+
+export function resultsDescription(row: PollCloseRow, authority: string): string {
+  return `For the November 3, 2026 election: ${pollCloseSentence(row)} Official results: ${authority.split('(')[0].trim()}. No live counts or calls here.`;
+}
+
+/** Citations can share a URL and kind while quoting different statutory clauses. */
+export const pollSourceKey = (source: PollSource) => JSON.stringify([source.url, source.kind, source.quote]);
+
 export function zoneOffsetMinutes(zone: string, date = ELECTION_DATE): number {
   const name = new Intl.DateTimeFormat('en-US', { timeZone: zone, timeZoneName: 'longOffset' })
     .formatToParts(new Date(`${date}T12:00:00Z`)).find(part => part.type === 'timeZoneName')?.value ?? '';
