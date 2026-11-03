@@ -10,7 +10,7 @@ import { forState, states } from '@/lib/data';
 import { guideFor, pageMetadata, refreshHtml } from '@/lib/refresh';
 export const dynamicParams = false;
 export function generateStaticParams() { return states.map(([state]) => ({ state: state.toLowerCase() })); }
-export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> { const { state } = await params; const guide = guideFor(state); return guide ? pageMetadata(`${guide.name} election dates and voting guide 2026`, `${guide.name}'s November 3 election: registration by method, ballot applications and returns, early voting and poll hours.`, `/states/${state.toLowerCase()}/`) : { title: 'State not found' }; }
+export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> { const { state } = await params; const guide = guideFor(state); return guide ? { twitter: { card: 'summary_large_image' as const }, ...pageMetadata(`${guide.name} election dates and voting guide 2026`, `${guide.name}'s November 3 election: registration by method, ballot applications and returns, early voting and poll hours.`, `/states/${state.toLowerCase()}/`) } : { title: 'State not found' }; }
 export default async function StatePage({ params }: { params: Promise<{ state: string }> }) {
   const { state } = await params; const guide = guideFor(state); if (!guide) notFound();
   const archive = forState(guide.state).filter(row => row.election_date < '2026-11-03');
