@@ -4775,14 +4775,19 @@
       ],
       "field_scope": "ordinary domestic voters; local sites/hours and special categories require the linked authority",
       "election_day_hours": {
-        "value": "7 a.m. to 7 p.m.",
+        "value": "Central default: 7 a.m. to 7 p.m.; Mountain default: 6 a.m. to 6 p.m.",
         "source_ids": [
           "BP-HOURS",
           "VOTECLOCK",
-          "GP-HOURS"
+          "GP-HOURS",
+          "KS-HOURS-LAW-20261103",
+          "KS-HOURS-SOS-20261103"
         ],
         "verification_status": "cross_checked",
-        "note": "County schedules can differ within statutory limits. Polls must stay open for at least 12 consecutive hours; confirm the county schedule and applicable time zone."
+        "note": "Updated Nov 3, 2026 (UTC): County election officers may set different hours within statutory limits; polls must stay open at least 12 consecutive hours. Confirm your county's schedule and time zone.",
+        "corrected_on": "2026-11-03",
+        "correction_date_basis": "UTC",
+        "previous_superseded": "7 a.m. to 7 p.m."
       }
     },
     {
