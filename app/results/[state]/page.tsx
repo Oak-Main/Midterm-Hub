@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   if (!row || !results) return { title: 'State not found' };
   const title = `${row.name} 2026 election results: poll closing and official results`;
   const description = `${row.name}'s polls close ${closeSentence(row).replace(`${row.name} polls close `, '')} on Tuesday, November 3, 2026. Official ${row.name} election results come from the ${authorityShort(results.authority)} — direct link below.`;
-  return pageMetadata(title, description.slice(0, 300), `/results/${state.toLowerCase()}/`);
+  return { ...pageMetadata(title, description.slice(0, 300), `/results/${state.toLowerCase()}/`), twitter: { card: 'summary_large_image' } };
 }
 
 // KEVYN-WRITE: status banner sentence per edition state, scoped to one state | facts: edition_state from content/election-night/status.json; poll-close-2026.json row for this state
