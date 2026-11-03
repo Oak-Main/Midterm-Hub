@@ -4,10 +4,10 @@ import { pageMetadata } from '@/lib/refresh';
 import { BreadcrumbData } from '@/components/structured-data';
 import { JumpToState } from '@/components/jump-to-state';
 import { electionStatus, officialResults, pollClose } from '@/lib/election-night-data';
-import { clockLabel, dayLabel, editionLabels, sortByClose, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
+import { clockLabel, dayLabel, pollSourceKey, type PollSource, editionLabels, sortByClose, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 
 // KEVYN-WRITE: meta title and description naming poll-closing times, official results links and the per-state pages | facts: this page lists 51 poll-closing rows and 51 election-authority results links (content/election-night/*.json); per-state pages at /results/[state]/
-export const metadata = { twitter: { card: 'summary_large_image' as const }, ...pageMetadata('2026 election results status: poll closing times and official results', 'Every state\'s poll closing times for Tuesday, November 3, 2026 and its official election-authority results page — plus a per-state results page for all 50 states and DC. No live counts or calls are published here.', '/results/') };
+export const metadata = { twitter: { card: 'summary_large_image' as const }, ...pageMetadata('2026 election results status: poll closing times and official results', 'State-by-state poll-closing information for the November 3, 2026 election: times where verified, election-office fallbacks elsewhere, and official results links for all 50 states and DC. No live counts or calls here.', '/results/') };
 
 // One sentence per edition state, rendered inside the status banner.
 const statusSentence: Record<EditionState, ReactNode> = {
@@ -17,8 +17,8 @@ const statusSentence: Record<EditionState, ReactNode> = {
   post_election: null, // KEVYN-WRITE: post_election banner sentence: counting and certification continue under each state's schedule; link to official results and runoff registration | facts: conditional_runoffs in content/refresh/content-package.json (GA Dec 1, MS Dec 1, LA Dec 12)
 };
 
-const sourceList = (row: { sources: { url: string; publisher: string; retrieved_at: string }[] }) => row.sources.map(source => (
-  <span key={source.url} className="block"><a href={source.url} rel="noopener noreferrer">{source.publisher}</a> · retrieved {dayLabel(source.retrieved_at)}</span>
+const sourceList = (row: { sources: PollSource[] }) => row.sources.map(source => (
+  <span key={pollSourceKey(source)} className="block"><a href={source.url} rel="noopener noreferrer">{source.publisher}</a> · retrieved {dayLabel(source.retrieved_at)}</span>
 ));
 
 export default function Results() {
@@ -38,8 +38,9 @@ export default function Results() {
     <section id="poll-closing" className="refresh-content mt-6">
       <h2>Poll-closing times, November 3</h2>
       {/* KEVYN-WRITE: one or two sentences introducing the table: final statewide closing time in local time and Eastern time, sorted by Eastern time, where a state spans two zones the later close is when all its polls have closed | facts: time basis in content/election-night/poll-close-2026.json time_basis (DST ends Nov 1, 2026; ET = UTC-5) with its sources; each row's sources */}
+      <p>Times are shown where verified. Where a statewide time or an area’s closing time is unverified or conflicting, check the linked election office. Local closing dates are November 3; Eastern times after midnight are labeled November 4.</p>
       <JumpToState options={states} prefix="close-" label="Jump to a state" />
-      <div className="table-wrap" role="region" tabIndex={0} aria-label="Poll-closing times by state, sorted by Eastern time"><table><caption>Final statewide poll closing, Tuesday, November 3, 2026, earliest Eastern time first</caption>
+      <div className="table-wrap" role="region" tabIndex={0} aria-label="Poll-closing times by state, sorted by Eastern time"><table><caption>Poll-closing information for the November 3, 2026 election, earliest verified Eastern time first</caption>
         <thead><tr><th scope="col">State</th><th scope="col">Polls close (local)</th><th scope="col">Eastern time</th><th scope="col">Source</th></tr></thead>
         <tbody>{rows.map(row => <tr key={row.state} id={`close-${row.state.toLowerCase()}`} tabIndex={-1} data-tag={row.tag}>
           <th scope="row"><Link href={`/results/${row.state.toLowerCase()}/`}>{row.name}</Link></th>
