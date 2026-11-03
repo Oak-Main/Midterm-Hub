@@ -7091,7 +7091,9 @@
     "source_ids": [
       "BP-HOURS",
       "VOTECLOCK",
-      "GP-HOURS"
+      "GP-HOURS",
+      "KS-HOURS-LAW-20261103",
+      "KS-HOURS-SOS-20261103"
     ],
     "scope": "ordinary domestic voters; local sites/hours and special categories require the linked authority"
   },

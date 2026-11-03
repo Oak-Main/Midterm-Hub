@@ -18,6 +18,9 @@ test('Kansas polling hours distinguish time-zone defaults and direct voters to t
   assert.equal(record.previous_superseded, '7 a.m. to 7 p.m.');
   assert.ok(record.source_ids.includes('KS-HOURS-LAW-20261103'));
   assert.ok(record.source_ids.includes('KS-HOURS-SOS-20261103'));
+  const claims = JSON.parse(read('../../content/refresh/claim-ledger.json'));
+  const claim = claims.find(item => item.record_id === 'KS.election_day_hours');
+  assert.deepEqual(claim.source_ids, record.source_ids);
   for (const path of ['../../content/refresh/fragments/states/ks.html', '../../content/refresh/fragments/voting-deadlines.html']) {
     const html = read(path);
     assert.ok(html.includes(record.value), path);
