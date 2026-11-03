@@ -114,7 +114,8 @@ const page = path => readFileSync(new URL(`../../out/${path}`, import.meta.url),
 test('the built /results/ and home pages carry the committed status', { skip: freshExport ? false : 'no fresh `npm run build` export in out/' }, () => {
   const results = page('results/index.html');
   assert.match(results, new RegExp(`data-edition-state="${status.edition_state}"`));
-  assert.match(results, new RegExp(`<strong>${editionLabels[status.edition_state]}\\.</strong>`));
+  assert.ok(results.includes(`Status: ${editionLabels[status.edition_state]}</p>`), 'banner names the status.json state');
+  assert.match(results, /<strong>No live results or election calls are published here\.<\/strong>/, '#44 banner wording is kept');
   assert.equal((results.match(/<tr id="close-[a-z]{2}"/g) ?? []).length, 51);
   assert.equal((results.match(/<tr id="results-[a-z]{2}"/g) ?? []).length, 51);
   assert.match(results, /<caption>Result publication states<\/caption>/);
