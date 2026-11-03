@@ -5,17 +5,17 @@
       "name": "midterm-watch-refresh-2026-10-20.json",
       "format": "JSON",
       "records": 435,
-      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026.",
-      "bytes": 1259377,
-      "sha256": "5f12fcbfb8802e1b66c7fd1047afe5ff27cbe4f05532cf43500ca26bb3e9c0c1"
+      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026. Kansas poll-hours correction documented November 3, 2026 UTC.",
+      "bytes": 1259589,
+      "sha256": "147265ee120ac2040a223c2f0b2f05923a6a820552d3f7012cc5e75466076910"
     },
     {
       "name": "midterm-watch-sources-2026-10-20.json",
       "format": "JSON",
-      "records": 252,
-      "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates.",
-      "bytes": 80724,
-      "sha256": "40ad3e705e2b284f6ef9b353f658f5110883d6f56513e67c3ebee9a06be2ac99"
+      "records": 254,
+      "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates. Includes separately dated Kansas poll-hours sources checked November 3, 2026 UTC.",
+      "bytes": 81668,
+      "sha256": "85a5fb0b4accaf297a4912abea8531695f71193d5e2936b2b3e8279f2a0787d9"
     },
     {
       "name": "midterm-watch-house-2026-10-20.csv",
@@ -29,9 +29,9 @@
       "name": "midterm-watch-voting-2026-10-20.csv",
       "format": "CSV",
       "records": 51,
-      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON. Minnesota ballot-return correction dated November 2, 2026.",
-      "bytes": 47160,
-      "sha256": "c29afab01acc9df4c131430878f10e32ca9bdbef758ac0b4170981a6751e5712"
+      "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON. Minnesota ballot-return correction dated November 2, 2026. Kansas poll-hours correction dated November 3, 2026 UTC.",
+      "bytes": 47175,
+      "sha256": "1b77fee1162c9e732f116f3f754adc1e591dbc247eb8da8fd04c22f626c79175"
     },
     {
       "name": "midterm-watch-voting-2026-10-20.ics",
