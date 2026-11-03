@@ -142,29 +142,27 @@ version has no edge cache and no stale fallback.
 
 ## Drill (this branch, nothing touches production)
 
-Run on 2026-11-02 (about 23:45–00:10 UTC). Vercel previews for this project sit
-behind Vercel Authentication (a preview URL answered 302 to `vercel.com/sso-api`),
-so every check ran against a local static server of this branch's `out/` export
-(`npm run build`; trailing-slash directory hosting like Vercel's). Nothing touched
-midtermwatch.com or a Vercel deployment. The Worker is covered separately by
-`tests/frontend/worker-cache.test.mjs` and `wrangler deploy --dry-run`.
+Run on 2026-11-03 from 03:37 UTC, on this branch rebased onto `8f8bcd2` (#44).
+Vercel previews for this project sit behind Vercel Authentication (a preview URL
+answered 302 to `vercel.com/sso-api`), so every check ran against a local static
+server of this branch's `out/` export (`npm run build`; trailing-slash directory
+hosting like Vercel's). Nothing touched midtermwatch.com or a Vercel deployment.
+The Worker is covered separately by `tests/frontend/worker-cache.test.mjs` and
+`wrangler deploy --dry-run`.
 
 ### Home and /results/ under each status value
 
 One build per `edition_state` (`updated_at` 2026-11-03T12:00:00Z), reading the
-static HTML: the `/results/` banner label and the home masthead's first paint.
+static HTML: the `/results/` status label and the home masthead's first paint.
 After hydration the home masthead also applies the visitor's date (tested in
 `tests/frontend/election-night.test.mjs` for Nov 2, 3, 4 and 10).
 
-| edition_state | build exit | /results/ banner | home first paint | home headline |
+| edition_state | build exit | /results/ label | home first paint | home headline |
 | --- | --- | --- | --- | --- |
-| `awaiting_polls` | 0 | Awaiting polls. | data-phase="date" | Nov 3 |
-| `election_day` | 0 | Election Day: polls open. | data-phase="election_day" | Polls close today |
-| `counting` | 0 | Counting. | data-phase="after" | Official results by state |
-| `post_election` | 0 | After the election. | data-phase="after" | Official results by state |
-
-With the committed `awaiting_polls` and a device date of Nov 2, the hydrated
-home masthead showed "1 day until Nov 3".
+| `awaiting_polls` | 0 | Status: Awaiting polls | data-phase="date" | Nov 3 |
+| `election_day` | 0 | Status: Election Day: polls open | data-phase="election_day" | Polls close today |
+| `counting` | 0 | Status: Counting | data-phase="after" | Official results by state |
+| `post_election` | 0 | Status: After the election | data-phase="after" | Official results by state |
 
 ### 30-URL matrix (status, canonical, og:url)
 
@@ -204,14 +202,19 @@ home masthead showed "1 day until Nov 3".
 ### Load check, /results/
 
 20 concurrent clients for 60 s against the local static server (Node fetch,
-full body read). The /results/ HTML is 297,471 bytes uncompressed.
+full body read). The /results/ HTML is 297,942 bytes uncompressed.
 
 | Requests | Rate | p50 | p95 | p99 | Max | Errors |
 | --- | --- | --- | --- | --- | --- | --- |
-| 38414 | 640.2/s | 28.9 ms | 50.9 ms | 73.2 ms | 187.5 ms | 0 |
+| 52,342 | 872.4/s | 20.8 ms | 38.0 ms | 51.7 ms | 349.8 ms | 0 |
 
 This measures the page and a single local server, not Vercel or the Worker.
 Production adds the Worker cache: a 30 s `/results/` copy per Cloudflare data
 center means Vercel sees at most about one `/results/` request per data center
 every 30 s, however many visitors arrive.
 
+In the browser the drill server answered 404 for Next's segment prefetch files
+(`/<page>/__next.<segment>.__PAGE__.txt`), which the export stores as nested
+folders that this simple server does not map. Every page shows the same 404s,
+including pages this branch does not change; they only cost client-side
+prefetch, and every page and asset request returned 200.
