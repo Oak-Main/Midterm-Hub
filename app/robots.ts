@@ -1,3 +1,4 @@
 import type { MetadataRoute } from "next";
+import { canonicalOrigin } from "@/lib/refresh";
 export const dynamic = "force-static";
-export default function robots():MetadataRoute.Robots{return {rules:{userAgent:"*",allow:"/"},sitemap:"https://www.midtermwatch.com/sitemap.xml"};}
+export default function robots():MetadataRoute.Robots{return {rules:{userAgent:"*",allow:"/"},sitemap:canonicalOrigin+"/sitemap.xml"};}

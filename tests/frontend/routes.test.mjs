@@ -5,12 +5,12 @@ import { importFromRepo } from './resolve-repo.mjs';
 
 const payload = JSON.parse(readFileSync(new URL('../../generated/elections.json', import.meta.url)));
 const elections = payload.elections;
-const BASE = 'https://www.midtermwatch.com';
+const BASE = 'https://midtermwatch.com';
 
 const { default: sitemap } = await importFromRepo('../../app/sitemap.ts');
 const { default: robots } = await importFromRepo('../../app/robots.ts');
 
-test('the sitemap publishes standing pages under the verified www canonical host', () => {
+test('the sitemap publishes standing pages under the apex canonical host', () => {
   const urls = sitemap().map((entry) => entry.url);
   for (const path of ['/states/', '/methodology/', '/data/', '/about/']) {
     assert.ok(urls.includes(BASE + path), `expected ${BASE}${path} in the sitemap`);
