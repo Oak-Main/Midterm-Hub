@@ -35,32 +35,28 @@
       "name": "Alabama",
       "closes": [
         {
-          "zone": "America/New_York",
-          "local_time": "19:00",
-          "area": "Eastern time zone",
-          "utc": "2026-11-04T00:00:00Z",
-          "et": "7:00 p.m. ET"
-        },
-        {
           "zone": "America/Chicago",
           "local_time": "19:00",
-          "area": "Central time zone",
+          "area": "Statewide",
           "utc": "2026-11-04T01:00:00Z",
           "et": "8:00 p.m. ET"
         }
       ],
       "all_polls_closed_utc": "2026-11-04T01:00:00Z",
-      "split_zone_note": "7:00 p.m. Eastern / 7:00 p.m. Central; all polls closed 8:00 p.m. ET",
-      "notes": "Matches existing data (7 a.m. to 7 p.m.). Same SOS voter guide also says: 'polling places located in the Eastern Time Zone may be open from 7 A.M. to 7 P.M. Eastern Time' (hedged 'may'; no counties named, so the second close entry is area-limited and unnamed). The SOS election-night page (www2.alabamavotes.gov) also states 'Polls close at 7:00 p.m. CST.' (same publisher as SOS). Statute text (Code of Alabama 17-9-6, alison.legislature.state.al.us) could not be retrieved as plain text (JS app / paged API), so statute was not used as a source. Mobile County guide: any voter in line at 7:00 PM may vote (ignored per brief). | Eastern time zone: polling places located in the Eastern Time Zone (SOS voter guide says these 'may' run 7 A.M. to 7 P.M. Eastern Time; guide names no counties) | Central time zone: statewide",
-      "source_url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
-      "retrieved_at": "2026-11-02",
+      "split_zone_note": "",
+      "notes": "Election-Day verification (Nov 3, 2026): the SOS election-night page states polls close at 7:00 p.m. CST and no official state or county page found on Nov 3 identifies any polling place operating on Eastern Time for this election. The earlier Eastern-time-zone close entry (sourced to the voter guide's hedged 'polling places located in the Eastern Time Zone may be open from 7 A.M. to 7 P.M. Eastern Time') was removed as unverified for 2026; statewide close is 7:00 p.m. Central (8:00 p.m. ET).",
+      "source_url": "https://www2.alabamavotes.gov/electionNight/countyResultsByContest.aspx?cid=09&ecode=1001225",
+      "retrieved_at": "2026-11-03",
       "sources": [
         {
-          "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026-VoterGuide.pdf",
-          "publisher": "Alabama Secretary of State (2026 Voter Guide, PDF)",
-          "kind": "state_election_office",
-          "retrieved_at": "2026-11-02",
-          "quote": "Alabama polling places are open from 7 A.M. to 7 P.M. on Election Day."
+          "url": "https://www2.alabamavotes.gov/electionNight/countyResultsByContest.aspx?cid=09&ecode=1001225",
+          "publisher": "Alabama Secretary of State (election-night results page: 'Polls close at 7:00 p.m. CST')",
+          "retrieved_at": "2026-11-03"
+        },
+        {
+          "url": "https://www.sos.alabama.gov/newsroom/secretary-state-wes-allen-issues-important-election-day-reminders-ahead-november-3-general",
+          "publisher": "Alabama Secretary of State (Election Day reminders: polls open 7 a.m. to 7 p.m.)",
+          "retrieved_at": "2026-11-03"
         },
         {
           "url": "https://www.shelbyal.com/1106/Shelby-County-Election",
@@ -1181,7 +1177,7 @@
       "closes": [],
       "all_polls_closed_utc": null,
       "split_zone_note": "",
-      "notes": "A single statewide final close cannot be established from an official page. RSA 659:4 (and 659:4-a for town ballot questions) sets only a floor: polls open no later than 11 a.m. and close no earlier than 7 p.m., with the city council fixing hours in cities. No statutory latest time exists, and RSA 659:3 lets voters at a polling place vote to close early once everyone on the checklist has voted. Municipal practice varies: Hampton posts 7 am to 8 pm for Nov 3, 2026, Dover posts 7 a.m. to 7 p.m. So 20:00 ET is at least the latest known close, but I could not prove no town closes later. Recommended display: 'Closes no earlier than 7 p.m.; many places close at 8 p.m.; check your town clerk.' The sos.nh.gov pages I opened in the browser pane (At the Polls on Election Day, the 2026-2027 Political Calendar page) do not state polling hours; the Political Calendar PDF the existing data cites returns 403 to curl and I could not read it, so no state-office quote is available. Existing site data (hours set by municipality, close no earlier than 7 p.m.) is consistent with the statute.",
+      "notes": "A single statewide final close cannot be established from an official page. RSA 659:4 (and 659:4-a for town ballot questions) sets only a floor: polls open no later than 11 a.m. and close no earlier than 7 p.m., with the city council fixing hours in cities. No statutory latest time exists, and RSA 659:3 lets voters at a polling place vote to close early once everyone on the checklist has voted. Municipal practice varies: Hampton posts 7 am to 8 pm for Nov 3, 2026, Dover posts 7 a.m. to 7 p.m. So 20:00 ET is at least the latest known close, but I could not prove no town closes later. Recommended display: 'Closes no earlier than 7 p.m.; many places close at 8 p.m.; check your town clerk.' The sos.nh.gov pages I opened in the browser pane (At the Polls on Election Day, the 2026-2027 Political Calendar page) do not state polling hours; the Political Calendar PDF the existing data cites returns 403 to curl and I could not read it, so no state-office quote is available. Existing site data (hours set by municipality, close no earlier than 7 p.m.) is consistent with the statute. Election-Day verification (Nov 3, 2026): RSA 659:4 remains a 7:00 p.m. floor with hours set locally; 7:00 p.m. and 8:00 p.m. closes are in effect in different municipalities today (e.g. Milford's official page shows 8:00 p.m.), and the Secretary of State's 2026 pages state no single statewide final closing time. The UNVERIFIED treatment stands: check the local election office.",
       "source_url": "https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm",
       "retrieved_at": "2026-11-02",
       "sources": [
@@ -1205,6 +1201,16 @@
           "kind": "other_official",
           "retrieved_at": "2026-11-02",
           "quote": "Polls will be open from 7 a.m. to 7 p.m."
+        },
+        {
+          "url": "https://www.milford.nh.gov/voterinformation",
+          "publisher": "City of Milford, NH (voter information: 8:00 p.m. close in effect Nov 3, 2026)",
+          "retrieved_at": "2026-11-03"
+        },
+        {
+          "url": "https://www.sos.nh.gov/2026-election-details",
+          "publisher": "New Hampshire Secretary of State (2026 election details; no statewide final close stated)",
+          "retrieved_at": "2026-11-03"
         }
       ],
       "tag": "UNVERIFIED",
@@ -1382,21 +1388,21 @@
         {
           "zone": "America/Chicago",
           "local_time": "21:00",
-          "area": "Central time zone",
+          "area": "Central time zone (latest county close)",
           "utc": "2026-11-04T03:00:00Z",
           "et": "10:00 p.m. ET"
         },
         {
           "zone": "America/Denver",
           "local_time": "21:00",
-          "area": "Mountain time zone",
+          "area": "Mountain time zone (latest county close)",
           "utc": "2026-11-04T04:00:00Z",
           "et": "11:00 p.m. ET"
         }
       ],
       "all_polls_closed_utc": "2026-11-04T04:00:00Z",
-      "split_zone_note": "9:00 p.m. Central / 9:00 p.m. Mountain; all polls closed 11:00 p.m. ET",
-      "notes": "Not a single statewide time. NDCC 16.1-01-03: polls open at nine a.m. or earlier (not before seven a.m.) and stay open until seven p.m. or a later hour, not later than nine p.m., as designated per precinct by the city or county governing body. The SOS 2026 General Election media guide says 'Poll Hours are determined by county commissions and vary by county' and points to vote.nd.gov/myvotinginfo for the county list (not opened). Recorded the LATEST permitted close, 21:00 local; the earliest a precinct may close is 19:00. ND spans Central and Mountain time; I list both zones but the sources do not name the Mountain-time counties. Matches existing data (closing 7 to 9 p.m.). Voters in line at closing may vote (ignored). | Central time zone: latest permitted closing time; each precinct closes between 19:00 and 21:00 as set by its city or county governing body (Central time) | Mountain time zone: latest permitted closing time, same 19:00-21:00 window (Mountain-time part of ND); the sources I opened do not list which counties",
+      "split_zone_note": "Poll hours vary by county, opening 7:00-9:00 a.m. and closing 7:00-9:00 p.m. local (ND SOS media guide); times shown are the latest closes. 9:00 p.m. Central / 9:00 p.m. Mountain; all polls closed 11:00 p.m. ET.",
+      "notes": "Not a single statewide time. NDCC 16.1-01-03: polls open at nine a.m. or earlier (not before seven a.m.) and stay open until seven p.m. or a later hour, not later than nine p.m., as designated per precinct by the city or county governing body. The SOS 2026 General Election media guide says 'Poll Hours are determined by county commissions and vary by county' and points to vote.nd.gov/myvotinginfo for the county list (not opened). Recorded the LATEST permitted close, 21:00 local; the earliest a precinct may close is 19:00. ND spans Central and Mountain time; I list both zones but the sources do not name the Mountain-time counties. Matches existing data (closing 7 to 9 p.m.). Voters in line at closing may vote (ignored). | Central time zone: latest permitted closing time; each precinct closes between 19:00 and 21:00 as set by its city or county governing body (Central time) | Mountain time zone: latest permitted closing time, same 19:00-21:00 window (Mountain-time part of ND); the sources I opened do not list which counties Election-Day verification (Nov 3, 2026): the SOS media guide states poll hours are determined by county commissions and vary; the SOS polling-place lookup lists per-county hours (e.g. Adams County 9:00 a.m.-7:00 p.m.). The closes shown are the latest permitted/designated, not a uniform statewide close.",
       "source_url": "https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf",
       "retrieved_at": "2026-11-02",
       "sources": [
