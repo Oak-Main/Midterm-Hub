@@ -46,9 +46,16 @@ test('New Hampshire stays UNVERIFIED so no statewide close is fabricated', () =>
   assert.equal(pollRow('NH').tag, 'UNVERIFIED');
 });
 
-test('Texas and Alabama carry split-zone notes for two-wave closes', () => {
+test('Texas carries a split-zone note; Alabama is a single statewide close', () => {
   assert.match(pollRow('TX').split_zone_note, /all polls closed/i);
-  assert.match(pollRow('AL').split_zone_note, /all polls closed/i);
+  // Election-Day verification: no official Eastern-Time polling places found;
+  // AL closes statewide at 7 p.m. Central (8 p.m. ET).
+  const al = pollRow('AL');
+  assert.equal(al.closes.length, 1);
+  assert.equal(al.closes[0].area, 'Statewide');
+  assert.equal(al.closes[0].et, '8:00 p.m. ET');
+  assert.equal(al.split_zone_note, '');
+  assert.match(pollRow('ND').split_zone_note, /vary by county/i);
 });
 
 test('Alabama results page carries title, authority link, closing time and guide link', { skip: !hasExport }, () => {
