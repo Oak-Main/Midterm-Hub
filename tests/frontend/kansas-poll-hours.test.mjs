@@ -10,7 +10,9 @@ test('Kansas polling hours distinguish time-zone defaults and direct voters to t
   assert.match(record.value, /Central default: 7 a\.m\. to 7 p\.m\./);
   assert.match(record.value, /Mountain default: 6 a\.m\. to 6 p\.m\./);
   assert.match(record.note, /County election officers may set different hours/);
-  assert.match(record.note, /confirm your county/);
+  assert.match(record.note, /within statutory limits/);
+  assert.match(record.note, /at least 12 consecutive hours/);
+  assert.match(record.note, /confirm your county/i);
   assert.equal(record.corrected_on, '2026-11-03');
   assert.equal(record.correction_date_basis, 'UTC');
   assert.equal(record.previous_superseded, '7 a.m. to 7 p.m.');
@@ -19,6 +21,7 @@ test('Kansas polling hours distinguish time-zone defaults and direct voters to t
   for (const path of ['../../content/refresh/fragments/states/ks.html', '../../content/refresh/fragments/voting-deadlines.html']) {
     const html = read(path);
     assert.ok(html.includes(record.value), path);
+    assert.ok(html.includes(record.note), path);
     assert.ok(html.includes('KS-HOURS-LAW-20261103'), path);
     assert.ok(html.includes('KS-HOURS-SOS-20261103'), path);
   }
@@ -31,6 +34,8 @@ test('Kansas polling hours distinguish time-zone defaults and direct voters to t
   const event = calendar.split('BEGIN:VEVENT').find(item => item.includes('SUMMARY:Kansas — November election'));
   assert.ok(event.includes('Central default: 7 a.m. to 7 p.m.'));
   assert.ok(event.includes('Mountain default: 6 a.m. to 6 p.m.'));
+  assert.ok(event.includes('within statutory limits'));
+  assert.ok(event.includes('12 consecutive hours'));
   assert.ok(event.includes('www.kslegislature.gov/b2025_26/laws/'));
   assert.ok(event.includes('www.sos.ks.gov/elections/voter-information.html'));
 });

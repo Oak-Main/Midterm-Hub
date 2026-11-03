@@ -6,8 +6,8 @@
       "format": "JSON",
       "records": 435,
       "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026. Kansas poll-hours correction documented November 3, 2026 UTC.",
-      "bytes": 1259589,
-      "sha256": "147265ee120ac2040a223c2f0b2f05923a6a820552d3f7012cc5e75466076910"
+      "bytes": 1259665,
+      "sha256": "a957f7187aaa8565baa9ec0f6005ebe31957c166a3b8ae13cae5f8f88f12eda3"
     },
     {
       "name": "midterm-watch-sources-2026-10-20.json",
@@ -30,16 +30,16 @@
       "format": "CSV",
       "records": 51,
       "description": "Method-specific registration, ballot application and return rules, voting windows and poll hours. Blank dates require the accompanying status and notes in JSON. Minnesota ballot-return correction dated November 2, 2026. Kansas poll-hours correction dated November 3, 2026 UTC.",
-      "bytes": 47364,
-      "sha256": "da499a05513ed04a63e74a33be614b6a54216e15f4149e6ba1e2f07ef3ede57e"
+      "bytes": 47440,
+      "sha256": "3c14ef6cdfb20ca72ff15f110a8d4ce4a60db50b85b32f1a62e3babc3ccc35f3"
     },
     {
       "name": "midterm-watch-voting-2026-10-20.ics",
       "format": "ICS",
       "records": 196,
       "description": "All-day civil-date reminders for general elections, registration routes and conditional runoffs. Instructions and local cutoffs remain in event descriptions; this is not a polling-place schedule. Kansas poll-hours correction dated November 3, 2026 UTC.",
-      "bytes": 96670,
-      "sha256": "2a92c7154537e38b01eb3728c551d22aee6fe8abcddf1ec497d17de71160cbdc"
+      "bytes": 96749,
+      "sha256": "362834f0ec4ccdda33c035ada2d7d9f9d8633b5d9c0fd4c211ef67599a012de6"
     },
     {
       "name": "midterm-watch-pec-forecast-2026-11-02.json",

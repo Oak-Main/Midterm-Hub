@@ -737,11 +737,12 @@ DTEND;VALUE=DATE:20261104
 SUMMARY:Kansas — November election
 DESCRIPTION:Central default: 7 a.m. to 7 p.m.\; Mountain default: 6 a.m. to
   6 p.m. Updated Nov 3\, 2026 (UTC): County election officers may set diffe
- rent hours\; confirm your county's schedule and time zone.\nOrdinary domes
- tic voters\; local sites/hours and special categories require the linked a
- uthority.\nSources: https://www.kslegislature.gov/b2025_26/laws/025_000_00
- 00_chapter/025_001_0000_article/025_001_0006_section/025_001_0006_k/\; htt
- ps://www.sos.ks.gov/elections/voter-information.html
+ rent hours within statutory limits\; polls must stay open at least 12 cons
+ ecutive hours. Confirm your county's schedule and time zone.\nOrdinary dom
+ estic voters\; local sites/hours and special categories require the linked
+  authority.\nSources: https://www.kslegislature.gov/b2025_26/laws/025_000_
+ 0000_chapter/025_001_0000_article/025_001_0006_section/025_001_0006_k/\; h
+ ttps://www.sos.ks.gov/elections/voter-information.html
 URL:https://sos.ks.gov/elections/important-election-dates.html
 END:VEVENT
 BEGIN:VEVENT

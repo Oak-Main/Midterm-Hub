@@ -4784,7 +4784,7 @@
           "KS-HOURS-SOS-20261103"
         ],
         "verification_status": "cross_checked",
-        "note": "Updated Nov 3, 2026 (UTC): County election officers may set different hours; confirm your county's schedule and time zone.",
+        "note": "Updated Nov 3, 2026 (UTC): County election officers may set different hours within statutory limits; polls must stay open at least 12 consecutive hours. Confirm your county's schedule and time zone.",
         "corrected_on": "2026-11-03",
         "correction_date_basis": "UTC",
         "previous_superseded": "7 a.m. to 7 p.m."
