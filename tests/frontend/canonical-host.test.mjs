@@ -9,6 +9,8 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const WWW = 'www.midtermwatch.com';
 const BINARY = /\.(?:png|jpe?g|gif|webp|avif|ico|woff2?|ttf|otf|pdf|zip)$/i;
+// This counts text occurrences in source and the export; it does not validate URLs.
+const wwwOccurrences = line => line.toLowerCase().split(WWW).length - 1;
 
 function walk(dir) {
   return readdirSync(dir).flatMap(name => {
@@ -23,9 +25,7 @@ function wwwMentions(dir) {
     if (BINARY.test(path)) continue;
     const lines = readFileSync(path, 'utf8').split('\n');
     lines.forEach((line, index) => {
-      // This checks for text occurrences in an export; it does not validate URLs.
-      const occurrences = line.split(WWW).length - 1;
-      if (occurrences > 0) hits.push(`${path.slice(root.length)}:${index + 1}`);
+      if (wwwOccurrences(line) > 0) hits.push(`${path.slice(root.length)}:${index + 1}`);
     });
   }
   return hits;
@@ -34,6 +34,15 @@ function wwwMentions(dir) {
 test('source, content and downloads never name the www host', () => {
   for (const dir of ['app', 'lib', 'components', 'content', 'public/downloads']) {
     assert.deepEqual(wwwMentions(dir), [], `${dir}/ must use the apex canonical origin`);
+  }
+});
+
+test('the www scan finds the host in URLs, JSON and prose, and ignores the apex', () => {
+  for (const line of ['<link rel="canonical" href="https://www.midtermwatch.com/"/>', '"url":"https://WWW.midtermwatch.com/results/"', 'served from www.midtermwatch.com.']) {
+    assert.ok(wwwOccurrences(line) > 0, line);
+  }
+  for (const line of ['<link rel="canonical" href="https://midtermwatch.com/"/>', 'https://midterm-hub.vercel.app/']) {
+    assert.equal(wwwOccurrences(line), 0, line);
   }
 });
 
