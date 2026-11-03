@@ -23,7 +23,9 @@ function wwwMentions(dir) {
     if (BINARY.test(path)) continue;
     const lines = readFileSync(path, 'utf8').split('\n');
     lines.forEach((line, index) => {
-      if (line.includes(WWW)) hits.push(`${path.slice(root.length)}:${index + 1}`);
+      // This checks for text occurrences in an export; it does not validate URLs.
+      const occurrences = line.split(WWW).length - 1;
+      if (occurrences > 0) hits.push(`${path.slice(root.length)}:${index + 1}`);
     });
   }
   return hits;
