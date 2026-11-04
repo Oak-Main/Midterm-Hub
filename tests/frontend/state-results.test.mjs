@@ -46,6 +46,17 @@ test('New Hampshire stays UNVERIFIED so no statewide close is fabricated', () =>
   assert.equal(pollRow('NH').tag, 'UNVERIFIED');
 });
 
+test('North Dakota legal closing range is not promoted to a verified statewide final', () => {
+  const nd = pollRow('ND');
+  assert.equal(nd.tag, 'UNVERIFIED');
+  assert.deepEqual(nd.closes, []);
+  assert.equal(nd.all_polls_closed_utc, null);
+  assert.match(nd.split_zone_note, /vary by county/i);
+  assert.match(nd.split_zone_note, /actual final closing time.*not been verified/i);
+  assert.doesNotMatch(nd.notes, /Election-Day verification|Adams County/);
+  assert.ok(nd.sources.every(source => source.retrieved_at === nd.retrieved_at), 'row and cited-source retrieval dates agree');
+});
+
 test('Texas carries a split-zone note; Alabama is a single statewide close', () => {
   assert.match(pollRow('TX').split_zone_note, /all polls closed/i);
   // Election-Day verification: no official Eastern-Time polling places found;
@@ -72,6 +83,17 @@ test('New Hampshire renders the election-office fallback, not a fabricated close
   assert.ok(html.includes(pollRow('NH').election_office_url), 'election office link present');
 });
 
+test('North Dakota renders uncertainty on its results page and the national table', { skip: !hasExport }, () => {
+  const nd = read('results/nd/index.html');
+  assert.ok(nd.includes('Check the North Dakota election office'));
+  assert.match(nd, /data-tag="UNVERIFIED"/);
+  assert.doesNotMatch(nd, /(?:10|11):00 p\.m\. ET|latest county close|all polls closed/i);
+  const nationalRow = read('results/index.html').match(/<tr id="close-nd"[\s\S]*?<\/tr>/)?.[0];
+  assert.ok(nationalRow, 'North Dakota remains in the national table');
+  assert.ok(nationalRow.includes('Check the North Dakota election office'));
+  assert.doesNotMatch(nationalRow, /(?:10|11):00 p\.m\. ET|latest county close|all polls closed/i);
+});
+
 test('DC results page exists with its authority link', { skip: !hasExport }, () => {
   const html = read('results/dc/index.html');
   assert.ok(html.includes(officialRow('DC').url));
@@ -96,7 +118,7 @@ test('sitemap includes every state results URL', { skip: !hasExport }, () => {
 });
 
 test('search descriptions preserve uncertainty without malformed prefixes', () => {
-  for (const code of ['NH', 'AK']) {
+  for (const code of ['NH', 'AK', 'ND']) {
     const description = resultsDescription(pollRow(code), officialRow(code).authority);
     assert.match(description, new RegExp(`check the ${pollRow(code).name} election office`));
     assert.doesNotMatch(description, /polls close|\d:\d\d/);
