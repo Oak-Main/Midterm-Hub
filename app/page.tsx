@@ -9,10 +9,19 @@ import { RefreshContent } from '@/components/refresh-content';
 import { StructuredData } from '@/components/structured-data';
 import { canonicalOrigin, downBallotSections, guideFor, pageMetadata, refresh, refreshHtml } from '@/lib/refresh';
 import { electionStatus } from '@/lib/election-night-data';
-import { editionLabels, timestampLabel } from '@/lib/election-night';
+import { editionLabels, timestampLabel, type EditionState } from '@/lib/election-night';
 import { ElectionDayFaq } from '@/components/election-day-faq';
 
-export const metadata = pageMetadata('2026 Midterm Election Results, Dates & Live Status', 'Election Day is Tuesday, November 3, 2026. Polls close starting 6 PM ET tonight — live results begin ~8 PM ET.', '/');
+// Lead of the Election Day block, also the meta description; keyed off
+// status.json like the /results/ banner. The home page is unchanged from
+// counting to post_election (docs/RESULTS-NIGHT.md, flip 3).
+const beforeCloseLead = 'Election Day is Tuesday, November 3, 2026. Polls close starting 6 PM ET tonight — live results begin ~8 PM ET.';
+// Operator copy needed before merge | facts: last verified close 12:00 a.m. ET Nov 4 (content/election-night/poll-close-2026.json); official results links (official-results.json); this site reports no counts or calls
+const afterCloseLead = '[[COPY: home lead sentence and meta description once polls have closed (counting and post-election states)]]';
+const leadSentence: Record<EditionState, string> = { awaiting_polls: beforeCloseLead, election_day: beforeCloseLead, counting: afterCloseLead, post_election: afterCloseLead };
+const lead = leadSentence[electionStatus.edition_state];
+
+export const metadata = pageMetadata('2026 Midterm Election Results, Dates & Live Status', lead, '/');
 const runoffs = refresh.conditional_runoffs.map(row => ({ state: row.state, name: guideFor(row.state)?.name ?? row.state, date: row.date, href: `/states/${row.state.toLowerCase()}/` }));
 export default function Home() {
   return <>
@@ -27,7 +36,7 @@ export default function Home() {
     </div></section>
     <section className="border-b"><div className="mx-auto max-w-7xl px-5 py-10 lg:px-8"><div className="border-l-4 border-secondary bg-card p-6" data-edition-state={electionStatus.edition_state}>
       <h2 className="rule-label text-secondary">Election Day · Tuesday, November 3, 2026</h2>
-      <p className="mt-2 text-lg"><strong>Election Day is Tuesday, November 3, 2026. Polls close starting 6 PM ET tonight — live results begin ~8 PM ET.</strong></p>
+      <p className="mt-2 text-lg"><strong>{lead}</strong></p>
       <p className="mt-2 text-muted-foreground">First closes: Indiana and Kentucky at 6 PM ET; the last verified close is midnight ET (Alaska and Hawaii). This site links each state’s official results page — it does not publish vote counts or call races. <Link className="editorial-link font-bold" href="/results/">Live results status and poll-closing times →</Link></p>
       <p className="mt-3 font-mono text-xs text-muted-foreground">Status: {editionLabels[electionStatus.edition_state]} · updated {timestampLabel(electionStatus.updated_at)}</p>
     </div></div></section>
