@@ -1,7 +1,8 @@
 # Results night runbook, November 3–4, 2026
 
 Operator: Kevyn. This site never calls a race and carries no vote counts. On
-election night it shows each state's official poll-closing time, a link to each
+election night it shows poll-closing times where verified, election-office
+fallbacks elsewhere, a link to each
 election authority's results page, and a status banner driven by one file.
 
 - Public host: `https://midtermwatch.com` (apex, canonical). `www` 308s to it at
@@ -27,18 +28,27 @@ Source per row: `content/election-night/poll-close-2026.json`. First close 6:00 
 | 8:00 p.m. ET | 5:00 p.m. PT | **Alabama (Central)**, **Connecticut**, **Delaware**, **District of Columbia**, **Florida (Central)**, **Illinois**, **Maine**, **Maryland**, **Massachusetts**, Michigan (Eastern), **Mississippi**, **Missouri**, **New Jersey**, **Oklahoma**, **Pennsylvania**, **Rhode Island**, South Dakota (Central), **Tennessee (Eastern and Central)**, Texas (Central) |
 | 8:30 p.m. ET | 5:30 p.m. PT | **Arkansas** |
 | 9:00 p.m. ET | 6:00 p.m. PT | **Arizona**, **Colorado**, **Iowa**, **Kansas (Central and Mountain)**, **Louisiana**, **Michigan (Central)**, **Minnesota**, **Nebraska (Central and Mountain)**, **New Mexico**, **New York**, **South Dakota (Mountain)**, **Texas (Mountain)**, **Wisconsin**, **Wyoming** |
-| 10:00 p.m. ET | 7:00 p.m. PT | Idaho (Mountain), **Montana**, **Nevada**, North Dakota (Central), Oregon (Mountain), **Utah** |
-| 11:00 p.m. ET | 8:00 p.m. PT | **California**, **Idaho (Pacific)**, **North Dakota (Mountain)**, **Oregon (Pacific)**, **Washington** |
+| 10:00 p.m. ET | 7:00 p.m. PT | Idaho (Mountain), **Montana**, **Nevada**, Oregon (Mountain), **Utah** |
+| 11:00 p.m. ET | 8:00 p.m. PT | **California**, **Idaho (Pacific)**, **Oregon (Pacific)**, **Washington** |
 | 12:00 a.m. ET, Nov 4 | 9:00 p.m. PT | Alaska, **Hawaii** |
 
 Alaska: Aleutian Islands west of 169°30′ W (Hawaii-Aleutian time zone) has no verified close; /results/ links the Alaska election office for it.
 
-No verified statewide close (shown as "Check the [state] election office"): New Hampshire.
-RSA 659:4 sets only an earliest close (7 p.m.); towns choose later times.
+No verified statewide close (shown as "Check the [state] election office"):
+New Hampshire and North Dakota. New Hampshire's RSA 659:4 sets only an earliest
+close (7 p.m.); towns choose later times.
 
-Kansas and North Dakota set hours locally within a statutory window; the table
-shows the latest permitted close (K.S.A. 25-106: 8 p.m. Central, 7 p.m. Mountain;
-NDCC 16.1-01-03: 9 p.m.). The Kansas voting guide, corrected on `main`
+North Dakota's [2026 SOS media guide](https://www.sos.nd.gov/sites/default/files/documents/news/2026-general-election-media-info-aug26.pdf)
+and [NDCC 16.1-01-03](https://ndlegis.gov/cencode/t16-1c01.pdf), reviewed
+November 4, allow local closing times between 7 and 9 p.m. They do not establish
+the actual last closing time across all 2026 precincts. Do not turn the legal
+maximum into a statewide closing wave or an "all polls closed" claim. Check the
+[North Dakota election office](https://www.sos.nd.gov/elections/voter/voting-north-dakota/where-do-i-vote) and its
+polling-place lookup or county auditor for the applicable local schedule.
+
+Kansas sets hours locally within a statutory window; the table shows the latest
+permitted close (K.S.A. 25-106: 8 p.m. Central, 7 p.m. Mountain).
+The Kansas voting guide, corrected on `main`
 (`docs/kansas-poll-hours-2026-11-03.md`), shows the same statute's defaults
 (7 p.m. Central, 6 p.m. Mountain); counties may close later, up to these limits.
 
@@ -54,7 +64,7 @@ home page.
 | Flip | Recommended time | `edition_state` | What changes |
 | --- | --- | --- | --- |
 | 1 | Tue Nov 3, 06:00 ET / 03:00 PT (every US zone is on Nov 3) | `election_day` | `/results/` banner "Election Day: polls open"; home first paint "Polls close today" |
-| 2 | After 12:00 a.m. ET Nov 4 / 9:00 p.m. PT, the last verified close; 1:00 a.m. ET leaves margin for the unverified Aleutian close | `counting` | `/results/` banner "Counting"; home shows the after-election block (links to `/results/` and runoff registration routes) |
+| 2 | After 12:00 a.m. ET Nov 4 / 9:00 p.m. PT, the last verified close; consult the election offices for unverified local schedules before the operator's manual change | `counting` | `/results/` banner "Counting"; home shows the after-election block (links to `/results/` and runoff registration routes) |
 | 3 | Your call, no earlier than Wed Nov 4 | `post_election` | `/results/` banner "After the election"; home unchanged from `counting` |
 
 `Projected` is not an edition state. The publication-state table on `/results/`

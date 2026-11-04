@@ -54,6 +54,7 @@ test('North Dakota legal closing range is not promoted to a verified statewide f
   assert.match(nd.split_zone_note, /vary by county/i);
   assert.match(nd.split_zone_note, /actual final closing time.*not been verified/i);
   assert.doesNotMatch(nd.notes, /Election-Day verification|Adams County/);
+  assert.ok(nd.retrieved_at >= '2026-11-04', 'retrieval date covers the November 4 source review or a later review');
   assert.ok(nd.sources.every(source => source.retrieved_at === nd.retrieved_at), 'row and cited-source retrieval dates agree');
 });
 
@@ -115,6 +116,9 @@ test('all 51 state results pages exported', { skip: !hasExport }, () => {
 test('sitemap includes every state results URL', { skip: !hasExport }, () => {
   const xml = read('sitemap.xml');
   for (const row of pollClose.rows) assert.ok(xml.includes(`/results/${row.state.toLowerCase()}/`), `${row.state} in sitemap`);
+  const ndEntry = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].find((entry) => entry[1].includes('/results/nd/'))?.[1];
+  const modified = ndEntry?.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+  assert.ok(Date.parse(modified ?? '') >= Date.parse('2026-11-04T00:00:00Z'), 'ND sitemap date covers the published correction');
 });
 
 test('search descriptions preserve uncertainty without malformed prefixes', () => {
