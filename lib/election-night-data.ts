@@ -19,5 +19,8 @@ export const electionNightPaths = new Set(['/', '/results/']);
 // dates move with each status flip too; derived from the same states list the
 // route's generateStaticParams uses.
 for (const [code] of jurisdictionList) electionNightPaths.add(`/results/${code.toLowerCase()}/`);
-const contentChanged = '2026-11-02T00:00:00Z';
+// Editorial content changed when North Dakota's unsupported final close was
+// removed. This is a page-modification date, not a review date for every source;
+// each cited source retains its own retrieved_at value in the data.
+const contentChanged = '2026-11-04T00:00:00Z';
 export const electionNightModified = new Date(Math.max(Date.parse(contentChanged), Date.parse(electionStatus.updated_at)));
