@@ -13,8 +13,10 @@ export const metadata = { twitter: { card: 'summary_large_image' as const }, ...
 const statusSentence: Record<EditionState, ReactNode> = {
   awaiting_polls: null, // KEVYN-WRITE: awaiting_polls banner sentence: polls have not yet closed; this page lists each state's official closing time and results page | facts: earliest close in content/election-night/poll-close-2026.json; status.json edition_state=awaiting_polls
   election_day: null, // KEVYN-WRITE: election_day banner sentence: polls are open today and close at different times by state; official results come from each state's election authority | facts: first and last closes in poll-close-2026.json (sources per row); official-results.json
-  counting: null, // KEVYN-WRITE: counting banner sentence: polls have closed and election authorities are counting; follow the official results links; this site reports no counts | facts: last close in poll-close-2026.json; official-results.json
-  post_election: null, // KEVYN-WRITE: post_election banner sentence: counting and certification continue under each state's schedule; link to official results and runoff registration | facts: conditional_runoffs in content/refresh/content-package.json (GA Dec 1, MS Dec 1, LA Dec 12)
+  // Facts: last verified close 12:00 a.m. ET Nov 4 (content/election-night/poll-close-2026.json); official-results.json. Owner-approved wording.
+  counting: "Polls have closed in every state; the last verified closing time was midnight ET on November 4. Election authorities are counting, and the official results links below are the source for every count.",
+  // Facts: conditional_runoffs in content/refresh/content-package.json (GA Dec 1, MS Dec 1, LA Dec 12); runoff sections on /results/[state]/ and /states/[state]/. Owner-approved wording.
+  post_election: "Counting and certification continue on each state's own schedule, and the official results links below stay current. Where a state requires a runoff, its page lists the date and registration rules.",
 };
 
 const sourceList = (row: { sources: PollSource[] }) => row.sources.map(source => (
