@@ -19,7 +19,7 @@ const beforeCloseLead = 'Election Day is Tuesday, November 3, 2026. Polls close 
 // Facts: last verified close 12:00 a.m. ET Nov 4 (content/election-night/poll-close-2026.json); official results links (official-results.json); this site reports no counts or calls. Worded to hold for both counting and post_election.
 const afterCloseLead = 'Election Day was Tuesday, November 3. The last verified poll close was midnight ET on November 4; final closing times in New Hampshire, North Dakota and western Alaska were not independently verified. Find each state’s official results page here — this site reports no vote counts and calls no races.';
 // Meta description for the same states, kept under the 160-character snippet budget (tests/test_site_regressions.py).
-const afterCloseDescription = 'Election Day was Nov 3; the last verified poll close was midnight ET Nov 4. Official results links for every state — no vote counts, no race calls.';
+const afterCloseDescription = 'Election Day was Nov 3; last verified poll close midnight ET Nov 4 (NH, ND, western Alaska unverified). Official results links — no vote counts, no race calls.';
 const leadSentence: Record<EditionState, string> = { awaiting_polls: beforeCloseLead, election_day: beforeCloseLead, counting: afterCloseLead, post_election: afterCloseLead };
 const lead = leadSentence[electionStatus.edition_state];
 
