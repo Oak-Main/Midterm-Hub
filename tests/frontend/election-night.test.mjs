@@ -121,6 +121,19 @@ const bannerSentence = {
   post_election: "Counting and certification continue on each state's own schedule, and the official results links below stay current. Where a state requires a runoff, its page lists the date and registration rules.",
 };
 
+// Positive check on both sentences regardless of the committed state: the
+// export carries only the active one, so the other is pinned at the source.
+test('app/results/page.tsx statusSentence carries both approved sentences as string literals', () => {
+  const source = readFileSync(new URL('../../app/results/page.tsx', import.meta.url), 'utf8');
+  const block = source.match(/const statusSentence: Record<EditionState, ReactNode> = \{([\s\S]*?)\n\};/)?.[1];
+  assert.ok(block, 'statusSentence map is where the banner reads it');
+  for (const [state, sentence] of Object.entries(bannerSentence)) {
+    assert.match(block, new RegExp(`\\n\\s*${state}: ["'\`]`), `${state} is a string literal, not null`);
+    assert.ok(block.includes(sentence), `${state} sentence is the approved text, verbatim`);
+  }
+  assert.match(source, /\{statusSentence\[electionStatus\.edition_state\]\}/, 'the banner renders the committed state\'s sentence');
+});
+
 test('the built /results/ and home pages carry the committed status', { skip: freshExport ? false : 'no fresh `npm run build` export in out/' }, () => {
   const results = page('results/index.html');
   assert.match(results, new RegExp(`data-edition-state="${status.edition_state}"`));
