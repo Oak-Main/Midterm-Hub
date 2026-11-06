@@ -117,7 +117,7 @@ const page = path => readFileSync(new URL(`../../out/${path}`, import.meta.url),
 // and marks the text-node boundary with <!-- -->). awaiting_polls and
 // election_day still render no sentence; both have passed.
 const bannerSentence = {
-  counting: 'Polls have closed in every state; the last verified closing time was midnight ET on November 4. Election authorities are counting, and the official results links below are the source for every count.',
+  counting: 'Election Day was Tuesday, November 3; the last verified poll close was midnight ET on November 4, and final closing times in New Hampshire, North Dakota and western Alaska were not independently verified. Election authorities are counting, and the official results links below are the source for every count.',
   post_election: "Counting and certification continue on each state's own schedule, and the official results links below stay current. Where a state requires a runoff, its page lists the date and registration rules.",
 };
 
