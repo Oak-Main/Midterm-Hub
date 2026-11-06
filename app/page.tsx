@@ -17,7 +17,7 @@ import { ElectionDayFaq } from '@/components/election-day-faq';
 // counting to post_election (docs/RESULTS-NIGHT.md, flip 3).
 const beforeCloseLead = 'Election Day is Tuesday, November 3, 2026. Polls close starting 6 PM ET tonight — live results begin ~8 PM ET.';
 // Facts: last verified close 12:00 a.m. ET Nov 4 (content/election-night/poll-close-2026.json); official results links (official-results.json); this site reports no counts or calls. Worded to hold for both counting and post_election.
-const afterCloseLead = 'Polls have closed in every state; the last verified closing time was midnight ET on November 4. Find each state’s official results page here — this site does not report vote counts or call races.';
+const afterCloseLead = 'Election Day voting has ended. The last verified poll close was midnight ET on November 4; final closing times in New Hampshire, North Dakota and western Alaska were not independently verified. Find each state’s official results page here — this site reports no vote counts and calls no races.';
 const leadSentence: Record<EditionState, string> = { awaiting_polls: beforeCloseLead, election_day: beforeCloseLead, counting: afterCloseLead, post_election: afterCloseLead };
 const lead = leadSentence[electionStatus.edition_state];
 
