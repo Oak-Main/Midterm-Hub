@@ -131,3 +131,12 @@ test('the built /results/ and home pages carry the committed status', { skip: fr
   assert.doesNotMatch(home, /KEVYN-WRITE/);
   assert.ok((home.match(/href="\/results\/"/g) ?? []).length >= 3, 'header, hero and footer link to /results/');
 });
+
+// app/status.json/route.ts: the public switch, exported as a static JSON file.
+test('the exported /status.json matches the committed status.json and stays out of the sitemap', { skip: freshExport ? false : 'no fresh `npm run build` export in out/' }, () => {
+  assert.ok(existsSync(new URL('../../out/status.json', import.meta.url)), 'the static export writes out/status.json');
+  const payload = JSON.parse(page('status.json'));
+  assert.deepEqual(payload, { status: status.edition_state, edition_state: status.edition_state, updated_at: status.updated_at });
+  assert.deepEqual(Object.keys(payload).sort(), ['edition_state', 'status', 'updated_at'], 'no counts, projections or calls ride along');
+  assert.doesNotMatch(page('sitemap.xml'), /status\.json/, '/status.json is not a sitemap entry');
+});
