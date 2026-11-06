@@ -111,11 +111,29 @@ const freshExport = Boolean(buildId) && existsSync(new URL(`../../out/_next/stat
 
 const page = path => readFileSync(new URL(`../../out/${path}`, import.meta.url), 'utf8');
 
+// Owner-approved banner sentences from app/results/page.tsx statusSentence, pinned
+// verbatim. The build renders only the committed state's sentence, right after
+// "Consult election authorities for official results." (React escapes ' as &#x27;
+// and marks the text-node boundary with <!-- -->). awaiting_polls and
+// election_day still render no sentence; both have passed.
+const bannerSentence = {
+  counting: 'Polls have closed in every state; the last verified closing time was midnight ET on November 4. Election authorities are counting, and the official results links below are the source for every count.',
+  post_election: "Counting and certification continue on each state's own schedule, and the official results links below stay current. Where a state requires a runoff, its page lists the date and registration rules.",
+};
+
 test('the built /results/ and home pages carry the committed status', { skip: freshExport ? false : 'no fresh `npm run build` export in out/' }, () => {
   const results = page('results/index.html');
   assert.match(results, new RegExp(`data-edition-state="${status.edition_state}"`));
   assert.ok(results.includes(`Status: ${editionLabels[status.edition_state]}</p>`), 'banner names the status.json state');
   assert.match(results, /<strong>No live results or election calls are published here\.<\/strong>/, '#44 banner wording is kept');
+  const sentence = bannerSentence[status.edition_state];
+  if (sentence) {
+    const banner = results.replaceAll('&#x27;', "'").replaceAll('<!-- -->', '');
+    assert.ok(banner.includes(`Consult election authorities for official results. ${sentence}`), `banner carries the ${status.edition_state} sentence verbatim`);
+    for (const [state, other] of Object.entries(bannerSentence)) {
+      if (state !== status.edition_state) assert.ok(!banner.includes(other), `the ${state} sentence does not leak into a ${status.edition_state} build`);
+    }
+  }
   assert.equal((results.match(/<tr id="close-[a-z]{2}"/g) ?? []).length, 51);
   assert.equal((results.match(/<tr id="results-[a-z]{2}"/g) ?? []).length, 51);
   assert.match(results, /<caption>Result publication states<\/caption>/);
