@@ -82,8 +82,9 @@ and commit-status access. It needs no npm installation. It:
 5. Confirms the `www` results route returns HTTP 308 to the canonical apex.
 
 Each route is checked both with a non-tracking query parameter to bypass the
-Worker's cache and as an ordinary cacheable visitor request. Both must match
-the exact deployment and reject stale fallback. The GitHub token is sent only to `api.github.com`, never
+Worker's cache and as an ordinary cacheable visitor request. HTML responses must
+match the exact deployment; JSON must match the committed payload. Both reject
+stale fallback. The GitHub token is sent only to `api.github.com`, never
 to the website. A JSON receipt is written to the job log and step summary.
 The workflow has a ten-minute overall bound. Local/manual equivalent:
 
