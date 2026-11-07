@@ -1,0 +1,33 @@
+name: Vercel production verification
+
+# Vercel deploys main independently. This read-only check waits for its exact
+# commit status, then checks the canonical domain through the Cloudflare proxy.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: read
+
+concurrency:
+  group: vercel-production-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-production:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Verify exact Vercel release and public edition
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/verify-production.mjs

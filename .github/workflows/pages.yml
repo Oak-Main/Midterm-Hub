@@ -1,27 +1,21 @@
-name: deploy-site
+name: Static export validation
 
-# Builds the current Next.js election edition and publishes the static export.
-# Vercel is the public-domain host; this alternate Pages release uses the same
-# dated research and preserved historical calendar inputs. See DEPLOY.md.
-
-# Runs on the default branch and on manual dispatch only — not on feature branches,
-# so an un-provisioned Pages site never shows as a failing check on a PR.
-# One-time setup: Settings → Pages → Source: "GitHub Actions".
+# Build validation only. Vercel's Git integration publishes main; GitHub Pages
+# is a retired duplicate target. Retain this workflow path and its weekly build
+# without granting Pages/OIDC permissions or changing hosting settings.
 on:
   push:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # Weekly rebuild so on-page relative countdowns stay fresh between commits.
+    # Weekly validation of the complete static export; this does not publish it.
     - cron: "0 6 * * 1"
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: static-export-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -48,22 +42,12 @@ jobs:
           python -m pip install -r requirements.txt
           npm ci
           npm run build
-          printf '%s\n' "$SITE_CNAME" > out/CNAME
+      - name: Validate exported routes and edition
+        env:
+          REQUIRE_STATIC_EXPORT: "1"
+        run: npm test
 
-      - uses: actions/configure-pages@v5
-        with:
-          # Enable Pages (Actions build type) on first run so no manual toggle is needed.
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Record build scope
+        run: |
+          echo 'Static export and regression checks passed. This workflow does not deploy.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Production release: Vercel Git integration. See the Vercel production verification workflow and DEPLOY.md.' >> "$GITHUB_STEP_SUMMARY"
