@@ -5,13 +5,17 @@ import { BreadcrumbData } from '@/components/structured-data';
 import { electionStatus, officialResults, pollClose } from '@/lib/election-night-data';
 import { clockLabel, dayLabel, pollSourceKey, resultsDescription, editionLabels, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 import { electionHref, forState, states } from '@/lib/data';
-import { pageMetadata } from '@/lib/refresh';
+import { pageMetadata, refresh, refreshHtml } from '@/lib/refresh';
+import { RunoffRegistration } from '@/components/runoff-registration';
+import { RefreshContent } from '@/components/refresh-content';
 
 export const dynamicParams = false;
 export function generateStaticParams() { return states.map(([state]) => ({ state: state.toLowerCase() })); }
 
 const rowFor = (code: string) => pollClose.rows.find(row => row.state === code.toUpperCase());
 const resultsRowFor = (code: string) => officialResults.rows.find(row => row.state === code.toUpperCase());
+/** "Tuesday, December 1, 2026" for a YYYY-MM-DD runoff date. */
+const runoffDateLabel = (date: string) => new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T12:00:00Z`));
 
 // KEVYN-WRITE: per-state results route metadata — answer-first with the state's final poll close and its official results authority | facts: content/election-night/poll-close-2026.json rows[].closes[].et (final row) and official-results.json rows[].authority
 export async function generateMetadata({ params }: { params: Promise<{ state: string }> }): Promise<Metadata> {
@@ -39,7 +43,10 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
   if (!row || !results) notFound();
   const code = row.state;
   const general = forState(code).find(election => election.election_type === 'general' && election.election_date === '2026-11-03');
-  const runoff = ['GA', 'MS', 'LA'].includes(code);
+  // Conditional runoffs come from content/refresh/content-package.json, the same
+  // record the voting guide renders, so the /results/ post_election banner's
+  // "its page lists the date and registration rules" holds on this page too.
+  const runoff = refresh.conditional_runoffs.find(item => item.state === code);
   return <article className="mx-auto max-w-5xl px-5 py-14 lg:px-8">
     <BreadcrumbData name={`${row.name} 2026 results`} path={`/results/${state}/`} parent={{ name: 'Result status', path: '/results/' }} />
     <nav className="rule-label" aria-label="Breadcrumb"><Link href="/results/">Result status</Link> / {row.name}</nav>
@@ -55,6 +62,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
       <a className="editorial-link" href="#poll-closing">Poll closing</a>
       <a className="editorial-link" href="#official-results">Official results</a>
       {general && <a className="editorial-link" href="#ballot">On the {row.name} ballot</a>}
+      {runoff && <a className="editorial-link" href="#runoff">Conditional runoff</a>}
       <Link className="editorial-link" href={`/states/${state}/`}>{row.name} voting guide</Link>
     </nav>
 
@@ -89,10 +97,14 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
       <p className="mt-3"><Link className="editorial-link" href={electionHref(general)}>{`All ${row.name} 2026 races`}</Link></p>
     </section>}
 
-    {runoff && <section className="refresh-content mt-6">
+    {runoff && <section id="runoff" className="refresh-content mt-6">
       <h2>Conditional runoff</h2>
       {/* KEVYN-WRITE: runoff possibility for this state with the registration link | facts: content/refresh/content-package.json conditional_runoffs (GA Dec 1, MS Dec 1, LA Dec 12) */}
       <p>{row.name} contests can require a December runoff if no candidate clears the threshold. See the runoff section of the <Link className="editorial-link" href={`/states/${state}/`}>{row.name} voting guide</Link>.</p>
+      {/* Date and registration rules come from the conditional_runoffs record and its sourced fragment, as on the voting guide. */}
+      <p><strong>Runoff date, if required.</strong> {runoffDateLabel(runoff.date)}. Applies to: {runoff.offices}.</p>
+      <RunoffRegistration state={code} />
+      <RefreshContent html={refreshHtml(`runoffs/${state}.html`)} />
     </section>}
 
     <footer className="mt-10 border-t pt-6 text-sm text-muted-foreground">
