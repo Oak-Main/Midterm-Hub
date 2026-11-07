@@ -36,7 +36,7 @@ function mockRequest({ status = commitStatus(), publicStatus = { status: 'post_e
     calls.push({ url, options });
     if (url.endsWith('/branches/main')) return response(JSON.stringify({ commit: { sha: advance ? 'b'.repeat(40) : sha } }));
     if (url.endsWith(`/commits/${sha}/statuses?per_page=100`)) return response(JSON.stringify(status.statuses));
-    if (url.includes('/status.json?')) return response(JSON.stringify(publicStatus));
+    if (url.includes('/status.json')) return response(JSON.stringify(publicStatus));
     if (url.startsWith('https://www.midtermwatch.com/')) return new Response(null, { status: 308, headers: { location: 'https://midtermwatch.com/results/' } });
     return response(html, 'text/html');
   };
@@ -49,6 +49,7 @@ test('complete acceptance checks canonical pages and redirect without sending th
   assert.equal(receipt.outcome, 'verified');
   assert.equal(receipt.deployment, deployment);
   assert.equal(calls.filter(call => call.url.includes('mw_acceptance=')).length, 6);
+  assert.equal(calls.filter(call => call.url.startsWith('https://midtermwatch.com/') && !call.url.includes('?')).length, 6);
   for (const { url, options } of calls) {
     if (url.startsWith('https://api.github.com/')) assert.equal(options.headers.authorization, 'Bearer test-only-token');
     else assert.equal(options.headers?.authorization, undefined);
@@ -82,4 +83,46 @@ test('a superseded main revision is recorded separately from a verified release'
   const receipt = await verifyProduction({ sha, expectedStatus, request, attempts: 1 });
   assert.equal(receipt.outcome, 'superseded');
   assert.equal(calls.length, 1);
+});
+
+for (const [name, replacement, expected] of [
+  ['wrong redirect status', () => new Response(null, { status: 302, headers: { location: 'https://midtermwatch.com/results/' } }), /www must permanently redirect/],
+  ['wrong redirect location', () => new Response(null, { status: 308, headers: { location: 'https://other.example/results/' } }), /other\.example/],
+  ['stale status response', () => response(JSON.stringify({ status: 'post_election', ...expectedStatus }), 'application/json', { 'x-mw-stale': '1' }), /stale fallback/],
+  ['non-JSON status response', () => response('<html>Not JSON</html>', 'text/html'), /JSON content type required/],
+]) {
+  test(`production acceptance rejects ${name}`, async () => {
+    const mock = mockRequest();
+    const request = (url, options) => {
+      const replace = name.includes('redirect') ? url.startsWith('https://www.') : url.includes('/status.json');
+      return replace ? replacement() : mock.request(url, options);
+    };
+    await assert.rejects(verifyProduction({ sha, expectedStatus, request, attempts: 1, log: () => {} }), expected);
+  });
+}
+
+test('main advancing after public checks cannot produce a verified receipt', async () => {
+  const mock = mockRequest();
+  let branches = 0;
+  const request = (url, options) => {
+    if (url.endsWith('/branches/main') && ++branches === 2) return response(JSON.stringify({ commit: { sha: 'b'.repeat(40) } }));
+    return mock.request(url, options);
+  };
+  const receipt = await verifyProduction({ sha, expectedStatus, request, attempts: 1 });
+  assert.equal(receipt.outcome, 'superseded');
+  assert.equal(branches, 2);
+  assert.ok(mock.calls.some(call => call.url.startsWith('https://www.')), 'public checks completed before final branch guard');
+});
+
+test('an ordinary visitor response cannot hide stale fallback or an old cached deployment behind a healthy bypass', async () => {
+  for (const stale of [true, false]) {
+    const mock = mockRequest();
+    const request = (url, options) => {
+      if (url === 'https://midtermwatch.com/') {
+        return response(stale ? html : html.replace(deployment, 'dpl_Older'), 'text/html', stale ? { 'x-mw-stale': '1' } : {});
+      }
+      return mock.request(url, options);
+    };
+    await assert.rejects(verifyProduction({ sha, expectedStatus, request, attempts: 1, log: () => {} }), stale ? /stale fallback/ : /expected Vercel deployment/);
+  }
 });

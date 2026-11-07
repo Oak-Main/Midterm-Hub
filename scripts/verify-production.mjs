@@ -24,6 +24,8 @@ export function validatePage(response, html, state, deployment, path) {
   assert.equal(response.status, 200, `${path}: HTTP 200 required`);
   assert.match(response.headers.get('content-type') ?? '', /text\/html/i, `${path}: HTML required`);
   assert.equal(response.headers.get('x-mw-stale'), null, `${path}: stale fallback is not release acceptance`);
+  // Hosting metadata observed in real Vercel-served HTML (PR #55 and the
+  // baseline acceptance receipt); it is not emitted by app/ or the Worker.
   assert.ok(html.includes(`data-dpl-id="${deployment}"`), `${path}: expected Vercel deployment ${deployment}`);
   assert.ok(html.includes(`data-edition-state="${state}"`), `${path}: committed edition state required`);
   if (path.startsWith('/results/')) {
@@ -53,7 +55,7 @@ export async function verifyProduction({
     assert.equal(response.status, 200, `GitHub release evidence ${path}: HTTP 200 required`);
     return response.json();
   };
-  const publicResponse = path => request(`${origin}${path}?mw_acceptance=${sha}`, {
+  const publicResponse = (path, bypass) => request(`${origin}${path}${bypass ? `?mw_acceptance=${sha}` : ''}`, {
     signal: AbortSignal.timeout(10_000), redirect: 'error',
   });
   let lastError;
@@ -68,19 +70,24 @@ export async function verifyProduction({
       // is newest first and includes the bot identity required for attribution.
       const deployment = vercelDeployment({ statuses: await api(`/commits/${sha}/statuses?per_page=100`) });
       assert.ok(deployment, 'Vercel has not reported this commit ready yet');
-      const statusResponse = await publicResponse('/status.json');
-      assert.equal(statusResponse.status, 200, '/status.json: HTTP 200 required');
-      assert.match(statusResponse.headers.get('content-type') ?? '', /application\/json/i);
-      assert.equal(statusResponse.headers.get('x-mw-stale'), null);
-      const status = await statusResponse.json();
-      assert.deepEqual(status, {
-        status: expectedStatus.edition_state,
-        edition_state: expectedStatus.edition_state,
-        updated_at: expectedStatus.updated_at,
-      }, '/status.json must match the committed edition exactly');
-      for (const path of ['/', '/results/', '/results/ga/', '/results/ms/', '/results/la/']) {
-        const response = await publicResponse(path);
-        validatePage(response, await response.text(), status.edition_state, deployment, path);
+      let status;
+      // Bypass proves origin identity; ordinary requests also exercise the
+      // visitor cache/stale-fallback path. Both must serve this exact release.
+      for (const bypass of [true, false]) {
+        const statusResponse = await publicResponse('/status.json', bypass);
+        assert.equal(statusResponse.status, 200, '/status.json: HTTP 200 required');
+        assert.match(statusResponse.headers.get('content-type') ?? '', /application\/json/i, '/status.json: JSON content type required');
+        assert.equal(statusResponse.headers.get('x-mw-stale'), null, '/status.json: stale fallback is not release acceptance');
+        status = await statusResponse.json();
+        assert.deepEqual(status, {
+          status: expectedStatus.edition_state,
+          edition_state: expectedStatus.edition_state,
+          updated_at: expectedStatus.updated_at,
+        }, '/status.json must match the committed edition exactly');
+        for (const path of ['/', '/results/', '/results/ga/', '/results/ms/', '/results/la/']) {
+          const response = await publicResponse(path, bypass);
+          validatePage(response, await response.text(), status.edition_state, deployment, path);
+        }
       }
       const redirect = await request('https://www.midtermwatch.com/results/', {
         redirect: 'manual', signal: AbortSignal.timeout(10_000),
@@ -111,6 +118,8 @@ if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.m
     if (process.env.GITHUB_STEP_SUMMARY) {
       appendFileSync(process.env.GITHUB_STEP_SUMMARY, `## Vercel production ${receipt.outcome}\n\n\`\`\`json\n${JSON.stringify(receipt, null, 2)}\n\`\`\`\n`);
     }
+    // A superseded receipt is informative, but never a green acceptance.
+    if (receipt.outcome !== 'verified') process.exitCode = 2;
   } catch (error) {
     console.error(error.message);
     if (process.env.GITHUB_STEP_SUMMARY) {

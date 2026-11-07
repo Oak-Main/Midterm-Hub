@@ -66,8 +66,9 @@ replacement for this current edition.
 `scripts/verify-production.mjs` runs with Node 24 and read-only GitHub contents
 and commit-status access. It needs no npm installation. It:
 
-1. Confirms its SHA is still `main`; superseded runs report `superseded`, not
-   `verified`, so an older run cannot claim a newer release.
+1. Confirms its SHA is still `main`; superseded runs report `superseded` and
+   exit 2, so an older run cannot claim a newer release or green acceptance.
+   Concurrency can cancel an obsolete run before it writes a receipt.
 2. Waits up to 30 attempts, ten seconds apart, for the Vercel bot's commit
    status. `failure` or `error` terminates immediately. Only the approved
    team's `midterm-hub` deployment URL is accepted.
@@ -76,11 +77,13 @@ and commit-status access. It needs no npm installation. It:
    pages. A successful older edition cannot pass for a new commit.
 4. Requires HTTP 200, expected response types, no Worker stale fallback,
    the committed edition state and exact `/status.json` payload. Results
-   pages must retain the no-live-results disclaimer and active status label.
+   pages must retain the no-live-results disclaimer; post-election pages must
+   also show `Status: After the election`.
 5. Confirms the `www` results route returns HTTP 308 to the canonical apex.
 
-Public acceptance requests use a non-tracking query parameter to bypass the
-Worker's HTML cache. The GitHub token is sent only to `api.github.com`, never
+Each route is checked both with a non-tracking query parameter to bypass the
+Worker's cache and as an ordinary cacheable visitor request. Both must match
+the exact deployment and reject stale fallback. The GitHub token is sent only to `api.github.com`, never
 to the website. A JSON receipt is written to the job log and step summary.
 The workflow has a ten-minute overall bound. Local/manual equivalent:
 
@@ -98,7 +101,7 @@ and names the missing evidence; that alone does not establish a public outage.
 | Vercel commit status `failure` / `error` | Authoritative build/release failure; inspect that exact Vercel deployment |
 | Vercel ready, public acceptance fails | Investigate alias assignment, canonical routing, edge cache/stale fallback or deployed content using the reported SHA and deployment ID |
 | Historical `deploy-site` / `github-pages` failure | Separate retired target; not proof of a Vercel or public-domain outage |
-| Production verification `superseded` | A newer `main` exists; use the newer run's receipt |
+| Production verification `superseded` (exit 2), or canceled run | Obsolete revision, not an outage; use the newer run's receipt |
 
 For content rollback and the separately deployed Worker, follow
 `docs/RESULTS-NIGHT.md`. After a Vercel rollback, restore automatic domain
@@ -140,13 +143,15 @@ Sources: [PR #55 and production receipt](https://github.com/Oak-Main/Midterm-Hub
 ## Repair validation
 
 The repair passed lint (zero warnings), typecheck, a complete Next.js build
-(739 generated static routes), all 134 frontend/export regressions (zero
-skipped), and all 409 Python tests. Six new acceptance tests cover attribution,
+(739 generated static routes), all 140 frontend/export regressions (zero
+skipped), and all 409 Python tests. Twelve new acceptance tests cover attribution,
 old deployments, stale fallback, status timestamps, retries, terminal Vercel
-failures, superseded runs and token scoping. Both workflow files parse as YAML;
+failures, superseded runs, redirect/JSON failures, visitor cache failures and
+token scoping. Both workflow files parse as YAML;
 the validation workflow has no Pages action, deployment job or write permission.
 The new verifier accepted baseline `7c203ae` and its exact live Vercel deployment
-at `2026-11-07T04:22:06Z`. App, editorial content, generated data, assets, Worker,
+at `2026-11-07T04:28:38Z`, checking both bypass and ordinary visitor paths. App,
+editorial content, generated data, assets, Worker,
 Next.js and Vercel configuration were checked unchanged. Production acceptance
 for the merged repair is recorded by its GitHub Actions run, with the exact SHA
 and deployment ID in the step summary; local results alone are not a release
