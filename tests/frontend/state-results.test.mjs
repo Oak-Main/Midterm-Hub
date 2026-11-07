@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { pollSourceKey, resultsDescription } from '../../lib/election-night.ts';
+import { runoffRegistrationText } from '../../lib/runoff-registration.mjs';
 import { readFileSync, existsSync } from 'node:fs';
 
 // Per-state results pages are generated from content/election-night data.
@@ -98,6 +99,31 @@ test('North Dakota renders uncertainty on its results page and the national tabl
 test('DC results page exists with its authority link', { skip: !hasExport }, () => {
   const html = read('results/dc/index.html');
   assert.ok(html.includes(officialRow('DC').url));
+});
+
+// The /results/ post_election banner says "Where a state requires a runoff, its
+// page lists the date and registration rules." Each conditional-runoff state's
+// results page must carry both, from the same record the voting guide uses.
+const conditionalRunoffs = JSON.parse(readFileSync(new URL('../../content/refresh/content-package.json', import.meta.url))).conditional_runoffs;
+const runoffDateLabel = date => new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T12:00:00Z`));
+
+test('runoff states list the runoff date and registration rules on their results page', { skip: !hasExport }, () => {
+  const plain = html => html.replaceAll('&#x27;', "'").replaceAll('&amp;', '&').replaceAll('<!-- -->', '');
+  assert.deepEqual(conditionalRunoffs.map(row => row.state).sort(), ['GA', 'LA', 'MS']);
+  for (const runoff of conditionalRunoffs) {
+    const code = runoff.state.toLowerCase();
+    const html = plain(read(`results/${code}/index.html`));
+    const section = html.match(/<section id="runoff"[\s\S]*?<\/section>/)?.[0];
+    assert.ok(section, `${runoff.state} results page has a runoff section`);
+    assert.ok(section.includes(`Runoff date, if required.</strong> ${runoffDateLabel(runoff.date)}.`), `${runoff.state} names ${runoffDateLabel(runoff.date)}`);
+    assert.ok(section.includes(runoffRegistrationText(runoff)), `${runoff.state} lists its registration rules`);
+    assert.ok(section.includes(`<strong>${runoff.state} · `), `${runoff.state} carries the sourced runoff fragment`);
+    assert.ok(section.includes(`href="/states/${code}/"`), `${runoff.state} links its voting guide`);
+    assert.ok(html.includes('href="#runoff"'), `${runoff.state} on-page nav reaches the runoff section`);
+  }
+  for (const code of ['al', 'ak', 'nd', 'nh', 'tx', 'dc']) {
+    assert.doesNotMatch(read(`results/${code}/index.html`), /id="runoff"|href="#runoff"/, `${code} has no runoff section`);
+  }
 });
 
 test('Texas split-zone page shows both waves and the ballot section', { skip: !hasExport }, () => {
