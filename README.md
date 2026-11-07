@@ -143,9 +143,12 @@ Design & engineering notes:
 - **Provenance-first**: every election page shows a source citation, confidence
   level, and verification metadata — accuracy rendered as UI.
 
-`.github/workflows/pages.yml` builds and publishes the site to GitHub Pages on push
-(derives the origin/subpath from the repo). Enable **Settings → Pages → Source:
-GitHub Actions** once.
+The public edition is deployed by Vercel's Git integration from `main`, behind
+the Cloudflare proxy. `.github/workflows/pages.yml` now validates the static
+export only; the duplicate GitHub Pages publisher is retired. The separate
+**Vercel production verification** workflow checks the exact release on the
+canonical domain. See [DEPLOY.md](DEPLOY.md) for the accepted host configuration,
+release checks, incident evidence and rollback instructions.
 
 ## Configuration (environment)
 
