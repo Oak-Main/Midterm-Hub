@@ -88,4 +88,70 @@ contests, candidate certifications, schedules) remain excluded.
 
 ## Official results links (availability refresh)
 
-See the section appended by the release below.
+Every changed row was re-checked on November 10 in a plain headless Chromium
+(stock user agent, no automation-hiding flags or other bot-check workarounds).
+Oklahoma and South Carolina were refreshed from the authority's own linking page
+fetched with plain curl; their result hosts refused automated checks and their
+contents were not inspected. Labels are the authority's own wording at the
+check time, rendered as a dated quotation, never as a certification claim.
+Research agents' renders that used an automation-hiding browser flag were
+discarded and re-done.
+
+| State | Before (Nov 2) | After | Checked | Authority label seen |
+| --- | --- | --- | --- | --- |
+| AL | pending · https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001290 | https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305 | 2026-11-10T17:40:02Z | Unofficial Election Night Results |
+| AZ | pending · https://app.enhancedvoting.com/results/public/Arizona/110326GeneralElection | https://app.enhancedvoting.com/results/public/Arizona/110326GeneralElection | 2026-11-10T17:40:12Z | UNOFFICIAL RESULTS |
+| AR | pending · https://arkansas.tally-enr.com/ | https://arkansas.tally-enr.com/#election=11b07106-031e-4d7c-911a-d01fb473d6dd | 2026-11-10T17:40:23Z | Unofficial Results |
+| DE | pending · https://elections.delaware.gov/results/enr/GE2026.html | https://elections.delaware.gov/results/enr/GE2026.html | 2026-11-10T17:40:44Z | UNOFFICIAL RESULTS |
+| DC | pending · https://electionresults.dcboe.org/ | https://electionresults.dcboe.org/election_results/2026-General-Election | 2026-11-10T17:40:52Z | Election Night Unofficial Results |
+| GA | pending · https://results.sos.ga.gov/results/public/Georgia | https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection | 2026-11-10T17:41:01Z | UNOFFICIAL RESULTS |
+| HI | pending · https://elections.hawaii.gov/election-results/ | https://elections.hawaii.gov/election-results/ | 2026-11-10T17:41:11Z | — |
+| ID | pending · https://voteidaho.gov/election-results/ | https://results.voteidaho.gov/results/public/id/elections/nov2026 | 2026-11-10T17:41:20Z | UNOFFICIAL RESULTS |
+| IN | pending · https://enr.indianavoters.in.gov/site/index.html | https://enr.indianavoters.in.gov/site/index.html | 2026-11-10T17:41:30Z | — |
+| MD | https://elections.maryland.gov/elections/2026/general_results/index.html | same URL | 2026-11-10T17:41:51Z | Unofficial |
+| MT | pending · https://sosmt.gov/elections/results/ | https://electionresults.mt.gov/ | 2026-11-10T17:33:01Z | — |
+| NE | https://electionresults.nebraska.gov/ | same URL | 2026-11-10T17:33:08Z | Unofficial Results |
+| NM | https://electionresults.sos.nm.gov/ | same URL | 2026-11-10T17:33:30Z | Unofficial Results |
+| NC | pending · https://er.ncsbe.gov/ | https://er.ncsbe.gov/?election_dt=11/03/2026&county_id=0&office=FED&contest=0 | 2026-11-10T17:34:38Z | UNOFFICIAL |
+| ND | https://resultsnd.sos.nd.gov/#election=348 | same URL | 2026-11-10T17:34:48Z | Unofficial Results |
+| OK | pending · https://oklahoma.gov/elections/elections-results/election-results/2026-election-results.html | https://oklahoma.gov/elections/elections-results/election-results/2026-election-results/november-general-election.html | 2026-11-10T17:37:30Z | UNOFFICIAL RESULTS |
+| OR | https://results.oregonvotes.gov/ | same URL | 2026-11-10T17:35:04Z | UNOFFICIAL |
+| RI | https://electionresults.ri.gov/results/public/rhodeisland/elections/2026StatewideGeneralElection | same URL | 2026-11-10T17:35:14Z | UNOFFICIAL RESULTS |
+| SC | pending · https://scvotes.gov/elections-statistics/election-results/ | https://www.enr-scvotes.org/SC/127300/web.345435/#/summary | 2026-11-10T17:36:48Z | — |
+| SD | https://electionresults.sd.gov/Default.aspx | same URL | 2026-11-10T17:35:27Z | Unofficial Results |
+| UT | pending · https://electionresults.utah.gov/results/public/Utah | https://electionresults.utah.gov/results/public/Utah/elections/General11032026 | 2026-11-10T17:35:44Z | UNOFFICIAL RESULTS |
+| VT | pending · https://electionresults.vermont.gov/ | https://electionresults.vermont.gov/ | 2026-11-10T17:35:52Z | UNOFFICIAL |
+| VA | https://enr.elections.virginia.gov/results/public/virginia/elections/2026-November-General | same URL | 2026-11-10T17:36:02Z | UNOFFICIAL RESULTS |
+| WA | pending · https://results.votewa.gov/results/public/washington | https://results.votewa.gov/results/public/washington/elections/20261103 | 2026-11-10T17:36:12Z | UNOFFICIAL RESULTS |
+| WY | pending · https://sos.wyo.gov/Elections/ElectionResults.aspx | https://sos.wyo.gov/Elections/Docs/2026/2026GeneralResults.aspx | 2026-11-10T17:36:25Z | Unofficial |
+
+Unchanged rows (honest November 2 check date retained):
+
+| State | Kept as of Nov 2 because |
+| --- | --- |
+| AK | plain browser 502 (incomplete certificate chain) |
+| CA | Incapsula challenge |
+| CO | 403 to plain browser |
+| CT | Election Center root is an election selector, no stable 2026 link |
+| FL | Cloudflare challenge |
+| IA | 403 to plain browser |
+| IL | no 2026 general results posted |
+| KS | Cloudflare challenge |
+| KY | 403 bot block; 2026 general section empty |
+| LA | graphical page shows the default election, no stable 2026 link |
+| MA | no 2026 general results posted |
+| ME | no 2026 general results posted |
+| MI | linked results host returns Cloudflare 403 |
+| MN | captcha redirect |
+| MO | results site shows no vote counts |
+| MS | no 2026 general results posted |
+| NH | 403 / Akamai challenge |
+| NJ | Division posts no vote counts on that page |
+| NV | 403 to plain browser |
+| NY | 403 / timeout |
+| OH | Cloudflare challenge |
+| PA | 403 |
+| TN | 403 to plain browser |
+| TX | CAPTCHA |
+| WI | no 2026 general results posted |
+| WV | 403 to plain browser |
