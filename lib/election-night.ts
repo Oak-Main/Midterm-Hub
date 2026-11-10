@@ -261,7 +261,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
   const ids = new Set<string>();
   for (const event of events) {
     const at = (message: string) => problems.push(`${event.id}: ${message}`);
-    if (!/^[A-Z]{2}-\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(event.id) || Number.isNaN(Date.parse(event.id.slice(3, 13)))) at('id must look like ST-YYYY-MM-DD-slug with a real date');
+    if (!/^[A-Z]{2}-\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(event.id) || !isDayOrInstant(event.id.slice(3, 13))) at('id must look like ST-YYYY-MM-DD-slug with a real date');
     if (ids.has(event.id)) at('duplicate id');
     ids.add(event.id);
     if (!stateCodes.includes(event.state) || !event.id.startsWith(`${event.state}-`)) at('state must be a covered jurisdiction matching the id');

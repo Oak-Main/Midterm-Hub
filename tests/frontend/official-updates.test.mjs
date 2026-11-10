@@ -87,6 +87,7 @@ test('validator: race_path must be an existing House page in the event state', (
 
 test('validator: ids, states, sources and duplicates are checked', () => {
   assert.ok(officialUpdateProblems([base(), base()], codes).some((p) => /duplicate id/.test(p)));
+  assert.ok(problemsFor({ id: 'CT-2026-02-31-sample' }).some((p) => /real date/.test(p)), 'impossible id date rejected');
   assert.ok(problemsFor({ state: 'GA' }).some((p) => /state must be/.test(p)));
   assert.ok(problemsFor({ sources: [{ ...base().sources[0], url: 'http://example.gov' }] }).some((p) => /https/.test(p)));
   assert.ok(problemsFor({ sources: [base().sources[0], base().sources[0]] }).some((p) => /duplicate source/.test(p)));
