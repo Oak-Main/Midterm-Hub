@@ -501,13 +501,14 @@
       "state": "SC",
       "name": "South Carolina",
       "authority": "South Carolina State Election Commission",
-      "url": "https://www.enr-scvotes.org/SC/127300/web.345435/#/summary",
+      "url": "https://scvotes.gov/elections-statistics/election-results/",
       "requested_url": "https://scvotes.gov/elections-statistics/election-results/",
       "http_status": 200,
       "checked_at": "2026-11-10T17:36:48Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Linked as 'Statewide General Election' from the State Election Commission results index (HTTP 200, checked 2026-11-10T17:36:48Z); the same index separately lists 'Statewide General Election Recount' (enr-scvotes.org/SC/127592/), which is not linked here. The results host refused automated checks, so its contents were not inspected."
+      "notes": "State Election Commission results index (HTTP 200, plain fetch at 2026-11-10T17:36:48Z) lists 'Statewide General Election' (enr-scvotes.org/SC/127300/) and, separately, 'Statewide General Election Recount' (enr-scvotes.org/SC/127592/). The index itself is linked because the results host refused automated checks and its contents were not inspected.",
+      "visitor_note": "On the State Election Commission results page, choose “Statewide General Election”; the separate “Statewide General Election Recount” entry is a different listing."
     },
     {
       "state": "SD",

@@ -120,7 +120,7 @@ discarded and re-done.
 | OK | pending · https://oklahoma.gov/elections/elections-results/election-results/2026-election-results.html | https://oklahoma.gov/elections/elections-results/election-results/2026-election-results/november-general-election.html | 2026-11-10T17:37:30Z | UNOFFICIAL RESULTS |
 | OR | https://results.oregonvotes.gov/ | same URL | 2026-11-10T17:35:04Z | UNOFFICIAL |
 | RI | https://electionresults.ri.gov/results/public/rhodeisland/elections/2026StatewideGeneralElection | same URL | 2026-11-10T17:35:14Z | UNOFFICIAL RESULTS |
-| SC | pending · https://scvotes.gov/elections-statistics/election-results/ | https://www.enr-scvotes.org/SC/127300/web.345435/#/summary | 2026-11-10T17:36:48Z | — |
+| SC | pending · https://scvotes.gov/elections-statistics/election-results/ | same URL, no longer pending (visitor note: choose “Statewide General Election”, not the recount listing) | 2026-11-10T17:36:48Z | — |
 | SD | https://electionresults.sd.gov/Default.aspx | same URL | 2026-11-10T17:35:27Z | Unofficial Results |
 | UT | pending · https://electionresults.utah.gov/results/public/Utah | https://electionresults.utah.gov/results/public/Utah/elections/General11032026 | 2026-11-10T17:35:44Z | UNOFFICIAL RESULTS |
 | VT | pending · https://electionresults.vermont.gov/ | https://electionresults.vermont.gov/ | 2026-11-10T17:35:52Z | UNOFFICIAL |

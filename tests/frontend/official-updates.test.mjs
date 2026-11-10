@@ -53,6 +53,7 @@ test('validator: certifications need a dated act and full-contest scope; partial
   assert.ok(problemsFor(certified).some((p) => /speaks for the whole contest/.test(p)), 'a town scope cannot be a full certification');
   assert.deepEqual(problemsFor({ ...certified, ...withContest({ scope_kind: 'full_contest', scope: 'Full contest, statewide' }) }), []);
   assert.deepEqual(problemsFor({ ...certified, kind: 'local_certification' }), []);
+  assert.ok(problemsFor({ ...certified, kind: 'local_certification', ...withContest({ scope_kind: 'full_contest', scope: 'Full contest' }) }).some((p) => /requires local_unit scope/.test(p)));
   assert.ok(problemsFor({ ...certified, status: 'Unofficial certification', ...withContest({ scope_kind: 'full_contest', scope: 'Full contest' }) }).some((p) => /must not call the result unofficial/.test(p)));
   for (const scope of ['Orleans Parish', 'Seminole County portion', 'Ward 5', 'Full contest, town returns only']) {
     assert.ok(problemsFor({ ...certified, ...withContest({ scope_kind: 'full_contest', scope }) }).some((p) => /full-contest scope must not/.test(p)), scope);

@@ -284,6 +284,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
       if (contest.scope_kind !== 'full_contest' && contest.scope_kind !== 'local_unit') at(`${name}: scope_kind must be full_contest or local_unit`);
       if (contest.scope_kind === 'local_unit' && !LOCAL_SCOPE_DISCLAIMER.test(contest.scope)) at(`${name}: a local-unit scope must say it is not a statewide, district or contest total`);
       if (contest.scope_kind === 'full_contest' && LOCAL_SCOPE_WORDS.test(contest.scope)) at(`${name}: a full-contest scope must not describe a town, county, parish, ward or other part`);
+      if (event.kind === 'local_certification' && contest.scope_kind !== 'local_unit') at(`${name}: local_certification requires local_unit scope; use certification for the whole contest`);
       if (FULL_CONTEST_ONLY.includes(event.kind) && contest.scope_kind !== 'full_contest') at(`${name}: ${event.kind} speaks for the whole contest; use local_certification for a partial scope`);
       if (contest.race_path !== null) {
         const match = /^\/house\/([a-z]{2})-[a-z0-9]+\/$/.exec(contest.race_path);
