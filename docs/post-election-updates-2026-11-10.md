@@ -175,6 +175,23 @@ Unchanged rows (honest November 2 check date retained):
 
 ## Release receipt
 
-Recorded after the merge of PR #59 in a follow-up documentation commit: merge
-commit, Vercel deployment ID, production verification run, and the live-domain
-checks with their times.
+| Item | Value |
+| --- | --- |
+| PR | [Oak-Main/Midterm-Hub#59](https://github.com/Oak-Main/Midterm-Hub/pull/59), squash-merged 2026-11-10 18:09:25Z |
+| Merge commit | `8a8a126bcad6a8abeeda5a1ebddb7d19c35f9128` |
+| Production deployment | `dpl_7pcVq59h3hVQv7zALpGHsSp5BA75` (Vercel project `midterm-hub`; replaced `dpl_9BZYGUpxcZnPxAE1oh7v2c7KHoNv`, the rollback target) |
+| CI before merge | `test` (frontend, pytest), CodeQL and Vercel preview green on head `4f85e11`; Copilot and cubic AI review findings fixed or answered and resolved |
+| Production verification workflow | [run 42872293151](https://github.com/Oak-Main/Midterm-Hub/actions/runs/42872293151): `outcome: verified`, sha `8a8a126`, deployment `dpl_7pcVq59h3hVQv7zALpGHsSp5BA75`, checked 2026-11-10T18:11:43Z |
+| Live-domain checks (2026-11-10T18:12:03Z) | All 51 `/results/[state]/` routes, cache-bypass and ordinary visitor: HTTP 200, exact deployment id, no-live-results disclaimer, "Status: After the election", authority link, "not posted" wording only on pending rows, labels and visitor notes; CT and GA update entries with every figure, scope, status and source link; `/results/` lists both entries; `/house/ct-1/` links the Windsor entry with its scope and keeps its forecast disclaimer; `/house/ct-2/` unchanged; `/status.json` `post_election`; `www` 308 to apex; sitemap lastmod 2026-11-10; all 8 official source URLs HTTP 200 |
+| Rendered check (fresh Chromium session, 18:17Z) | `/results/`, `/results/ct/`, `/results/ga/`, `/results/sc/`, `/house/ct-1/` on desktop (1366 px) and iPhone 13: HTTP 200, no horizontal scroll |
+| Follow-up | Governor coverage label reworded to remove nested parentheses (cosmetic), with this receipt |
+| Local note | `scripts/verify-production.mjs` run from the research container could not read GitHub commit statuses (HTTP 401 through the sandbox proxy); the CI run above is the release receipt |
+
+### Still open after release (checked 2026-11-10 17:09Z–17:53Z)
+
+- Oklahoma: State Election Board certification meeting at 5:00 p.m. CT (23:00Z); not yet held when checked.
+- Idaho, Latah County recount (scheduled 17:30Z) and Florida U.S. House 27 recount: no completed determination posted.
+- South Carolina recount portal: 0% of counties reporting.
+- Nashua, NH amended ward returns: materiality blocked by NH Secretary of State 403.
+- Georgia SOS November 6 release: blocked by a Cloudflare bot challenge (not circumvented).
+- 25 results links keep their November 2 check date (blocked or not yet posted; see table above).
