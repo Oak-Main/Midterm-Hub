@@ -155,6 +155,8 @@ export function pollCloseProblems(rows: readonly PollCloseRow[]): string[] {
 export type OfficialResultsRow = {
   state: string; name: string; authority: string; url: string; requested_url: string; http_status: number;
   checked_at: string; page_kind: '2026_general' | 'landing'; pending: boolean; notes: string;
+  /** The authority's own status wording seen at checked_at, verbatim (e.g. "Unofficial Results"); never a certification claim of ours. */
+  label_seen?: string;
 };
 
 export function officialResultsProblems(rows: readonly OfficialResultsRow[]): string[] {
@@ -164,6 +166,103 @@ export function officialResultsProblems(rows: readonly OfficialResultsRow[]): st
     if (!isHttps(row.url)) problems.push(`${row.state}: url must be https`);
     if (Number.isNaN(Date.parse(row.checked_at))) problems.push(`${row.state}: checked_at must be a timestamp`);
     if (row.page_kind === 'landing' && !row.pending) problems.push(`${row.state}: a landing page stands in for a pending 2026 page`);
+    if (row.label_seen !== undefined && (row.pending || !row.label_seen.trim())) problems.push(`${row.state}: label_seen describes posted 2026 results only`);
   }
   return problems;
 }
+
+/* Official post-election updates. Each event is one authority document version
+ * (a corrected return, a completed recount determination or a certification),
+ * never a vote-count feed. Scope stays explicit: a town or county return is not
+ * a district or statewide total, and nothing here certifies a contest unless
+ * the competent authority's certification is the cited document. */
+
+export type OfficialUpdateKind = 'corrected_unofficial_tally' | 'completed_recount' | 'certification' | 'amended_certification' | 'withdrawn_certification';
+export const OFFICIAL_UPDATE_KINDS: readonly OfficialUpdateKind[] = ['corrected_unofficial_tally', 'completed_recount', 'certification', 'amended_certification', 'withdrawn_certification'];
+export const officialUpdateLabels: Record<OfficialUpdateKind, string> = {
+  corrected_unofficial_tally: 'Corrected unofficial tally',
+  completed_recount: 'Completed recount',
+  certification: 'Certification',
+  amended_certification: 'Amended certification',
+  withdrawn_certification: 'Certification withdrawn',
+};
+
+export type OfficialUpdateContest = {
+  /** "U.S. House, Connecticut District 1" */
+  contest: string;
+  /** Where Midterm Watch covers the contest, e.g. "U.S. House race page" or "Georgia House, chamber level". */
+  coverage: string;
+  /** Site route for the contest when one exists; chamber-level coverage has none. */
+  race_path: string | null;
+  candidates: string;
+  /** Reporting unit the figures describe, stated in words. */
+  scope: string;
+  before: string | null;
+  after: string | null;
+  change: string | null;
+};
+export type OfficialUpdateSource = { url: string; title: string; publisher: string; version: string | null; sha256: string | null; checked_at: string };
+export type OfficialUpdateDates = {
+  /** Authority publication date as stated by the authority; null when the source states none. */
+  published: string | null;
+  effective: string | null;
+  certified: string | null;
+  /** Verbatim print/report timestamp from the document; time zone only if stated. */
+  printed: string | null;
+  /** First time Midterm Watch's research record observed the document (UTC); null when not retained. */
+  first_observed: string | null;
+  /** Latest successful recheck of every cited source for supersession (UTC). */
+  last_checked: string;
+};
+export type OfficialUpdateEvent = {
+  id: string; state: string; kind: OfficialUpdateKind;
+  /** Short status line, e.g. "Unofficial; not certified". */
+  status: string;
+  authority: string;
+  summary: string;
+  contests: OfficialUpdateContest[];
+  sources: OfficialUpdateSource[];
+  dates: OfficialUpdateDates;
+  caveats: string[];
+};
+
+const isDate = (value: string | null) => value !== null && !Number.isNaN(Date.parse(value));
+
+/** Returns every problem with the official-updates record; an empty list means it is publishable. */
+export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], stateCodes: readonly string[]): string[] {
+  const problems: string[] = [];
+  const ids = new Set<string>();
+  for (const event of events) {
+    const at = (message: string) => problems.push(`${event.id}: ${message}`);
+    if (!/^[A-Z]{2}-\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(event.id)) at('id must look like ST-YYYY-MM-DD-slug');
+    if (ids.has(event.id)) at('duplicate id');
+    ids.add(event.id);
+    if (!stateCodes.includes(event.state) || !event.id.startsWith(`${event.state}-`)) at('state must be a covered jurisdiction matching the id');
+    if (!OFFICIAL_UPDATE_KINDS.includes(event.kind)) at(`unknown kind ${event.kind}`);
+    if (!event.status.trim() || !event.authority.trim() || !event.summary.trim()) at('status, authority and summary are required');
+    const certifying = event.kind === 'certification' || event.kind === 'amended_certification' || event.kind === 'withdrawn_certification';
+    if (certifying && !isDate(event.dates.certified)) at('a certification event needs its certification date');
+    if (!certifying && event.dates.certified !== null) at('only a certification event carries a certification date');
+    if (!certifying && !/unofficial/i.test(event.status)) at('an uncertified event must say it is unofficial');
+    if (!event.contests.length) at('at least one contest');
+    for (const contest of event.contests) {
+      if (!contest.contest.trim() || !contest.coverage.trim() || !contest.candidates.trim() || !contest.scope.trim()) at('every contest needs contest, coverage, candidates and scope');
+      if (contest.race_path !== null && !/^\/[a-z0-9/-]+\/$/.test(contest.race_path)) at(`race_path ${contest.race_path} must be a site route`);
+      if ((contest.before === null) !== (contest.after === null)) at(`${contest.contest}: before and after must both be stated or both be absent`);
+    }
+    if (!event.sources.length) at('at least one official source');
+    for (const source of event.sources) {
+      if (!isHttps(source.url) || !source.title.trim() || !source.publisher.trim() || !isDate(source.checked_at)) at('every source needs an https url, title, publisher and checked_at');
+      if (source.sha256 !== null && !/^[0-9a-f]{64}$/.test(source.sha256)) at('sha256 must be 64 hex characters');
+    }
+    for (const key of ['published', 'effective', 'certified'] as const) if (event.dates[key] !== null && !isDate(event.dates[key])) at(`dates.${key} must be a date or null`);
+    if (!isDate(event.dates.last_checked)) at('last_checked must be a timestamp');
+    if (event.dates.first_observed !== null && !isDate(event.dates.first_observed)) at('first_observed must be a timestamp or null');
+    if (isDate(event.dates.first_observed) && isDate(event.dates.last_checked) && Date.parse(event.dates.last_checked) < Date.parse(event.dates.first_observed!)) at('last_checked precedes first_observed');
+  }
+  return problems;
+}
+
+/** Events touching a site route, for race pages that cover one of the contests. */
+export const officialUpdatesForPath = (events: readonly OfficialUpdateEvent[], path: string) =>
+  events.filter(event => event.contests.some(contest => contest.race_path === path));
