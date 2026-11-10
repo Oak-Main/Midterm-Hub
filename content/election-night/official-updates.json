@@ -10,7 +10,7 @@
       "contests": [
         {
           "contest": "Governor and Lieutenant Governor",
-          "coverage": "Connecticut governor contest (governor ratings)",
+          "coverage": "Connecticut governor contest, in the governor ratings table",
           "race_path": null,
           "candidates": "Ryan Fazio and Matt Corey, Republican line only",
           "scope_kind": "local_unit",
