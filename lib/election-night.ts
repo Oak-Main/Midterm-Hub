@@ -306,6 +306,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
       if (event.dates[key] !== null && !isDayOrInstant(event.dates[key])) at(`dates.${key} must be YYYY-MM-DD, a UTC timestamp or null`);
     }
     if (!isDayOrInstant(event.dates.last_checked) || !INSTANT.test(event.dates.last_checked)) at('last_checked must be a UTC timestamp');
+    else if (event.sources.some(source => isDayOrInstant(source.checked_at) && Date.parse(source.checked_at) > Date.parse(event.dates.last_checked))) at('last_checked precedes a source check');
     else if (isDayOrInstant(event.dates.first_observed) && Date.parse(event.dates.last_checked) < Date.parse(event.dates.first_observed)) at('last_checked precedes first_observed');
   }
   return problems;

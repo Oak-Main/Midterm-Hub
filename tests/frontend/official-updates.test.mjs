@@ -70,6 +70,7 @@ test('validator: dates must be a calendar day or a UTC timestamp, never loose te
     assert.ok(problemsFor(withDates({ published: loose })).some((p) => /dates\.published/.test(p)), loose);
   }
   assert.ok(problemsFor(withDates({ last_checked: '2026-11-10' })).some((p) => /last_checked must be a UTC timestamp/.test(p)));
+  assert.ok(problemsFor(withDates({ last_checked: '2026-11-10T16:00:00Z' })).some((p) => /precedes a source check/.test(p)));
 });
 
 test('validator: a local scope must disclaim being a contest total, for any local unit', () => {
@@ -122,7 +123,7 @@ test('every event keeps its reporting-unit scope and states missing values inste
 
 test('race pages only list events whose contests name that route', () => {
   for (const event of events) for (const contest of event.contests) if (contest.race_path) {
-    assert.ok(officialUpdatesForPath(events, contest.race_path).includes(event));
+    assert.deepEqual(officialUpdatesForPath(events, contest.race_path), events.filter((candidate) => candidate.contests.some((item) => item.race_path === contest.race_path)));
   }
   assert.deepEqual(officialUpdatesForPath(events, '/house/zz-99/'), []);
 });
