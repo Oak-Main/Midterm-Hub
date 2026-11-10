@@ -5,13 +5,14 @@
       "state": "AL",
       "name": "Alabama",
       "authority": "Alabama Secretary of State (Alabama Votes election-night site, www2.alabamavotes.gov)",
-      "url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001290",
-      "requested_url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001290",
+      "url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
+      "requested_url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:39:01Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Page is SOS-branded ('Alabama Votes | Alabama Secretary of State') and currently reads 'Results Coming Soon. Polls close at 7:00 p.m. CST.' The URL without ecode serves the same page and its own links use ecode=1001290, but I could not confirm that code is the Nov 3 general (a web-search lead associated it with the May primary), so treated as landing/pending. I did not find this host linked from sos.alabama.gov pages I fetched; www.alabamavotes.gov redirects to sos.alabama.gov. Fallback SOS data page (linked from SOS, no general results yet): https://www.sos.alabama.gov/alabama-votes/voter/election-data (200 at 2026-11-02T23:39:02Z)."
+      "checked_at": "2026-11-10T17:40:02Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:40:02Z: the page names '2026 GENERAL ELECTION STATEWIDE RESULTS' and displays the label 'Unofficial Election Night Results', with 2026 general-election results posted. Located via https://www.sos.alabama.gov/.",
+      "label_seen": "Unofficial Election Night Results"
     },
     {
       "state": "AK",
@@ -32,22 +33,24 @@
       "url": "https://app.enhancedvoting.com/results/public/Arizona/110326GeneralElection",
       "requested_url": "https://app.enhancedvoting.com/results/public/Arizona/110326GeneralElection",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:25:40Z",
+      "checked_at": "2026-11-10T17:40:12Z",
       "page_kind": "2026_general",
-      "pending": true,
-      "notes": "Link text on azsos.gov 2026 Election Info page: 'Unofficial 2026 General Election Results' (https://azsos.gov/elections/election-information/2026-election-info). Results not posted yet (election is Nov 3). SOS ENR landing https://azsos.gov/elections/election-information/unofficial-enr is 403 to curl (opened via browser pane)."
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:40:12Z: the page names '2026 General Election November 3, 2026' and displays the label 'UNOFFICIAL RESULTS', with 2026 general-election results posted.",
+      "label_seen": "UNOFFICIAL RESULTS"
     },
     {
       "state": "AR",
       "name": "Arkansas",
       "authority": "Arkansas Secretary of State (Tally ENR)",
-      "url": "https://arkansas.tally-enr.com/",
-      "requested_url": "https://arkansas.tally-enr.com/",
+      "url": "https://arkansas.tally-enr.com/#election=11b07106-031e-4d7c-911a-d01fb473d6dd",
+      "requested_url": "https://arkansas.tally-enr.com/#election=11b07106-031e-4d7c-911a-d01fb473d6dd",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:26:48Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Linked from https://www.sos.arkansas.gov/elections/research/election-results as '2012-2026 Election Results' (link goes through a linkprotect wrapper to arkansas.tally-enr.com). That SOS page lists 2026 elections only through the primaries/specials; no Nov 3 general election entry yet, so landing/pending."
+      "checked_at": "2026-11-10T17:40:23Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:40:23Z: the page names '2026 General Election & Judical Runoff (Tuesday 03 Nov 2026)' and displays the label 'Unofficial Results', with 2026 general-election results posted. Located via https://www.sos.arkansas.gov/elections/research/election-results.",
+      "label_seen": "Unofficial Results"
     },
     {
       "state": "CA",
@@ -92,22 +95,24 @@
       "url": "https://elections.delaware.gov/results/enr/GE2026.html",
       "requested_url": "https://elections.delaware.gov/results/enr/GE2026.html",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:35:29Z",
+      "checked_at": "2026-11-10T17:40:44Z",
       "page_kind": "2026_general",
-      "pending": true,
-      "notes": "Page header '2026 General Election, November 3, 2026, Unofficial Results' with a results-reporting status section; linked from the Department of Elections home page. Results not in yet."
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:40:44Z: the page names '2026 General Election November 3, 2026' and displays the label 'UNOFFICIAL RESULTS', with 2026 general-election results posted.",
+      "label_seen": "UNOFFICIAL RESULTS"
     },
     {
       "state": "DC",
       "name": "District of Columbia",
       "authority": "District of Columbia Board of Elections",
-      "url": "https://electionresults.dcboe.org/",
-      "requested_url": "https://electionresults.dcboe.org/",
+      "url": "https://electionresults.dcboe.org/election_results/2026-General-Election",
+      "requested_url": "https://electionresults.dcboe.org/election_results/2026-General-Election",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:36:17Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Linked from https://dcboe.org/elections/2026-elections. Page is a JS app ('DCBOE Election Results'); content for the Nov 3 general could not be confirmed from the static response, so recorded as landing/pending."
+      "checked_at": "2026-11-10T17:40:52Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:40:52Z: the page names 'General Election 2026 - Election Night Unofficial Results (Election Date: Tuesday, November 3rd 2026)' and displays the label 'Election Night Unofficial Results', with 2026 general-election results posted.",
+      "label_seen": "Election Night Unofficial Results"
     },
     {
       "state": "FL",
@@ -125,13 +130,14 @@
       "state": "GA",
       "name": "Georgia",
       "authority": "Georgia Secretary of State (Elections Division)",
-      "url": "https://results.sos.ga.gov/results/public/Georgia",
-      "requested_url": "https://results.sos.ga.gov/",
+      "url": "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
+      "requested_url": "https://results.sos.ga.gov/results/public/Georgia/elections/11032026GeneralAndSpecialElection",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:34:03Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Enhanced Voting single-page app at the SOS results subdomain. It returns HTTP 200 for any election path, so a 2026-general-specific URL cannot be verified by curl; the landing page is recorded. sos.ga.gov/page/georgia-election-results (the SOS results page linked from georgia.gov's 2026 general-election page) returned 403 to curl, so the link chain from sos.ga.gov to results.sos.ga.gov was not confirmed."
+      "checked_at": "2026-11-10T17:41:01Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:41:01Z: the page names 'November 3, 2026 - General & Special Elections' and displays the label 'UNOFFICIAL RESULTS', with 2026 general-election results posted.",
+      "label_seen": "UNOFFICIAL RESULTS"
     },
     {
       "state": "HI",
@@ -140,22 +146,23 @@
       "url": "https://elections.hawaii.gov/election-results/",
       "requested_url": "https://elections.hawaii.gov/election-results/",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:34:04Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Results landing page already has a 'General Election, November 3, 2026' block (Statewide Summary, county summaries, Statement of Vote, text files) but every link points to a /wp-content/results/Placeholders/ file, so actual results are not posted yet."
+      "checked_at": "2026-11-10T17:41:11Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:41:11Z: the page names 'General Election November 3, 2026', with 2026 general-election results posted as PDF reports."
     },
     {
       "state": "ID",
       "name": "Idaho",
       "authority": "Idaho Secretary of State",
-      "url": "https://voteidaho.gov/election-results/",
-      "requested_url": "https://voteidaho.gov/election-results/",
+      "url": "https://results.voteidaho.gov/results/public/id/elections/nov2026",
+      "requested_url": "https://results.voteidaho.gov/results/public/id/elections/nov2026",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:34:05Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Landing page's 2026 section covers only the May 19 Primary (county results at results.voteidaho.gov .../elections/may2026); no November 2026 general results or link yet."
+      "checked_at": "2026-11-10T17:41:20Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:41:20Z: the page names 'General Election - November 3, 2026' and displays the label 'UNOFFICIAL RESULTS', with 2026 general-election results posted.",
+      "label_seen": "UNOFFICIAL RESULTS"
     },
     {
       "state": "IL",
@@ -176,10 +183,10 @@
       "url": "https://enr.indianavoters.in.gov/site/index.html",
       "requested_url": "https://enr.indianavoters.in.gov/site/index.html",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:34:12Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "Election-night reporting site linked as 'View all results' from indianavoters.in.gov. It is a JavaScript app: the HTML says 'Complete unofficial results may not be available election night; please check back' and shows unfilled template placeholders, so no specific election is selected yet."
+      "checked_at": "2026-11-10T17:41:30Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Plain headless-browser check at 2026-11-10T17:41:30Z: the page names 'Indiana Election Results November 3, 2026', with 2026 general-election results posted."
     },
     {
       "state": "IA",
@@ -248,10 +255,11 @@
       "url": "https://elections.maryland.gov/elections/2026/general_results/index.html",
       "requested_url": "https://elections.maryland.gov/elections/2026/general_results/index.html",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:33:39Z",
+      "checked_at": "2026-11-10T17:41:51Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Linked from the board's 2026 elections index as 'Unofficial General Results'. Page titled 'Unofficial 2026 Gubernatorial General Election Results'; the contest links are in place but no results are posted yet (election not held). A first parallel curl attempt hit a connection reset; the retry returned 200."
+      "notes": "Plain headless-browser check at 2026-11-10T17:41:51Z: the page names 'Unofficial 2026 Gubernatorial General Election Results' and displays the label 'Unofficial', with 2026 general-election results posted.",
+      "label_seen": "Unofficial"
     },
     {
       "state": "MA",
