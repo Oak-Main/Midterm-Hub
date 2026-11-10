@@ -1,0 +1,151 @@
+{
+  "events": [
+    {
+      "id": "CT-2026-11-06-windsor-amended-return",
+      "state": "CT",
+      "kind": "corrected_tally",
+      "status": "Unofficial corrected town return; not certified",
+      "authority": "Town of Windsor Head Moderator (return posted by the Windsor Town Clerk)",
+      "summary": "Windsor reissued its head moderator's return as “Amendment 1 - Recanvas - 3 typos.” Compared with the original return, it changes Windsor's figures in three offices: governor (Republican line), U.S. House District 1 and state treasurer, which this site does not cover. The Connecticut Secretary of the State's results system shows the amended Windsor figures and labels them unofficial.",
+      "contests": [
+        {
+          "contest": "Governor and Lieutenant Governor",
+          "coverage": "Connecticut governor contest (governor ratings)",
+          "race_path": null,
+          "candidates": "Ryan Fazio and Matt Corey, Republican line only",
+          "scope_kind": "local_unit",
+          "scope": "Town of Windsor return only; not a statewide total",
+          "before": "2,995",
+          "after": "2,981",
+          "change": "−14"
+        },
+        {
+          "contest": "U.S. House, Connecticut District 1",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/ct-1/",
+          "candidates": "Luke Bronin, Democratic line (his only line on this ballot)",
+          "scope_kind": "local_unit",
+          "scope": "Town of Windsor return only; not a district total",
+          "before": "9,972",
+          "after": "9,992",
+          "change": "+20"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.windsorct.gov/DocumentCenter/View/6871/Election-Results---November-3-2026---Amended",
+          "title": "Election Results - November 3, 2026 - Amended (Head Moderator's Return, Amendment 1)",
+          "publisher": "Town of Windsor",
+          "version": "Amendment 1",
+          "sha256": "6b73ce45aa257e4caf81759d3e8c9333a3cbc5687264c099f9052a5377093687",
+          "checked_at": "2026-11-10T17:09:21Z"
+        },
+        {
+          "url": "https://www.windsorct.gov/DocumentCenter/View/6867/Election-Results---November-3-2026",
+          "title": "Election Results - November 3, 2026 (original Head Moderator's Return)",
+          "publisher": "Town of Windsor",
+          "version": "Original",
+          "sha256": "9350dc37adf6908bf1828821f56959bbb16f60bcf74b4884d07d18198e98dfe5",
+          "checked_at": "2026-11-10T17:20:10Z"
+        },
+        {
+          "url": "https://www.windsorct.gov/560/Complete-Election-Results",
+          "title": "Complete Election Results",
+          "publisher": "Windsor Town Clerk",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-10T17:09:20Z"
+        },
+        {
+          "url": "https://ctemspublic.pcctg.net/",
+          "title": "Election Center, November 2026 State Election (Windsor figures labeled unofficial)",
+          "publisher": "Connecticut Secretary of the State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-10T17:21:03Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": "Original return 11/3/2026 10:54:11 PM; Amendment 1 11/6/2026 8:45:43 AM (time zone not stated)",
+        "first_observed": "2026-11-10",
+        "last_checked": "2026-11-10T17:21:03Z"
+      },
+      "caveats": [
+        "These are one town's party-line figures. Ryan Fazio and Matt Corey also appear on the Independent line, where Windsor's figure is 241 in both versions.",
+        "“Recanvas” is the document's own label; it does not by itself show a completed recount. The signature line on the posted amended return is blank.",
+        "Neither return states a publication date; the times below are the documents' print times."
+      ]
+    },
+    {
+      "id": "GA-2026-11-06-seminole-house-154",
+      "state": "GA",
+      "kind": "corrected_tally",
+      "status": "Corrected Seminole County figures; the district contest is unofficial and not certified",
+      "authority": "Seminole County Elections Department, with figures on the Georgia Secretary of State results site",
+      "summary": "Seminole County's election-night report, marked “Unofficial & Incomplete,” counted 2,523 ballots. The county elections supervisor states that every memory card was accounted for, that the election management system had not completed its final validate-and-publish step for the last precinct, and that the completed report counted 2,911 ballots, an increase of 388. The Secretary of State's results site shows the corrected Seminole figures below and labels the county's results official; it labels the district-wide House District 154 results unofficial.",
+      "contests": [
+        {
+          "contest": "Georgia House District 154",
+          "coverage": "Georgia House, covered at chamber level",
+          "race_path": null,
+          "candidates": "Gerald E. Greene (R, incumbent); Harry James (D)",
+          "scope_kind": "local_unit",
+          "scope": "Seminole County portion only; not the district total",
+          "before": "Greene 1,665; James 824",
+          "after": "Greene 2,019; James 858",
+          "change": "Greene +354; James +34 (all Election Day votes)"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://seminolecountyga.com/DocumentCenter/View/242/Elections-Department-Press-Release-PDF",
+          "title": "Elections Department press release (statement of Elections Supervisor Ronald D. Foskey)",
+          "publisher": "Seminole County Elections Department",
+          "version": "Undated",
+          "sha256": "02ef4cc954aa1e496396c3e10c8ec147962904de4bffd75c11bd0ace3760b2db",
+          "checked_at": "2026-11-10T17:09:09Z"
+        },
+        {
+          "url": "https://seminolecountyga.com/DocumentCenter/View/239/Election-Summary-Report-For-Reporting-Purposes-11-04-2026",
+          "title": "Election Summary Report, “Unofficial & Incomplete” (election-night figures)",
+          "publisher": "Seminole County",
+          "version": "Unofficial & Incomplete",
+          "sha256": "9e994180457529be1a1abffea7856fe02bc5d56e4814a8dea3cdac7df18d42ad",
+          "checked_at": "2026-11-10T17:11:57Z"
+        },
+        {
+          "url": "https://results.sos.ga.gov/results/public/seminole-county-ga/elections/11032026GeneralAndSpecialElection",
+          "title": "Seminole County, November 3, 2026 General & Special Elections",
+          "publisher": "Georgia Secretary of State",
+          "version": "Labeled official; last updated November 9, 2026, 8:40:34 PM UTC",
+          "sha256": null,
+          "checked_at": "2026-11-10T17:17:18Z"
+        },
+        {
+          "url": "https://seminolecountyga.com/DocumentCenter/View/241",
+          "title": "RLA Audit and Ballot Image Audit Notice",
+          "publisher": "Seminole County",
+          "version": "Undated",
+          "sha256": "599086dc6f1b8108a79bd518b339b2948c2841baffbaaf530101f37f6b8ba0e5",
+          "checked_at": "2026-11-10T17:15:46Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": "Election-night report printed 11/3/2026 9:33:34 PM (time zone not stated)",
+        "first_observed": "2026-11-09",
+        "last_checked": "2026-11-10T17:17:18Z"
+      },
+      "caveats": [
+        "Figures are Seminole County's share of a nine-county district. District-wide results remain unofficial; check the Georgia Secretary of State results site for the current count.",
+        "The county statement says no memory card was missing or found; the corrected count came from completing the system's publish step.",
+        "Seminole County has scheduled post-election audits (an audit of the results and a ballot image audit) for November 16, 2026."
+      ]
+    }
+  ]
+}

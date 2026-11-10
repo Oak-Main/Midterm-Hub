@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { pageMetadata } from '@/lib/refresh';
 import { BreadcrumbData } from '@/components/structured-data';
 import { JumpToState } from '@/components/jump-to-state';
-import { electionStatus, officialResults, pollClose } from '@/lib/election-night-data';
+import { electionStatus, officialResults, officialUpdates, pollClose } from '@/lib/election-night-data';
+import { OfficialUpdateLinks } from '@/components/official-updates';
 import { clockLabel, dayLabel, pollSourceKey, type PollSource, editionLabels, sortByClose, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 
 // KEVYN-WRITE: meta title and description naming poll-closing times, official results links and the per-state pages | facts: this page lists 51 poll-closing rows and 51 election-authority results links (content/election-night/*.json); per-state pages at /results/[state]/
@@ -35,7 +36,7 @@ export default function Results() {
       {/* KEVYN-WRITE: two sentences stating what this site reports (official poll-closing times, links to each election authority's results page, the publication rules below) and what it does not (vote counts, projections, race calls, AP or other licensed results) | facts: content/election-night/*.json; Projected requires a named call provider (table below); out-of-scope list in the Nov 2 results-night task */}
       <p className="mt-3 font-mono text-xs text-muted-foreground">Status updated {timestampLabel(electionStatus.updated_at)}</p>
     </div>
-    <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 font-bold"><a className="editorial-link" href="#poll-closing">Poll-closing times</a><a className="editorial-link" href="#official-results">Official results links</a><a className="editorial-link" href="#publication-states">Result publication states</a><a className="editorial-link" href="#sources">Sources and retrieval dates</a></nav>
+    <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 font-bold"><a className="editorial-link" href="#poll-closing">Poll-closing times</a>{officialUpdates.length > 0 && <a className="editorial-link" href="#official-updates">Official updates</a>}<a className="editorial-link" href="#official-results">Official results links</a><a className="editorial-link" href="#publication-states">Result publication states</a><a className="editorial-link" href="#sources">Sources and retrieval dates</a></nav>
 
     <section id="poll-closing" className="refresh-content mt-6">
       <h2>Poll-closing times, November 3</h2>
@@ -56,15 +57,18 @@ export default function Results() {
       {/* KEVYN-WRITE: one sentence explaining rows that say "Check the [state] election office": no single official statewide closing time could be confirmed for that state or area before publication | facts: New Hampshire, RSA 659:4 sets only an earliest close of 7 p.m. (https://gc.nh.gov/rsa/html/LXIII/659/659-4.htm); Alaska's Aleutian Islands west of 169°30′ W are in the Hawaii-Aleutian zone (49 CFR 71.12, https://www.ecfr.gov/current/title-49/subtitle-A/part-71/section-71.12) and no official page stated their close; rows tagged UNVERIFIED or with unverified_areas in content/election-night/poll-close-2026.json */}
     </section>
 
+    {/* Dated official documents (corrected returns, completed recounts, certifications) for covered contests; detail on each state page | facts: content/election-night/official-updates.json */}
+    <OfficialUpdateLinks events={officialUpdates} heading="Official updates recorded since Election Day" />
+
     <section id="official-results" className="refresh-content mt-6">
       <h2>Official results links</h2>
       {/* KEVYN-WRITE: each state name links its per-state results page (closing times and the authority link); each outbound link opens the election authority's own results page; a page marked pending was the authority's results landing page when checked because its 2026 general page was not yet posted | facts: content/election-night/official-results.json (final URL after redirects, HTTP status, checked_at per row); /results/[state]/ routes */}
       <p className="mt-2">Each state name opens its per-state results page; the third column opens the election authority directly.</p>
-      <div className="table-wrap" role="region" tabIndex={0} aria-label="Official election results pages by state"><table><caption>Election authority results pages, checked {dayLabel(results.map(row => row.checked_at).sort().at(-1) ?? '2026-11-02')}</caption>
+      <div className="table-wrap" role="region" tabIndex={0} aria-label="Official election results pages by state"><table><caption>Election authority results pages, with the date each link was last checked</caption>
         <thead><tr><th scope="col">State</th><th scope="col">Election authority</th><th scope="col">Results page</th></tr></thead>
         <tbody>{results.map(row => <tr key={row.state} id={`results-${row.state.toLowerCase()}`} data-pending={row.pending}>
           <th scope="row"><Link href={`/results/${row.state.toLowerCase()}/`}>{row.name}</Link></th><td>{row.authority}</td>
-          <td><a href={row.url} rel="noopener noreferrer">{new URL(row.url).hostname}</a>{row.pending && <span className="block text-xs font-bold">2026 results page pending</span>}</td>
+          <td><a href={row.url} rel="noopener noreferrer">{new URL(row.url).hostname}</a>{row.pending && <span className="block text-xs font-bold">2026 results page pending</span>}<span className="block text-xs">checked {dayLabel(row.checked_at)}</span></td>
         </tr>)}</tbody></table></div>
     </section>
 

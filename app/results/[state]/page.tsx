@@ -2,12 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { BreadcrumbData } from '@/components/structured-data';
-import { electionStatus, officialResults, pollClose } from '@/lib/election-night-data';
+import { electionStatus, officialResults, officialUpdates, pollClose } from '@/lib/election-night-data';
 import { clockLabel, dayLabel, pollSourceKey, resultsDescription, editionLabels, tagLabels, timestampLabel, zoneLabel, type EditionState } from '@/lib/election-night';
 import { electionHref, forState, states } from '@/lib/data';
 import { pageMetadata, refresh, refreshHtml } from '@/lib/refresh';
 import { RunoffRegistration } from '@/components/runoff-registration';
 import { RefreshContent } from '@/components/refresh-content';
+import { OfficialUpdates } from '@/components/official-updates';
 
 export const dynamicParams = false;
 export function generateStaticParams() { return states.map(([state]) => ({ state: state.toLowerCase() })); }
@@ -47,6 +48,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
   // record the voting guide renders, so the /results/ post_election banner's
   // "its page lists the date and registration rules" holds on this page too.
   const runoff = refresh.conditional_runoffs.find(item => item.state === code);
+  const updates = officialUpdates.filter(event => event.state === code);
   return <article className="mx-auto max-w-5xl px-5 py-14 lg:px-8">
     <BreadcrumbData name={`${row.name} 2026 results`} path={`/results/${state}/`} parent={{ name: 'Result status', path: '/results/' }} />
     <nav className="rule-label" aria-label="Breadcrumb"><Link href="/results/">Result status</Link> / {row.name}</nav>
@@ -61,6 +63,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
     <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 font-bold">
       <a className="editorial-link" href="#poll-closing">Poll closing</a>
       <a className="editorial-link" href="#official-results">Official results</a>
+      {updates.length > 0 && <a className="editorial-link" href="#official-updates">Official updates</a>}
       {general && <a className="editorial-link" href="#ballot">On the {row.name} ballot</a>}
       {runoff && <a className="editorial-link" href="#runoff">Conditional runoff</a>}
       <Link className="editorial-link" href={`/states/${state}/`}>{row.name} voting guide</Link>
@@ -88,7 +91,12 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
       {/* KEVYN-WRITE: the election authority's own results page for this state, with the date it was last checked | facts: content/election-night/official-results.json rows[state] authority, url, checked_at, pending */}
       <p>The authority publishing {row.name}&rsquo;s official results is the {results.authority}.{results.pending ? ' Its dedicated 2026 results page had not been posted when last checked; the link opens the authority’s results landing page.' : ''}</p>
       <p className="mt-3"><a className="editorial-link" href={results.url} rel="noopener noreferrer">{`Open official ${row.name} results`}</a> <span className="text-sm text-muted-foreground">· checked {dayLabel(results.checked_at)}</span></p>
+      {results.visitor_note && <p className="mt-2 text-sm">{results.visitor_note}</p>}
+      {results.label_seen && <p className="mt-2 text-sm">{`When checked ${dayLabel(results.checked_at)}, the authority’s page labeled these results “${results.label_seen}”. Check the link for the current status.`}</p>}
     </section>
+
+    {/* Dated official updates for covered contests: one entry per authority document version | facts: content/election-night/official-updates.json */}
+    <OfficialUpdates events={updates} name={row.name} />
 
     {general && <section id="ballot" className="refresh-content mt-6">
       <h2>On the {row.name} ballot, November 3</h2>
