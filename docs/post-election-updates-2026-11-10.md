@@ -124,6 +124,7 @@ discarded and re-done.
 | VA | https://enr.elections.virginia.gov/results/public/virginia/elections/2026-November-General | same URL | 2026-11-10T17:36:02Z | UNOFFICIAL RESULTS |
 | WA | pending · https://results.votewa.gov/results/public/washington | https://results.votewa.gov/results/public/washington/elections/20261103 | 2026-11-10T17:36:12Z | UNOFFICIAL RESULTS |
 | WY | pending · https://sos.wyo.gov/Elections/ElectionResults.aspx | https://sos.wyo.gov/Elections/Docs/2026/2026GeneralResults.aspx | 2026-11-10T17:36:25Z | Unofficial |
+| CT | pending · https://portal.ct.gov/sots/election-services/election-results/election-results | https://ctemspublic.pcctg.net/ (visitor note: choose “11/03/2026 -- November 2026 State Election”) | 2026-11-10T17:46:46Z | — (statewide view shows no label; town data marked “Unofficial Results”) |
 
 Unchanged rows (honest November 2 check date retained):
 
@@ -132,7 +133,6 @@ Unchanged rows (honest November 2 check date retained):
 | AK | plain browser 502 (incomplete certificate chain) |
 | CA | Incapsula challenge |
 | CO | 403 to plain browser |
-| CT | Election Center root is an election selector, no stable 2026 link |
 | FL | Cloudflare challenge |
 | IA | 403 to plain browser |
 | IL | no 2026 general results posted |
@@ -155,3 +155,10 @@ Unchanged rows (honest November 2 check date retained):
 | TX | CAPTCHA |
 | WI | no 2026 general results posted |
 | WV | 403 to plain browser |
+
+## Reviews
+
+| Review | Scope | Outcome |
+| --- | --- | --- |
+| Independent factual review (separate agent, fresh downloads, page images inspected) | Every claim in `official-updates.json` against its official sources | No blocking issues; all figures, names, party lines, scope labels, statuses, dates and hashes confirmed; no superseding Windsor amendment, Seminole document or state certification found. Applied: both November 16 Seminole audits named. Kept: cautious "unofficial" district framing. |
+| Independent code review (separate agent) | `git diff origin/main...HEAD` | No blocking issues. Six should-fix findings (S1 Connecticut pending row contradicting a newer update; loose date parsing; certification overclaim for partial scope or withdrawal; scope rule only in tests; undated completed recount; unchecked race_path) fixed in `e7910b8` with regression tests; optional items O1–O3, O5, O7–O11 applied; O4 documented; O6 (South Carolina link) kept as the authority's own link. Re-review result recorded in the release receipt. |
