@@ -157,6 +157,8 @@ export type OfficialResultsRow = {
   checked_at: string; page_kind: '2026_general' | 'landing'; pending: boolean; notes: string;
   /** The authority's own status wording seen at checked_at, verbatim (e.g. "Unofficial Results"); never a certification claim of ours. */
   label_seen?: string;
+  /** One sentence telling a visitor how to reach the 2026 results at url, e.g. which election to select. */
+  visitor_note?: string;
 };
 
 export function officialResultsProblems(rows: readonly OfficialResultsRow[]): string[] {
@@ -167,6 +169,7 @@ export function officialResultsProblems(rows: readonly OfficialResultsRow[]): st
     if (Number.isNaN(Date.parse(row.checked_at))) problems.push(`${row.state}: checked_at must be a timestamp`);
     if (row.page_kind === 'landing' && !row.pending) problems.push(`${row.state}: a landing page stands in for a pending 2026 page`);
     if (row.label_seen !== undefined && (row.pending || !row.label_seen.trim())) problems.push(`${row.state}: label_seen describes posted 2026 results only`);
+    if (row.visitor_note !== undefined && (row.pending || !/\.$/.test(row.visitor_note.trim()))) problems.push(`${row.state}: visitor_note is one sentence for posted 2026 results`);
   }
   return problems;
 }
@@ -175,27 +178,36 @@ export function officialResultsProblems(rows: readonly OfficialResultsRow[]): st
  * (a corrected return, a completed recount determination or a certification),
  * never a vote-count feed. Scope stays explicit: a town or county return is not
  * a district or statewide total, and nothing here certifies a contest unless
- * the competent authority's certification is the cited document. */
+ * the competent authority's certification of the full contest is cited. */
 
-export type OfficialUpdateKind = 'corrected_unofficial_tally' | 'completed_recount' | 'certification' | 'amended_certification' | 'withdrawn_certification';
-export const OFFICIAL_UPDATE_KINDS: readonly OfficialUpdateKind[] = ['corrected_unofficial_tally', 'completed_recount', 'certification', 'amended_certification', 'withdrawn_certification'];
+export type OfficialUpdateKind = 'corrected_tally' | 'completed_recount' | 'local_certification' | 'certification' | 'amended_certification' | 'withdrawn_certification';
+export const OFFICIAL_UPDATE_KINDS: readonly OfficialUpdateKind[] = ['corrected_tally', 'completed_recount', 'local_certification', 'certification', 'amended_certification', 'withdrawn_certification'];
 export const officialUpdateLabels: Record<OfficialUpdateKind, string> = {
-  corrected_unofficial_tally: 'Corrected unofficial tally',
+  corrected_tally: 'Corrected tally',
   completed_recount: 'Completed recount',
+  local_certification: 'Local certification (partial scope)',
   certification: 'Certification',
   amended_certification: 'Amended certification',
   withdrawn_certification: 'Certification withdrawn',
 };
+/** Kinds that carry a certification act and its date. */
+const CERTIFYING: readonly OfficialUpdateKind[] = ['local_certification', 'certification', 'amended_certification', 'withdrawn_certification'];
+/** Kinds that speak for the whole contest; every contest must be full_contest scope. */
+const FULL_CONTEST_ONLY: readonly OfficialUpdateKind[] = ['certification', 'amended_certification', 'withdrawn_certification'];
+/** Label for the certification date row, so a withdrawal never reads as "Certified". */
+export const certificationDateLabel = (kind: OfficialUpdateKind) => kind === 'withdrawn_certification' ? 'Certification withdrawn' : 'Certified';
 
 export type OfficialUpdateContest = {
   /** "U.S. House, Connecticut District 1" */
   contest: string;
   /** Where Midterm Watch covers the contest, e.g. "U.S. House race page" or "Georgia House, chamber level". */
   coverage: string;
-  /** Site route for the contest when one exists; chamber-level coverage has none. */
+  /** House race route (/house/st-n/) when one exists; chamber-level coverage has none. */
   race_path: string | null;
   candidates: string;
-  /** Reporting unit the figures describe, stated in words. */
+  /** full_contest: the figures describe the whole contest; local_unit: a town, county, ward or other part. */
+  scope_kind: 'full_contest' | 'local_unit';
+  /** Reporting unit the figures describe, stated in words; a local unit says it is "not a/the … total". */
   scope: string;
   before: string | null;
   after: string | null;
@@ -203,20 +215,23 @@ export type OfficialUpdateContest = {
 };
 export type OfficialUpdateSource = { url: string; title: string; publisher: string; version: string | null; sha256: string | null; checked_at: string };
 export type OfficialUpdateDates = {
-  /** Authority publication date as stated by the authority; null when the source states none. */
+  /** Authority publication date as stated by the authority (YYYY-MM-DD or UTC timestamp); null when the source states none. */
   published: string | null;
+  /** Date the act took effect (for a recount, its completion); null when not stated. */
   effective: string | null;
+  /** Date of the certification act (or its withdrawal) by the competent authority. */
   certified: string | null;
   /** Verbatim print/report timestamp from the document; time zone only if stated. */
   printed: string | null;
-  /** First time Midterm Watch's research record observed the document (UTC); null when not retained. */
+  /** First time Midterm Watch's research record observed the document; null when not retained. */
   first_observed: string | null;
-  /** Latest successful recheck of every cited source for supersession (UTC). */
+  /** Latest successful recheck of every cited source for later versions (UTC timestamp). */
   last_checked: string;
 };
 export type OfficialUpdateEvent = {
+  /** ST-YYYY-MM-DD-slug; the date is when the authority issued the corrected figures or act (print, upload or certification date). */
   id: string; state: string; kind: OfficialUpdateKind;
-  /** Short status line, e.g. "Unofficial; not certified". */
+  /** Short status line without a final period, e.g. "Unofficial corrected town return; not certified". */
   status: string;
   authority: string;
   summary: string;
@@ -226,42 +241,82 @@ export type OfficialUpdateEvent = {
   caveats: string[];
 };
 
-const isDate = (value: string | null) => value !== null && !Number.isNaN(Date.parse(value));
+const DAY = /^\d{4}-\d{2}-\d{2}$/;
+const INSTANT = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2})?Z$/;
+/** Only a calendar day or a full UTC timestamp; anything looser could render a date the source never gave. */
+const isDayOrInstant = (value: string | null): value is string => value !== null && (DAY.test(value) || INSTANT.test(value)) && !Number.isNaN(Date.parse(value));
+const LOCAL_SCOPE_DISCLAIMER = /\bnot (?:a|the) (?:statewide|district|full[- ]contest|contest)\b[^;.]*\btotal\b/i;
+const dupes = (values: string[]) => values.filter((value, index) => values.indexOf(value) !== index);
 
-/** Returns every problem with the official-updates record; an empty list means it is publishable. */
-export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], stateCodes: readonly string[]): string[] {
+/**
+ * Returns every problem with the official-updates record; an empty list means it is publishable.
+ * `housePaths` lists the House race routes that exist, so a race_path can never link to a missing or wrong-state page.
+ */
+export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], stateCodes: readonly string[], housePaths?: ReadonlySet<string>): string[] {
   const problems: string[] = [];
   const ids = new Set<string>();
   for (const event of events) {
     const at = (message: string) => problems.push(`${event.id}: ${message}`);
-    if (!/^[A-Z]{2}-\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(event.id)) at('id must look like ST-YYYY-MM-DD-slug');
+    if (!/^[A-Z]{2}-\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(event.id) || Number.isNaN(Date.parse(event.id.slice(3, 13)))) at('id must look like ST-YYYY-MM-DD-slug with a real date');
     if (ids.has(event.id)) at('duplicate id');
     ids.add(event.id);
     if (!stateCodes.includes(event.state) || !event.id.startsWith(`${event.state}-`)) at('state must be a covered jurisdiction matching the id');
     if (!OFFICIAL_UPDATE_KINDS.includes(event.kind)) at(`unknown kind ${event.kind}`);
     if (!event.status.trim() || !event.authority.trim() || !event.summary.trim()) at('status, authority and summary are required');
-    const certifying = event.kind === 'certification' || event.kind === 'amended_certification' || event.kind === 'withdrawn_certification';
-    if (certifying && !isDate(event.dates.certified)) at('a certification event needs its certification date');
-    if (!certifying && event.dates.certified !== null) at('only a certification event carries a certification date');
-    if (!certifying && !/unofficial/i.test(event.status)) at('an uncertified event must say it is unofficial');
+    if (/[.;,]\s*$/.test(event.status)) at('status must not end with punctuation; the page adds it');
+
+    const certifying = CERTIFYING.includes(event.kind);
+    if (certifying && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');
+    if (event.kind === 'corrected_tally' && event.dates.certified !== null) at('a corrected tally carries no certification date');
+    if (event.kind === 'completed_recount' && !isDayOrInstant(event.dates.effective) && !isDayOrInstant(event.dates.published)) at('a completed recount needs its completion (effective) or publication date');
+    if (event.dates.certified === null && !/unofficial/i.test(event.status)) at('an event without a certification date must say it is unofficial');
+    if (event.kind === 'withdrawn_certification' && !/withdr/i.test(event.status)) at('a withdrawn certification must say so in its status');
+
     if (!event.contests.length) at('at least one contest');
     for (const contest of event.contests) {
-      if (!contest.contest.trim() || !contest.coverage.trim() || !contest.candidates.trim() || !contest.scope.trim()) at('every contest needs contest, coverage, candidates and scope');
-      if (contest.race_path !== null && !/^\/[a-z0-9/-]+\/$/.test(contest.race_path)) at(`race_path ${contest.race_path} must be a site route`);
-      if ((contest.before === null) !== (contest.after === null)) at(`${contest.contest}: before and after must both be stated or both be absent`);
+      const name = contest.contest || '(unnamed contest)';
+      if (!contest.contest.trim() || !contest.coverage.trim() || !contest.candidates.trim() || !contest.scope.trim()) at(`${name}: contest, coverage, candidates and scope are required`);
+      if (contest.scope_kind !== 'full_contest' && contest.scope_kind !== 'local_unit') at(`${name}: scope_kind must be full_contest or local_unit`);
+      if (contest.scope_kind === 'local_unit' && !LOCAL_SCOPE_DISCLAIMER.test(contest.scope)) at(`${name}: a local-unit scope must say it is not a statewide, district or contest total`);
+      if (FULL_CONTEST_ONLY.includes(event.kind) && contest.scope_kind !== 'full_contest') at(`${name}: ${event.kind} speaks for the whole contest; use local_certification for a partial scope`);
+      if (contest.race_path !== null) {
+        const match = /^\/house\/([a-z]{2})-[a-z0-9]+\/$/.exec(contest.race_path);
+        if (!match || match[1] !== event.state.toLowerCase()) at(`${name}: race_path ${contest.race_path} must be a /house/ route in ${event.state}`);
+        else if (housePaths && !housePaths.has(contest.race_path)) at(`${name}: race_path ${contest.race_path} is not a published House page`);
+      }
+      if ((contest.before === null) !== (contest.after === null)) at(`${name}: before and after must both be stated or both be absent`);
     }
+    for (const value of dupes(event.contests.map(contest => contest.contest))) at(`duplicate contest ${value}`);
+
     if (!event.sources.length) at('at least one official source');
     for (const source of event.sources) {
-      if (!isHttps(source.url) || !source.title.trim() || !source.publisher.trim() || !isDate(source.checked_at)) at('every source needs an https url, title, publisher and checked_at');
+      if (!isHttps(source.url) || !source.title.trim() || !source.publisher.trim() || !isDayOrInstant(source.checked_at)) at('every source needs an https url, title, publisher and a YYYY-MM-DD or UTC checked_at');
       if (source.sha256 !== null && !/^[0-9a-f]{64}$/.test(source.sha256)) at('sha256 must be 64 hex characters');
     }
-    for (const key of ['published', 'effective', 'certified'] as const) if (event.dates[key] !== null && !isDate(event.dates[key])) at(`dates.${key} must be a date or null`);
-    if (!isDate(event.dates.last_checked)) at('last_checked must be a timestamp');
-    if (event.dates.first_observed !== null && !isDate(event.dates.first_observed)) at('first_observed must be a timestamp or null');
-    if (isDate(event.dates.first_observed) && isDate(event.dates.last_checked) && Date.parse(event.dates.last_checked) < Date.parse(event.dates.first_observed!)) at('last_checked precedes first_observed');
+    for (const value of dupes(event.sources.map(source => source.url))) at(`duplicate source ${value}`);
+    for (const value of dupes(event.caveats)) at(`duplicate caveat ${value}`);
+
+    for (const key of ['published', 'effective', 'certified', 'first_observed'] as const) {
+      if (event.dates[key] !== null && !isDayOrInstant(event.dates[key])) at(`dates.${key} must be YYYY-MM-DD, a UTC timestamp or null`);
+    }
+    if (!isDayOrInstant(event.dates.last_checked) || !INSTANT.test(event.dates.last_checked)) at('last_checked must be a UTC timestamp');
+    else if (isDayOrInstant(event.dates.first_observed) && Date.parse(event.dates.last_checked) < Date.parse(event.dates.first_observed)) at('last_checked precedes first_observed');
   }
   return problems;
 }
+
+/** A state page must not say its 2026 results page was unposted while citing a newer official update for that state. */
+export function officialUpdateRowConflicts(events: readonly OfficialUpdateEvent[], rows: readonly OfficialResultsRow[]): string[] {
+  return events.flatMap(event => {
+    const row = rows.find(item => item.state === event.state);
+    return row && row.pending && Date.parse(row.checked_at) < Date.parse(event.dates.last_checked)
+      ? [`${event.id}: ${event.state} results link is still pending from ${row.checked_at}; recheck it before publishing a newer update`] : [];
+  });
+}
+
+/** Newest authority date first (the id date), then id; the order every page renders. */
+export const sortOfficialUpdates = (events: readonly OfficialUpdateEvent[]) =>
+  [...events].sort((a, b) => b.id.slice(3, 13).localeCompare(a.id.slice(3, 13)) || a.id.localeCompare(b.id));
 
 /** Events touching a site route, for race pages that cover one of the contests. */
 export const officialUpdatesForPath = (events: readonly OfficialUpdateEvent[], path: string) =>

@@ -25,7 +25,7 @@ export default async function HouseRace({ params }: { params: Promise<{ district
     <h1 className="mt-5 font-serif text-5xl font-bold">{race.district} · 2026 House election</h1><EditionNote />
     <RefreshContent html={refreshHtml(`races/house/${district}.html`)} />
     {/* Official post-election documents touching this contest; the ratings above remain the dated pre-election record. */}
-    <OfficialUpdateLinks events={officialUpdatesForPath(officialUpdates, `/house/${district}/`)} heading="Official updates after the election" />
+    <OfficialUpdateLinks events={officialUpdatesForPath(officialUpdates, `/house/${district}/`)} heading="Official updates after the election" path={`/house/${district}/`} />
     <p className="mt-8"><Link className="editorial-link" href={`/states/${race.state.toLowerCase()}/`}>Open the {race.state} voting guide</Link> · <Link className="editorial-link" href="/results/">Election result status</Link></p>
   </article>;
 }

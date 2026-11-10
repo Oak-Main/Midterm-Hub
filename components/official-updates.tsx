@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { dayLabel, officialUpdateLabels, timestampLabel, type OfficialUpdateEvent } from '@/lib/election-night';
+import { certificationDateLabel, dayLabel, officialUpdateLabels, timestampLabel, type OfficialUpdateEvent } from '@/lib/election-night';
 
 // Renders dated, source-linked official updates (corrected returns, completed
 // recounts, certifications). Missing values are stated as missing; nothing is
@@ -32,25 +32,30 @@ export function OfficialUpdates({ events, name }: { events: readonly OfficialUpd
       <dl className="mt-4 grid gap-x-6 gap-y-1 text-sm sm:grid-cols-[max-content_1fr]">
         <dt className="font-bold">Published by the authority</dt><dd>{when(event.dates.published, 'Not stated in the source')}</dd>
         <dt className="font-bold">Effective</dt><dd>{when(event.dates.effective, 'Not stated in the source')}</dd>
-        <dt className="font-bold">Certified</dt><dd>{when(event.dates.certified, 'No certification of this contest is cited')}</dd>
+        <dt className="font-bold">{certificationDateLabel(event.kind)}</dt><dd>{when(event.dates.certified, 'No certification of this contest is cited')}</dd>
         <dt className="font-bold">Document print time</dt><dd>{event.dates.printed ?? 'Not stated in the source'}</dd>
         <dt className="font-bold">First observed by Midterm Watch</dt><dd>{when(event.dates.first_observed, 'Not retained')}</dd>
         <dt className="font-bold">Sources last checked for later versions</dt><dd>{when(event.dates.last_checked, 'Not checked')}</dd>
       </dl>
       <p className="mt-3 text-sm"><strong>Official sources:</strong></p>
-      <ul className="sources">{event.sources.map(source => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.title}</a> · {source.publisher}{source.version ? ` · ${source.version}` : ''} · checked {dayLabel(source.checked_at)}</li>)}</ul>
+      <ul className="sources">{event.sources.map(source => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.title}</a> · {source.publisher}{source.version ? ` · ${source.version}` : ''} · checked {when(source.checked_at, '')}</li>)}</ul>
     </article>)}
   </section>;
 }
 
-/** One-line pointers for a race page or the national hub; the detail lives on the state results page. */
-export function OfficialUpdateLinks({ events, heading }: { events: readonly OfficialUpdateEvent[]; heading: string }) {
+/** One-line pointers for a race page or the national hub; the detail lives on the state results page.
+ * With `path`, only the contest on that page is named, with its scope, so a race page never leads with another contest. */
+export function OfficialUpdateLinks({ events, heading, path }: { events: readonly OfficialUpdateEvent[]; heading: string; path?: string }) {
   if (!events.length) return null;
   return <section id="official-updates" className="refresh-content mt-6">
     <h2>{heading}</h2>
-    <ul className="mt-3 list-disc pl-6">{events.map(event => <li key={event.id}>
-      <Link className="editorial-link" href={`/results/${event.state.toLowerCase()}/#${anchor(event)}`}>{`${officialUpdateLabels[event.kind]}: ${contestNames(event)}`}</Link>
-      {` (${event.status}; ${event.authority}${event.dates.published ? `, published ${when(event.dates.published, '')}` : ''})`}
-    </li>)}</ul>
+    <ul className="mt-3 list-disc pl-6">{events.map(event => {
+      const contests = path ? event.contests.filter(contest => contest.race_path === path) : event.contests;
+      const scope = contests.length === 1 ? contests[0].scope : null;
+      return <li key={event.id}>
+        <Link className="editorial-link" href={`/results/${event.state.toLowerCase()}/#${anchor(event)}`}>{`${officialUpdateLabels[event.kind]}: ${contests.map(contest => contest.contest).join('; ')}`}</Link>
+        {` — ${event.status}${scope ? `; ${scope}` : ''}. ${event.authority}${event.dates.published ? `, published ${when(event.dates.published, '')}` : ''}.`}
+      </li>;
+    })}</ul>
   </section>;
 }

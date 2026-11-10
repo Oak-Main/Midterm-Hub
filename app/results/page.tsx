@@ -36,7 +36,7 @@ export default function Results() {
       {/* KEVYN-WRITE: two sentences stating what this site reports (official poll-closing times, links to each election authority's results page, the publication rules below) and what it does not (vote counts, projections, race calls, AP or other licensed results) | facts: content/election-night/*.json; Projected requires a named call provider (table below); out-of-scope list in the Nov 2 results-night task */}
       <p className="mt-3 font-mono text-xs text-muted-foreground">Status updated {timestampLabel(electionStatus.updated_at)}</p>
     </div>
-    <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 font-bold"><a className="editorial-link" href="#poll-closing">Poll-closing times</a><a className="editorial-link" href="#official-results">Official results links</a>{officialUpdates.length > 0 && <a className="editorial-link" href="#official-updates">Official updates</a>}<a className="editorial-link" href="#publication-states">Result publication states</a><a className="editorial-link" href="#sources">Sources and retrieval dates</a></nav>
+    <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 font-bold"><a className="editorial-link" href="#poll-closing">Poll-closing times</a>{officialUpdates.length > 0 && <a className="editorial-link" href="#official-updates">Official updates</a>}<a className="editorial-link" href="#official-results">Official results links</a><a className="editorial-link" href="#publication-states">Result publication states</a><a className="editorial-link" href="#sources">Sources and retrieval dates</a></nav>
 
     <section id="poll-closing" className="refresh-content mt-6">
       <h2>Poll-closing times, November 3</h2>

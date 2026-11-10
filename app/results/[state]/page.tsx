@@ -91,6 +91,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
       {/* KEVYN-WRITE: the election authority's own results page for this state, with the date it was last checked | facts: content/election-night/official-results.json rows[state] authority, url, checked_at, pending */}
       <p>The authority publishing {row.name}&rsquo;s official results is the {results.authority}.{results.pending ? ' Its dedicated 2026 results page had not been posted when last checked; the link opens the authority’s results landing page.' : ''}</p>
       <p className="mt-3"><a className="editorial-link" href={results.url} rel="noopener noreferrer">{`Open official ${row.name} results`}</a> <span className="text-sm text-muted-foreground">· checked {dayLabel(results.checked_at)}</span></p>
+      {results.visitor_note && <p className="mt-2 text-sm">{results.visitor_note}</p>}
       {results.label_seen && <p className="mt-2 text-sm">{`When checked ${dayLabel(results.checked_at)}, the authority’s page labeled these results “${results.label_seen}”. Check the link for the current status.`}</p>}
     </section>
 

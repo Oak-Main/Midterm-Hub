@@ -80,13 +80,14 @@
       "state": "CT",
       "name": "Connecticut",
       "authority": "Connecticut Secretary of the State",
-      "url": "https://portal.ct.gov/sots/election-services/election-results/election-results",
-      "requested_url": "https://portal.ct.gov/sots/election-services/election-results/election-results",
+      "url": "https://ctemspublic.pcctg.net/",
+      "requested_url": "https://ctemspublic.pcctg.net/",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:39:03Z",
-      "page_kind": "landing",
-      "pending": true,
-      "notes": "SOTS Election Results page; it links the 'Elections Management System (Electronic Election Results - August 2018 to Present)' at https://ctemspublic.pcctg.net/#/selectTown, which is where electronic results are published. That EMS URL returns 200 but redirects to https://ctemspublic.tgstg.net/ (checked 2026-11-02T23:39:04Z) and I could not confirm it shows the Nov 3 general; so the stable SOTS page is recorded as primary. Historic archive: https://electionhistory.ct.gov/eng/."
+      "checked_at": "2026-11-10T17:46:46Z",
+      "page_kind": "2026_general",
+      "pending": false,
+      "notes": "Election Center linked from the Secretary of the State's election results page (portal.ct.gov/sots). Plain headless-browser check at 2026-11-10T17:46:46Z: selecting '11/03/2026 -- November 2026 State Election' shows statewide results with 169 of 169 towns completely reported; the statewide view displays no official/unofficial label, while the election's town data is marked '( *Unofficial Results )' (checked 2026-11-10T17:21:03Z). The host redirects to ctemspublic.tgstg.net.",
+      "visitor_note": "In the Election Center, choose “11/03/2026 -- November 2026 State Election” to see the 2026 results."
     },
     {
       "state": "DE",
