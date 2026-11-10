@@ -156,6 +156,13 @@ Unchanged rows (honest November 2 check date retained):
 | WI | no 2026 general results posted |
 | WV | 403 to plain browser |
 
+## Pre-merge supersession recheck (2026-11-10 17:53Z)
+
+- Windsor index still lists only "Election Results - November 3, 2026 - Amended" (View/6871); amended return sha256 unchanged (`6b73ce45…3687`).
+- Seminole statement View/242 sha256 unchanged (`02ef4cc9…b2db`).
+- Georgia SOS results site: Seminole page still "OFFICIAL RESULTS", last updated November 9, 8:40:34 PM, Greene 2,019 / James 858; the statewide page, which includes House District 154, still "UNOFFICIAL RESULTS", last updated November 10, 3:51:41 PM.
+- No change to the published entries.
+
 ## Reviews
 
 | Review | Scope | Outcome |
