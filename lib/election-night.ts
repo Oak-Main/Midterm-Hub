@@ -244,7 +244,11 @@ export type OfficialUpdateEvent = {
 const DAY = /^\d{4}-\d{2}-\d{2}$/;
 const INSTANT = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2})?Z$/;
 /** Only a calendar day or a full UTC timestamp; anything looser could render a date the source never gave. */
-const isDayOrInstant = (value: string | null): value is string => value !== null && (DAY.test(value) || INSTANT.test(value)) && !Number.isNaN(Date.parse(value));
+const isDayOrInstant = (value: string | null): value is string => value !== null && (DAY.test(value) || INSTANT.test(value)) && !Number.isNaN(Date.parse(value))
+  // A real calendar day: "2026-02-31" would otherwise roll over to March 3.
+  && new Date(Date.parse(`${value.slice(0, 10)}T00:00:00Z`)).toISOString().slice(0, 10) === value.slice(0, 10);
+/** Words that describe part of a contest; a full-contest scope must not use them. */
+const LOCAL_SCOPE_WORDS = /\b(?:town|township|city|county|counties'?|parish|borough|ward|precinct|municipal|portion|part|only)\b/i;
 const LOCAL_SCOPE_DISCLAIMER = /\bnot (?:a|the) (?:statewide|district|full[- ]contest|contest)\b[^;.]*\btotal\b/i;
 const dupes = (values: string[]) => values.filter((value, index) => values.indexOf(value) !== index);
 
@@ -267,7 +271,8 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
 
     const certifying = CERTIFYING.includes(event.kind);
     if (certifying && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');
-    if (event.kind === 'corrected_tally' && event.dates.certified !== null) at('a corrected tally carries no certification date');
+    if (!certifying && event.dates.certified !== null) at('only a certification event carries a certification date; record a later certification as its own event');
+    if (certifying && event.kind !== 'withdrawn_certification' && /unofficial/i.test(event.status)) at('a certification status must not call the result unofficial');
     if (event.kind === 'completed_recount' && !isDayOrInstant(event.dates.effective) && !isDayOrInstant(event.dates.published)) at('a completed recount needs its completion (effective) or publication date');
     if (event.dates.certified === null && !/unofficial/i.test(event.status)) at('an event without a certification date must say it is unofficial');
     if (event.kind === 'withdrawn_certification' && !/withdr/i.test(event.status)) at('a withdrawn certification must say so in its status');
@@ -278,6 +283,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
       if (!contest.contest.trim() || !contest.coverage.trim() || !contest.candidates.trim() || !contest.scope.trim()) at(`${name}: contest, coverage, candidates and scope are required`);
       if (contest.scope_kind !== 'full_contest' && contest.scope_kind !== 'local_unit') at(`${name}: scope_kind must be full_contest or local_unit`);
       if (contest.scope_kind === 'local_unit' && !LOCAL_SCOPE_DISCLAIMER.test(contest.scope)) at(`${name}: a local-unit scope must say it is not a statewide, district or contest total`);
+      if (contest.scope_kind === 'full_contest' && LOCAL_SCOPE_WORDS.test(contest.scope)) at(`${name}: a full-contest scope must not describe a town, county, parish, ward or other part`);
       if (FULL_CONTEST_ONLY.includes(event.kind) && contest.scope_kind !== 'full_contest') at(`${name}: ${event.kind} speaks for the whole contest; use local_certification for a partial scope`);
       if (contest.race_path !== null) {
         const match = /^\/house\/([a-z]{2})-[a-z0-9]+\/$/.exec(contest.race_path);

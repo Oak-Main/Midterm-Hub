@@ -42,7 +42,8 @@ test('validator: the sample event passes', () => assert.deepEqual(problemsFor({}
 
 test('validator: uncertified events must say unofficial; a corrected tally carries no certification date', () => {
   assert.ok(problemsFor({ status: 'Corrected' }).some((p) => /unofficial/.test(p)));
-  assert.ok(problemsFor(withDates({ certified: '2026-11-10' })).some((p) => /no certification date/.test(p)));
+  assert.ok(problemsFor(withDates({ certified: '2026-11-10' })).some((p) => /only a certification event/.test(p)));
+  assert.ok(problemsFor({ kind: 'completed_recount', status: 'Recount result', ...withDates({ effective: '2026-11-12', certified: '2026-11-20' }) }).some((p) => /only a certification event/.test(p)), 'a local recount never reads as certified');
   assert.ok(problemsFor({ status: 'Unofficial; not certified.' }).some((p) => /punctuation/.test(p)));
 });
 
@@ -50,8 +51,12 @@ test('validator: certifications need a dated act and full-contest scope; partial
   const certified = { kind: 'certification', status: 'Certified by the State Board', ...withDates({ certified: '2026-11-10' }) };
   assert.ok(problemsFor({ kind: 'certification', status: 'Certified' }).some((p) => /date of the certification act/.test(p)));
   assert.ok(problemsFor(certified).some((p) => /speaks for the whole contest/.test(p)), 'a town scope cannot be a full certification');
-  assert.deepEqual(problemsFor({ ...certified, ...withContest({ scope_kind: 'full_contest', scope: 'Full contest, all counties' }) }), []);
+  assert.deepEqual(problemsFor({ ...certified, ...withContest({ scope_kind: 'full_contest', scope: 'Full contest, statewide' }) }), []);
   assert.deepEqual(problemsFor({ ...certified, kind: 'local_certification' }), []);
+  assert.ok(problemsFor({ ...certified, status: 'Unofficial certification', ...withContest({ scope_kind: 'full_contest', scope: 'Full contest' }) }).some((p) => /must not call the result unofficial/.test(p)));
+  for (const scope of ['Orleans Parish', 'Seminole County portion', 'Ward 5', 'Full contest, town returns only']) {
+    assert.ok(problemsFor({ ...certified, ...withContest({ scope_kind: 'full_contest', scope }) }).some((p) => /full-contest scope must not/.test(p)), scope);
+  }
   assert.ok(problemsFor({ ...certified, kind: 'withdrawn_certification', ...withContest({ scope_kind: 'full_contest', scope: 'Full contest' }) }).some((p) => /withdrawn certification must say so/.test(p)));
 });
 
@@ -61,7 +66,7 @@ test('validator: a completed recount needs a completion or publication date', ()
 });
 
 test('validator: dates must be a calendar day or a UTC timestamp, never loose text', () => {
-  for (const loose of ['2026-11', 'Tuesday, November 10, 2026', '11/10/2026', '2026-11-10T09:00:00-05:00']) {
+  for (const loose of ['2026-11', 'Tuesday, November 10, 2026', '11/10/2026', '2026-11-10T09:00:00-05:00', '2026-02-31', '2026-02-31T12:00:00Z']) {
     assert.ok(problemsFor(withDates({ published: loose })).some((p) => /dates\.published/.test(p)), loose);
   }
   assert.ok(problemsFor(withDates({ last_checked: '2026-11-10' })).some((p) => /last_checked must be a UTC timestamp/.test(p)));
