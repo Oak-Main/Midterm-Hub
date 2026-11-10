@@ -18,13 +18,16 @@ export function OfficialUpdates({ events, name }: { events: readonly OfficialUpd
       <h3>{`${officialUpdateLabels[event.kind]}: ${contestNames(event)}`}</h3>
       <p><strong>Status:</strong> {event.status}. <strong>Authority:</strong> {event.authority}.</p>
       <p>{event.summary}</p>
-      <div className="table-wrap" role="region" tabIndex={0} aria-label={`${officialUpdateLabels[event.kind]} details`}><table><caption>{`What the ${event.authority} document changed`}</caption>
-        <thead><tr><th scope="col">Contest</th><th scope="col">Candidates</th><th scope="col">Scope of the figures</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Change</th></tr></thead>
-        <tbody>{event.contests.map(contest => <tr key={contest.contest}>
-          <th scope="row">{contest.race_path ? <Link href={contest.race_path}>{contest.contest}</Link> : contest.contest}<span className="block text-xs font-normal">{contest.coverage}</span></th>
-          <td>{contest.candidates}</td><td>{contest.scope}</td>
-          <td>{contest.before ?? 'Not stated'}</td><td>{contest.after ?? 'Not stated'}</td><td>{contest.change ?? 'Not stated'}</td>
-        </tr>)}</tbody></table></div>
+      {event.contests.map(contest => <div key={contest.contest} className="mt-4 border-t pt-3" data-contest={contest.contest}>
+        <p className="font-bold">{contest.race_path ? <Link className="editorial-link" href={contest.race_path}>{contest.contest}</Link> : contest.contest} <span className="text-xs font-normal">({contest.coverage})</span></p>
+        <dl className="mt-2 grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1 text-sm">
+          <dt className="font-bold">Candidates</dt><dd>{contest.candidates}</dd>
+          <dt className="font-bold">Scope</dt><dd>{contest.scope}</dd>
+          <dt className="font-bold">Before</dt><dd>{contest.before ?? 'Not stated'}</dd>
+          <dt className="font-bold">After</dt><dd>{contest.after ?? 'Not stated'}</dd>
+          <dt className="font-bold">Change</dt><dd>{contest.change ?? 'Not stated'}</dd>
+        </dl>
+      </div>)}
       {event.caveats.length > 0 && <ul className="mt-3 list-disc pl-6">{event.caveats.map(caveat => <li key={caveat}>{caveat}</li>)}</ul>}
       <dl className="mt-4 grid gap-x-6 gap-y-1 text-sm sm:grid-cols-[max-content_1fr]">
         <dt className="font-bold">Published by the authority</dt><dd>{when(event.dates.published, 'Not stated in the source')}</dd>
