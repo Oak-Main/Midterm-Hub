@@ -195,3 +195,13 @@ Unchanged rows (honest November 2 check date retained):
 - Nashua, NH amended ward returns: materiality blocked by NH Secretary of State 403.
 - Georgia SOS November 6 release: blocked by a Cloudflare bot challenge (not circumvented).
 - 25 results links keep their November 2 check date (blocked or not yet posted; see table above).
+
+## Follow-up check, 2026-11-11 00:15Z–00:24Z
+
+| Item | Finding | Action |
+| --- | --- | --- |
+| Florida U.S. House 27 recount | Miami-Dade County Canvassing Board "Certificate of County Canvassing Board" headed "*** 2nd Set of Unofficial Results ***" ([PDF](https://www.miamidade.gov/elections/library/reports/recount/2026-11-10-representative-congress-dist-27-recount.pdf), sha256 `1584cb62…a083`, printed 11/10/2026 04:58:36 PM; two signatures dated 11/10/2026, a third handwritten date hard to read), linked on the county's Reports page as the District 27 recount certificate. Salazar (REP) 124,519, Rodriguez (DEM) 123,433, total 247,952. Before (county results summary, last updated 11/07/2026 3:57:16 pm, captured 2026-11-10T17:13:11Z): 124,528 / 123,438 / 247,966. Change −9 / −5; derived margin 1,090 → 1,086 (about 0.44%), above the 0.25% manual-recount threshold in s. 102.166(1), F.S. The official EDR map of the 2026 district (plan EOGPCRP2026, sha256 `dcac8ad9…edc8`) shows it entirely within Miami-Dade, so the certificate covers the full contest. Not certified by the state. | Published as a completed recount, labeled unofficial and not certified, on `/results/fl/`, `/results/` and `/house/fl-27/`. |
+| Florida results link | State Division of Elections results site's election list still begins with "2026 Primary Election"; no 2026 General Election listed (checked 00:24:04Z). | Row stays pending with a fresh check date. |
+| Oklahoma certification | State Election Board November 3 general-election page still headed "UNOFFICIAL RESULTS" and says results "will be certified on Tuesday, November 10"; no certification document, board action or November newsroom item posted (checked 00:15:57Z–00:17Z). | Unresolved; nothing published. |
+| Latah County, ID recount | Idaho SOS press site unreachable (connection failure, 00:16Z and 00:22Z); Latah results page labeled "OFFICIAL RESULTS", last updated November 9 (before the recount); county elections page has no recount notice. | Unresolved; nothing published. |
+| South Carolina | Public notices list the November 10 State Board of Canvassers certification meeting with its agenda only; no signed canvass sheets posted; recount listing unchanged. | Unresolved; nothing published. |

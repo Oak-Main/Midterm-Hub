@@ -122,10 +122,10 @@
       "url": "https://results.elections.myflorida.com/",
       "requested_url": "https://results.elections.myflorida.com/",
       "http_status": 200,
-      "checked_at": "2026-11-02T23:39:06Z",
+      "checked_at": "2026-11-11T00:24:04Z",
       "page_kind": "landing",
       "pending": true,
-      "notes": "Linked from the DOS Election Results Archive page (https://dos.fl.gov/elections/data-statistics/elections-data/election-results-archive/). The page is a frames page ('Florida Department of State - Election Results'); Nov 3 general contest data not confirmed."
+      "notes": "Plain headless-browser check at 2026-11-11T00:24:04Z: the Division of Elections results site's election list begins with '2026 Primary Election' and does not yet list the November 3, 2026 General Election, so this remains the results landing page. Miami-Dade's own results site posts county results and canvassing board certificates (enr.electionsfl.org/DAD/4087/)."
     },
     {
       "state": "GA",

@@ -146,6 +146,83 @@
         "The county statement says no memory card was missing or found; the corrected count came from completing the system's publish step.",
         "Seminole County has scheduled post-election audits (an audit of the results and a ballot image audit) for November 16, 2026."
       ]
+    },
+    {
+      "id": "FL-2026-11-10-miami-dade-house-27-recount",
+      "state": "FL",
+      "kind": "completed_recount",
+      "status": "Unofficial recount result; not certified",
+      "authority": "Miami-Dade County Canvassing Board",
+      "summary": "Miami-Dade County's canvassing board certified a second set of unofficial returns for U.S. House District 27, posted as the district's recount report. Compared with the county's results page before the recount, Maria Elvira Salazar's total fell by 9 votes and Eliott Rodriguez's by 5; the leader did not change. The 2026 district lies entirely within Miami-Dade, so these are the district's figures. The Florida Elections Canvassing Commission certifies federal contests separately.",
+      "contests": [
+        {
+          "contest": "U.S. House, Florida District 27",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/fl-27/",
+          "candidates": "Maria Elvira Salazar (R); Eliott Rodriguez (D)",
+          "scope_kind": "full_contest",
+          "scope": "Full District 27 contest; the 2026 district lies entirely within Miami-Dade",
+          "before": "Salazar 124,528; Rodriguez 123,438 (247,966 votes)",
+          "after": "Salazar 124,519; Rodriguez 123,433 (247,952 votes)",
+          "change": "Salazar −9; Rodriguez −5; margin 1,090 → 1,086 (Midterm Watch arithmetic)"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.miamidade.gov/elections/library/reports/recount/2026-11-10-representative-congress-dist-27-recount.pdf",
+          "title": "Certificate of County Canvassing Board, Representative in Congress District 27 (2nd Set of Unofficial Results)",
+          "publisher": "Miami-Dade County Canvassing Board",
+          "version": "2nd Set of Unofficial Results",
+          "sha256": "1584cb627b6c5ac1380e9da02cc5cecbeaf3e8d600afe8ee3dc312c4bc03a083",
+          "checked_at": "2026-11-11T00:17:18Z"
+        },
+        {
+          "url": "https://enr.electionsfl.org/DAD/4087/Reports/",
+          "title": "Miami-Dade election results reports (“There was a recount for” listing)",
+          "publisher": "Miami-Dade County Supervisor of Elections",
+          "version": "Last updated 11/10/2026 5:34:27 pm",
+          "sha256": null,
+          "checked_at": "2026-11-11T00:16:36Z"
+        },
+        {
+          "url": "https://enr.electionsfl.org/DAD/4087/Summary/",
+          "title": "Miami-Dade election results summary (pre-recount District 27 figures, last updated 11/07/2026 3:57:16 pm; no longer shown there)",
+          "publisher": "Miami-Dade County Supervisor of Elections",
+          "version": "Pre-recount figures captured 2026-11-10T17:13:11Z",
+          "sha256": null,
+          "checked_at": "2026-11-11T00:19:38Z"
+        },
+        {
+          "url": "https://edr.state.fl.us/Content/redistricting/2026redistricting/congressional/Congress27_2026_8x11.pdf",
+          "title": "2026 Congressional District 27 (HB 1-D, Enrolled) map",
+          "publisher": "Florida Legislature, Office of Economic and Demographic Research",
+          "version": "Plan EOGPCRP2026, May 2026",
+          "sha256": "dcac8ad96ecb30c7063d9f82ddf24cbadc81224a4843824bc09fc5717cb1edc8",
+          "checked_at": "2026-11-11T00:20:30Z"
+        },
+        {
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0102/Sections/0102.166.html",
+          "title": "Section 102.166, Florida Statutes: manual recounts",
+          "publisher": "Florida Legislature",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-11T00:24:04Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": "2026-11-10",
+        "certified": null,
+        "printed": "11/10/2026 04:58:36 PM (time zone not stated)",
+        "first_observed": "2026-11-11T00:16:36Z",
+        "last_checked": "2026-11-11T00:24:04Z"
+      },
+      "caveats": [
+        "The earlier figures are from the county's results page as it stood before the recount (last updated November 7); that page now links the certificate instead of showing them.",
+        "Under s. 102.166(1), Florida Statutes, a manual recount follows only when the second set of unofficial returns shows a margin of one-quarter of a percent or less; Midterm Watch's arithmetic from the certificate gives about 0.44%.",
+        "Two board signatures are dated 11/10/2026; a third handwritten date is hard to read.",
+        "No state certification of this contest is cited; the Florida Elections Canvassing Commission certifies it separately."
+      ]
     }
   ]
 }
