@@ -207,3 +207,14 @@ Unchanged rows (honest November 2 check date retained):
 | South Carolina | Public notices list the November 10 State Board of Canvassers certification meeting with its agenda only; no signed canvass sheets posted; recount listing unchanged. | Unresolved; nothing published. |
 
 Independent factual review of the Florida District 27 entry (fresh certificate download, page image, map and state results site): all figures, arithmetic, scope and dates confirmed. Applied: the summary's vote changes are labeled as Midterm Watch arithmetic; status reads "not yet certified by the state"; the manual-recount caveat uses the statute's "must be ordered"; the earlier capture is identified as Midterm Watch's own (17:13Z, November 10); s. 102.111, F.S. cited for state certification of federal returns.
+
+### Release receipt, Florida District 27 (PR #61)
+
+| Item | Value |
+| --- | --- |
+| PR | [Oak-Main/Midterm-Hub#61](https://github.com/Oak-Main/Midterm-Hub/pull/61), squash-merged 2026-11-11 00:32Z |
+| Merge commit | `38aa0f2f221a1aa896babd67a48a5d19ddf397a4` |
+| Production deployment | `dpl_Fo8kQaVJqVT1YUMN9MEXG4MqDymj` (serving from 00:33:50Z; previous `dpl_3anvtWWhzi47mP6QFxXzFKQzFCEc`) |
+| Production verification workflow | [run 42932099552](https://github.com/Oak-Main/Midterm-Hub/actions/runs/42932099552): success |
+| Live-domain checks (00:34Z) | All 51 `/results/[state]/` routes (cache-bypass and visitor) with deployment id, disclaimer, status label, authority link and pending wording; CT, GA and FL update entries with every figure, scope, status and source link; `/results/` lists all three; `/house/fl-27/` and `/house/ct-1/` link their entries; `/status.json`, `www` redirect; all source URLs HTTP 200; sitemap lastmod for affected pages 2026-11-11T00:28:28Z (the latest update check); `/results/fl/` and `/house/fl-27/` desktop and iPhone 13 render without horizontal scroll |
+| Pre-merge checks | Typecheck, lint, full build, 156/156 frontend (export) and 409/409 Python tests; independent factual review applied; CI green on head `cc06883` (an intermediate commit `a4d3364` was correctly rejected by the build validator and superseded) |
