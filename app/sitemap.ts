@@ -4,6 +4,6 @@ import { canonicalOrigin, downBallotSections, houseDistricts, refreshModified, r
 import { electionNightModified, electionNightPaths } from '@/lib/election-night-data';
 export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths = ['/', '/states/', '/methodology/', '/data/', '/about/', '/sources/', '/results/', '/corrections/', '/down-ballot/', ...refreshSections.map(row => `/${row.slug}/`), ...downBallotSections.map(row => `/down-ballot/${row.slug}/`), ...states.map(([code]) => stateHref(code)), ...states.map(([code]) => `/results/${code.toLowerCase()}/`), ...elections.map(electionHref), ...houseDistricts.map(district => `/house/${district}/`)];
+  const paths = ['/', '/states/', '/methodology/', '/data/', '/about/', '/sources/', '/results/', '/corrections/', '/privacy/', '/terms/', '/down-ballot/', ...refreshSections.map(row => `/${row.slug}/`), ...downBallotSections.map(row => `/down-ballot/${row.slug}/`), ...states.map(([code]) => stateHref(code)), ...states.map(([code]) => `/results/${code.toLowerCase()}/`), ...elections.map(electionHref), ...houseDistricts.map(district => `/house/${district}/`)];
   return paths.map(path => ({ url: canonicalOrigin + path, lastModified: electionNightPaths.has(path) ? electionNightModified : refreshModified }));
 }

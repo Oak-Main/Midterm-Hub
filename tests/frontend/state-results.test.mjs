@@ -190,6 +190,6 @@ test('every exported state has matching search and social descriptions and norma
   assert.match(hub, /times where verified, election-office fallbacks elsewhere/);
   const xml = read('sitemap.xml');
   const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-  assert.equal(urls.length, 630);
-  assert.equal(new Set(urls).size, 630);
+  assert.equal(urls.length, 632);
+  assert.equal(new Set(urls).size, 632);
 });

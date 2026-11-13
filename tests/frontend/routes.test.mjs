@@ -12,7 +12,7 @@ const { default: robots } = await importFromRepo('../../app/robots.ts');
 
 test('the sitemap publishes standing pages under the apex canonical host', () => {
   const urls = sitemap().map((entry) => entry.url);
-  for (const path of ['/states/', '/methodology/', '/data/', '/about/']) {
+  for (const path of ['/states/', '/methodology/', '/data/', '/about/', '/privacy/', '/terms/']) {
     assert.ok(urls.includes(BASE + path), `expected ${BASE}${path} in the sitemap`);
   }
   assert.equal(urls[0], BASE + '/');
@@ -24,7 +24,7 @@ test('every state and election record is discoverable, once, through the sitemap
   const urls = entries.map((entry) => entry.url);
   const jurisdictions = new Set(elections.map((e) => e.state));
   // Standing pages + House districts + state guides + per-state results pages + election records.
-  assert.equal(urls.length, 19 + 435 + 2 * jurisdictions.size + elections.length);
+  assert.equal(urls.length, 21 + 435 + 2 * jurisdictions.size + elections.length);
   assert.equal(new Set(urls).size, urls.length, 'the sitemap must not repeat a URL');
 
   for (const code of jurisdictions) {
