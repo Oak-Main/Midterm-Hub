@@ -62,7 +62,7 @@ test('validator: certifications need a dated act and full-contest scope; partial
 });
 
 test('validator: a completed recount needs a completion or publication date', () => {
-  assert.ok(problemsFor({ kind: 'completed_recount', status: 'Unofficial recount result' }).some((p) => /completed recount needs/.test(p)));
+  assert.ok(problemsFor({ kind: 'completed_recount', status: 'Unofficial recount result' }).some((p) => /undated completed recount needs/.test(p)));
   assert.deepEqual(problemsFor({ kind: 'completed_recount', status: 'Unofficial recount result', ...withDates({ effective: '2026-11-12' }) }), []);
 });
 
@@ -93,7 +93,7 @@ test('validator: ids, states, sources and duplicates are checked', () => {
   assert.ok(problemsFor({ state: 'GA' }).some((p) => /state must be/.test(p)));
   assert.ok(problemsFor({ sources: [{ ...base().sources[0], url: 'http://example.gov' }] }).some((p) => /https/.test(p)));
   assert.ok(problemsFor({ sources: [base().sources[0], base().sources[0]] }).some((p) => /duplicate source/.test(p)));
-  assert.ok(problemsFor(withContest({ after: null })).some((p) => /both be stated/.test(p)));
+  assert.ok(problemsFor(withContest({ after: null })).some((p) => /prior tally requires/.test(p)));
 });
 
 test('a pending results link older than an update for that state is a build error', () => {
@@ -158,5 +158,30 @@ test('built results pages state each authority link check date and only claim "n
     assert.ok(html.includes(`href="${row.url.replaceAll('&', '&amp;')}"`) || html.includes(`href="${row.url}"`), `${row.state} links its authority`);
     if (row.label_seen) assert.ok(html.includes(`“${row.label_seen}”`), `${row.state} label shown`);
     if (row.visitor_note) assert.ok(html.includes(row.visitor_note), `${row.state} visitor note shown`);
+  }
+});
+
+
+test('undated completed recounts preserve first observation without inventing publication', () => {
+  const event = { ...base(), kind: 'completed_recount', ...withDates({ first_observed: '2026-11-10' }), caveats: ['Publication and completion dates are not stated.'] };
+  assert.deepEqual(officialUpdateProblems([event], codes, housePaths), []);
+  assert.equal(event.dates.published, null);
+  assert.equal(event.dates.effective, null);
+  assert.ok(problemsFor({ ...event, caveats: [] }).some(p => /undated completed recount/.test(p)));
+  assert.deepEqual(problemsFor(withContest({ before: null, after: '2', change: null })), []);
+});
+
+test('official canvass is distinct from dated certification', () => {
+  const event = { ...base(), kind: 'official_canvass', status: 'Official canvass; certification date not established' };
+  assert.deepEqual(officialUpdateProblems([event], codes, housePaths), []);
+  assert.ok(problemsFor({ ...event, ...withDates({ certified: '2026-11-10' }) }).some(p => /only a certification event/.test(p)));
+});
+
+test('coverage pages show only their covered contests', { skip: hasExport ? false : 'no fresh export' }, () => {
+  for (const path of ['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/']) {
+    const html = page(`${path.slice(1)}index.html`);
+    for (const event of officialUpdatesForPath(events, path)) {
+      assert.ok(html.includes(`/results/${event.state.toLowerCase()}/#update-${event.id.toLowerCase()}`));
+    }
   }
 });
