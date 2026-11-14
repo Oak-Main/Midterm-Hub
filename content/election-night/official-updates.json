@@ -1453,6 +1453,107 @@
         "The November 14 recheck shows McDow 36,443 and Miller 36,146, a margin of 297, with eligible overseas ballots included. That ordinary ballot addition is not a new correction or recount event.",
         "The current portal says Official Results, but no separate state certification act for the full contest is cited. Publication date is not stated."
       ]
+    },
+    {
+      "id": "SD-2026-11-10-state-certification",
+      "state": "SD",
+      "kind": "certification",
+      "status": "Certified by the South Dakota State Board of Canvassers",
+      "authority": "South Dakota State Board of Canvassers; certificate published by the Secretary of State",
+      "summary": "Previously published returns without a verified certification act → certified statewide results. The signed certificate is sworn and filed November 10, 2026, and expressly certifies the attached candidate returns for the November 3 general election. The five covered contests below are taken from those certified returns.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "coverage_path": "/senate/",
+          "candidates": "Mike Rounds; Brian L. Bengs",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Rounds 184,590; Bengs 120,513",
+          "change": "Rounds margin 64,077"
+        },
+        {
+          "contest": "U.S. House, South Dakota at-large",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sd-al/",
+          "coverage_path": "/house/",
+          "candidates": "Marty Jackley; Nicole \"Nikki\" Gronli",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jackley 195,589; Gronli 109,997",
+          "change": "Jackley margin 85,592"
+        },
+        {
+          "contest": "Governor and Lieutenant Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "coverage_path": "/governors/",
+          "candidates": "Larry Rhoden / Tony Venhuizen; Dan Ahlers / Steven McCleerey",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Rhoden / Venhuizen 193,335; Ahlers / McCleerey 111,161",
+          "change": "Rhoden / Venhuizen margin 82,174"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "Selected statewide executive coverage",
+          "race_path": null,
+          "coverage_path": "/down-ballot/executives/",
+          "candidates": "Heather Baxter; Tamara J. Lesnar; Terrence Davis",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Baxter 172,366; Lesnar 16,261; Davis 106,561",
+          "change": "Baxter margin over Davis 65,805"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "Selected statewide executive coverage",
+          "race_path": null,
+          "coverage_path": "/down-ballot/executives/",
+          "candidates": "Lance Russell",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Russell 193,279",
+          "change": "Uncontested; no opponent margin"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Assets/General/2026GeneralElectionStateCanvassandCertificate.pdf",
+          "title": "2026 General Election State Canvass and Certificate",
+          "publisher": "South Dakota Secretary of State",
+          "version": "Certificate sworn and filed November 10, 2026; 22-page official canvass",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:33:50Z"
+        },
+        {
+          "url": "https://www.sdsos.gov/elections-voting/upcoming-elections/general-information/default.aspx",
+          "title": "2026 Election Information (links the general-election certificate)",
+          "publisher": "South Dakota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:33:50Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": "2026-11-10",
+        "certified": "2026-11-10",
+        "printed": null,
+        "first_observed": "2026-11-14",
+        "last_checked": "2026-11-14T08:33:50Z"
+      },
+      "caveats": [
+        "The certificate does not state a web publication date. November 14 is the first observation of this document for this update, not its publication or certification date.",
+        "No prior candidate tally is stated in the certificate or retained for this comparison. Margins are calculated from the certified totals; no numerical correction is inferred.",
+        "The certificate also covers offices and measures outside this site's selected coverage; only the five verified covered contests are included."
+      ]
     }
   ]
 }
