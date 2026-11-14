@@ -1,6 +1,6 @@
 # Official election updates — November 14, 2026
 
-Owner authorized source-backed publication, PR creation, merging, deployment and live verification. This release adds 16 missing records to the three already published: 19 records containing 55 contest entries. Some contests occur in more than one event; this is not a count of unique races.
+Owner authorized source-backed publication, PR creation, merging, deployment and live verification. This release adds 17 missing records to the three already published: 20 records containing 60 contest entries. Some contests occur in more than one event; this is not a count of unique races.
 
 ## Evidence and scope
 
@@ -8,6 +8,7 @@ The complete direct election-office URLs, observed document versions, check time
 
 | Jurisdiction | Added records | Publication treatment |
 | --- | --- | --- |
+| South Dakota | State certification, five covered contests | Signed certificate sworn and filed November 10; first observed November 14; publication date unstated |
 | Wyoming | State certification, four covered contests | November 10 signed canvassing-board minutes; missing publication date remains null |
 | New Hampshire | Nashua amended ward returns and four completed House recounts | Preserve ward scope and workbook recount columns; missing publication/completion dates explicitly identified |
 | Idaho | Bannock correction and Latah completed recount | County figures only; Latah recount completion does not establish certification |
@@ -17,7 +18,7 @@ The complete direct election-office URLs, observed document versions, check time
 | Oklahoma | State certification, eight covered contests | November 13 reporting review documents the November 10 certification; official portal supplies totals |
 | Vermont | Official canvass, four covered contests | Official report retained without inferring a publication or certification date |
 
-The state results directory covers all 50 states and DC. Twelve authority routes or labels were refreshed: AK, CA, FL, IA, LA, ME, MN, MS, MO, OH, OK and WY. Other rows retain their prior observation dates. Colorado and Texas portal rendering was incomplete during this review; Illinois, Kansas, Massachusetts and Wisconsin archive checks did not establish new general-election records. Those limitations are not evidence of no change and require subsequent rechecking. This release does not claim a fresh, exhaustive official-record review of all 51 jurisdictions.
+The state results directory covers all 50 states and DC. Fourteen authority routes or labels were refreshed: AK, CA, FL, IA, LA, ME, MN, MS, MO, OH, OK, SD, DE and WY. Other rows retain their prior observation dates. Colorado and Texas portal rendering was incomplete during this review; Illinois, Kansas, Massachusetts and Wisconsin archive checks did not establish new general-election records. Those limitations are not evidence of no change and require subsequent rechecking. This release does not claim a fresh, exhaustive official-record review of all 51 jurisdictions.
 
 ## Presentation and safeguards
 
@@ -31,4 +32,4 @@ The state results directory covers all 50 states and DC. Twelve authority routes
 
 Local Python suite: 409 passing. Frontend suite: 159 passing with a required fresh static export. Lint, typecheck and production build pass. Generated `out/` files are not part of this source change; Vercel builds the merged revision.
 
-After deployment, run `GITHUB_SHA=<exact-main-sha> node scripts/verify-official-updates.mjs` following a fresh local build. It first verifies Vercel bot attribution and the exact production deployment, then concurrently checks all 51 state/DC results routes, the national hub, and affected race/coverage routes with both cache bypass and ordinary visitor requests. Every event article must exactly match the reviewed rendered export, including totals, dates, scope, caveats and official source links. This acceptance checks publication fidelity; it does not replace the election-office evidence review above.
+After deployment, run `GITHUB_SHA=<exact-main-sha> node scripts/verify-official-updates.mjs` following a fresh local build. It first verifies Vercel bot attribution and the exact production deployment, then concurrently checks all 51 state/DC results routes, the national hub, and affected race/coverage routes with both cache bypass and ordinary visitor requests. On state results pages, every event article must exactly match the reviewed rendered export, including totals, dates, scope, caveats and official source links. Race and coverage pages must link to the corresponding state records. Authority links, labels and check dates are compared on all state/DC pages. This acceptance checks publication fidelity; it does not replace the election-office evidence review above.
