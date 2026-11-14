@@ -180,9 +180,10 @@ export function officialResultsProblems(rows: readonly OfficialResultsRow[]): st
  * a district or statewide total, and nothing here certifies a contest unless
  * the competent authority's certification of the full contest is cited. */
 
-export type OfficialUpdateKind = 'corrected_tally' | 'completed_recount' | 'local_certification' | 'certification' | 'amended_certification' | 'withdrawn_certification';
-export const OFFICIAL_UPDATE_KINDS: readonly OfficialUpdateKind[] = ['corrected_tally', 'completed_recount', 'local_certification', 'certification', 'amended_certification', 'withdrawn_certification'];
+export type OfficialUpdateKind = 'official_canvass' | 'corrected_tally' | 'completed_recount' | 'local_certification' | 'certification' | 'amended_certification' | 'withdrawn_certification';
+export const OFFICIAL_UPDATE_KINDS: readonly OfficialUpdateKind[] = ['official_canvass', 'corrected_tally', 'completed_recount', 'local_certification', 'certification', 'amended_certification', 'withdrawn_certification'];
 export const officialUpdateLabels: Record<OfficialUpdateKind, string> = {
+  official_canvass: 'Official canvass',
   corrected_tally: 'Corrected tally',
   completed_recount: 'Completed recount',
   local_certification: 'Local certification (partial scope)',
@@ -204,6 +205,8 @@ export type OfficialUpdateContest = {
   coverage: string;
   /** House race route (/house/st-n/) when one exists; chamber-level coverage has none. */
   race_path: string | null;
+  /** Published coverage page for this contest, including chamber-level coverage. */
+  coverage_path?: string;
   candidates: string;
   /** full_contest: the figures describe the whole contest; local_unit: a town, county, ward or other part. */
   scope_kind: 'full_contest' | 'local_unit';
@@ -229,7 +232,7 @@ export type OfficialUpdateDates = {
   last_checked: string;
 };
 export type OfficialUpdateEvent = {
-  /** ST-YYYY-MM-DD-slug; the date is when the authority issued the corrected figures or act (print, upload or certification date). */
+  /** ST-YYYY-MM-DD-slug; the date is the documented act date, or explicitly labeled first observation when no authority date is given. */
   id: string; state: string; kind: OfficialUpdateKind;
   /** Short status line without a final period, e.g. "Unofficial corrected town return; not certified". */
   status: string;
@@ -273,8 +276,8 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
     if (certifying && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');
     if (!certifying && event.dates.certified !== null) at('only a certification event carries a certification date; record a later certification as its own event');
     if (certifying && event.kind !== 'withdrawn_certification' && /unofficial/i.test(event.status)) at('a certification status must not call the result unofficial');
-    if (event.kind === 'completed_recount' && !isDayOrInstant(event.dates.effective) && !isDayOrInstant(event.dates.published)) at('a completed recount needs its completion (effective) or publication date');
-    if (event.dates.certified === null && !/unofficial/i.test(event.status)) at('an event without a certification date must say it is unofficial');
+    if (event.kind === 'completed_recount' && !isDayOrInstant(event.dates.effective) && !isDayOrInstant(event.dates.published) && (!isDayOrInstant(event.dates.first_observed) || !event.caveats.some(note => /publication.*completion.*not stated/i.test(note)))) at('an undated completed recount needs first observation and an explicit missing publication/completion date caveat');
+    if (event.kind !== 'official_canvass' && event.dates.certified === null && !/unofficial/i.test(event.status)) at('an event without a certification date must say it is unofficial');
     if (event.kind === 'withdrawn_certification' && !/withdr/i.test(event.status)) at('a withdrawn certification must say so in its status');
 
     if (!event.contests.length) at('at least one contest');
@@ -291,7 +294,8 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
         if (!match || match[1] !== event.state.toLowerCase()) at(`${name}: race_path ${contest.race_path} must be a /house/ route in ${event.state}`);
         else if (housePaths && !housePaths.has(contest.race_path)) at(`${name}: race_path ${contest.race_path} is not a published House page`);
       }
-      if ((contest.before === null) !== (contest.after === null)) at(`${name}: before and after must both be stated or both be absent`);
+      if (contest.before !== null && contest.after === null) at(`${name}: a prior tally requires an updated tally`);
+      if (contest.coverage_path !== undefined && !['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/'].includes(contest.coverage_path)) at(`${name}: unknown coverage_path`);
     }
     for (const value of dupes(event.contests.map(contest => contest.contest))) at(`duplicate contest ${value}`);
 
@@ -322,10 +326,10 @@ export function officialUpdateRowConflicts(events: readonly OfficialUpdateEvent[
   });
 }
 
-/** Newest authority date first (the id date), then id; the order every page renders. */
+/** Newest record date first (act date or explicitly labeled first observation), then id. */
 export const sortOfficialUpdates = (events: readonly OfficialUpdateEvent[]) =>
   [...events].sort((a, b) => b.id.slice(3, 13).localeCompare(a.id.slice(3, 13)) || a.id.localeCompare(b.id));
 
 /** Events touching a site route, for race pages that cover one of the contests. */
 export const officialUpdatesForPath = (events: readonly OfficialUpdateEvent[], path: string) =>
-  events.filter(event => event.contests.some(contest => contest.race_path === path));
+  events.filter(event => event.contests.some(contest => contest.race_path === path || contest.coverage_path === path));
