@@ -28,6 +28,11 @@ await Promise.all(Array.from({ length: 6 }, async () => {
     const html = await response.text();
     assert.ok(html.includes(`data-dpl-id="${release.deployment}"`), `${path}: exact deployment identity`);
     assert.ok(html.includes(`<link rel="canonical" href="https://midtermwatch.com${path}"`), `${path}: canonical`);
+    if (/^\/results\/[a-z]{2}\/$/.test(path)) {
+      const section = content => content.match(/<section id="official-results"[\s\S]*?<\/section>/)?.[0];
+      assert.ok(section(expected.get(path)), `${path}: reviewed authority section exists`);
+      assert.equal(section(html), section(expected.get(path)), `${path}: authority URL, observed label and check date`);
+    }
     for (const event of events) {
       const statePath = `/results/${event.state.toLowerCase()}/`;
       const id = `update-${event.id.toLowerCase()}`;
@@ -42,6 +47,9 @@ await Promise.all(Array.from({ length: 6 }, async () => {
     completed++;
   }
 }));
+const finalRelease = await verifyProduction();
+assert.equal(finalRelease.outcome, 'verified', 'Release must remain current after the concurrent run');
+assert.equal(finalRelease.deployment, release.deployment, 'Deployment must remain unchanged during acceptance');
 console.log(JSON.stringify({ ...release, state_pages: rows.length, event_records: events.length,
   contest_entries: events.reduce((sum, event) => sum + event.contests.length, 0),
   routes_checked: paths.length, requests_passed: completed, modes: ['cache bypass', 'ordinary visitor'],
