@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { existsSync, readFileSync } from 'node:fs';
-import { officialResultsProblems, officialUpdateProblems, officialUpdateRowConflicts, officialUpdatesForPath, sortOfficialUpdates } from '../../lib/election-night.ts';
+import { certificationDateLabel, officialResultsProblems, officialUpdateProblems, officialUpdateRowConflicts, officialUpdatesForPath, sortOfficialUpdates } from '../../lib/election-night.ts';
 
 // Official post-election updates: dated, source-linked authority documents for
 // covered contests. These tests pin the publication rules (scope, unofficial
@@ -172,6 +172,7 @@ test('undated completed recounts preserve first observation without inventing pu
 });
 
 test('official canvass is distinct from dated certification', () => {
+  assert.equal(certificationDateLabel('official_canvass'), 'Certification date');
   const event = { ...base(), kind: 'official_canvass', status: 'Official canvass; certification date not established' };
   assert.deepEqual(officialUpdateProblems([event], codes, housePaths), []);
   assert.ok(problemsFor({ ...event, ...withDates({ certified: '2026-11-10' }) }).some(p => /only a certification event/.test(p)));
@@ -180,8 +181,8 @@ test('official canvass is distinct from dated certification', () => {
 test('coverage pages show only their covered contests', { skip: hasExport ? false : 'no fresh export' }, () => {
   for (const path of ['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/']) {
     const html = page(`${path.slice(1)}index.html`);
-    for (const event of officialUpdatesForPath(events, path)) {
-      assert.ok(html.includes(`/results/${event.state.toLowerCase()}/#update-${event.id.toLowerCase()}`));
-    }
+    const expected = events.filter(event => event.contests.some(contest => contest.race_path === path || contest.coverage_path === path)).map(event => `/results/${event.state.toLowerCase()}/#update-${event.id.toLowerCase()}`).sort();
+    const actual = [...new Set([...html.matchAll(/href="(\/results\/[a-z]{2}\/#update-[^"]+)"/g)].map(match => match[1]))].sort();
+    assert.deepEqual(actual, expected, `${path}: exactly the events for covered contests`);
   }
 });
