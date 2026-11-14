@@ -17,7 +17,8 @@
           "scope": "Town of Windsor return only; not a statewide total",
           "before": "2,995",
           "after": "2,981",
-          "change": "−14"
+          "change": "−14",
+          "coverage_path": "/governors/"
         },
         {
           "contest": "U.S. House, Connecticut District 1",
@@ -28,7 +29,8 @@
           "scope": "Town of Windsor return only; not a district total",
           "before": "9,972",
           "after": "9,992",
-          "change": "+20"
+          "change": "+20",
+          "coverage_path": "/house/"
         }
       ],
       "sources": [
@@ -96,7 +98,8 @@
           "scope": "Seminole County portion only; not the district total",
           "before": "Greene 1,665; James 824",
           "after": "Greene 2,019; James 858",
-          "change": "Greene +354; James +34 (all Election Day votes)"
+          "change": "Greene +354; James +34 (all Election Day votes)",
+          "coverage_path": "/down-ballot/legislatures/"
         }
       ],
       "sources": [
@@ -164,7 +167,8 @@
           "scope": "Full District 27 contest; the 2026 district lies entirely within Miami-Dade",
           "before": "Salazar 124,528; Rodriguez 123,438 (247,966 votes)",
           "after": "Salazar 124,519; Rodriguez 123,433 (247,952 votes)",
-          "change": "Salazar −9; Rodriguez −5; margin 1,090 → 1,086 (all Midterm Watch arithmetic)"
+          "change": "Salazar −9; Rodriguez −5; margin 1,090 → 1,086 (all Midterm Watch arithmetic)",
+          "coverage_path": "/house/"
         }
       ],
       "sources": [
@@ -230,6 +234,1224 @@
         "Under s. 102.166(1), Florida Statutes, a manual recount must be ordered when the second set of unofficial returns shows a margin of one-quarter of a percent or less; Midterm Watch's arithmetic from the certificate gives about 0.44%.",
         "Two board signatures are dated 11/10/2026; a third handwritten date is hard to read.",
         "No state certification of this contest is cited; under s. 102.111, Florida Statutes, the Elections Canvassing Commission certifies federal returns on the 14th day after a general election."
+      ]
+    },
+    {
+      "id": "WY-2026-11-10-state-certification",
+      "state": "WY",
+      "kind": "certification",
+      "status": "Certified by the competent canvassing authority",
+      "authority": "Wyoming State Canvassing Board",
+      "summary": "Previously published returns → certified state abstract. The board unanimously certified the November 3 general-election abstract on November 10. These are the four contests covered by Midterm Watch.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Harriet Hageman; James Byrd",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Hageman 122,174; Byrd 65,105; write-ins 1,039",
+          "change": "Hageman margin 57,069",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "U.S. House, Wyoming at-large",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/wy-al/",
+          "candidates": "Chuck Gray; Lisa Kinney; Shawn Johnson; Jeffrey Haggit",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Gray 99,906; Kinney 61,689; Johnson 13,667; Haggit 7,961; write-ins 1,031",
+          "change": "Gray margin 38,217",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Eric Barlow; Kenneth R. Casner; Rebecca Bextel",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Barlow 128,496; Casner 27,472; Bextel 31,444; write-ins 1,212",
+          "change": "Barlow margin over Bextel 97,052",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Robert Short; Bryan McCarty; Tamara Trujillo",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Short 124,940; McCarty 43,877; Trujillo 15,507; write-ins 452",
+          "change": "Short margin 81,063",
+          "coverage_path": "/down-ballot/executives/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_State_Canvassing_Board_Minutes.pdf",
+          "title": "State Canvassing Board minutes and certification",
+          "publisher": "Wyoming Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_General_Statewide_Candidates_Summary.pdf",
+          "title": "Official statewide candidates summary",
+          "publisher": "Wyoming Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": "2026-11-10",
+        "certified": "2026-11-10",
+        "printed": null,
+        "first_observed": "2026-11-10",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "Publication date and prior tally are not stated in the cited documents. Margins are Midterm Watch arithmetic, not changes from a prior count."
+      ]
+    },
+    {
+      "id": "NH-2026-11-07-nashua-amended-returns",
+      "state": "NH",
+      "kind": "corrected_tally",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "Nashua City Clerk",
+      "summary": "Original ward returns → amended ward returns. The city identifies transposed figures, adjacent-column totals and omitted tabulator tapes; amendments are dated November 4 and November 7. These changes are local contributions to the named contests.",
+      "contests": [
+        {
+          "contest": "U.S. House, New Hampshire District 2",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/nh-2/",
+          "candidates": "Maggie Goodlander; Lily Tang Williams",
+          "scope_kind": "local_unit",
+          "scope": "Nashua Ward 5 only; not a district total",
+          "before": "Goodlander 4,795; Williams 1,757",
+          "after": "Goodlander 3,038; Williams 1,757",
+          "change": "Goodlander margin 3,038 → 1,281",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. Senate — Ward 4 correction",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "John E. Sununu; Chris Pappas",
+          "scope_kind": "local_unit",
+          "scope": "Nashua Ward 4 only; not a statewide total",
+          "before": "Sununu 527; Pappas 1,375",
+          "after": "Sununu 577; Pappas 1,375",
+          "change": "Sununu +50",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "U.S. Senate — Ward 6 correction",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Edmond Laplante",
+          "scope_kind": "local_unit",
+          "scope": "Nashua Ward 6 only; not a statewide total",
+          "before": "101",
+          "after": "92",
+          "change": "−9",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "New Hampshire Senate District 12",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Carryl L. Roy",
+          "scope_kind": "local_unit",
+          "scope": "Nashua Ward 1 only; not a district total",
+          "before": "2,294",
+          "after": "2,707",
+          "change": "+413",
+          "coverage_path": "/down-ballot/legislatures/"
+        },
+        {
+          "contest": "New Hampshire House, Hillsborough District 5",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Heather Raymond",
+          "scope_kind": "local_unit",
+          "scope": "Nashua Ward 1 only; not a district total",
+          "before": "2,676",
+          "after": "2,679",
+          "change": "+3",
+          "coverage_path": "/down-ballot/legislatures/"
+        },
+        {
+          "contest": "New Hampshire House, Hillsborough District 8",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Travis Tripodi; Christal Lloyd",
+          "scope_kind": "local_unit",
+          "scope": "Nashua Ward 6 only; not a district total",
+          "before": "Tripodi 860; Lloyd 1,227",
+          "after": "Tripodi 1,160; Lloyd 1,697",
+          "change": "Tripodi +300; Lloyd +470",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nashuanh.gov/DocumentCenter/View/37495",
+          "title": "Amended November 3, 2026 ward returns",
+          "publisher": "Nashua City Clerk",
+          "version": "Amendments dated November 4 and November 7",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-10",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "Publication date is not stated. No statewide or full-district certification is established by these ward amendments."
+      ]
+    },
+    {
+      "id": "ID-2026-11-10-bannock-correction",
+      "state": "ID",
+      "kind": "corrected_tally",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "Bannock County Clerk; Idaho Secretary of State",
+      "summary": "Election-night county tally → corrected unofficial county tally after 333 omitted Pocatello 2 ballots were counted. Ballots cast increased from 32,170 to 32,503. The authority states no outcome changed.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Jim Risch; Todd Achilles",
+          "scope_kind": "local_unit",
+          "scope": "Bannock County contribution only; not a district or statewide total",
+          "before": "Risch 15,063; Achilles 11,692",
+          "after": "Risch 15,232; Achilles 11,802",
+          "change": "Margin 3,371 → 3,430",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "U.S. House, Idaho District 2",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/id-2/",
+          "candidates": "Mike Simpson; Ellie Gilbreath",
+          "scope_kind": "local_unit",
+          "scope": "Bannock County contribution only; not a district or statewide total",
+          "before": "Simpson 15,349; Gilbreath 13,217",
+          "after": "Simpson 15,527; Gilbreath 13,324",
+          "change": "Margin 2,132 → 2,203",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Brad Little; Terri Pickens",
+          "scope_kind": "local_unit",
+          "scope": "Bannock County contribution only; not a district or statewide total",
+          "before": "Little 14,933; Pickens 13,345",
+          "after": "Little 15,098; Pickens 13,468",
+          "change": "Margin 1,588 → 1,630",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Phil McGrane; Shawn Keenan",
+          "scope_kind": "local_unit",
+          "scope": "Bannock County contribution only; not a district or statewide total",
+          "before": "McGrane 17,462; Keenan 13,623",
+          "after": "McGrane 17,660; Keenan 13,744",
+          "change": "Margin 3,839 → 3,916",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Raúl Labrador; Lori Hickman",
+          "scope_kind": "local_unit",
+          "scope": "Bannock County contribution only; not a district or statewide total",
+          "before": "Labrador 15,775; Hickman 15,147",
+          "after": "Labrador 15,958; Hickman 15,282",
+          "change": "Margin 628 → 676",
+          "coverage_path": "/down-ballot/executives/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://press.sos.idaho.gov/press-release/bannock-county-ballots/",
+          "title": "Bannock County reports additional Election Day ballots",
+          "publisher": "Idaho Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.bannockcounty.gov/wp-content/uploads/2026/11/November-2026-Summary-Results62.pdf",
+          "title": "November general election corrected summary",
+          "publisher": "Bannock County Clerk",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://results.voteidaho.gov/results/public/bannock-county-id/elections/nov2026",
+          "title": "Bannock County results portal",
+          "publisher": "Idaho Secretary of State",
+          "version": "Prior figures observed in the November 9, 1:46:10 PM version",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-10",
+        "effective": "2026-11-10",
+        "certified": null,
+        "printed": "11/10/2026 11:16 AM (time zone not stated)",
+        "first_observed": "2026-11-10",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "Figures shown compare the two leading candidates in each tracked race; other candidates also received votes. Margins are Midterm Watch arithmetic.",
+        "The release announces a future recanvass; it does not establish its completion. Its later editorial correction to the identity of the closest race is not a new tracked-race event."
+      ]
+    },
+    {
+      "id": "ID-2026-11-11-latah-completed-recount",
+      "state": "ID",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "Latah County Clerk, overseen by Idaho Secretary of State",
+      "summary": "Unofficial election-night report → completed full county recount. The November 11 release confirms completion and inclusion of 2,343 previously omitted early-vote ballots, bringing ballots cast to 18,104. The authority says all outcomes remained unchanged.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Jim Risch; Todd Achilles; Natalie M Fleming; Matt Loesby",
+          "scope_kind": "local_unit",
+          "scope": "Latah County contribution only; not a district or statewide total",
+          "before": null,
+          "after": "Risch 8,294; Achilles 6,755; Fleming 1,784; Loesby 680",
+          "change": "Risch margin 1,539",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "U.S. House, Idaho District 1",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/id-1/",
+          "candidates": "Russ Fulcher; Kaylee Peterson; Sarah Zabel; Brendan J. Gomez",
+          "scope_kind": "local_unit",
+          "scope": "Latah County contribution only; not a district or statewide total",
+          "before": null,
+          "after": "Fulcher 8,429; Peterson 8,093; Zabel 1,009; Gomez 129",
+          "change": "Fulcher margin 336",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Brad Little; Terri Pickens; John R. Stegner; Paul Sand; Pro-Life; Jacob Burnett",
+          "scope_kind": "local_unit",
+          "scope": "Latah County contribution only; not a district or statewide total",
+          "before": null,
+          "after": "Little 8,142; Pickens 5,366; Stegner 3,833; Sand 192; Pro-Life 178; invalid write-ins 34; Burnett 1",
+          "change": "Little margin 2,776",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Phil McGrane; Shawn Keenan",
+          "scope_kind": "local_unit",
+          "scope": "Latah County contribution only; not a district or statewide total",
+          "before": null,
+          "after": "McGrane 9,505; Keenan 7,977",
+          "change": "McGrane margin 1,528",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Raúl Labrador; Lori Hickman",
+          "scope_kind": "local_unit",
+          "scope": "Latah County contribution only; not a district or statewide total",
+          "before": null,
+          "after": "Hickman 9,065; Labrador 8,490",
+          "change": "Hickman margin 575",
+          "coverage_path": "/down-ballot/executives/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://press.sos.idaho.gov/press-release/latah-county-recount-complete/",
+          "title": "Latah County recount complete",
+          "publisher": "Idaho Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://results.voteidaho.gov/results/public/latah-county-id/elections/nov2026",
+          "title": "Latah County unofficial results",
+          "publisher": "Idaho Secretary of State",
+          "version": "Updated November 10, 2026, 11:35:31 PM; time zone not stated",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-11",
+        "effective": "2026-11-11",
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-12",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "Prior candidate totals are not supplied in the completion release. Margins are arithmetic from the updated count, not before/after changes.",
+        "Certification scheduled for November 12 is not evidence that certification occurred."
+      ]
+    },
+    {
+      "id": "NH-2026-11-11-strafford-1-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "New Hampshire Secretary of State",
+      "summary": "Original reported totals → posted recount totals for the 2-seat House contest. The official workbook includes populated original and RECOUNT columns; it supplies no publication, recount-completion or certification date. The date in this entry's identifier is first observation, not publication.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Strafford District 1",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Andy Dow; W. Packy Campbell; Brian Beaverstock; Jimmy Bourque",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Andy Dow 1,206; W. Packy Campbell 1,167; Brian Beaverstock 1,165; Jimmy Bourque 1,113; Write-ins 2",
+          "after": "Andy Dow 1,211; W. Packy Campbell 1,173; Brian Beaverstock 1,171; Jimmy Bourque 1,120; Write-ins 4",
+          "change": "Second-place margin 2 → 2; same two leading candidates (Midterm Watch arithmetic)",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-strafford.xlsx",
+          "title": "strafford House results with recount columns",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Recount columns for District 1",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.sos.nh.gov/2026-general-election-results",
+          "title": "2026 general election results and amendment caveat",
+          "publisher": "New Hampshire Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-11",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The workbook documents a completed count, not a scheduled recount. It does not establish certification. Publication and completion dates are not stated; first observation is not a substitute for either."
+      ]
+    },
+    {
+      "id": "NH-2026-11-12-carroll-8-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "New Hampshire Secretary of State",
+      "summary": "Original reported totals → posted recount totals for the 2-seat House contest. The official workbook includes populated original and RECOUNT columns; it supplies no publication, recount-completion or certification date. The date in this entry's identifier is first observation, not publication.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Carroll District 8",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Jim Pittman; Tammy Garthwaite; Colin Mitchell; George Randell",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Jim Pittman 4,677; Tammy Garthwaite 5,068; Colin Mitchell 5,379; George Randell 5,070; Write-ins 11",
+          "after": "Jim Pittman 4,687; Tammy Garthwaite 5,068; Colin Mitchell 5,384; George Randell 5,086; Write-ins 16",
+          "change": "Second-place margin 2 → 18; same two leading candidates (Midterm Watch arithmetic)",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-carroll.xlsx",
+          "title": "carroll House results with recount columns",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Recount columns for District 8",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.sos.nh.gov/2026-general-election-results",
+          "title": "2026 general election results and amendment caveat",
+          "publisher": "New Hampshire Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-12",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The workbook documents a completed count, not a scheduled recount. It does not establish certification. Publication and completion dates are not stated; first observation is not a substitute for either."
+      ]
+    },
+    {
+      "id": "NH-2026-11-12-rockingham-25-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "New Hampshire Secretary of State",
+      "summary": "Original reported totals → posted recount totals for the 9-seat House contest. The official workbook includes populated original and RECOUNT columns; it supplies no publication, recount-completion or certification date. The date in this entry's identifier is first observation, not publication.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Rockingham District 25",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Claudia DeFuria; Kienen Dyer; Donna Loranger; Lorie Ball; Edward W. Huminick; John Janigian; George I. Kassas; Dennis Mannion; Valerie McDonnell; Joe Sweeney; John Sytek; Susan J. Vandecasteele",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Claudia DeFuria 5,766; Kienen Dyer 5,605; Donna Loranger 5,954; Lorie Ball 7,235; Edward W. Huminick 5,947; John Janigian 6,644; George I. Kassas 6,392; Dennis Mannion 6,116; Valerie McDonnell 6,443; Joe Sweeney 6,929; John Sytek 6,705; Susan J. Vandecasteele 6,849; Write-ins 43",
+          "after": "Claudia DeFuria 5,768; Kienen Dyer 5,612; Donna Loranger 5,957; Lorie Ball 7,234; Edward W. Huminick 5,954; John Janigian 6,648; George I. Kassas 6,395; Dennis Mannion 6,118; Valerie McDonnell 6,445; Joe Sweeney 6,935; John Sytek 6,715; Susan J. Vandecasteele 6,858; Write-ins 32",
+          "change": "Ninth-place margin 7 → 3; same nine leading candidates (Midterm Watch arithmetic)",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-rockingham.xlsx",
+          "title": "rockingham House results with recount columns",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Recount columns for District 25",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.sos.nh.gov/2026-general-election-results",
+          "title": "2026 general election results and amendment caveat",
+          "publisher": "New Hampshire Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-12",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The workbook documents a completed count, not a scheduled recount. It does not establish certification. Publication and completion dates are not stated; first observation is not a substitute for either."
+      ]
+    },
+    {
+      "id": "NH-2026-11-13-rockingham-13-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "New Hampshire Secretary of State",
+      "summary": "Original reported totals → posted recount totals for the 10-seat House contest. The official workbook includes populated original and RECOUNT columns; it supplies no publication, recount-completion or certification date. The date in this entry's identifier is first observation, not publication.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Rockingham District 13",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Thomas Bosia; Haley Carreau; Jamie Carreau; Paula Mahon d'Entremont; Matthew Glavin; Hollie Hesse; Jim Marshall; David Provencher; Kristine Trow; Thomas C. Wood; Michael Appleton; Brandon Bach; Brian K. Chirichiello; Charles Foote; Anthony Henry; Erica Layon; David C. Love; Jodi Nelson; John Potucek; Richard Tripp",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Thomas Bosia 4,994; Haley Carreau 5,537; Jamie Carreau 5,757; Paula Mahon d'Entremont 5,360; Matthew Glavin 5,745; Hollie Hesse 5,602; Jim Marshall 5,570; David Provencher 5,520; Kristine Trow 5,876; Thomas C. Wood 5,294; Michael Appleton 4,908; Brandon Bach 4,709; Brian K. Chirichiello 5,370; Charles Foote 5,583; Anthony Henry 4,915; Erica Layon 5,089; David C. Love 5,262; Jodi Nelson 5,358; John Potucek 5,002; Richard Tripp 5,149; Write-ins 33",
+          "after": "Thomas Bosia 5,006; Haley Carreau 5,546; Jamie Carreau 5,761; Paula Mahon d'Entremont 5,368; Matthew Glavin 5,751; Hollie Hesse 5,608; Jim Marshall 5,571; David Provencher 5,528; Kristine Trow 5,881; Thomas C. Wood 5,301; Michael Appleton 4,913; Brandon Bach 4,716; Brian K. Chirichiello 5,372; Charles Foote 5,586; Anthony Henry 4,921; Erica Layon 5,092; David C. Love 5,265; Jodi Nelson 5,365; John Potucek 5,010; Richard Tripp 5,154; Write-ins 33",
+          "change": "Tenth-place margin 2 → 3; same ten leading candidates (Midterm Watch arithmetic)",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-rockingham.xlsx",
+          "title": "rockingham House results with recount columns",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Recount columns for District 13",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.sos.nh.gov/2026-general-election-results",
+          "title": "2026 general election results and amendment caveat",
+          "publisher": "New Hampshire Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-13",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The workbook documents a completed count, not a scheduled recount. It does not establish certification. Publication and completion dates are not stated; first observation is not a substitute for either."
+      ]
+    },
+    {
+      "id": "SC-2026-11-11-state-certification",
+      "state": "SC",
+      "kind": "certification",
+      "status": "Certified by the competent canvassing authority",
+      "authority": "South Carolina State Election Commission",
+      "summary": "Previously published returns → state certification. The November 12 release reports that the commission met November 11 to certify the statewide general election. U.S. House District 2 is recorded separately because its later recount has no separately verified certification date.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Annie Andrews; Darline Graham; Kasie Whitener; Mark Hackett",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Andrews 1,044,001; Graham 952,191; Whitener 23,585; Hackett 16,811; write-ins 4,899",
+          "change": "Andrews margin 91,810",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "Governor and Lieutenant Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Alan Wilson / Mike Reichenbach; Jermaine Johnson / Sam Skardon; Michael Addison / Candace Brewer; Walid Hakim / Arnold E Karr",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Wilson / Reichenbach 1,051,334; Johnson / Skardon 960,534; Addison / Brewer 16,125; Hakim / Karr 9,078; write-ins 1,143",
+          "change": "Wilson / Reichenbach margin 90,800",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Mark Hammond; Jason Belton",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Hammond 1,073,982; Belton 952,447; write-ins 961",
+          "change": "Hammond margin 121,535",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "David Stumbo; Richard Hricik",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Stumbo 1,059,689; Hricik 965,180; write-ins 1,135",
+          "change": "Stumbo margin 94,509",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 1",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-1/",
+          "candidates": "Nancy Lacore; Jenny Costa Honeycutt; Bill Reeside",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Lacore 162,103; Honeycutt 158,751; Reeside 5,351; write-ins 218",
+          "change": "Lacore margin 3,352",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 3",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-3/",
+          "candidates": "Sheri Biggs; Eunice Lehmacher; Brian Corriea",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Biggs 173,960; Lehmacher 93,955; Corriea 5,103; write-ins 150",
+          "change": "Biggs margin 80,005",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 4",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-4/",
+          "candidates": "William Timmons; Courtney McClain; Jessica Ethridge",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Timmons 146,944; McClain 129,742; Ethridge 7,215; write-ins 292",
+          "change": "Timmons margin 17,202",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 5",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-5/",
+          "candidates": "Wes Climer; Mallory Dittmer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Climer 151,497; Dittmer 135,203; write-ins 158",
+          "change": "Climer margin 16,294",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 6",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-6/",
+          "candidates": "James E. Jim Clyburn; John Peterson",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Clyburn 181,118; Peterson 79,898; write-ins 318",
+          "change": "Clyburn margin 101,220",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 7",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-7/",
+          "candidates": "Russell Fry; John Gregory Vincent",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Fry 172,439; Vincent 131,445; write-ins 204",
+          "change": "Fry margin 40,994",
+          "coverage_path": "/house/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvotes.gov/state-election-commission-certifies-2026-statewide-general-election/",
+          "title": "State Election Commission certifies statewide general election",
+          "publisher": "South Carolina State Election Commission",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/127300/web.345435/#/summary",
+          "title": "Statewide general election returns",
+          "publisher": "South Carolina State Election Commission",
+          "version": "November 10, 2026, 5:22:26 PM",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-12",
+        "effective": "2026-11-11",
+        "certified": "2026-11-11",
+        "printed": null,
+        "first_observed": "2026-11-12",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "No prior candidate tally is supplied in the certification release. Margins are arithmetic from the published totals, not vote changes."
+      ]
+    },
+    {
+      "id": "SC-2026-11-12-house-2-recount",
+      "state": "SC",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "South Carolina State Election Commission",
+      "summary": "Original general-election totals → completed recount totals in the office-linked recount portal, with all participating counties reporting. Joe Wilson remains ahead; his margin narrows by 86 votes.",
+      "contests": [
+        {
+          "contest": "U.S. House, South Carolina District 2",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-2/",
+          "candidates": "Joe Wilson; Zyon Khalifa; Dayna Alane Smith",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Wilson 147,791; Khalifa 144,865; Smith 3,674; write-ins 334; total 296,664",
+          "after": "Wilson 147,785; Khalifa 144,945; Smith 3,673; write-ins 334; total 296,737",
+          "change": "Margin 2,926 → 2,840; Wilson −6, Khalifa +80, Smith −1, write-ins unchanged (Midterm Watch arithmetic)",
+          "coverage_path": "/house/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvotes.gov/elections-statistics/election-results/",
+          "title": "Official directory linking the general and recount results",
+          "publisher": "South Carolina State Election Commission",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/127300/web.345435/#/summary",
+          "title": "Original general-election results",
+          "publisher": "South Carolina State Election Commission",
+          "version": "Updated November 10, 2026, 5:22:26 PM",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/127592/web.345435/#/summary",
+          "title": "Completed recount results",
+          "publisher": "South Carolina State Election Commission",
+          "version": "Updated November 12, 2026, 9:41:42 AM",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": "Recount portal last updated 11/12/2026 9:41:42 AM; time zone not stated",
+        "first_observed": "2026-11-13",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The portal timestamp is not a publication or certification date. No separate certification of this post-recount contest is cited; the recount is presented as unofficial.",
+        "Publication and completion dates are not stated; the portal update time establishes observation of a completed recount, not its exact completion date."
+      ]
+    },
+    {
+      "id": "FL-2026-11-13-miami-dade-house-27-certification",
+      "state": "FL",
+      "kind": "local_certification",
+      "status": "County returns certified; no state certification of the full contest is cited",
+      "authority": "Miami-Dade County Canvassing Board",
+      "summary": "Second unofficial recount returns → certified county returns. The November 13 county certificate includes all valid votes and preserves the recount figures for District 27. This district lies entirely within Miami-Dade, so the county certificate covers its complete numerical tally; the Florida Elections Canvassing Commission's certification of the congressional contest is a separate act.",
+      "contests": [
+        {
+          "contest": "U.S. House, Florida District 27",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/fl-27/",
+          "candidates": "Maria Elvira Salazar; Eliott Rodriguez",
+          "scope_kind": "local_unit",
+          "scope": "Miami-Dade County returns; not a statewide total or state certification of the full contest",
+          "before": "Salazar 124,519; Rodriguez 123,433; total 247,952",
+          "after": "Salazar 124,519; Rodriguez 123,433; total 247,952",
+          "change": "No change; Salazar margin remains 1,086",
+          "coverage_path": "/house/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.miamidade.gov/elections/library/reports/recount/2026-11-13-representative-congress-dist-27-recount-official.pdf",
+          "title": "Official certificate of county canvassing board",
+          "publisher": "Miami-Dade County Canvassing Board",
+          "version": "November 13 official returns",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": "2026-11-13",
+        "certified": "2026-11-13",
+        "printed": "11/13/2026 03:14:10 PM (time zone not stated)",
+        "first_observed": "2026-11-13",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "Publication date is not stated. Other contests in this county certificate are not treated as full statewide or multi-county certifications."
+      ]
+    },
+    {
+      "id": "MN-2026-11-09-senate-33-certification",
+      "state": "MN",
+      "kind": "certification",
+      "status": "Certified by the competent canvassing authority",
+      "authority": "Washington County Canvassing Board",
+      "summary": "Unofficial returns → certified full-district results. The Secretary of State's November 13 notice expressly reports this board's completed certification. This single-county legislative district is certified by its county canvassing board; the later statewide canvass does not substitute for this act.",
+      "contests": [
+        {
+          "contest": "Minnesota Senate District 33",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Karin Housley; Nat Smith",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Housley 23,977; Smith 23,935",
+          "after": "Housley 23,977; Smith 23,935",
+          "change": "Margin remains 42; no numerical change",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sos.mn.gov/about-the-office/news-room/updates-on-state-legislative-recounts/",
+          "title": "Updates on state legislative recounts (reports completed certifications)",
+          "publisher": "Minnesota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-13",
+        "effective": "2026-11-09",
+        "certified": "2026-11-09",
+        "printed": null,
+        "first_observed": "2026-11-13",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The requested and scheduled recount is not yet a completed recount outcome."
+      ]
+    },
+    {
+      "id": "MN-2026-11-10-house-32a-certification",
+      "state": "MN",
+      "kind": "certification",
+      "status": "Certified by the competent canvassing authority",
+      "authority": "Anoka County Canvassing Board",
+      "summary": "Unofficial returns → certified full-district results. The Secretary of State's November 13 notice expressly reports this board's completed certification. This single-county legislative district is certified by its county canvassing board; the later statewide canvass does not substitute for this act.",
+      "contests": [
+        {
+          "contest": "Minnesota House District 32A",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Nolan West; Amanda Matchett",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "West 11,833; Matchett 11,811",
+          "after": "West 11,833; Matchett 11,811",
+          "change": "Margin remains 22; no numerical change",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sos.mn.gov/about-the-office/news-room/updates-on-state-legislative-recounts/",
+          "title": "Updates on state legislative recounts (reports completed certifications)",
+          "publisher": "Minnesota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-13",
+        "effective": "2026-11-10",
+        "certified": "2026-11-10",
+        "printed": null,
+        "first_observed": "2026-11-13",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The requested and scheduled recount is not yet a completed recount outcome."
+      ]
+    },
+    {
+      "id": "OK-2026-11-10-state-certification",
+      "state": "OK",
+      "kind": "certification",
+      "status": "Certified by the competent canvassing authority",
+      "authority": "Oklahoma State Election Board",
+      "summary": "Published returns without a verified certification act → certified statewide results. The board's November 13 report expressly states that statewide certification occurred November 10. The linked results portal supplies these totals.",
+      "contests": [
+        {
+          "contest": "Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Mike Mazzei; Cyndi Munson; Orlando Lynn Bush; Robert E. Brooks Sr.; Jerry Griffin",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Mazzei 582,039; Munson 514,776; Bush 5,014; Brooks 11,660; Griffin 7,441",
+          "change": "Mazzei margin 67,263",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Kevin Hern; N'Kiyla Jasmine Thomas; Sevier White; Ron Meinhardt; Curtis Stinnett",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Hern 639,860; Thomas 439,522; White 10,209; Meinhardt 14,504; Stinnett 14,635",
+          "change": "Hern margin 200,338",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Jon Echols; Nick Coffey",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Echols 617,671; Coffey 498,671",
+          "change": "Echols margin 119,000",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "U.S. House, Oklahoma District 1",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/ok-1/",
+          "candidates": "Mark Tedford; John Croisant",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Tedford 121,397; Croisant 110,707",
+          "change": "Leading-candidate margin 10,690",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, Oklahoma District 2",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/ok-2/",
+          "candidates": "Josh Brecheen; Brandon Wade; Ronnie Hopkins",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Brecheen 144,054; Wade 61,409; Hopkins 6,520",
+          "change": "Leading-candidate margin 82,645",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, Oklahoma District 3",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/ok-3/",
+          "candidates": "Frank D. Lucas; Suzie Byrd",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Lucas 122,181; Byrd 68,832",
+          "change": "Leading-candidate margin 53,349",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, Oklahoma District 4",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/ok-4/",
+          "candidates": "Tom Cole; Mitchell Jacob; Rocco Bonacci",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Cole 125,631; Jacob 86,108; Bonacci 6,389",
+          "change": "Leading-candidate margin 39,523",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, Oklahoma District 5",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/ok-5/",
+          "candidates": "Stephanie Bice; Jena Nelson; Robert P. Henri; Austin Nieves",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Bice 131,023; Nelson 127,687; Henri 4,027; Nieves 2,047",
+          "change": "Leading-candidate margin 3,336",
+          "coverage_path": "/house/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://oklahoma.gov/content/dam/ok/en/elections/election-results/2026-election-results/20261103-reporting-issues-review.pdf",
+          "title": "Review of results reporting issues, conclusion on page 8",
+          "publisher": "Oklahoma State Election Board",
+          "version": "November 13, 2026 report",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://results.okelections.gov/OKER/?elecDate=20261103",
+          "title": "Official November 3 general-election results",
+          "publisher": "Oklahoma State Election Board",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://oklahoma.gov/elections/elections-results/election-results/2026-election-results/november-general-election.html",
+          "title": "Official results directory and report link",
+          "publisher": "Oklahoma State Election Board",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-13",
+        "effective": "2026-11-10",
+        "certified": "2026-11-10",
+        "printed": null,
+        "first_observed": "2026-11-13",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "No prior candidate tally is preserved in this record or supplied by the report. Margins are Midterm Watch arithmetic, not vote changes.",
+        "The report's unspecified Comanche corrections and ordinary provisional-ballot additions are not represented as a separate material contest correction."
+      ]
+    },
+    {
+      "id": "VT-2026-11-12-official-canvass",
+      "state": "VT",
+      "kind": "official_canvass",
+      "status": "Official canvass published; separate certification date not established",
+      "authority": "Vermont Canvassing Committee; Vermont Secretary of State",
+      "summary": "Previously reported returns → published official canvass. The committee report expressly records that it met and canvassed the general-election returns and marks winners. The extracted record does not provide a publication or separate certification date, so this entry does not claim a dated certification.",
+      "contests": [
+        {
+          "contest": "U.S. House, Vermont at-large",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/vt-al/",
+          "candidates": "Becca Balint; Gerald Malloy; Phoenix K. Altair; Adam Ortiz; Suzanne Seymour; Ryan P. Walton",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Balint 198,758; Malloy 94,078; Altair 2,335; Ortiz 2,196; Seymour 4,362; Walton 2,700; write-ins 246",
+          "change": "Balint margin 104,680",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Phil Scott; Amanda Janoo; June Goodband; Brian Judd; Dean Roy",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Scott 162,048; Janoo 141,631; Goodband 1,227; Judd 2,614; Roy 1,137; write-ins 398",
+          "change": "Scott margin 20,417",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Sarah Copeland Hanzas; H. Brooke Paige; Rachel Shaw",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Copeland Hanzas 174,741; Paige 96,149; Shaw 24,006; write-ins 234",
+          "change": "Copeland Hanzas margin 78,592",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Charity R. Clark; Edwin Howell Kemon",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Clark 200,480; Kemon 94,948; write-ins 528",
+          "change": "Clark margin 105,532",
+          "coverage_path": "/down-ballot/executives/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026_general_election_official_report_canvassing_committee_vermont_statewide_public_questions.pdf",
+          "title": "Official report of the canvassing committee, statewide offices",
+          "publisher": "Vermont Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-12",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "Publication, effective and separate certification dates are not stated in the extracted report. The identifier uses first observation, not an inferred publication date.",
+        "Prior candidate totals are not stated. Margins are Midterm Watch arithmetic."
+      ]
+    },
+    {
+      "id": "FL-2026-11-10-brevard-house-33-recount",
+      "state": "FL",
+      "kind": "completed_recount",
+      "status": "Unofficial; no certification of the contest is cited",
+      "authority": "Brevard County Supervisor of Elections and County Canvassing Board",
+      "summary": "Unrecounted unofficial returns → completed machine-recount results for House District 33. The November 10 second-unofficial portal version recorded McDow 36,428 and Miller 36,142. The current portal expressly includes the machine recount and later eligible overseas ballots; its later totals are shown separately below.",
+      "contests": [
+        {
+          "contest": "Florida House District 33",
+          "coverage": "State legislative chamber coverage",
+          "race_path": null,
+          "candidates": "Daniel R. McDow; Monique Miller",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Machine recount: McDow 36,428; Miller 36,142; margin 286",
+          "change": "No pre-recount candidate tally was retained; no recount vote delta is inferred",
+          "coverage_path": "/down-ballot/legislatures/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://enr.electionsfl.org/BRE/4064/Summary/",
+          "title": "Brevard results summary including District 33 machine recount",
+          "publisher": "Brevard County Supervisor of Elections",
+          "version": "Historical second unofficial version: November 10, 2026, 4:54:45 PM; current version also includes 10-day overseas ballots",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": "2026-11-10",
+        "certified": null,
+        "printed": "Historical second unofficial portal update: 11/10/2026 4:54:45 PM (time zone not stated)",
+        "first_observed": "2026-11-10",
+        "last_checked": "2026-11-14T08:19:11Z"
+      },
+      "caveats": [
+        "The November 14 recheck shows McDow 36,443 and Miller 36,146, a margin of 297, with eligible overseas ballots included. That ordinary ballot addition is not a new correction or recount event.",
+        "The current portal says Official Results, but no separate state certification act for the full contest is cited. Publication date is not stated."
       ]
     }
   ]
