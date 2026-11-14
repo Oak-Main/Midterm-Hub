@@ -196,7 +196,7 @@ const CERTIFYING: readonly OfficialUpdateKind[] = ['local_certification', 'certi
 /** Kinds that speak for the whole contest; every contest must be full_contest scope. */
 const FULL_CONTEST_ONLY: readonly OfficialUpdateKind[] = ['certification', 'amended_certification', 'withdrawn_certification'];
 /** Label for the certification date row, so a withdrawal never reads as "Certified". */
-export const certificationDateLabel = (kind: OfficialUpdateKind) => kind === 'withdrawn_certification' ? 'Certification withdrawn' : 'Certified';
+export const certificationDateLabel = (kind: OfficialUpdateKind) => kind === 'withdrawn_certification' ? 'Certification withdrawn' : kind === 'official_canvass' ? 'Certification date' : 'Certified';
 
 export type OfficialUpdateContest = {
   /** "U.S. House, Connecticut District 1" */
@@ -331,5 +331,6 @@ export const sortOfficialUpdates = (events: readonly OfficialUpdateEvent[]) =>
   [...events].sort((a, b) => b.id.slice(3, 13).localeCompare(a.id.slice(3, 13)) || a.id.localeCompare(b.id));
 
 /** Events touching a site route, for race pages that cover one of the contests. */
+export const contestOnPath = (contest: OfficialUpdateContest, path: string) => contest.race_path === path || contest.coverage_path === path;
 export const officialUpdatesForPath = (events: readonly OfficialUpdateEvent[], path: string) =>
-  events.filter(event => event.contests.some(contest => contest.race_path === path || contest.coverage_path === path));
+  events.filter(event => event.contests.some(contest => contestOnPath(contest, path)));
