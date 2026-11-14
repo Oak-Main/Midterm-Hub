@@ -64,7 +64,7 @@
       "checked_at": "2026-11-14T08:22:39Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Read the official page on November 14, 2026. 2026 general-election results are posted; certification is established only by the separately cited act.",
+      "notes": "Read the official page on November 14, 2026. The posted 2026 general-election results are labeled unofficial; no certification act is established by this source.",
       "label_seen": "Unofficial Election Results"
     },
     {
@@ -99,11 +99,12 @@
       "url": "https://elections.delaware.gov/results/enr/GE2026.html",
       "requested_url": "https://elections.delaware.gov/results/enr/GE2026.html",
       "http_status": 200,
-      "checked_at": "2026-11-10T17:40:44Z",
+      "checked_at": "2026-11-14T08:33:50.524Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Plain headless-browser check at 2026-11-10T17:40:44Z: the page names '2026 General Election November 3, 2026' and displays the label 'UNOFFICIAL RESULTS', with 2026 general-election results posted.",
-      "label_seen": "UNOFFICIAL RESULTS"
+      "notes": "Read the fully rendered Department of Elections portal: OFFICIAL RESULTS, data as of 11/10/2026 01:49 PM. The initial non-rendered template says unofficial; the populated portal supplies the official label. This page does not establish a dated certification act.",
+      "label_seen": "OFFICIAL RESULTS",
+      "visitor_note": "The populated portal labels its results official. Its data timestamp does not independently establish the date of certification."
     },
     {
       "state": "DC",
@@ -204,7 +205,7 @@
       "checked_at": "2026-11-14T08:22:39Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Read the official page on November 14, 2026. 2026 general-election results are posted; certification is established only by the separately cited act."
+      "notes": "Read the official linked results portal on November 14, 2026. The November 3 general-election results are posted; this observation does not establish a certification act."
     },
     {
       "state": "KS",
@@ -527,14 +528,15 @@
       "state": "SD",
       "name": "South Dakota",
       "authority": "South Dakota Secretary of State",
-      "url": "https://electionresults.sd.gov/Default.aspx",
-      "requested_url": "https://electionresults.sd.gov/Default.aspx",
+      "url": "https://www.sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Assets/General/2026GeneralElectionStateCanvassandCertificate.pdf",
+      "requested_url": "https://www.sdsos.gov/elections-voting/upcoming-elections/general-information/2026%20Election%20Assets/General/2026GeneralElectionStateCanvassandCertificate.pdf",
       "http_status": 200,
-      "checked_at": "2026-11-10T17:35:27Z",
+      "checked_at": "2026-11-14T08:33:50.524Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Plain headless-browser check at 2026-11-10T17:35:27Z: the page names 'GENERAL ELECTION NOVEMBER 3, 2026' and displays the label 'Unofficial Results', with 2026 general-election results posted. Located via https://sdsos.gov/elections-voting/default.aspx.",
-      "label_seen": "Unofficial Results"
+      "notes": "Read the signed 22-page state canvass and certificate linked by the Secretary of State. It expressly certifies the attached November 3 general-election candidate returns and is sworn and filed November 10, 2026.",
+      "label_seen": "CERTIFICATE",
+      "visitor_note": "The state canvass certificate was sworn and filed November 10, 2026. Its web publication date is not stated."
     },
     {
       "state": "TN",
