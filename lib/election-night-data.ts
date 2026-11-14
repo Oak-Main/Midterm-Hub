@@ -31,7 +31,10 @@ for (const [code] of jurisdictionList) electionNightPaths.add(`/results/${code.t
 const contentChanged = '2026-11-04T00:00:00Z';
 // Official updates and results-link rechecks also change these pages, so their
 // latest check moves the sitemap date; House pages that list an update join the set.
-for (const event of officialUpdates) for (const contest of event.contests) if (contest.race_path) electionNightPaths.add(contest.race_path);
+for (const event of officialUpdates) for (const contest of event.contests) {
+  if (contest.race_path) electionNightPaths.add(contest.race_path);
+  if (contest.coverage_path) electionNightPaths.add(contest.coverage_path);
+}
 export const electionNightModified = new Date(Math.max(
   Date.parse(contentChanged), Date.parse(electionStatus.updated_at),
   ...officialUpdates.map(event => Date.parse(event.dates.last_checked)),
