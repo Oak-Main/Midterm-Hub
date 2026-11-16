@@ -118,7 +118,8 @@ const buildIdFile = new URL('../../.next/BUILD_ID', import.meta.url);
 const buildId = existsSync(buildIdFile) ? readFileSync(buildIdFile, 'utf8').trim() : null;
 const freshExport = Boolean(buildId) && existsSync(new URL(`../../out/_next/static/${buildId}`, import.meta.url));
 if (process.env.REQUIRE_STATIC_EXPORT === '1') assert.ok(freshExport, 'Run npm run build before export regression tests');
-const decode = html => html.replaceAll('&amp;', '&').replaceAll('&#x27;', "'").replaceAll('&quot;', '"');
+// &amp; is decoded last so an escaped entity such as &amp;quot; is not unescaped twice.
+const decode = html => html.replaceAll('&#x27;', "'").replaceAll('&quot;', '"').replaceAll('&amp;', '&');
 
 test('built home page: runoff title, description budget, Event data and section order', { skip: freshExport ? false : 'no fresh `npm run build` export in out/' }, () => {
   const home = readFileSync(new URL('../../out/index.html', import.meta.url), 'utf8');
