@@ -2286,5 +2286,59 @@
     "retrieved_on": "2026-11-03",
     "source_updated": null,
     "note": "Checked November 3 UTC. Directs voters to verify county hours; the state statute gives the distinct Mountain-time default."
+  },
+  {
+    "id": "LA-DATES-20261115",
+    "url": "https://www.sos.la.gov/elections-voting/election-dates",
+    "title": "Election dates: December 12, 2026 Open U.S. Representative General/Open General/Special Primary",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-11-15",
+    "source_updated": null,
+    "note": "Checked November 15 for the December 12 election: registration in person, by mail or at an OMV office by November 12; GeauxVote online registration by November 21; early voting November 28\u2013December 5 (excluding Sunday, November 29), 8:30 a.m.\u20136 p.m.; absentee requests by 4:30 p.m. December 8 and voted absentee ballots received by the registrar by 4:30 p.m. December 11 (other than military and overseas voters); polls 7 a.m.\u20138 p.m. The page also lists a December 12 Special Primary for State Senator, 14th Senatorial District, Parish of East Baton Rouge."
+  },
+  {
+    "id": "LA-LINCOLN-20261115",
+    "url": "https://www.lincolnparish.gov/registrar-voters/page/election-information",
+    "title": "Election information for the Saturday, December 12, 2026 election",
+    "publisher": "Lincoln Parish Registrar of Voters",
+    "retrieved_on": "2026-11-15",
+    "source_updated": null,
+    "note": "Checked November 15. Lists the same December 12 deadlines as the Secretary of State: November 12 (in person, mail, OMV) and November 21 (GeauxVote online) registration; early voting November 28\u2013December 5 excluding Sunday, November 29, 8:30 a.m.\u20136 p.m.; absentee request by 4:30 p.m. December 8; absentee receipt by 4:30 p.m. December 11 (other than military and overseas voters); polls 7 a.m.\u20138 p.m."
+  },
+  {
+    "id": "LA-STTAMMANY-20261115",
+    "url": "https://www.stprov.org/general-info.shtml",
+    "title": "St. Tammany Parish 2026 fall election dates",
+    "publisher": "St. Tammany Parish Registrar of Voters",
+    "retrieved_on": "2026-11-15",
+    "source_updated": null,
+    "note": "Checked November 15. For the Saturday, December 12, 2026 Open U.S. Representative General/Open General Election: mail or in-person registration through Thursday, November 12; Geaux Vote online registration through Saturday, November 21; early voting Saturday, November 28 through Saturday, December 5, closed Sunday, 8:30 a.m.\u20136 p.m."
+  },
+  {
+    "id": "LA-CANDIDATES-20261115",
+    "url": "https://voterportal.sos.la.gov/candidateinquiry",
+    "title": "Candidate Inquiry: offices on the December 12, 2026 ballot",
+    "publisher": "Louisiana Secretary of State",
+    "retrieved_on": "2026-11-15",
+    "source_updated": null,
+    "note": "Checked November 15 with a plain headless browser by selecting election date 12/12/2026. Statewide/Multi-Parish offices listed: U.S. Representative, 5th and 6th Congressional Districts; State Senator, 14th Senatorial District; District Judge seats in the 12th, 18th, 22nd, 27th and 30th Judicial District Courts; District Attorney, 2nd and 31st Judicial District Courts; and City of Shreveport mayor, city judge and District F council seats. Parish races are listed separately. Candidate names and results are not reproduced on this site."
+  },
+  {
+    "id": "MS-CALENDAR-20261115",
+    "url": "https://www.sos.ms.gov/content/documents/elections/2026%20Elections%20Calendar.pdf",
+    "title": "2026 election calendar (last revised September 8, 2026)",
+    "publisher": "Mississippi Secretary of State",
+    "retrieved_on": "2026-11-15",
+    "source_updated": "2026-09-08",
+    "note": "Checked November 15. General/special runoff voter registration deadline November 2; circuit clerks open 8 a.m.\u2013noon Saturday, November 21 for runoff absentee voting; in-person runoff absentee voting deadline noon Saturday, November 28; runoff day (if required) December 1 for Supreme Court, Court of Appeals, chancery, circuit and county court judges and school board members/trustees, polls 7 a.m.\u20137 p.m.; mailed absentee ballots postmarked by December 1 and received by 5 p.m. December 8. Gives no first day for runoff in-person absentee voting."
+  },
+  {
+    "id": "MS-CALENDAR-SUMMARY-20261115",
+    "url": "https://www.sos.ms.gov/sites/default/files/publications/Election%20Calendar_2026.pdf",
+    "title": "Election calendar 2026\u20132027 (one-page summary)",
+    "publisher": "Mississippi Secretary of State",
+    "retrieved_on": "2026-11-15",
+    "source_updated": null,
+    "note": "Checked November 15. Lists December 1 as the 2026 General Runoff Election; it does not list registration, absentee or office details, which come from MS-CALENDAR-20261115."
   }
 ]

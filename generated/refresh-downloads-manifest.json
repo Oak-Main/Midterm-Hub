@@ -5,17 +5,17 @@
       "name": "midterm-watch-refresh-2026-10-20.json",
       "format": "JSON",
       "records": 435,
-      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026. Kansas poll-hours correction documented November 3, 2026 UTC.",
-      "bytes": 1259665,
-      "sha256": "a957f7187aaa8565baa9ec0f6005ebe31957c166a3b8ae13cae5f8f88f12eda3"
+      "description": "Complete dated refresh: race ratings, polls, voting guides, down-ballot watchlists and attribution. Schema 2.0; independent collections. Georgia runoff timing correction documented November 2, 2026. Kansas poll-hours correction documented November 3, 2026 UTC. Runoff desk fields (voting windows, Louisiana December 12 contests, authority links) added November 15, 2026; no earlier runoff value changed.",
+      "bytes": 1262813,
+      "sha256": "f7d067aa295db5ef92dd9ed0f04670f3ee9b4c21cbedb9941c3273e043c45092"
     },
     {
       "name": "midterm-watch-sources-2026-10-20.json",
       "format": "JSON",
-      "records": 254,
-      "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates. Includes separately dated Kansas poll-hours sources checked November 3, 2026 UTC.",
-      "bytes": 81668,
-      "sha256": "85a5fb0b4accaf297a4912abea8531695f71193d5e2936b2b3e8279f2a0787d9"
+      "records": 260,
+      "description": "Source URLs, source vintages, research dates and limitations; includes separately dated November 2 updates. Includes separately dated Kansas poll-hours sources checked November 3, 2026 UTC. Includes separately dated Louisiana and Mississippi runoff sources checked November 15, 2026.",
+      "bytes": 86246,
+      "sha256": "2d48b5185833131103a268c91727b4ed425131693459c57af04187b038305328"
     },
     {
       "name": "midterm-watch-house-2026-10-20.csv",

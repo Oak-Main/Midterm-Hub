@@ -37158,6 +37158,34 @@
         "GA-SOS-2026-RUNOFF",
         "GA-GOV-2026-RUNOFF",
         "GA-FULTON-20261102"
+      ],
+      "election_name": "General election runoff",
+      "voting_window": {
+        "kind": "advance_voting",
+        "first_day": "2026-11-23",
+        "first_day_note": "Starts as soon as possible and no later than November 23; Fulton County lists November 21.",
+        "last_day": "2026-11-27",
+        "last_day_conflict": [
+          "2026-11-25",
+          "2026-11-27"
+        ],
+        "closed_days": [],
+        "source_ids": [
+          "GA-SOS-2026-RUNOFF",
+          "GA-GOV-2026-RUNOFF",
+          "GA-FULTON-20261102"
+        ]
+      },
+      "authority_source_ids": [
+        "GA-SOS-2026-RUNOFF"
+      ],
+      "desk_source_ids": [
+        "GA-CALENDAR",
+        "GA-FULTON",
+        "GA-PUTNAM",
+        "GA-SOS-2026-RUNOFF",
+        "GA-GOV-2026-RUNOFF",
+        "GA-FULTON-20261102"
       ]
     },
     {
@@ -37175,7 +37203,27 @@
       "existing_calendar_id": "b7d3d9575f9d794c",
       "early_voting_note": "No general early voting. For qualifying absentee voters, in-person absentee voting ends at noon November 28.",
       "ordinary_absentee_return": "Mail: postmark by December 1; delivery within five business days, by December 8. Eligibility and permitted return method still apply.",
-      "election_day_hours": "7 a.m.\u20137 p.m. local time"
+      "election_day_hours": "7 a.m.\u20137 p.m. local time",
+      "election_name": "General/special election runoff",
+      "voting_window": {
+        "kind": "in_person_absentee",
+        "first_day": null,
+        "first_day_note": "The Secretary of State calendar gives no first day for runoff in-person absentee voting; ask your circuit clerk.",
+        "last_day": "2026-11-28",
+        "last_day_time": "noon",
+        "hours_note": "Circuit clerks' offices are open 8 a.m.\u2013noon on Saturdays November 21 and November 28 for runoff absentee voting.",
+        "closed_days": [],
+        "source_ids": [
+          "MS-CALENDAR-20261115"
+        ]
+      },
+      "authority_source_ids": [
+        "MS-CALENDAR-20261115"
+      ],
+      "desk_source_ids": [
+        "MS-CALENDAR-20261115",
+        "MS-CALENDAR-SUMMARY-20261115"
+      ]
     },
     {
       "state": "LA",
@@ -37196,7 +37244,57 @@
       "absentee_request_date": "2026-12-08",
       "absentee_request_time": "4:30 p.m.",
       "ordinary_absentee_return": "Most voters: received by the registrar by 4:30 p.m. December 11. Special categories differ.",
-      "election_day_hours": "7 a.m.\u20138 p.m. on Saturday December 12"
+      "election_day_hours": "7 a.m.\u20138 p.m. on Saturday December 12",
+      "election_name": "Open U.S. Representative general / open general election",
+      "registration_online_system": "GeauxVote",
+      "voting_window": {
+        "kind": "early_voting",
+        "first_day": "2026-11-28",
+        "last_day": "2026-12-05",
+        "closed_days": [
+          "2026-11-29"
+        ],
+        "hours": "8:30 a.m.\u20136 p.m.",
+        "source_ids": [
+          "LA-DATES-20261115",
+          "LA-LINCOLN-20261115",
+          "LA-STTAMMANY-20261115"
+        ]
+      },
+      "contests": [
+        {
+          "label": "U.S. House, District 5",
+          "source_ids": [
+            "LA-CANDIDATES-20261115"
+          ]
+        },
+        {
+          "label": "U.S. House, District 6",
+          "source_ids": [
+            "LA-CANDIDATES-20261115"
+          ]
+        },
+        {
+          "label": "State Senate, District 14 special primary (East Baton Rouge Parish)",
+          "source_ids": [
+            "LA-DATES-20261115",
+            "LA-CANDIDATES-20261115"
+          ]
+        }
+      ],
+      "contests_note": "The Secretary of State also lists district judge, district attorney and City of Shreveport contests for December 12. Ballots differ by parish; check your sample ballot in the Voter Portal.",
+      "contests_note_source_ids": [
+        "LA-CANDIDATES-20261115"
+      ],
+      "authority_source_ids": [
+        "LA-DATES-20261115"
+      ],
+      "desk_source_ids": [
+        "LA-DATES-20261115",
+        "LA-LINCOLN-20261115",
+        "LA-STTAMMANY-20261115",
+        "LA-CANDIDATES-20261115"
+      ]
     }
   ],
   "verification_policy": {
