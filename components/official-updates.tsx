@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { certificationDateLabel, dayLabel, officialUpdateLabels, timestampLabel, type OfficialUpdateEvent } from '@/lib/election-night';
+import { certificationDateLabel, contestOnPath, dayLabel, officialUpdateLabels, timestampLabel, type OfficialUpdateEvent } from '@/lib/election-night';
 
 // Renders dated, source-linked official updates (corrected returns, completed
 // recounts, certifications). Missing values are stated as missing; nothing is
@@ -23,7 +23,7 @@ export function OfficialUpdates({ events, name }: { events: readonly OfficialUpd
         <dl className="mt-2 grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1 text-sm">
           <dt className="font-bold">Candidates</dt><dd>{contest.candidates}</dd>
           <dt className="font-bold">Scope</dt><dd>{contest.scope}</dd>
-          <dt className="font-bold">Before</dt><dd>{contest.before ?? 'Not stated'}</dd>
+          <dt className="font-bold">Before</dt><dd>{contest.before ?? 'Prior tally not stated or not retained'}</dd>
           <dt className="font-bold">After</dt><dd>{contest.after ?? 'Not stated'}</dd>
           <dt className="font-bold">Change</dt><dd>{contest.change ?? 'Not stated'}</dd>
         </dl>
@@ -50,7 +50,7 @@ export function OfficialUpdateLinks({ events, heading, path }: { events: readonl
   return <section id="official-updates" className="refresh-content mt-6">
     <h2>{heading}</h2>
     <ul className="mt-3 list-disc pl-6">{events.map(event => {
-      const contests = path ? event.contests.filter(contest => contest.race_path === path) : event.contests;
+      const contests = path ? event.contests.filter(contest => contestOnPath(contest, path)) : event.contests;
       const scope = contests.length === 1 ? contests[0].scope : null;
       return <li key={event.id}>
         <Link className="editorial-link" href={`/results/${event.state.toLowerCase()}/#${anchor(event)}`}>{`${officialUpdateLabels[event.kind]}: ${contests.map(contest => contest.contest).join('; ')}`}</Link>
