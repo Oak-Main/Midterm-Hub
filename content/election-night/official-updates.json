@@ -843,8 +843,8 @@
       "state": "SC",
       "kind": "certification",
       "status": "Certified by the competent canvassing authority",
-      "authority": "South Carolina State Election Commission",
-      "summary": "Previously published returns → state certification. The November 12 release reports that the commission met November 11 to certify the statewide general election. U.S. House District 2 is recorded separately because its later recount has no separately verified certification date.",
+      "authority": "South Carolina State Board of Canvassers",
+      "summary": "The approved November 10 minutes record initial certification of contests outside the three mandatory recounts. The November 11 minutes record the later recount certifications and statewide recertification.",
       "contests": [
         {
           "contest": "U.S. Senate",
@@ -969,12 +969,20 @@
       ],
       "sources": [
         {
+          "url": "https://scvotes.gov/wp-content/uploads/2026/11/11.10.2026-SBC-Minutes_Approved.pdf",
+          "title": "Approved November 10 board minutes",
+          "publisher": "South Carolina State Election Commission",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:20:18Z"
+        },
+        {
           "url": "https://scvotes.gov/state-election-commission-certifies-2026-statewide-general-election/",
           "title": "State Election Commission certifies statewide general election",
           "publisher": "South Carolina State Election Commission",
           "version": null,
           "sha256": null,
-          "checked_at": "2026-11-14T08:19:11Z"
+          "checked_at": "2026-11-19T14:20:18Z"
         },
         {
           "url": "https://www.enr-scvotes.org/SC/127300/web.345435/#/summary",
@@ -982,26 +990,27 @@
           "publisher": "South Carolina State Election Commission",
           "version": "November 10, 2026, 5:22:26 PM",
           "sha256": null,
-          "checked_at": "2026-11-14T08:19:11Z"
+          "checked_at": "2026-11-19T14:20:18Z"
         }
       ],
       "dates": {
         "published": "2026-11-12",
-        "effective": "2026-11-11",
-        "certified": "2026-11-11",
+        "effective": "2026-11-10",
+        "certified": "2026-11-10",
         "printed": null,
         "first_observed": "2026-11-12",
-        "last_checked": "2026-11-14T08:19:11Z"
+        "last_checked": "2026-11-19T14:20:18Z"
       },
       "caveats": [
-        "No prior candidate tally is supplied in the certification release. Margins are arithmetic from the published totals, not vote changes."
+        "No prior candidate tally is supplied in the certification release. Margins are arithmetic from the published totals, not vote changes.",
+        "The November 12 release described the later meeting. The approved minutes distinguish the initial certification on November 10 from recertification on November 11."
       ]
     },
     {
       "id": "SC-2026-11-12-house-2-recount",
       "state": "SC",
       "kind": "completed_recount",
-      "status": "Unofficial; no certification of the contest is cited",
+      "status": "Unofficial at the recount stage; subsequently certified November 11",
       "authority": "South Carolina State Election Commission",
       "summary": "Original general-election totals → completed recount totals in the office-linked recount portal, with all participating counties reporting. Joe Wilson remains ahead; his margin narrows by 86 votes.",
       "contests": [
@@ -1025,7 +1034,7 @@
           "publisher": "South Carolina State Election Commission",
           "version": null,
           "sha256": null,
-          "checked_at": "2026-11-14T08:19:11Z"
+          "checked_at": "2026-11-19T14:20:18Z"
         },
         {
           "url": "https://www.enr-scvotes.org/SC/127300/web.345435/#/summary",
@@ -1033,7 +1042,7 @@
           "publisher": "South Carolina State Election Commission",
           "version": "Updated November 10, 2026, 5:22:26 PM",
           "sha256": null,
-          "checked_at": "2026-11-14T08:19:11Z"
+          "checked_at": "2026-11-19T14:20:18Z"
         },
         {
           "url": "https://www.enr-scvotes.org/SC/127592/web.345435/#/summary",
@@ -1041,7 +1050,7 @@
           "publisher": "South Carolina State Election Commission",
           "version": "Updated November 12, 2026, 9:41:42 AM",
           "sha256": null,
-          "checked_at": "2026-11-14T08:19:11Z"
+          "checked_at": "2026-11-19T14:20:18Z"
         }
       ],
       "dates": {
@@ -1050,11 +1059,10 @@
         "certified": null,
         "printed": "Recount portal last updated 11/12/2026 9:41:42 AM; time zone not stated",
         "first_observed": "2026-11-13",
-        "last_checked": "2026-11-14T08:19:11Z"
+        "last_checked": "2026-11-19T14:20:18Z"
       },
       "caveats": [
-        "The portal timestamp is not a publication or certification date. No separate certification of this post-recount contest is cited; the recount is presented as unofficial.",
-        "Publication and completion dates are not stated; the portal update time establishes observation of a completed recount, not its exact completion date."
+        "The recount portal was updated November 12 after the board certified the recount on November 11. The portal timestamp is distinct from the certification act. Publication and completion dates are not stated by the portal."
       ]
     },
     {
@@ -1451,7 +1459,7 @@
       },
       "caveats": [
         "The November 14 recheck shows McDow 36,443 and Miller 36,146, a margin of 297, with eligible overseas ballots included. That ordinary ballot addition is not a new correction or recount event.",
-        "The current portal says Official Results, but no separate state certification act for the full contest is cited. Publication date is not stated."
+        "The portal subsequently labeled its return official. The separate November 17 state certification appears above. The recount portal omits a publication date."
       ]
     },
     {
@@ -1553,6 +1561,2779 @@
         "The certificate does not state a web publication date. November 14 is the first observation of this document for this update, not its publication or certification date.",
         "No prior candidate tally is stated in the certificate or retained for this comparison. Margins are calculated from the certified totals; no numerical correction is inferred.",
         "The certificate also covers offices and measures outside this site's selected coverage; only the five verified covered contests are included."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-merrimack-3-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 2-seat district. Michael Visconti led Vivian Marie Hall by 3 before the recount. Vivian Marie Hall leads Michael Visconti by 1 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Merrimack District 3",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Scott A. Burns; Vivian Marie Hall; Werner D. Horn; Michael Visconti; Desiree McLaughlin WRITE-IN",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Scott A. Burns 1,571; Vivian Marie Hall 1,355; Werner D. Horn 1,224; Michael Visconti 1,358; Desiree McLaughlin WRITE-IN 91; Write-Ins 26",
+          "after": "Scott A. Burns 1,571; Vivian Marie Hall 1,358; Werner D. Horn 1,225; Michael Visconti 1,357; Write-Ins 135",
+          "change": "Michael Visconti led Vivian Marie Hall by 3 before the recount. Vivian Marie Hall leads Michael Visconti by 1 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-merrimack.xlsx",
+          "title": "Merrimack House returns, District 3",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook.",
+        "The workbook gives Desiree McLaughlin a separate original write-in column and gives all write-ins a recount column. It does not give her an individual recount total."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-merrimack-5-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 2-seat district. Lorna Carlisle led Louise Andrus by 16 before the recount. Lorna Carlisle leads Louise Andrus by 19 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Merrimack District 5",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Lorna Carlisle; Thomas Ware; Louise Andrus; Deborah Aylward",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Lorna Carlisle 1,926; Thomas Ware 1,939; Louise Andrus 1,910; Deborah Aylward 1,795; Write-Ins 5",
+          "after": "Lorna Carlisle 1,928; Thomas Ware 1,944; Louise Andrus 1,909; Deborah Aylward 1,797; Write-Ins 5",
+          "change": "Lorna Carlisle led Louise Andrus by 16 before the recount. Lorna Carlisle leads Louise Andrus by 19 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-merrimack.xlsx",
+          "title": "Merrimack House returns, District 5",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-merrimack-26-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 1-seat district. Harold D. Tuttle led Alvin B. See by 114 before the recount. Harold D. Tuttle leads Alvin B. See by 110 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Merrimack District 26",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Harold D. Tuttle; Alvin B. See",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Harold D. Tuttle 4,908; Alvin B. See 4,794; Write-Ins 5",
+          "after": "Harold D. Tuttle 4,906; Alvin B. See 4,796; Write-Ins 6",
+          "change": "Harold D. Tuttle led Alvin B. See by 114 before the recount. Harold D. Tuttle leads Alvin B. See by 110 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-merrimack.xlsx",
+          "title": "Merrimack House returns, District 26",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-grafton-1-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 3-seat district. Andrew Dorsett led Joseph Goderic Beaulieu by 17 before the recount. Andrew Dorsett leads Joseph Goderic Beaulieu by 9 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Grafton District 1",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Joseph Goderic Beaulieu; Timothy T. Egan; Linda Massimilla; Joseph Barton; Calvin Beaulier; Andrew Dorsett",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Joseph Goderic Beaulieu 2,209; Timothy T. Egan 2,351; Linda Massimilla 2,526; Joseph Barton 2,195; Calvin Beaulier 2,163; Andrew Dorsett 2,226; Write-Ins 0",
+          "after": "Joseph Goderic Beaulieu 2,219; Timothy T. Egan 2,350; Linda Massimilla 2,525; Joseph Barton 2,194; Calvin Beaulier 2,155; Andrew Dorsett 2,228; Write-Ins 3",
+          "change": "Andrew Dorsett led Joseph Goderic Beaulieu by 17 before the recount. Andrew Dorsett leads Joseph Goderic Beaulieu by 9 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-grafton.xlsx",
+          "title": "Grafton House returns, District 1",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-grafton-11-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 1-seat district. Jake Abuhav led Roger B. Larochelle, Jr. by 6 before the recount. Jake Abuhav leads Roger B. Larochelle, Jr. by 1 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Grafton District 11",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Roger B. Larochelle, Jr.; Jake Abuhav",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Roger B. Larochelle, Jr. 1,124; Jake Abuhav 1,130; Write-Ins 1",
+          "after": "Roger B. Larochelle, Jr. 1,127; Jake Abuhav 1,128; Write-Ins 2",
+          "change": "Jake Abuhav led Roger B. Larochelle, Jr. by 6 before the recount. Jake Abuhav leads Roger B. Larochelle, Jr. by 1 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-grafton.xlsx",
+          "title": "Grafton House returns, District 11",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-rockingham-14-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 2-seat district. Paul C. Paone led Pam Brown by 2 before the recount. Paul C. Paone leads Pam Brown by 1 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Rockingham District 14",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Paul C. Paone; Pam Brown; Kenneth L. Weyler",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Paul C. Paone 2,086; Pam Brown 2,084; Kenneth L. Weyler 2,159; Write-Ins 16",
+          "after": "Paul C. Paone 2,085; Pam Brown 2,084; Kenneth L. Weyler 2,159; Write-Ins 16",
+          "change": "Paul C. Paone led Pam Brown by 2 before the recount. Paul C. Paone leads Pam Brown by 1 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-rockingham.xlsx",
+          "title": "Rockingham House returns, District 14",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-belknap-6-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 4-seat district. Lisa Rivard led Priscilla M. Bean by 24 before the recount. Lisa Rivard leads Priscilla M. Bean by 24 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Belknap District 6",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Allan Frank; Bob McLean; David Nagel; Lisa Rivard; Glen Aldrich; Priscilla M. Bean; Colleen M. Harkey; Jade Wood",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Allan Frank 3,168; Bob McLean 3,436; David Nagel 3,492; Lisa Rivard 3,283; Glen Aldrich 3,120; Priscilla M. Bean 3,259; Colleen M. Harkey 3,143; Jade Wood 3,353; Write-Ins 3",
+          "after": "Allan Frank 3,168; Bob McLean 3,438; David Nagel 3,493; Lisa Rivard 3,284; Glen Aldrich 3,124; Priscilla M. Bean 3,260; Colleen M. Harkey 3,142; Jade Wood 3,353; Write-Ins 8",
+          "change": "Lisa Rivard led Priscilla M. Bean by 24 before the recount. Lisa Rivard leads Priscilla M. Bean by 24 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-belknap.xlsx",
+          "title": "Belknap House returns, District 6",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "NH-2026-11-19-strafford-18-recount",
+      "state": "NH",
+      "kind": "completed_recount",
+      "authority": "New Hampshire Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The Secretary of State posted original and recount totals for this 1-seat district. Michael Harrington led Thom Flynn by 28 before the recount. Michael Harrington leads Thom Flynn by 25 after the recount.",
+      "contests": [
+        {
+          "contest": "New Hampshire House, Strafford District 18",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Thom Flynn; Michael Harrington",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Thom Flynn 4,649; Michael Harrington 4,677; Write-Ins 2",
+          "after": "Thom Flynn 4,649; Michael Harrington 4,674; Write-Ins 2",
+          "change": "Michael Harrington led Thom Flynn by 28 before the recount. Michael Harrington leads Thom Flynn by 25 after the recount."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/media/media_document/2026-ge-house-strafford.xlsx",
+          "title": "Strafford House returns, District 18",
+          "publisher": "New Hampshire Secretary of State",
+          "version": "Original and recount columns",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the workbook."
+      ]
+    },
+    {
+      "id": "ME-2026-11-16-senate-18-recount",
+      "state": "ME",
+      "kind": "completed_recount",
+      "authority": "Maine Department of the Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The office affirmed Elizabeth D. Bosworth after the recount.",
+      "contests": [
+        {
+          "contest": "Maine Senate District 18",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Elizabeth D. Bosworth and John Andrews",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Elizabeth D. Bosworth led by 50. Prior candidate totals are not stated in the release.",
+          "after": "Bosworth 10,413; Andrews 10,360; blanks 504",
+          "change": "Elizabeth D. Bosworth margin 50 → 53 votes"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mobile.maine.gov/sos/news/maine-secretary-states-office-affirms-bosworth-winner-senate-district-18-following-recount",
+          "title": "Maine Senate District 18 recount determination",
+          "publisher": "Maine Department of the Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-16",
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-16",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": []
+    },
+    {
+      "id": "ME-2026-11-17-house-96-recount",
+      "state": "ME",
+      "kind": "completed_recount",
+      "authority": "Maine Department of the Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The office affirmed Lee Clement after the recount.",
+      "contests": [
+        {
+          "contest": "Maine House District 96",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Lee Clement and Luke Jensen",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Lee Clement led by 32. Prior candidate totals are not stated in the release.",
+          "after": "Clement 2,232; Jensen 2,208; blanks 141",
+          "change": "Lee Clement margin 32 → 24 votes"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www3.maine.gov/sos/news/maine-secretary-states-office-affirms-clement-winner-state-house-district-96-following-recount",
+          "title": "Maine House District 96 recount determination",
+          "publisher": "Maine Department of the Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-17",
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-17",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": []
+    },
+    {
+      "id": "ME-2026-11-18-house-106-recount",
+      "state": "ME",
+      "kind": "completed_recount",
+      "authority": "Maine Department of the Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "The office affirmed Bradley Youngs after the recount.",
+      "contests": [
+        {
+          "contest": "Maine House District 106",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Bradley Youngs and Barbara Bagshaw",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Bradley Youngs led by 147. Prior candidate totals are not stated in the release.",
+          "after": "Youngs 2,648; Bagshaw 2,500; blanks 85",
+          "change": "Bradley Youngs margin 147 → 148 votes"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://mobile.maine.gov/sos/news/youngs-affirmed-winner-state-house-district-106-following-recount",
+          "title": "Maine House District 106 recount determination",
+          "publisher": "Maine Department of the Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-18",
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-18",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": []
+    },
+    {
+      "id": "MN-2026-11-18-senate-33-recount",
+      "state": "MN",
+      "kind": "completed_recount",
+      "authority": "Minnesota Secretary of State",
+      "status": "Unofficial recount totals",
+      "summary": "Washington County recounted all 27 precincts. The state portal lists three ballots challenged by Smith, five by Housley and one by both. The challenges are included as initially determined by the recount official.",
+      "contests": [
+        {
+          "contest": "Minnesota Senate District 33",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Karin Housley and Nat Smith",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Housley 23,977; Smith 23,935",
+          "after": "Housley 23,978; Smith 23,936; all other ballots 551",
+          "change": "Each candidate gained one vote. Housley led by 42 votes in both counts."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://electionresults.sos.mn.gov/Results/Recount/Index?ersElectionId=201&recountId=59&scenario=RecountCounty",
+          "title": "District 33 recount by county",
+          "publisher": "Minnesota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        },
+        {
+          "url": "https://sos.mn.gov/about-the-office/news-room/updates-on-state-legislative-recounts/",
+          "title": "Pre-recount certified district totals",
+          "publisher": "Minnesota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": null,
+        "effective": null,
+        "printed": "Portal last updated November 18 at 2:44 p.m., time zone unstated",
+        "first_observed": "2026-11-18",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "Publication and completion dates are not stated in the portal. The November 9 certification applies to the pre-recount totals."
+      ]
+    },
+    {
+      "id": "ND-2026-11-18-state-certification",
+      "state": "ND",
+      "kind": "certification",
+      "authority": "North Dakota State Canvassing Board",
+      "status": "Certified by the competent authority",
+      "summary": "The board certified the general-election results after reviewing returns submitted by all 53 county canvassing boards. The Secretary of State published the decision and linked the official contest totals.",
+      "contests": [
+        {
+          "contest": "U.S. House, North Dakota at-large",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/nd-al/",
+          "candidates": "Julie Fedorchak, Trygve Hammer, Charles Tuttle and Helene Neville",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Fedorchak 134,636; Hammer 86,088; Tuttle 9,294; Neville 4,610; write-ins 342",
+          "change": "Fedorchak margin 48,548"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Michael Howe and Ryan Braunberger",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Howe 144,207; Braunberger 88,161; write-ins 340",
+          "change": "Howe margin 56,046"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Drew Wrigley and Tim Lamb",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Wrigley 148,603; Lamb 83,925; write-ins 526",
+          "change": "Wrigley margin 64,678"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.nd.gov/news/state-canvassing-board-certifies-2026-general-election-results",
+          "title": "State Canvassing Board certifies general-election results",
+          "publisher": "North Dakota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        },
+        {
+          "url": "https://resultsnd.sos.nd.gov/#election=348",
+          "title": "2026 general election, statewide contest totals",
+          "publisher": "North Dakota Secretary of State",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-18",
+        "certified": "2026-11-18",
+        "effective": "2026-11-18",
+        "printed": null,
+        "first_observed": "2026-11-18",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": []
+    },
+    {
+      "id": "DE-2026-11-10-state-certification",
+      "state": "DE",
+      "kind": "certification",
+      "authority": "Delaware Superior Court in each county sitting as the Board of Canvass",
+      "status": "Certified by the competent authority",
+      "summary": "The Department of Elections announced that the boards in all three counties certified the general-election results. Its statewide portal supplies the candidate totals below.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "U.S. Senate coverage",
+          "coverage_path": "/senate/",
+          "race_path": null,
+          "candidates": "Chris Coons and Michael Katz",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Coons 240,587; Katz 137,837; write-ins (sum of three county sheets): Shulli 978; Stevens 297; McVay 55",
+          "change": "Coons margin 102,750"
+        },
+        {
+          "contest": "U.S. House, Delaware at-large",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/de-al/",
+          "candidates": "Sarah McBride and Joseph Arminio",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "McBride 243,687; Arminio 135,016; write-ins (sum of three county sheets): Cooper 187; Walker 25",
+          "change": "McBride margin 108,671"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Kathy Jennings and David C. Graham",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jennings 240,626; Graham 137,516; write-ins (sum of three county sheets): Dyer 57",
+          "change": "Jennings margin 103,110"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://x.com/DE_Elections/status/2120238683995410674",
+          "title": "Department statement confirming completed certification",
+          "publisher": "Delaware Department of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        },
+        {
+          "url": "https://elections.delaware.gov/results/enr/GE2026.html",
+          "title": "Statewide general-election returns",
+          "publisher": "Delaware Department of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        },
+        {
+          "url": "https://elections.delaware.gov/elections/resultsarchive/elect2026/GE2026_Official_WriteInVotes_Statewide.html",
+          "title": "Official write-in tally sheet by office and county",
+          "publisher": "Delaware Department of Elections",
+          "version": "November 9, 10:50 a.m.",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:20:18Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-10T19:34:29Z",
+        "certified": null,
+        "effective": null,
+        "printed": null,
+        "first_observed": "2026-11-14",
+        "last_checked": "2026-11-19T14:20:18Z"
+      },
+      "caveats": [
+        "The announcement gives no date for the certification act and no prior tally. Write-in totals are MidtermWatch sums of the three county grand totals on the department’s separate tally sheet."
+      ],
+      "certification_date_unstated": true
+    },
+    {
+      "id": "SC-2026-11-11-house-2-recount-certification",
+      "state": "SC",
+      "kind": "certification",
+      "authority": "South Carolina State Board of Canvassers",
+      "status": "Certified by the competent authority",
+      "summary": "The board unanimously certified the completed U.S. House District 2 recount. The totals below compare the original general-election return with the certified recount.",
+      "contests": [
+        {
+          "contest": "U.S. House, South Carolina District 2",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-2/",
+          "candidates": "Joe Wilson; Zyon Khalifa; Dayna Alane Smith",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "Wilson 147,791; Khalifa 144,865; Smith 3,674; write-ins 334; total 296,664",
+          "after": "Wilson 147,785; Khalifa 144,945; Smith 3,673; write-ins 334; total 296,737",
+          "change": "Margin 2,926 → 2,840; Wilson −6, Khalifa +80, Smith −1, write-ins unchanged (Midterm Watch arithmetic)",
+          "coverage_path": "/house/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvotes.gov/wp-content/uploads/2026/11/11.11.2026-SBC-Minutes_Approved.pdf",
+          "title": "Approved November 11 board minutes",
+          "publisher": "South Carolina State Election Commission",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:20:18Z"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/127300/web.345435/#/summary",
+          "title": "Original general-election results",
+          "publisher": "South Carolina State Election Commission",
+          "version": "Updated November 10, 2026, 5:22:26 PM",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:20:18Z"
+        },
+        {
+          "url": "https://www.enr-scvotes.org/SC/127592/web.345435/#/summary",
+          "title": "Completed recount results",
+          "publisher": "South Carolina State Election Commission",
+          "version": "Updated November 12, 2026, 9:41:42 AM",
+          "sha256": null,
+          "checked_at": "2026-11-19T14:20:18Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": "2026-11-11",
+        "effective": "2026-11-11",
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:20:18Z"
+      },
+      "caveats": [
+        "The minutes omit a publication date."
+      ]
+    },
+    {
+      "id": "SC-2026-11-11-state-recertification",
+      "state": "SC",
+      "kind": "amended_certification",
+      "authority": "South Carolina State Board of Canvassers",
+      "status": "Certified by the competent authority",
+      "summary": "After Calhoun County submitted amended totals, the board voted unanimously to approve the amendment and recertify the general election. The board did not identify a race-level vote change.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "Senate ratings table",
+          "race_path": null,
+          "candidates": "Annie Andrews; Darline Graham; Kasie Whitener; Mark Hackett",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/senate/"
+        },
+        {
+          "contest": "Governor and Lieutenant Governor",
+          "coverage": "Governor ratings table",
+          "race_path": null,
+          "candidates": "Alan Wilson / Mike Reichenbach; Jermaine Johnson / Sam Skardon; Michael Addison / Candace Brewer; Walid Hakim / Arnold E Karr",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/governors/"
+        },
+        {
+          "contest": "Secretary of State",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "Mark Hammond; Jason Belton",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "race_path": null,
+          "candidates": "David Stumbo; Richard Hricik",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/down-ballot/executives/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 1",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-1/",
+          "candidates": "Nancy Lacore; Jenny Costa Honeycutt; Bill Reeside",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 3",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-3/",
+          "candidates": "Sheri Biggs; Eunice Lehmacher; Brian Corriea",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 4",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-4/",
+          "candidates": "William Timmons; Courtney McClain; Jessica Ethridge",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 5",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-5/",
+          "candidates": "Wes Climer; Mallory Dittmer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 6",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-6/",
+          "candidates": "James E. Jim Clyburn; John Peterson",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 7",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-7/",
+          "candidates": "Russell Fry; John Gregory Vincent",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        },
+        {
+          "contest": "U.S. House, South Carolina District 2",
+          "coverage": "U.S. House race page",
+          "race_path": "/house/sc-2/",
+          "candidates": "Joe Wilson; Zyon Khalifa; Dayna Alane Smith",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Statewide results recertified. The minutes do not itemize a change for this contest.",
+          "coverage_path": "/house/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://scvotes.gov/wp-content/uploads/2026/11/11.11.2026-SBC-Minutes_Approved.pdf",
+          "title": "Approved November 11 board minutes",
+          "publisher": "South Carolina State Election Commission",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:15:39Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": "2026-11-11",
+        "effective": "2026-11-11",
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:15:39Z"
+      },
+      "caveats": [
+        "The minutes omit a publication date and do not list the before or after totals for the amendment."
+      ]
+    },
+    {
+      "id": "FL-2026-11-17-general-election-certification",
+      "state": "FL",
+      "kind": "certification",
+      "authority": "Florida Elections Canvassing Commission",
+      "status": "Certified by the competent authority",
+      "summary": "The Florida Department of State confirmed that the commission certified the November 3 results on November 17. These are the tracked contests with published returns in the linked tables. The state Senate certificates are listed separately.",
+      "contests": [
+        {
+          "contest": "U.S. Senate, Florida (unexpired term)",
+          "coverage": "U.S. Senate coverage",
+          "coverage_path": "/senate/",
+          "race_path": null,
+          "candidates": "Ashley Moody; Angie Nixon; Neil J. Gillespie",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ashley Moody 4,211,733; Angie Nixon 3,975,375; Neil J. Gillespie 94,681",
+          "change": "Ashley Moody led by 236,358 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 1",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-1/",
+          "candidates": "Jimmy Patronis; Gay Valimont; Tyler L. Davis",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jimmy Patronis 181,972; Gay Valimont 103,812; Tyler L. Davis 5,339",
+          "change": "Jimmy Patronis led by 78,160 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 2",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-2/",
+          "candidates": "Austin Rogers; Amanda Marie Green",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Austin Rogers 161,191; Amanda Marie Green 148,322",
+          "change": "Austin Rogers led by 12,869 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 3",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-3/",
+          "candidates": "Kat Cammack; Seth Harp; Mike Klein",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Kat Cammack 165,666; Seth Harp 129,176; Mike Klein 5,621",
+          "change": "Kat Cammack led by 36,490 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 4",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-4/",
+          "candidates": "Aaron Bean; LaShonda \"L.J.\" Holloway; Mike Sell; Todd Schaefer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Aaron Bean 151,217; LaShonda \"L.J.\" Holloway 144,926; Mike Sell 1,835; Todd Schaefer 3,195",
+          "change": "Aaron Bean led by 6,291 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 5",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-5/",
+          "candidates": "John H. Rutherford; Rachel Grage; William Lintag Upham",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "John H. Rutherford 188,076; Rachel Grage 145,345; William Lintag Upham 26",
+          "change": "John H. Rutherford led by 42,731 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 6",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-6/",
+          "candidates": "Randy Fine; Eric Yonce; Andrew Parrott; Alec Pavlik",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Randy Fine 195,391; Eric Yonce 132,393; Andrew Parrott 3,729; Alec Pavlik 49",
+          "change": "Randy Fine led by 62,998 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 7",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-7/",
+          "candidates": "Ryan Elijah; Bale Dalton; Christopher Dennison",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ryan Elijah 161,303; Bale Dalton 159,689; Christopher Dennison 3,486",
+          "change": "Ryan Elijah led by 1,614 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 8",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-8/",
+          "candidates": "Mike Haridopolos; Jennifer Jenkins",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Mike Haridopolos 169,945; Jennifer Jenkins 149,741",
+          "change": "Mike Haridopolos led by 20,204 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 9",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-9/",
+          "candidates": "Dan Green; Darren Soto",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Dan Green 141,814; Darren Soto 143,354",
+          "change": "Darren Soto led by 1,540 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 11",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-11/",
+          "candidates": "Joe Strada; James Pericola; Ralph Groves",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Joe Strada 193,595; James Pericola 168,246; Ralph Groves 3,961",
+          "change": "Joe Strada led by 25,349 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 12",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-12/",
+          "candidates": "Gus Michael Bilirakis; Kimberly Overman; Branden Scrivener",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Gus Michael Bilirakis 150,879; Kimberly Overman 131,468; Branden Scrivener 3,790",
+          "change": "Gus Michael Bilirakis led by 19,411 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 13",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-13/",
+          "candidates": "Anna Paulina Luna; Leela Gray; Tony D'Arrigo",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Anna Paulina Luna 155,193; Leela Gray 152,731; Tony D'Arrigo 5,783",
+          "change": "Anna Paulina Luna led by 2,462 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 14",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-14/",
+          "candidates": "Mike Beltran; Kathy Castor; Brian Lambert; Salomon Hernandez Sr.; Keith Varian",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Mike Beltran 137,716; Kathy Castor 153,841; Brian Lambert 8,748; Salomon Hernandez Sr. 3; Keith Varian 16",
+          "change": "Kathy Castor led by 16,125 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 15",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-15/",
+          "candidates": "Laurel Lee; Robert People; Angie Boone",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Laurel Lee 163,377; Robert People 137,564; Angie Boone 26",
+          "change": "Laurel Lee led by 25,813 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 16",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-16/",
+          "candidates": "Sydney Gruters; Kelly Kirschner; Mark Davis",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Sydney Gruters 175,656; Kelly Kirschner 161,159; Mark Davis 6,283",
+          "change": "Sydney Gruters led by 14,497 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 17",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-17/",
+          "candidates": "Greg Steube; Matthew Montavon; Michael J. Quirk",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Greg Steube 209,193; Matthew Montavon 143,724; Michael J. Quirk 5,014",
+          "change": "Greg Steube led by 65,469 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 18",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-18/",
+          "candidates": "Scott Franklin; Curtis Gibson; Deva Simmons",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Scott Franklin 137,715; Curtis Gibson 127,776; Deva Simmons 8,132",
+          "change": "Scott Franklin led by 9,939 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 19",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-19/",
+          "candidates": "Jim Schwartzel; Victor Arias; Seth Haskin; Alexandra Zakhvatayev",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jim Schwartzel 198,768; Victor Arias 122,468; Seth Haskin 3,998; Alexandra Zakhvatayev 12",
+          "change": "Jim Schwartzel led by 76,300 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 20",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-20/",
+          "candidates": "Brent Andersen; Debbie Wasserman Schultz; Kedner Maxime",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Brent Andersen 53,403; Debbie Wasserman Schultz 182,752; Kedner Maxime 9,599",
+          "change": "Debbie Wasserman Schultz led by 129,349 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 21",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-21/",
+          "candidates": "Brian Mast; James T. Martin; Alexander Cooke; David Fabrikant",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Brian Mast 184,339; James T. Martin 153,310; Alexander Cooke 4,476; David Fabrikant 11",
+          "change": "Brian Mast led by 31,029 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 22",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-22/",
+          "candidates": "Casey Askar; Pia Dandiya",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Casey Askar 141,948; Pia Dandiya 153,223",
+          "change": "Pia Dandiya led by 11,275 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 23",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-23/",
+          "candidates": "Deborah Adeimy; Lois Frankel",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Deborah Adeimy 88,965; Lois Frankel 170,113",
+          "change": "Lois Frankel led by 81,148 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 24",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-24/",
+          "candidates": "Te Mayonna Brown; Oliver G. Gilbert III; Patricia Gonzalez",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Te Mayonna Brown 39,548; Oliver G. Gilbert III 164,899; Patricia Gonzalez 21",
+          "change": "Oliver G. Gilbert III led by 125,351 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 25",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-25/",
+          "candidates": "Scott Singer; Jared Moskowitz; Peter Jassenoff; Michaelangelo Hamilton",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Scott Singer 130,899; Jared Moskowitz 143,985; Peter Jassenoff 5,884; Michaelangelo Hamilton 37",
+          "change": "Jared Moskowitz led by 13,086 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 26",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-26/",
+          "candidates": "Mario Diaz-Balart; Nicole Locklin; Deborah Ann Meidinger Hosey",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Mario Diaz-Balart 114,581; Nicole Locklin 112,911; Deborah Ann Meidinger Hosey 2,352",
+          "change": "Mario Diaz-Balart led by 1,670 votes"
+        },
+        {
+          "contest": "U.S. House, Florida District 27",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-27/",
+          "candidates": "Maria Elvira Salazar; Eliott Rodriguez",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "November 13 Miami-Dade certificate, covering the entire district: Salazar 124,519; Rodriguez 123,433",
+          "after": "Maria Elvira Salazar 124,519; Eliott Rodriguez 123,433",
+          "change": "State certification confirmed the county tally and the 1,086-vote margin."
+        },
+        {
+          "contest": "U.S. House, Florida District 28",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/fl-28/",
+          "candidates": "Carlos A. Gimenez; Phil \"Felipe\" Ehr; Eddy Rojas",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Carlos A. Gimenez 125,037; Phil \"Felipe\" Ehr 107,917; Eddy Rojas 3,445",
+          "change": "Carlos A. Gimenez led by 17,120 votes"
+        },
+        {
+          "contest": "Governor and Lieutenant Governor",
+          "coverage": "Governor coverage",
+          "coverage_path": "/governors/",
+          "race_path": null,
+          "candidates": "Byron Donalds and Bryan Avila; David Jolly and Gwen Graham; Scott Eckhard Jewett and Nicole Skelly; Charles Burkett and Ruben A. Coto; Frank J. Russo and Rachel Rodriguez; Moliere \"Moe\" Dimanche and Benjiman Rojas; Dean Ocean Abrams and Joe Van Vactor; Jeffrey Peter \"Dr. Jeff\" Datto and Juan Santana; Kathy Anderson and Daniel Nokovich; Erik Morris and LeRoy Alaways",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Byron Donalds and Bryan Avila 4,135,955; David Jolly and Gwen Graham 4,030,579; Scott Eckhard Jewett and Nicole Skelly 37,951; Charles Burkett and Ruben A. Coto 15,261; Frank J. Russo and Rachel Rodriguez 23,244; Moliere \"Moe\" Dimanche and Benjiman Rojas 7,609; Dean Ocean Abrams and Joe Van Vactor 12,568; Jeffrey Peter \"Dr. Jeff\" Datto and Juan Santana 8,331; Kathy Anderson and Daniel Nokovich 22; Erik Morris and LeRoy Alaways 107",
+          "change": "Byron Donalds and Bryan Avila led by 105,376 votes"
+        },
+        {
+          "contest": "Attorney General",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "James Uthmeier; Jose Javier Rodriguez",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "James Uthmeier 4,181,567; Jose Javier Rodriguez 4,030,552",
+          "change": "James Uthmeier led by 151,015 votes"
+        },
+        {
+          "contest": "Florida House District 1",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Michelle Salzman; Francesca Yabraian",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Michelle Salzman 38,034; Francesca Yabraian 25,831",
+          "change": "Michelle Salzman led by 12,203 votes"
+        },
+        {
+          "contest": "Florida House District 2",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jon Fay; Johnny Austin Thompson",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jon Fay 38,777; Johnny Austin Thompson 29,701",
+          "change": "Jon Fay led by 9,076 votes"
+        },
+        {
+          "contest": "Florida House District 3",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Nathan Boyles; Ingrid D. Wadsworth",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Nathan Boyles 49,703; Ingrid D. Wadsworth 18,507",
+          "change": "Nathan Boyles led by 31,196 votes"
+        },
+        {
+          "contest": "Florida House District 4",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Patt Maney; John Peter Emerling",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Patt Maney 43,569; John Peter Emerling 20,638",
+          "change": "Patt Maney led by 22,931 votes"
+        },
+        {
+          "contest": "Florida House District 5",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Shane Abbott; Alex Finney",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Shane Abbott 53,990; Alex Finney 15,649",
+          "change": "Shane Abbott led by 38,341 votes"
+        },
+        {
+          "contest": "Florida House District 6",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Tricia Berry; Stephanie Lyn Leonard",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Tricia Berry 48,372; Stephanie Lyn Leonard 21,063",
+          "change": "Tricia Berry led by 27,309 votes"
+        },
+        {
+          "contest": "Florida House District 9",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Tracy Robinson; Allison Tant",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Tracy Robinson 32,857; Allison Tant 57,127",
+          "change": "Allison Tant led by 24,270 votes"
+        },
+        {
+          "contest": "Florida House District 10",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Marshall Rawson; Merrillee Malwitz Jipson; James Hunter Batley",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Marshall Rawson 43,867; Merrillee Malwitz Jipson 20,526; James Hunter Batley 1",
+          "change": "Marshall Rawson led by 23,341 votes"
+        },
+        {
+          "contest": "Florida House District 12",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Terrance Freeman; Benjamin Sandlin",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Terrance Freeman 32,870; Benjamin Sandlin 30,697",
+          "change": "Terrance Freeman led by 2,173 votes"
+        },
+        {
+          "contest": "Florida House District 15",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Dean Black; Chadd Charland; Lloyd Caulker",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Dean Black 54,684; Chadd Charland 33,964; Lloyd Caulker 79",
+          "change": "Dean Black led by 20,720 votes"
+        },
+        {
+          "contest": "Florida House District 17",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jessica Baker; Jacob Guerrero",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jessica Baker 34,947; Jacob Guerrero 34,000",
+          "change": "Jessica Baker led by 947 votes"
+        },
+        {
+          "contest": "Florida House District 18",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Kim Kendall; Art Stresing",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Kim Kendall 69,240; Art Stresing 37,070",
+          "change": "Kim Kendall led by 32,170 votes"
+        },
+        {
+          "contest": "Florida House District 19",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Sam Greco; Suzanna Pavelle",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Sam Greco 54,291; Suzanna Pavelle 38,435",
+          "change": "Sam Greco led by 15,856 votes"
+        },
+        {
+          "contest": "Florida House District 20",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Judson Sapp; Lee Butler",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Judson Sapp 51,685; Lee Butler 21,507",
+          "change": "Judson Sapp led by 30,178 votes"
+        },
+        {
+          "contest": "Florida House District 22",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Chad Johnson; Amy Trask",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Chad Johnson 38,344; Amy Trask 40,475",
+          "change": "Amy Trask led by 2,131 votes"
+        },
+        {
+          "contest": "Florida House District 23",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "J.J. Grow; Mark Leland Baker",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "J.J. Grow 61,304; Mark Leland Baker 24,609",
+          "change": "J.J. Grow led by 36,695 votes"
+        },
+        {
+          "contest": "Florida House District 25",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Taylor Yarkosky; Farmer Banks Helfrich",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Taylor Yarkosky 44,443; Farmer Banks Helfrich 41,719",
+          "change": "Taylor Yarkosky led by 2,724 votes"
+        },
+        {
+          "contest": "Florida House District 26",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Nan Cobb; Robyn Elaine Lawrence",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Nan Cobb 47,251; Robyn Elaine Lawrence 29,697",
+          "change": "Nan Cobb led by 17,554 votes"
+        },
+        {
+          "contest": "Florida House District 27",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Richard Gentry; Andy Ferrari",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Richard Gentry 50,906; Andy Ferrari 27,499",
+          "change": "Richard Gentry led by 23,407 votes"
+        },
+        {
+          "contest": "Florida House District 28",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Bill Partington; Sammy Jackson; Joseph \"Joe\" Hannoush",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Bill Partington 41,127; Sammy Jackson 31,366; Joseph \"Joe\" Hannoush 1,370",
+          "change": "Bill Partington led by 9,761 votes"
+        },
+        {
+          "contest": "Florida House District 29",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Webster Barnaby; Don Kanfer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Webster Barnaby 35,105; Don Kanfer 33,099",
+          "change": "Webster Barnaby led by 2,006 votes"
+        },
+        {
+          "contest": "Florida House District 30",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Chase Tramont; Edwin Munoz",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Chase Tramont 51,385; Edwin Munoz 31,063",
+          "change": "Chase Tramont led by 20,322 votes"
+        },
+        {
+          "contest": "Florida House District 31",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Matt Woodside; Daniel Lewis Cicirelli",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Matt Woodside 46,804; Daniel Lewis Cicirelli 31,552",
+          "change": "Matt Woodside led by 15,252 votes"
+        },
+        {
+          "contest": "Florida House District 32",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Brian Hodgers; Juan J. Hinojosa",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Brian Hodgers 49,868; Juan J. Hinojosa 36,632",
+          "change": "Brian Hodgers led by 13,236 votes"
+        },
+        {
+          "contest": "Florida House District 33",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Monique Miller; Daniel R. McDow",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": "November 14 county return including eligible overseas ballots: McDow 36,443; Miller 36,146",
+          "after": "Monique Miller 36,146; Daniel R. McDow 36,443",
+          "change": "State certification confirmed the 297-vote margin in the later county return."
+        },
+        {
+          "contest": "Florida House District 34",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Robert Brackett; Jordyn Guadalupe Balderas",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Robert Brackett 55,025; Jordyn Guadalupe Balderas 32,317",
+          "change": "Robert Brackett led by 22,708 votes"
+        },
+        {
+          "contest": "Florida House District 35",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Erika Booth; Eric Gray",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Erika Booth 32,117; Eric Gray 41,052",
+          "change": "Eric Gray led by 8,935 votes"
+        },
+        {
+          "contest": "Florida House District 36",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Rachel Plakon; Darryl Block",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Rachel Plakon 31,481; Darryl Block 38,071",
+          "change": "Darryl Block led by 6,590 votes"
+        },
+        {
+          "contest": "Florida House District 37",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Robert Prater; Jane Aman",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Robert Prater 24,111; Jane Aman 34,335",
+          "change": "Jane Aman led by 10,224 votes"
+        },
+        {
+          "contest": "Florida House District 38",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Emily Duda Buckley; Nik Dean",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Emily Duda Buckley 30,406; Nik Dean 39,077",
+          "change": "Nik Dean led by 8,671 votes"
+        },
+        {
+          "contest": "Florida House District 39",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Doug Bankson; Jarod Fox",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Doug Bankson 32,539; Jarod Fox 40,524",
+          "change": "Jarod Fox led by 7,985 votes"
+        },
+        {
+          "contest": "Florida House District 40",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Tuan Le; Ra'Shon Young",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Tuan Le 13,006; Ra'Shon Young 39,347",
+          "change": "Ra'Shon Young led by 26,341 votes"
+        },
+        {
+          "contest": "Florida House District 42",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Bonnie Jackson; Felipe Sousa Lazaballet",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Bonnie Jackson 29,980; Felipe Sousa Lazaballet 49,778",
+          "change": "Felipe Sousa Lazaballet led by 19,798 votes"
+        },
+        {
+          "contest": "Florida House District 43",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jorge Malavet; Samuel Vilchez Santiago",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jorge Malavet 16,118; Samuel Vilchez Santiago 31,533",
+          "change": "Samuel Vilchez Santiago led by 15,415 votes"
+        },
+        {
+          "contest": "Florida House District 45",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Erin Huntley; Leonard Spencer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Erin Huntley 34,820; Leonard Spencer 42,861",
+          "change": "Leonard Spencer led by 8,041 votes"
+        },
+        {
+          "contest": "Florida House District 46",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Michael Cruz; Jose Alvarez; Ivan A. Rivera",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Michael Cruz 13,629; Jose Alvarez 30,422; Ivan A. Rivera 859",
+          "change": "Jose Alvarez led by 16,793 votes"
+        },
+        {
+          "contest": "Florida House District 48",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jonathan Albert; Alethea Pugh",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jonathan Albert 34,516; Alethea Pugh 32,260",
+          "change": "Jonathan Albert led by 2,256 votes"
+        },
+        {
+          "contest": "Florida House District 49",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jennifer Kincart Jonsson; Robert Anzalone",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jennifer Kincart Jonsson 35,212; Robert Anzalone 23,943",
+          "change": "Jennifer Kincart Jonsson led by 11,269 votes"
+        },
+        {
+          "contest": "Florida House District 50",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jennifer Canady; Ricky Santiago; Jarvis Washington",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jennifer Canady 32,126; Ricky Santiago 25,842; Jarvis Washington 1,181",
+          "change": "Jennifer Canady led by 6,284 votes"
+        },
+        {
+          "contest": "Florida House District 51",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Hilary Holley; Octavio E. Hernandez",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Hilary Holley 33,289; Octavio E. Hernandez 36,316",
+          "change": "Octavio E. Hernandez led by 3,027 votes"
+        },
+        {
+          "contest": "Florida House District 52",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Samantha Scott; Pamala Kaye Bivins",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Samantha Scott 80,410; Pamala Kaye Bivins 34,675",
+          "change": "Samantha Scott led by 45,735 votes"
+        },
+        {
+          "contest": "Florida House District 53",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Brian Hawkins; Tony Claude; Christopher Anger",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Brian Hawkins 44,396; Tony Claude 25,620; Christopher Anger 1,185",
+          "change": "Brian Hawkins led by 18,776 votes"
+        },
+        {
+          "contest": "Florida House District 55",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Walter Price; Zach Funkhouser",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Walter Price 50,971; Zach Funkhouser 35,350",
+          "change": "Walter Price led by 15,621 votes"
+        },
+        {
+          "contest": "Florida House District 56",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Brad Yeager; Jose Freites",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Brad Yeager 32,324; Jose Freites 22,746",
+          "change": "Brad Yeager led by 9,578 votes"
+        },
+        {
+          "contest": "Florida House District 57",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Adam C. Anderson; Wendy Hoy",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Adam C. Anderson 46,979; Wendy Hoy 37,921",
+          "change": "Adam C. Anderson led by 9,058 votes"
+        },
+        {
+          "contest": "Florida House District 58",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Kimberly \"Kim\" Berfield; Bryan Beckman",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Kimberly \"Kim\" Berfield 39,005; Bryan Beckman 34,254",
+          "change": "Kimberly \"Kim\" Berfield led by 4,751 votes"
+        },
+        {
+          "contest": "Florida House District 59",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Berny Jacques; Susan Rochelle Leff",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Berny Jacques 36,085; Susan Rochelle Leff 31,377",
+          "change": "Berny Jacques led by 4,708 votes"
+        },
+        {
+          "contest": "Florida House District 60",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Melissa Rutland; Lindsay Polega-Quigley",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Melissa Rutland 28,591; Lindsay Polega-Quigley 40,168",
+          "change": "Lindsay Polega-Quigley led by 11,577 votes"
+        },
+        {
+          "contest": "Florida House District 61",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Linda Chaney; May Thach",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Linda Chaney 39,078; May Thach 36,549",
+          "change": "Linda Chaney led by 2,529 votes"
+        },
+        {
+          "contest": "Florida House District 64",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Dan Weldon; Luis Salazar",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Dan Weldon 18,212; Luis Salazar 26,159",
+          "change": "Luis Salazar led by 7,947 votes"
+        },
+        {
+          "contest": "Florida House District 65",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Karen Gonzalez Pittman; Ben Braver",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Karen Gonzalez Pittman 36,937; Ben Braver 35,558",
+          "change": "Karen Gonzalez Pittman led by 1,379 votes"
+        },
+        {
+          "contest": "Florida House District 66",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Traci Koster; Jose A. \"Dante\" Sanchez Sanchez",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Traci Koster 39,835; Jose A. \"Dante\" Sanchez Sanchez 35,995",
+          "change": "Traci Koster led by 3,840 votes"
+        },
+        {
+          "contest": "Florida House District 67",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Lisette Bonano; Luis Viera",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Lisette Bonano 17,479; Luis Viera 34,511",
+          "change": "Luis Viera led by 17,032 votes"
+        },
+        {
+          "contest": "Florida House District 68",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Ryan Gill; Tony Smith",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ryan Gill 35,943; Tony Smith 27,586",
+          "change": "Ryan Gill led by 8,357 votes"
+        },
+        {
+          "contest": "Florida House District 69",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Daniel \"Danny\" Alvarez; Ashley Elizabeth Herrmann",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Daniel \"Danny\" Alvarez 33,167; Ashley Elizabeth Herrmann 35,455",
+          "change": "Ashley Elizabeth Herrmann led by 2,288 votes"
+        },
+        {
+          "contest": "Florida House District 70",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Michael Owen; Luther Keith Wilkins",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Michael Owen 49,394; Luther Keith Wilkins 44,803",
+          "change": "Michael Owen led by 4,591 votes"
+        },
+        {
+          "contest": "Florida House District 71",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jordan Varnadore; Ocean Fitts; Joseph Hoolihan",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jordan Varnadore 31,183; Ocean Fitts 25,332; Joseph Hoolihan 1,323",
+          "change": "Jordan Varnadore led by 5,851 votes"
+        },
+        {
+          "contest": "Florida House District 72",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "William \"Bill\" Conerly; Harvey Shifrin",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "William \"Bill\" Conerly 56,214; Harvey Shifrin 35,151",
+          "change": "William \"Bill\" Conerly led by 21,063 votes"
+        },
+        {
+          "contest": "Florida House District 73",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Fiona McFarland; Lisa Klein",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Fiona McFarland 47,869; Lisa Klein 41,580",
+          "change": "Fiona McFarland led by 6,289 votes"
+        },
+        {
+          "contest": "Florida House District 74",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Nick Pachota; Ryan Neill",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Nick Pachota 54,575; Ryan Neill 37,280",
+          "change": "Nick Pachota led by 17,295 votes"
+        },
+        {
+          "contest": "Florida House District 75",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Danny Nix Jr.; Cynthia L. Butler",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Danny Nix Jr. 62,874; Cynthia L. Butler 35,177",
+          "change": "Danny Nix Jr. led by 27,697 votes"
+        },
+        {
+          "contest": "Florida House District 76",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Vanessa Oliver; Phillip Ray Carter",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Vanessa Oliver 54,249; Phillip Ray Carter 27,776",
+          "change": "Vanessa Oliver led by 26,473 votes"
+        },
+        {
+          "contest": "Florida House District 77",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Tiffany Esposito; Cornelius Fowler",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Tiffany Esposito 34,242; Cornelius Fowler 27,477",
+          "change": "Tiffany Esposito led by 6,765 votes"
+        },
+        {
+          "contest": "Florida House District 78",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Susan Frantz; Cindy Banyai",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Susan Frantz 35,571; Cindy Banyai 30,126",
+          "change": "Susan Frantz led by 5,445 votes"
+        },
+        {
+          "contest": "Florida House District 80",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Adam Botana; William Moskal",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Adam Botana 59,801; William Moskal 31,786",
+          "change": "Adam Botana led by 28,015 votes"
+        },
+        {
+          "contest": "Florida House District 81",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Yvette Benarroch; Kim Finer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Yvette Benarroch 56,996; Kim Finer 31,264",
+          "change": "Yvette Benarroch led by 25,732 votes"
+        },
+        {
+          "contest": "Florida House District 82",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Liesa Priddy; Arthur Boyer",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Liesa Priddy 39,147; Arthur Boyer 25,421",
+          "change": "Liesa Priddy led by 13,726 votes"
+        },
+        {
+          "contest": "Florida House District 83",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Kaylee Tuck; Leigh Estes",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Kaylee Tuck 41,310; Leigh Estes 18,837",
+          "change": "Kaylee Tuck led by 22,473 votes"
+        },
+        {
+          "contest": "Florida House District 84",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Dana Trabulsy; Jennifer Massey",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Dana Trabulsy 35,844; Jennifer Massey 34,825",
+          "change": "Dana Trabulsy led by 1,019 votes"
+        },
+        {
+          "contest": "Florida House District 85",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Anthony Bonna; Wayne Richter; Amr Metwally; Hunter Stone",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Anthony Bonna 43,124; Wayne Richter 42,472; Amr Metwally 355; Hunter Stone 14",
+          "change": "Anthony Bonna led by 652 votes"
+        },
+        {
+          "contest": "Florida House District 86",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "John Snyder; Elizabeth Brendel Pandich",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "John Snyder 50,982; Elizabeth Brendel Pandich 31,054",
+          "change": "John Snyder led by 19,928 votes"
+        },
+        {
+          "contest": "Florida House District 87",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jon Maples; Emily Gregory",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jon Maples 38,714; Emily Gregory 37,688",
+          "change": "Jon Maples led by 1,026 votes"
+        },
+        {
+          "contest": "Florida House District 88",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "William Joseph; Jervonte \"Tae\" Edmonds",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "William Joseph 8,745; Jervonte \"Tae\" Edmonds 34,680",
+          "change": "Jervonte \"Tae\" Edmonds led by 25,935 votes"
+        },
+        {
+          "contest": "Florida House District 89",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Cathy Higgins; Debra Tendrich",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Cathy Higgins 13,864; Debra Tendrich 25,710",
+          "change": "Debra Tendrich led by 11,846 votes"
+        },
+        {
+          "contest": "Florida House District 90",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Ionel Roiban; Rob Long",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ionel Roiban 24,823; Rob Long 42,177",
+          "change": "Rob Long led by 17,354 votes"
+        },
+        {
+          "contest": "Florida House District 91",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Peggy Gossett-Seidman; Luis Garcia",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Peggy Gossett-Seidman 39,917; Luis Garcia 35,541",
+          "change": "Peggy Gossett-Seidman led by 4,376 votes"
+        },
+        {
+          "contest": "Florida House District 92",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Steve Byers; Kelly Skidmore",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Steve Byers 37,629; Kelly Skidmore 51,848",
+          "change": "Kelly Skidmore led by 14,219 votes"
+        },
+        {
+          "contest": "Florida House District 93",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Anne Gerwig; August Mangeney",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Anne Gerwig 31,699; August Mangeney 40,695",
+          "change": "August Mangeney led by 8,996 votes"
+        },
+        {
+          "contest": "Florida House District 94",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Megan Weinberger; Elizabeth Holmes; Doug Barrow",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Megan Weinberger 36,582; Elizabeth Holmes 38,414; Doug Barrow 1,282",
+          "change": "Elizabeth Holmes led by 1,832 votes"
+        },
+        {
+          "contest": "Florida House District 100",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Yoni Anijar; Michael Terence Ferguson",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Yoni Anijar 34,825; Michael Terence Ferguson 37,761",
+          "change": "Michael Terence Ferguson led by 2,936 votes"
+        },
+        {
+          "contest": "Florida House District 101",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Hillary Cassel; Todd Delmay",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Hillary Cassel 22,287; Todd Delmay 28,362",
+          "change": "Todd Delmay led by 6,075 votes"
+        },
+        {
+          "contest": "Florida House District 102",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Mery Lopez-Palma; Michael \"Mike\" Friend",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Mery Lopez-Palma 28,770; Michael \"Mike\" Friend 42,937",
+          "change": "Michael \"Mike\" Friend led by 14,167 votes"
+        },
+        {
+          "contest": "Florida House District 103",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Imtiaz Mohammad; Robin Bartleman",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Imtiaz Mohammad 20,932; Robin Bartleman 47,351",
+          "change": "Robin Bartleman led by 26,419 votes"
+        },
+        {
+          "contest": "Florida House District 106",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Fabián Basabe; Lucia Baez-Geller",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Fabián Basabe 26,381; Lucia Baez-Geller 30,932",
+          "change": "Lucia Baez-Geller led by 4,551 votes"
+        },
+        {
+          "contest": "Florida House District 108",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Wancito Francius; Daphne Campbell",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Wancito Francius 9,287; Daphne Campbell 39,278",
+          "change": "Daphne Campbell led by 29,991 votes"
+        },
+        {
+          "contest": "Florida House District 113",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Bruno A. Barreiro; Gloria Romero Roses; Paola Vázquez del Mercado",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Bruno A. Barreiro 20,556; Gloria Romero Roses 24,778; Paola Vázquez del Mercado 4",
+          "change": "Gloria Romero Roses led by 4,222 votes"
+        },
+        {
+          "contest": "Florida House District 115",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Omar Blanco; Marcos Reyes",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Omar Blanco 37,724; Marcos Reyes 33,397",
+          "change": "Omar Blanco led by 4,327 votes"
+        },
+        {
+          "contest": "Florida House District 116",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Ashley Perez-Biliskov; Nicolas Ramos",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ashley Perez-Biliskov 33,536; Nicolas Ramos 23,111",
+          "change": "Ashley Perez-Biliskov led by 10,425 votes"
+        },
+        {
+          "contest": "Florida House District 117",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Miguel Granda; Kevin Chambliss",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Miguel Granda 16,316; Kevin Chambliss 29,319",
+          "change": "Kevin Chambliss led by 13,003 votes"
+        },
+        {
+          "contest": "Florida House District 118",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Mike Redondo; Armando \"A.C.\" Castillo",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Mike Redondo 36,165; Armando \"A.C.\" Castillo 25,851",
+          "change": "Mike Redondo led by 10,314 votes"
+        },
+        {
+          "contest": "Florida House District 119",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Juan Carlos Porras; Rey Lazaro Sordo",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Juan Carlos Porras 34,206; Rey Lazaro Sordo 27,077",
+          "change": "Juan Carlos Porras led by 7,129 votes"
+        },
+        {
+          "contest": "Florida Supreme Court, Carlos G. Muñiz retention",
+          "coverage": "State supreme court coverage",
+          "coverage_path": "/down-ballot/courts/",
+          "race_path": null,
+          "candidates": "Carlos G. Muñiz",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Yes 4,300,931; No 3,155,466",
+          "change": "Yes led by 1,145,465 votes"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://x.com/FLSecofState/status/2122827196280566027",
+          "title": "Department announcement confirming the commission vote",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://floridaelectionwatch.gov/FederalOffices/",
+          "title": "Official federal results",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://floridaelectionwatch.gov/StateOffices/",
+          "title": "Official statewide office results",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://floridaelectionwatch.gov/DistrictOffices/StateRepresentative",
+          "title": "Official state House district results",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://floridaelectionwatch.gov/JudicialOffices/SupremeCourt",
+          "title": "Official Supreme Court retention results",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://www.miamidade.gov/elections/library/reports/recount/2026-11-13-representative-congress-dist-27-recount-official.pdf",
+          "title": "Official certificate of county canvassing board",
+          "publisher": "Miami-Dade County Canvassing Board",
+          "version": "November 13 official returns",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        },
+        {
+          "url": "https://enr.electionsfl.org/BRE/4064/Summary/",
+          "title": "Brevard results summary including District 33 machine recount",
+          "publisher": "Brevard County Supervisor of Elections",
+          "version": "Historical second unofficial version: November 10, 2026, 4:54:45 PM; current version also includes 10-day overseas ballots",
+          "sha256": null,
+          "checked_at": "2026-11-14T08:19:11Z"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-17T23:00:18Z",
+        "certified": "2026-11-17",
+        "effective": "2026-11-17",
+        "printed": null,
+        "first_observed": null,
+        "last_checked": "2026-11-19T14:19:08Z"
+      },
+      "caveats": [
+        "The certification announcement does not supply prior figures. The federal table lists 27 House contests and has no District 10 tally. The state House table lists 91 contests."
+      ],
+      "group_title": "Florida federal, statewide, state House and judicial results"
+    },
+    {
+      "id": "FL-2026-11-17-senate-general-certificate",
+      "state": "FL",
+      "kind": "certification",
+      "authority": "Florida Secretary of State",
+      "status": "Certified by the competent authority",
+      "summary": "Secretary of State Cord Byrd signed a certificate naming the members elected in the November 3 general election. The Senate reproduced the instrument in its November 17 journal.",
+      "contests": [
+        {
+          "contest": "Florida Senate District 2",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jay Trumbull; Lauren Donahoo",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jay Trumbull 145,400; Lauren Donahoo 57,258",
+          "change": "Jay Trumbull certified elected. Jay Trumbull led by 88,142 votes."
+        },
+        {
+          "contest": "Florida Senate District 4",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Clay Yarborough",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Clay Yarborough certified elected. The state results table omits a vote tally for this district."
+        },
+        {
+          "contest": "Florida Senate District 6",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jennifer Bradley; Jason Bellamy-Fults; Joseph Thornton",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jennifer Bradley 122,619; Jason Bellamy-Fults 85,945; Joseph Thornton 2,044",
+          "change": "Jennifer Bradley certified elected. Jennifer Bradley led by 36,674 votes."
+        },
+        {
+          "contest": "Florida Senate District 8",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jake Johansson; Judy M. Ngying; Gabriel Jude Wozniak",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jake Johansson 125,115; Judy M. Ngying 96,382; Gabriel Jude Wozniak 3,941",
+          "change": "Jake Johansson certified elected. Jake Johansson led by 28,733 votes."
+        },
+        {
+          "contest": "Florida Senate District 10",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jason Brodeur; John Lowndes",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jason Brodeur 98,506; John Lowndes 125,136",
+          "change": "John Lowndes certified elected. John Lowndes led by 26,630 votes."
+        },
+        {
+          "contest": "Florida Senate District 12",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Colleen Burton; Alfred Reynolds",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Colleen Burton 94,012; Alfred Reynolds 92,769",
+          "change": "Colleen Burton certified elected. Colleen Burton led by 1,243 votes."
+        },
+        {
+          "contest": "Florida Senate District 14",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Josie Tomkow; Brian Nathan",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Josie Tomkow 92,548; Brian Nathan 101,282",
+          "change": "Brian Nathan certified elected. Brian Nathan led by 8,734 votes."
+        },
+        {
+          "contest": "Florida Senate District 16",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Fentrice Driskell",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": null,
+          "change": "Fentrice Driskell certified elected. The state results table omits a vote tally for this district."
+        },
+        {
+          "contest": "Florida Senate District 18",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Nick DiCeglie; Karla Kemp",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Nick DiCeglie 108,405; Karla Kemp 104,672",
+          "change": "Nick DiCeglie certified elected. Nick DiCeglie led by 3,733 votes."
+        },
+        {
+          "contest": "Florida Senate District 20",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jim Boyd; Gerald Baldi",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jim Boyd 134,598; Gerald Baldi 106,722",
+          "change": "Jim Boyd certified elected. Jim Boyd led by 27,876 votes."
+        },
+        {
+          "contest": "Florida Senate District 22",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "James Buchanan; Lew Wasserman; Martin Hyde",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "James Buchanan 147,072; Lew Wasserman 109,732; Martin Hyde 8,759",
+          "change": "James Buchanan certified elected. James Buchanan led by 37,340 votes."
+        },
+        {
+          "contest": "Florida Senate District 24",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Jackie Green; Mack Bernard",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Jackie Green 54,707; Mack Bernard 99,896",
+          "change": "Mack Bernard certified elected. Mack Bernard led by 45,189 votes."
+        },
+        {
+          "contest": "Florida Senate District 26",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Rick Roth; David Silvers",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Rick Roth 97,826; David Silvers 135,408",
+          "change": "David Silvers certified elected. David Silvers led by 37,582 votes."
+        },
+        {
+          "contest": "Florida Senate District 28",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Lauren Uhlich Melo; David Silverberg",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Lauren Uhlich Melo 142,427; David Silverberg 86,513",
+          "change": "Lauren Uhlich Melo certified elected. Lauren Uhlich Melo led by 55,914 votes."
+        },
+        {
+          "contest": "Florida Senate District 30",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Hector Rivera; Lauren Book",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Hector Rivera 68,146; Lauren Book 115,249",
+          "change": "Lauren Book certified elected. Lauren Book led by 47,103 votes."
+        },
+        {
+          "contest": "Florida Senate District 32",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Rosalind Osgood; Crescente Furnaguera",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Rosalind Osgood 142,988; Crescente Furnaguera 23,029",
+          "change": "Rosalind Osgood certified elected. Rosalind Osgood led by 119,959 votes."
+        },
+        {
+          "contest": "Florida Senate District 34",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Elizabeth Jeanty; Ashley Viola Gantt",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Elizabeth Jeanty 30,997; Ashley Viola Gantt 115,457",
+          "change": "Ashley Viola Gantt certified elected. Ashley Viola Gantt led by 84,460 votes."
+        },
+        {
+          "contest": "Florida Senate District 36",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Ileana Garcia; George Lavín",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ileana Garcia 71,136; George Lavín 69,472",
+          "change": "Ileana Garcia certified elected. Ileana Garcia led by 1,664 votes."
+        },
+        {
+          "contest": "Florida Senate District 38",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Alexis Maria Calatayud; Richard Lamondin Jr.; Jeffrey \"Doc\" Solomon",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Alexis Maria Calatayud 92,972; Richard Lamondin Jr. 91,425; Jeffrey \"Doc\" Solomon 3,383",
+          "change": "Alexis Maria Calatayud certified elected. Alexis Maria Calatayud led by 1,547 votes."
+        },
+        {
+          "contest": "Florida Senate District 40",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Ana Maria Rodriguez; Jose Antonio Stoute; Ramiro Orta",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Ana Maria Rodriguez 95,369; Jose Antonio Stoute 75,457; Ramiro Orta 1,866",
+          "change": "Ana Maria Rodriguez certified elected. Ana Maria Rodriguez led by 19,912 votes."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.flsenate.gov/Session/Journals/2026/11-17-2026#page=2",
+          "title": "Signed Department of State certificate in the Senate Journal, page 2",
+          "publisher": "Florida Department of State, reproduced by the Florida Senate",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://floridaelectionwatch.gov/DistrictOffices/StateSenator",
+          "title": "Official state Senate district results",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": "2026-11-17",
+        "effective": "2026-11-17",
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:19:08Z"
+      },
+      "caveats": [
+        "The certificate names the elected members. It omits prior totals and a separate publication date."
+      ],
+      "group_title": "Florida Senate general-election certificate for 20 districts"
+    },
+    {
+      "id": "FL-2026-11-17-senate-special-certificate",
+      "state": "FL",
+      "kind": "certification",
+      "authority": "Florida Secretary of State",
+      "status": "Certified by the competent authority",
+      "summary": "Secretary of State Cord Byrd signed a certificate naming the members elected in the November 3 special election. The Senate reproduced the instrument in its November 17 journal.",
+      "contests": [
+        {
+          "contest": "Florida Senate District 21",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Chris Nocco; Jordan Hensley",
+          "scope_kind": "full_contest",
+          "scope": "Full contest",
+          "before": null,
+          "after": "Chris Nocco 129,082; Jordan Hensley 94,666",
+          "change": "Chris Nocco certified elected. Chris Nocco led by 34,416 votes."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.flsenate.gov/Session/Journals/2026/11-17-2026#page=2",
+          "title": "Signed Department of State certificate in the Senate Journal, page 2",
+          "publisher": "Florida Department of State, reproduced by the Florida Senate",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        },
+        {
+          "url": "https://floridaelectionwatch.gov/DistrictOffices/StateSenator",
+          "title": "Official state Senate district results",
+          "publisher": "Florida Department of State, Division of Elections",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-19T14:19:08Z"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "certified": "2026-11-17",
+        "effective": "2026-11-17",
+        "printed": null,
+        "first_observed": "2026-11-19",
+        "last_checked": "2026-11-19T14:19:08Z"
+      },
+      "caveats": [
+        "The certificate names the elected members. It omits prior totals and a separate publication date."
       ]
     }
   ]

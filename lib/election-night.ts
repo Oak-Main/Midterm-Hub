@@ -236,6 +236,9 @@ export type OfficialUpdateEvent = {
   id: string; state: string; kind: OfficialUpdateKind;
   /** Short status line without a final period, e.g. "Unofficial corrected town return; not certified". */
   status: string;
+  /** A dated authority release expressly confirms certification but omits the act date. */
+  certification_date_unstated?: boolean;
+  group_title?: string;
   authority: string;
   summary: string;
   contests: OfficialUpdateContest[];
@@ -273,11 +276,14 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
     if (/[.;,]\s*$/.test(event.status)) at('status must not end with punctuation; the page adds it');
 
     const certifying = CERTIFYING.includes(event.kind);
-    if (certifying && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');
+    const confirmedWithoutDate = event.kind === 'certification' && event.certification_date_unstated === true
+      && event.dates.certified === null && isDayOrInstant(event.dates.published);
+    if (event.certification_date_unstated && !confirmedWithoutDate) at('an unstated certification date requires a dated confirmation of a completed certification');
+    if (certifying && !confirmedWithoutDate && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');
     if (!certifying && event.dates.certified !== null) at('only a certification event carries a certification date; record a later certification as its own event');
     if (certifying && event.kind !== 'withdrawn_certification' && /unofficial/i.test(event.status)) at('a certification status must not call the result unofficial');
     if (event.kind === 'completed_recount' && !isDayOrInstant(event.dates.effective) && !isDayOrInstant(event.dates.published) && (!isDayOrInstant(event.dates.first_observed) || !event.caveats.some(note => /publication.*completion.*not stated/i.test(note)))) at('an undated completed recount needs first observation and an explicit missing publication/completion date caveat');
-    if (event.kind !== 'official_canvass' && event.dates.certified === null && !/unofficial/i.test(event.status)) at('an event without a certification date must say it is unofficial');
+    if (!certifying && event.kind !== 'official_canvass' && event.dates.certified === null && !/unofficial/i.test(event.status)) at('an event without a certification date must say it is unofficial');
     if (event.kind === 'withdrawn_certification' && !/withdr/i.test(event.status)) at('a withdrawn certification must say so in its status');
 
     if (!event.contests.length) at('at least one contest');
@@ -295,7 +301,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
         else if (housePaths && !housePaths.has(contest.race_path)) at(`${name}: race_path ${contest.race_path} is not a published House page`);
       }
       if (contest.before !== null && contest.after === null) at(`${name}: a prior tally requires an updated tally`);
-      if (contest.coverage_path !== undefined && !['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/'].includes(contest.coverage_path)) at(`${name}: unknown coverage_path`);
+      if (contest.coverage_path !== undefined && !['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/', '/down-ballot/courts/'].includes(contest.coverage_path)) at(`${name}: unknown coverage_path`);
     }
     for (const value of dupes(event.contests.map(contest => contest.contest))) at(`duplicate contest ${value}`);
 

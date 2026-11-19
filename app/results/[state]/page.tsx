@@ -34,7 +34,7 @@ const statusSentence: Record<EditionState, (name: string) => string> = {
   awaiting_polls: (name) => `${name} polls have not opened yet; the schedule below shows sourced closing times and election-office fallbacks for November 3.`,
   election_day: (name) => `${name} Election Day closing information is below; official results follow from the ${name} election authority.`,
   counting: (name) => `${name} polls have closed and election authorities are counting; the official results link below is the source of counts.`,
-  post_election: (name) => `${name} counting and certification continue under the state's schedule; the official results link below stays current.`,
+  post_election: (name) => `${name} results and dated election-office records are available below.`,
 };
 
 export default async function StateResultsPage({ params }: { params: Promise<{ state: string }> }) {
@@ -57,7 +57,7 @@ export default async function StateResultsPage({ params }: { params: Promise<{ s
     <div className="mt-7 border-l-4 border-secondary bg-card p-6" data-edition-state={electionStatus.edition_state}>
       <p className="rule-label text-secondary">{`Status: ${editionLabels[electionStatus.edition_state]}`}</p>
       <p className="mt-2"><strong>No live results or election calls are published here.</strong> {statusSentence[electionStatus.edition_state](row.name)} Official {row.name} results come from the {results.authority}.</p>
-      <p className="mt-3 font-mono text-xs text-muted-foreground">Status updated {timestampLabel(electionStatus.updated_at)}</p>
+      <p className="mt-3 font-mono text-xs text-muted-foreground">Edition status updated {timestampLabel(electionStatus.updated_at)}</p>
     </div>
 
     <nav aria-label="On this page" className="mt-8 flex flex-wrap gap-x-6 gap-y-3 font-bold">

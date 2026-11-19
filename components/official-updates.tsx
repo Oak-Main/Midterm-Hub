@@ -7,7 +7,7 @@ import { certificationDateLabel, contestOnPath, dayLabel, officialUpdateLabels, 
 
 const when = (value: string | null, missing: string) => value === null ? missing : value.includes('T') ? timestampLabel(value) : dayLabel(value);
 const anchor = (event: OfficialUpdateEvent) => `update-${event.id.toLowerCase()}`;
-const contestNames = (event: OfficialUpdateEvent) => event.contests.map(contest => contest.contest).join('; ');
+const contestNames = (event: OfficialUpdateEvent) => event.group_title ?? event.contests.map(contest => contest.contest).join('; ');
 
 export function OfficialUpdates({ events, name }: { events: readonly OfficialUpdateEvent[]; name: string }) {
   if (!events.length) return null;
@@ -32,7 +32,7 @@ export function OfficialUpdates({ events, name }: { events: readonly OfficialUpd
       <dl className="mt-4 grid gap-x-6 gap-y-1 text-sm sm:grid-cols-[max-content_1fr]">
         <dt className="font-bold">Published by the authority</dt><dd>{when(event.dates.published, 'Not stated in the source')}</dd>
         <dt className="font-bold">Effective</dt><dd>{when(event.dates.effective, 'Not stated in the source')}</dd>
-        <dt className="font-bold">{certificationDateLabel(event.kind)}</dt><dd>{when(event.dates.certified, 'No certification of this contest is cited')}</dd>
+        <dt className="font-bold">{certificationDateLabel(event.kind)}</dt><dd>{when(event.dates.certified, event.certification_date_unstated ? 'Certification confirmed. The authority did not state the act date.' : 'No certification of this contest is cited in this record')}</dd>
         <dt className="font-bold">Document print time</dt><dd>{event.dates.printed ?? 'Not stated in the source'}</dd>
         <dt className="font-bold">First observed by Midterm Watch</dt><dd>{when(event.dates.first_observed, 'Not retained')}</dd>
         <dt className="font-bold">Sources last checked for later versions</dt><dd>{when(event.dates.last_checked, 'Not checked')}</dd>
@@ -51,9 +51,11 @@ export function OfficialUpdateLinks({ events, heading, path }: { events: readonl
     <h2>{heading}</h2>
     <ul className="mt-3 list-disc pl-6">{events.map(event => {
       const contests = path ? event.contests.filter(contest => contestOnPath(contest, path)) : event.contests;
+      const title = !path ? contestNames(event) : contests.length > 10 && event.group_title
+        ? `${event.state} · ${contests.length} covered contests` : contests.map(contest => contest.contest).join('; ');
       const scope = contests.length === 1 ? contests[0].scope : null;
       return <li key={event.id}>
-        <Link className="editorial-link" href={`/results/${event.state.toLowerCase()}/#${anchor(event)}`}>{`${officialUpdateLabels[event.kind]}: ${contests.map(contest => contest.contest).join('; ')}`}</Link>
+        <Link className="editorial-link" href={`/results/${event.state.toLowerCase()}/#${anchor(event)}`}>{`${officialUpdateLabels[event.kind]}: ${title}`}</Link>
         {` — ${event.status}${scope ? `; ${scope}` : ''}. ${event.authority}${event.dates.published ? `, published ${when(event.dates.published, '')}` : ''}.`}
       </li>;
     })}</ul>

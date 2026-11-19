@@ -17,7 +17,7 @@ const buildId = existsSync(buildIdFile) ? readFileSync(buildIdFile, 'utf8').trim
 const hasExport = Boolean(buildId) && existsSync(new URL(`../../out/_next/static/${buildId}`, import.meta.url));
 if (process.env.REQUIRE_STATIC_EXPORT === '1') assert.ok(hasExport, 'Run npm run build before export regression tests');
 const housePaths = new Set(json('content/refresh/content-package.json').house_races.map((race) => `/house/${race.district.toLowerCase()}/`));
-const page = (path) => readFileSync(new URL(`../../out/${path}`, import.meta.url), 'utf8').replaceAll('<!-- -->', '').replaceAll('&#x27;', "'").replaceAll('&amp;', '&');
+const page = (path) => readFileSync(new URL(`../../out/${path}`, import.meta.url), 'utf8').replaceAll('<!-- -->', '').replaceAll('&#x27;', "'").replaceAll('&quot;', '"').replaceAll('&amp;', '&');
 
 const base = () => ({
   id: 'CT-2026-11-06-sample', state: 'CT', kind: 'corrected_tally', status: 'Unofficial; not certified',
@@ -179,10 +179,19 @@ test('official canvass is distinct from dated certification', () => {
 });
 
 test('coverage pages show only their covered contests', { skip: hasExport ? false : 'no fresh export' }, () => {
-  for (const path of ['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/']) {
+  for (const path of ['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/', '/down-ballot/courts/']) {
     const html = page(`${path.slice(1)}index.html`);
     const expected = events.filter(event => event.contests.some(contest => contest.race_path === path || contest.coverage_path === path)).map(event => `/results/${event.state.toLowerCase()}/#update-${event.id.toLowerCase()}`).sort();
     const actual = [...new Set([...html.matchAll(/href="(\/results\/[a-z]{2}\/#update-[^"]+)"/g)].map(match => match[1]))].sort();
     assert.deepEqual(actual, expected, `${path}: exactly the events for covered contests`);
   }
+});
+
+
+test('a dated office announcement may confirm certification without stating the act date', () => {
+  const event = { ...base(), kind: 'certification', status: 'Certified by the board', certification_date_unstated: true,
+    dates: { ...base().dates, published: '2026-11-10' }, contests: [{ ...base().contests[0], scope_kind: 'full_contest', scope: 'Full contest' }] };
+  assert.deepEqual(officialUpdateProblems([event], codes, housePaths), []);
+  assert.ok(officialUpdateProblems([{ ...event, dates: base().dates }], codes, housePaths).length);
+  assert.ok(officialUpdateProblems([{ ...event, kind: 'completed_recount' }], codes, housePaths).length);
 });
