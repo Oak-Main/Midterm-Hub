@@ -99,12 +99,12 @@
       "url": "https://elections.delaware.gov/results/enr/GE2026.html",
       "requested_url": "https://elections.delaware.gov/results/enr/GE2026.html",
       "http_status": 200,
-      "checked_at": "2026-11-14T08:33:50.524Z",
+      "checked_at": "2026-11-19T14:15:39Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Read the fully rendered Department of Elections portal: OFFICIAL RESULTS, data as of 11/10/2026 01:49 PM. The initial non-rendered template says unofficial; the populated portal supplies the official label. This page does not establish a dated certification act.",
+      "notes": "The Department of Elections announced completed certification on November 10. Its announcement omits the date of the certification act.",
       "label_seen": "OFFICIAL RESULTS",
-      "visitor_note": "The populated portal labels its results official. Its data timestamp does not independently establish the date of certification."
+      "visitor_note": "The Department of Elections announced completed certification on November 10. Its announcement omits the date of the certification act."
     },
     {
       "state": "DC",
@@ -126,12 +126,12 @@
       "url": "https://floridaelectionwatch.gov/",
       "requested_url": "https://floridaelectionwatch.gov/",
       "http_status": 200,
-      "checked_at": "2026-11-14T08:22:39Z",
+      "checked_at": "2026-11-19T14:15:39Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Read the official page on November 14, 2026. The separate Florida Election Watch portal has 2026 general-election returns; the historical results archive has not yet added this election.",
-      "label_seen": "2nd Set of Unofficial Returns",
-      "visitor_note": "The separate Florida Election Watch portal has 2026 general-election returns; the historical results archive has not yet added this election."
+      "notes": "Florida Election Watch now labels its November 3 returns “Official Election Results”. See the dated state records below for the scope of each certification.",
+      "label_seen": "Official Election Results",
+      "visitor_note": "Florida Election Watch now labels its November 3 returns “Official Election Results”. See the dated state records below for the scope of each certification."
     },
     {
       "state": "GA",
@@ -315,12 +315,12 @@
       "url": "https://www.sos.ms.gov/elections-voting/election-results/2026/2026-general-election-results",
       "requested_url": "https://www.sos.ms.gov/elections-voting/election-results/2026/2026-general-election-results",
       "http_status": 200,
-      "checked_at": "2026-11-14T08:22:39Z",
+      "checked_at": "2026-11-19T14:20:18Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Read the official page on November 14, 2026. The linked county recapitulation reports do not by themselves establish full-race certification.",
+      "notes": "The Secretary of State’s index links 82 county recapitulation sheets. The index does not document a statewide certification act.",
       "label_seen": "OFFICIAL 2026 GENERAL ELECTION RESULTS",
-      "visitor_note": "The linked county recapitulation reports do not by themselves establish full-race certification."
+      "visitor_note": "The Secretary of State’s index links 82 county recapitulation sheets. The index does not document a statewide certification act."
     },
     {
       "state": "MO",
@@ -441,11 +441,11 @@
       "url": "https://resultsnd.sos.nd.gov/#election=348",
       "requested_url": "https://resultsnd.sos.nd.gov/#election=348",
       "http_status": 200,
-      "checked_at": "2026-11-10T17:34:48Z",
+      "checked_at": "2026-11-19T14:15:39Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Plain headless-browser check at 2026-11-10T17:34:48Z: the page names '2026 General Election' and displays the label 'Unofficial Results', with 2026 general-election results posted. Located via https://www.sos.nd.gov/elections/election-results.",
-      "label_seen": "Unofficial Results"
+      "notes": "The Secretary of State links these contest totals in the State Canvassing Board’s November 18 certification announcement.",
+      "visitor_note": "The Secretary of State links these contest totals in the State Canvassing Board’s November 18 certification announcement."
     },
     {
       "state": "OH",
