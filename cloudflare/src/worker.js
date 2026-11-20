@@ -125,6 +125,13 @@ const worker = {
       return Response.redirect(canonicalUrl(incomingUrl), 308);
     }
 
+    if (incomingUrl.hostname === "midtermwatch.com" && incomingUrl.protocol === "http:") {
+      return new Response(null, {
+        status: 308,
+        headers: { location: canonicalUrl(incomingUrl), "cache-control": "no-store" },
+      });
+    }
+
     const upstreamUrl = new URL(incomingUrl.pathname + incomingUrl.search, UPSTREAM_ORIGIN);
     const upstreamRequest = new Request(upstreamUrl, request);
     const cache = globalThis.caches?.default;

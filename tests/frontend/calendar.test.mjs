@@ -58,3 +58,16 @@ test('election routes retain their original uppercase codes', async () => {
     assert.equal(forwarded, 'https://midterm-hub.vercel.app/elections/CA/california/id/');
   } finally { globalThis.fetch = original; }
 });
+
+test('plain HTTP on the apex upgrades to HTTPS and preserves the path and query', async () => {
+  const response = await proxy.fetch(new Request('http://midtermwatch.com/results/?ref=runoff%2Fdesk'));
+  assert.equal(response.status, 308);
+  assert.equal(response.headers.get('location'), 'https://midtermwatch.com/results/?ref=runoff%2Fdesk');
+  assert.equal(response.headers.get('cache-control'), 'no-store');
+});
+
+test('plain HTTP on www still redirects straight to the HTTPS apex', async () => {
+  const response = await proxy.fetch(new Request('http://www.midtermwatch.com/results/?ref=calendar'));
+  assert.equal(response.status, 308);
+  assert.equal(response.headers.get('location'), 'https://midtermwatch.com/results/?ref=calendar');
+});
