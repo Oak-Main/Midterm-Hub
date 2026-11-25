@@ -179,7 +179,7 @@ test('official canvass is distinct from dated certification', () => {
 });
 
 test('coverage pages show only their covered contests', { skip: hasExport ? false : 'no fresh export' }, () => {
-  for (const path of ['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/', '/down-ballot/courts/']) {
+  for (const path of ['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/', '/down-ballot/courts/', '/down-ballot/measures/']) {
     const html = page(`${path.slice(1)}index.html`);
     const expected = events.filter(event => event.contests.some(contest => contest.race_path === path || contest.coverage_path === path)).map(event => `/results/${event.state.toLowerCase()}/#update-${event.id.toLowerCase()}`).sort();
     const actual = [...new Set([...html.matchAll(/href="(\/results\/[a-z]{2}\/#update-[^"]+)"/g)].map(match => match[1]))].sort();
@@ -192,6 +192,7 @@ test('a dated office announcement may confirm certification without stating the 
   const event = { ...base(), kind: 'certification', status: 'Certified by the board', certification_date_unstated: true,
     dates: { ...base().dates, published: '2026-11-10' }, contests: [{ ...base().contests[0], scope_kind: 'full_contest', scope: 'Full contest' }] };
   assert.deepEqual(officialUpdateProblems([event], codes, housePaths), []);
+  assert.deepEqual(officialUpdateProblems([{ ...event, dates: { ...base().dates, first_observed: '2026-11-10' } }], codes, housePaths), []);
   assert.ok(officialUpdateProblems([{ ...event, dates: base().dates }], codes, housePaths).length);
   assert.ok(officialUpdateProblems([{ ...event, kind: 'completed_recount' }], codes, housePaths).length);
 });

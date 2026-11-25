@@ -4,29 +4,30 @@
     {
       "state": "AL",
       "name": "Alabama",
-      "authority": "Alabama Secretary of State (Alabama Votes election-night site, www2.alabamavotes.gov)",
-      "url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
-      "requested_url": "https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305",
+      "authority": "Alabama Secretary of State",
+      "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
+      "requested_url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
       "http_status": 200,
-      "checked_at": "2026-11-10T17:40:02Z",
+      "checked_at": "2026-11-25T02:09:24Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Plain headless-browser check at 2026-11-10T17:40:02Z: the page names '2026 GENERAL ELECTION STATEWIDE RESULTS' and displays the label 'Unofficial Election Night Results', with 2026 general-election results posted. Located via https://www.sos.alabama.gov/.",
-      "label_seen": "Unofficial Election Night Results"
+      "notes": "Under General Election – November 3, 2026, open the State Certification of General Election Results.",
+      "label_seen": "State Certification of General Election Results",
+      "visitor_note": "Under General Election – November 3, 2026, open the State Certification of General Election Results."
     },
     {
       "state": "AK",
       "name": "Alaska",
       "authority": "Alaska Division of Elections",
-      "url": "https://www.elections.alaska.gov/election-results/",
-      "requested_url": "https://www.elections.alaska.gov/election-results/",
+      "url": "https://www.elections.alaska.gov/election-results/e/?id=26genr",
+      "requested_url": "https://www.elections.alaska.gov/election-results/e/?id=26genr",
       "http_status": 200,
-      "checked_at": "2026-11-14T08:22:39Z",
+      "checked_at": "2026-11-25T02:09:24Z",
       "page_kind": "2026_general",
       "pending": false,
-      "notes": "Read the official page on November 14, 2026. The November 3 general-election section includes current unofficial results; ranked-choice tabulation follows separately.",
-      "label_seen": "Results Status: Unofficial",
-      "visitor_note": "The November 3 general-election section includes current unofficial results; ranked-choice tabulation follows separately."
+      "notes": "The division links the official summary and final ranked-choice tabulations.",
+      "label_seen": "Results Status: Official",
+      "visitor_note": "The division links the official summary and final ranked-choice tabulations."
     },
     {
       "state": "AZ",

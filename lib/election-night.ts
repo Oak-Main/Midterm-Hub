@@ -236,7 +236,7 @@ export type OfficialUpdateEvent = {
   id: string; state: string; kind: OfficialUpdateKind;
   /** Short status line without a final period, e.g. "Unofficial corrected town return; not certified". */
   status: string;
-  /** A dated authority release expressly confirms certification but omits the act date. */
+  /** The authority explicitly confirms certification. Record publication or first observation when the act date is absent. */
   certification_date_unstated?: boolean;
   group_title?: string;
   authority: string;
@@ -277,7 +277,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
 
     const certifying = CERTIFYING.includes(event.kind);
     const confirmedWithoutDate = event.kind === 'certification' && event.certification_date_unstated === true
-      && event.dates.certified === null && isDayOrInstant(event.dates.published);
+      && event.dates.certified === null && (isDayOrInstant(event.dates.published) || isDayOrInstant(event.dates.first_observed));
     if (event.certification_date_unstated && !confirmedWithoutDate) at('an unstated certification date requires a dated confirmation of a completed certification');
     if (certifying && !confirmedWithoutDate && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');
     if (!certifying && event.dates.certified !== null) at('only a certification event carries a certification date; record a later certification as its own event');
@@ -301,7 +301,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
         else if (housePaths && !housePaths.has(contest.race_path)) at(`${name}: race_path ${contest.race_path} is not a published House page`);
       }
       if (contest.before !== null && contest.after === null) at(`${name}: a prior tally requires an updated tally`);
-      if (contest.coverage_path !== undefined && !['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/', '/down-ballot/courts/'].includes(contest.coverage_path)) at(`${name}: unknown coverage_path`);
+      if (contest.coverage_path !== undefined && !['/house/', '/senate/', '/governors/', '/down-ballot/executives/', '/down-ballot/legislatures/', '/down-ballot/courts/', '/down-ballot/measures/'].includes(contest.coverage_path)) at(`${name}: unknown coverage_path`);
     }
     for (const value of dupes(event.contests.map(contest => contest.contest))) at(`duplicate contest ${value}`);
 
