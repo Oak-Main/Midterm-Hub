@@ -276,7 +276,7 @@ export function officialUpdateProblems(events: readonly OfficialUpdateEvent[], s
     if (/[.;,]\s*$/.test(event.status)) at('status must not end with punctuation; the page adds it');
 
     const certifying = CERTIFYING.includes(event.kind);
-    const confirmedWithoutDate = event.kind === 'certification' && event.certification_date_unstated === true
+    const confirmedWithoutDate = (event.kind === 'certification' || event.kind === 'local_certification') && event.certification_date_unstated === true
       && event.dates.certified === null && (isDayOrInstant(event.dates.published) || isDayOrInstant(event.dates.first_observed));
     if (event.certification_date_unstated && !confirmedWithoutDate) at('an unstated certification date requires a dated confirmation of a completed certification');
     if (certifying && !confirmedWithoutDate && !isDayOrInstant(event.dates.certified)) at('a certification event needs the date of the certification act');

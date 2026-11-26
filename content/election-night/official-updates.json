@@ -5329,6 +5329,590 @@
         "The results page gives November 23 at 12:31 p.m. as its last update. The cited records do not separately date the certification act or the first publication of the certification notice. Prior unofficial totals are not listed in these records.",
         "Legislative entries report individual district results. Coalition membership and chamber control are separate matters."
       ]
+    },
+    {
+      "id": "AL-2026-11-25-senate-10-recount",
+      "state": "AL",
+      "kind": "completed_recount",
+      "authority": "Cherokee, DeKalb and Etowah county election officials; reports published by the Alabama Secretary of State",
+      "status": "Completed county recount returns; unofficial at district level pending a state determination",
+      "summary": "The Secretary of State published completed recount records for the three counties that reported votes in Senate District 10. The November 23 state canvass table listed Jesse Battles at 20,392 and Andrew Jones at 20,320, a 72-vote margin. The cited recount records do not provide a state-issued post-recount district total or amended district certification.",
+      "contests": [
+        {
+          "contest": "Alabama Senate District 10",
+          "coverage": "State legislative chamber coverage",
+          "coverage_path": "/down-ballot/legislatures/",
+          "race_path": null,
+          "candidates": "Andrew Jones (R); Jesse Battles (I)",
+          "scope_kind": "local_unit",
+          "scope": "Separately reported Cherokee, DeKalb and Etowah county returns; not a district total",
+          "before": "November 23 state canvass: Cherokee, Jones 4,573 and Battles 3,493; DeKalb, Jones 3,449 and Battles 1,140; Etowah, Jones 12,298 and Battles 15,759.",
+          "after": "Cherokee: Jones 4,573 and Battles 3,493 including one write-in. DeKalb: Jones 3,449 and Battles 1,140 in the provisional-inclusive table, and Battles 1,141 in the separate write-in-inclusive table. Etowah: Jones 12,311 and Battles 15,768.",
+          "change": "Cherokee’s candidate totals match the prior table. DeKalb’s signed return says the recount matched its November 10 certified results. Etowah’s report added 13 votes for Jones and 9 for Battles relative to the November 23 canvass table."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026StateCertificationofGeneralElectionResults-Canvassing.pdf",
+          "title": "November 23 state canvass, Senate District 10 table",
+          "publisher": "Alabama Secretary of State",
+          "version": "Pre-recount figures",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026CherokeeGeneralRecountResults.pdf",
+          "title": "Cherokee County recount return",
+          "publisher": "Cherokee County Canvassing Board",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/DeKalbCountyRecountResults.pdf",
+          "title": "DeKalb County recount return",
+          "publisher": "DeKalb County election officials",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://www.sos.alabama.gov/sites/default/files/election-2026/2026EtowahCountyRecountResults.pdf",
+          "title": "Etowah County official recount report",
+          "publisher": "Etowah County election officials",
+          "version": "November 25, 5:00 p.m. report",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": "2026-11-25",
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-26",
+        "last_checked": "2026-11-26T13:36:25Z"
+      },
+      "caveats": [
+        "One Cherokee signature page shows a handwritten November 24 date under a heading specifying a November 25 recount. The November 25 completion date is documented in the recount reports. The index does not state a first publication date.",
+        "The Cherokee and DeKalb signatures apply to their local returns. The Etowah document is a county report. No statewide authority’s post-recount district total or certification is cited."
+      ]
+    },
+    {
+      "id": "CA-2026-11-26-alameda-county-certification",
+      "state": "CA",
+      "kind": "local_certification",
+      "certification_date_unstated": true,
+      "authority": "Alameda County Registrar of Voters",
+      "status": "County returns certified; scope is limited to this county",
+      "group_title": "Alameda County, four U.S. House districts and three statewide offices",
+      "summary": "The county results portal labels the November 3 returns Certified Final Results. The figures below are the county’s contribution to the listed contests.",
+      "contests": [
+        {
+          "contest": "U.S. House, California District 10",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-10/",
+          "candidates": "Mark DeSaulnier; Jeff Frese",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a district total",
+          "before": null,
+          "after": "Mark DeSaulnier 19,367; Jeff Frese 6,722",
+          "change": "Unofficial reporting → certified county return. County margin 12,645 votes."
+        },
+        {
+          "contest": "U.S. House, California District 12",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-12/",
+          "candidates": "Lateefah Simon; Jamie Joyce",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a district total",
+          "before": null,
+          "after": "Lateefah Simon 207,333; Jamie Joyce 50,519",
+          "change": "Unofficial reporting → certified county return. County margin 156,814 votes."
+        },
+        {
+          "contest": "U.S. House, California District 14",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-14/",
+          "candidates": "Aisha Wahab; Melissa Hernandez",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a district total",
+          "before": null,
+          "after": "Aisha Wahab 122,451; Melissa Hernandez 90,268",
+          "change": "Unofficial reporting → certified county return. County margin 32,183 votes."
+        },
+        {
+          "contest": "U.S. House, California District 17",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-17/",
+          "candidates": "Ro Khanna; Ritesh Tandon",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a district total",
+          "before": null,
+          "after": "Ro Khanna 18,756; Ritesh Tandon 7,546",
+          "change": "Unofficial reporting → certified county return. County margin 11,210 votes."
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor coverage",
+          "coverage_path": "/governors/",
+          "race_path": null,
+          "candidates": "Xavier Becerra; Steve Hilton",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a statewide total",
+          "before": null,
+          "after": "Xavier Becerra 458,735; Steve Hilton 107,582",
+          "change": "Unofficial reporting → certified county return. County margin 351,153 votes."
+        },
+        {
+          "contest": "Secretary of state",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Shirley N. Weber; Donald P. Wagner",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a statewide total",
+          "before": null,
+          "after": "Shirley N. Weber 457,285; Donald P. Wagner 101,993",
+          "change": "Unofficial reporting → certified county return. County margin 355,292 votes."
+        },
+        {
+          "contest": "Attorney general",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Rob Bonta; Michael E. Gates",
+          "scope_kind": "local_unit",
+          "scope": "Alameda County returns; not a statewide total",
+          "before": null,
+          "after": "Rob Bonta 450,076; Michael E. Gates 108,239",
+          "change": "Unofficial reporting → certified county return. County margin 341,837 votes."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://alamedacountyca.gov/rovresults/260/",
+          "title": "Certified Final Results",
+          "publisher": "Alameda County Registrar of Voters",
+          "version": "Portal last updated November 25, 2026, at 6:34 p.m.",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-26",
+        "last_checked": "2026-11-26T13:36:25Z"
+      },
+      "caveats": [
+        "The portal’s update time is not a separately stated first publication or certification date. The linked final return does not give the prior unofficial tally."
+      ]
+    },
+    {
+      "id": "CA-2026-11-25-marin-county-certification",
+      "state": "CA",
+      "kind": "local_certification",
+      "certification_date_unstated": true,
+      "authority": "Marin County Registrar of Voters",
+      "status": "County returns certified; scope is limited to this county",
+      "group_title": "Marin County, U.S. House District 2 and three statewide offices",
+      "summary": "Registrar of Voters Natalie Adona confirmed that Marin County certified its returns and sent the certified Statement of Vote to the California Secretary of State.",
+      "contests": [
+        {
+          "contest": "U.S. House, California District 2",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-2/",
+          "candidates": "Jared Huffman; Robin Littau",
+          "scope_kind": "local_unit",
+          "scope": "Marin County returns; not a district total",
+          "before": null,
+          "after": "Jared Huffman 104,274; Robin Littau 20,611",
+          "change": "Unofficial reporting → certified county return. County margin 83,663 votes."
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor coverage",
+          "coverage_path": "/governors/",
+          "race_path": null,
+          "candidates": "Xavier Becerra; Steve Hilton",
+          "scope_kind": "local_unit",
+          "scope": "Marin County returns; not a statewide total",
+          "before": null,
+          "after": "Xavier Becerra 101,432; Steve Hilton 25,229",
+          "change": "Unofficial reporting → certified county return. County margin 76,203 votes."
+        },
+        {
+          "contest": "Secretary of state",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Shirley N. Weber; Donald P. Wagner",
+          "scope_kind": "local_unit",
+          "scope": "Marin County returns; not a statewide total",
+          "before": null,
+          "after": "Shirley N. Weber 101,269; Donald P. Wagner 23,118",
+          "change": "Unofficial reporting → certified county return. County margin 78,151 votes."
+        },
+        {
+          "contest": "Attorney general",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Rob Bonta; Michael E. Gates",
+          "scope_kind": "local_unit",
+          "scope": "Marin County returns; not a statewide total",
+          "before": null,
+          "after": "Rob Bonta 99,640; Michael E. Gates 24,280",
+          "change": "Unofficial reporting → certified county return. County margin 75,360 votes."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.marincounty.gov/news-releases/registrar-certifies-general-election-marin-turnout-74",
+          "title": "November 25 certification announcement",
+          "publisher": "Marin County Elections (Registrar of Voters)",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://assets.marincounty.gov/marincounty-prod/public/2026-11/11-26_SOVC.Final_.pdf?VersionId=T05KQaxkzLAl8mHDMA8Bbr8Zpf7i3Lk8",
+          "title": "Final Statement of Votes Cast",
+          "publisher": "Marin County Elections (Registrar of Voters)",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-25",
+        "effective": null,
+        "certified": null,
+        "printed": "11/25/2026 5:42:04 PM (time zone not stated)",
+        "first_observed": "2026-11-26",
+        "last_checked": "2026-11-26T13:36:25Z"
+      },
+      "caveats": [
+        "The release confirms that certification had occurred by November 25. It does not separately state the act date. The final statement does not provide prior unofficial totals."
+      ]
+    },
+    {
+      "id": "CA-2026-11-25-nevada-county-certification",
+      "state": "CA",
+      "kind": "local_certification",
+      "certification_date_unstated": true,
+      "authority": "Nevada County Registrar of Voters",
+      "status": "County returns certified; scope is limited to this county",
+      "group_title": "Nevada County, U.S. House District 3",
+      "summary": "The Registrar of Voters confirmed that Nevada County certified its November 3 returns. The official results portal shows final figures for all 105 reporting precincts in the county.",
+      "contests": [
+        {
+          "contest": "U.S. House, California District 3",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-3/",
+          "candidates": "Ami Bera; Robb Tucker",
+          "scope_kind": "local_unit",
+          "scope": "Nevada County returns; not a district total",
+          "before": null,
+          "after": "Ami Bera 31,074; Robb Tucker 22,255",
+          "change": "Unofficial reporting → certified county return. County margin 8,819 votes."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://nevadacountyca.gov/m/NewsFlash/Home/Detail/9029",
+          "title": "November 25 certification announcement",
+          "publisher": "Nevada County Registrar of Voters",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://app.enhancedvoting.com/results/public/nevada-county-ca/elections/2026StatewideGeneral",
+          "title": "County-linked official election results",
+          "publisher": "Nevada County Registrar of Voters",
+          "version": "Final results update November 25, 2026",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-25",
+        "effective": null,
+        "certified": null,
+        "printed": null,
+        "first_observed": "2026-11-26",
+        "last_checked": "2026-11-26T13:36:25Z"
+      },
+      "caveats": [
+        "The announcement and portal do not separately state the certification act date. The final portal does not give a prior unofficial tally."
+      ]
+    },
+    {
+      "id": "CA-2026-11-25-orange-county-certification",
+      "state": "CA",
+      "kind": "local_certification",
+      "authority": "Orange County Registrar of Voters",
+      "status": "County returns certified; scope is limited to this county",
+      "group_title": "Orange County, eight U.S. House districts and three statewide offices",
+      "summary": "Registrar of Voters Bob Page certified Orange County’s November 3 returns. The comparison uses the county’s November 20 unofficial report and the final results linked by the registrar.",
+      "contests": [
+        {
+          "contest": "U.S. House, California District 38",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-38/",
+          "candidates": "Pedro Antonio Casas; Hilda Solis",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Pedro Antonio Casas 29,629; Hilda Solis 25,026",
+          "after": "Pedro Antonio Casas 29,641; Hilda Solis 25,033",
+          "change": "Unofficial reporting → certified county return. County margin 4,603 → 4,608 votes."
+        },
+        {
+          "contest": "U.S. House, California District 40",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-40/",
+          "candidates": "Ken Calvert; Young Kim",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Ken Calvert 47,927; Young Kim 44,479",
+          "after": "Ken Calvert 47,935; Young Kim 44,496",
+          "change": "Unofficial reporting → certified county return. County margin 3,448 → 3,439 votes."
+        },
+        {
+          "contest": "U.S. House, California District 41",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-41/",
+          "candidates": "Linda Sánchez; Mitch Clemmons",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Linda Sánchez 29,435; Mitch Clemmons 22,633",
+          "after": "Linda Sánchez 29,447; Mitch Clemmons 22,641",
+          "change": "Unofficial reporting → certified county return. County margin 6,802 → 6,806 votes."
+        },
+        {
+          "contest": "U.S. House, California District 42",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-42/",
+          "candidates": "Robert Garcia; Brian Burley",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Robert Garcia 88,347; Brian Burley 83,761",
+          "after": "Robert Garcia 88,391; Brian Burley 83,790",
+          "change": "Unofficial reporting → certified county return. County margin 4,586 → 4,601 votes."
+        },
+        {
+          "contest": "U.S. House, California District 45",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-45/",
+          "candidates": "Derek Tran; Chuong V. Vo",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Derek Tran 115,823; Chuong V. Vo 82,013",
+          "after": "Derek Tran 115,876; Chuong V. Vo 82,056",
+          "change": "Unofficial reporting → certified county return. County margin 33,810 → 33,820 votes."
+        },
+        {
+          "contest": "U.S. House, California District 46",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-46/",
+          "candidates": "Lou Correa; David Pan",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Lou Correa 139,756; David Pan 55,564",
+          "after": "Lou Correa 139,833; David Pan 55,585",
+          "change": "Unofficial reporting → certified county return. County margin 84,192 → 84,248 votes."
+        },
+        {
+          "contest": "U.S. House, California District 47",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-47/",
+          "candidates": "Dave Min; Jenny Rae Le Roux",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Dave Min 167,158; Jenny Rae Le Roux 118,161",
+          "after": "Dave Min 167,221; Jenny Rae Le Roux 118,186",
+          "change": "Unofficial reporting → certified county return. County margin 48,997 → 49,035 votes."
+        },
+        {
+          "contest": "U.S. House, California District 49",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/ca-49/",
+          "candidates": "Armen Kurdian; Mike Levin",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a district total",
+          "before": "Unofficial: Armen Kurdian 30,331; Mike Levin 28,241",
+          "after": "Armen Kurdian 30,335; Mike Levin 28,244",
+          "change": "Unofficial reporting → certified county return. County margin 2,090 → 2,091 votes."
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor coverage",
+          "coverage_path": "/governors/",
+          "race_path": null,
+          "candidates": "Xavier Becerra; Steve Hilton",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a statewide total",
+          "before": "Unofficial: Xavier Becerra 638,301; Steve Hilton 514,241",
+          "after": "Xavier Becerra 638,579; Steve Hilton 514,406",
+          "change": "Unofficial reporting → certified county return. County margin 124,060 → 124,173 votes."
+        },
+        {
+          "contest": "Secretary of state",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Shirley N. Weber; Donald P. Wagner",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a statewide total",
+          "before": "Unofficial: Shirley N. Weber 629,061; Donald P. Wagner 506,344",
+          "after": "Shirley N. Weber 629,336; Donald P. Wagner 506,503",
+          "change": "Unofficial reporting → certified county return. County margin 122,717 → 122,833 votes."
+        },
+        {
+          "contest": "Attorney general",
+          "coverage": "State executive coverage",
+          "coverage_path": "/down-ballot/executives/",
+          "race_path": null,
+          "candidates": "Rob Bonta; Michael E. Gates",
+          "scope_kind": "local_unit",
+          "scope": "Orange County returns; not a statewide total",
+          "before": "Unofficial: Rob Bonta 625,055; Michael E. Gates 507,723",
+          "after": "Rob Bonta 625,322; Michael E. Gates 507,887",
+          "change": "Unofficial reporting → certified county return. County margin 117,332 → 117,435 votes."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ocvote.gov/press-releases/orange-county-registrar-of-voters-certifies-2026-general-election",
+          "title": "November 25 certification release",
+          "publisher": "Orange County Registrar of Voters",
+          "version": null,
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://www.livevoterturnout.com/ENR/orangecaenr/24/en/phkv4sV_Index_24.html",
+          "title": "County results portal linked by the registrar",
+          "publisher": "Orange County Registrar of Voters",
+          "version": "Final results",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://ocvote.gov/fileadmin/live/gen2026/Run_23/cumulative.pdf",
+          "title": "November 20 cumulative results report",
+          "publisher": "Orange County Registrar of Voters",
+          "version": "Run 23, unofficial",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        }
+      ],
+      "dates": {
+        "published": "2026-11-25",
+        "effective": "2026-11-25",
+        "certified": "2026-11-25",
+        "printed": null,
+        "first_observed": "2026-11-26",
+        "last_checked": "2026-11-26T13:36:25Z"
+      },
+      "caveats": [
+        "These figures show changes between reports. The county release did not identify a tally correction. The certified returns cover Orange County’s contribution to the listed contests."
+      ]
+    },
+    {
+      "id": "OR-2026-11-26-yamhill-county-certification",
+      "state": "OR",
+      "kind": "local_certification",
+      "certification_date_unstated": true,
+      "authority": "Yamhill County Clerk, Elections Division",
+      "status": "County returns certified; scope is limited to this county",
+      "group_title": "Yamhill County, U.S. Senate, U.S. House District 6 and governor",
+      "summary": "The county posted certified cumulative returns. The tables below show the county contribution to the three tracked contests.",
+      "contests": [
+        {
+          "contest": "U.S. Senate",
+          "coverage": "U.S. Senate coverage",
+          "coverage_path": "/senate/",
+          "race_path": null,
+          "candidates": "David Brock Smith; Jeff Merkley; Gary Lyndon Dye; Chris Henry",
+          "scope_kind": "local_unit",
+          "scope": "Yamhill County returns; not a statewide total",
+          "before": null,
+          "after": "David Brock Smith 24,723; Jeff Merkley 24,194; Gary Lyndon Dye 560; Chris Henry 1,029",
+          "change": "Unofficial reporting → certified county return."
+        },
+        {
+          "contest": "U.S. House, Oregon District 6",
+          "coverage": "U.S. House race page",
+          "coverage_path": "/house/",
+          "race_path": "/house/or-6/",
+          "candidates": "David Russ; Andrea Salinas",
+          "scope_kind": "local_unit",
+          "scope": "Yamhill County returns; not a district total",
+          "before": null,
+          "after": "David Russ 25,175; Andrea Salinas 24,946",
+          "change": "Unofficial reporting → certified county return. County margin 229 votes."
+        },
+        {
+          "contest": "Governor",
+          "coverage": "Governor coverage",
+          "coverage_path": "/governors/",
+          "race_path": null,
+          "candidates": "Christine Drazan; Tina Kotek; Brett Smith",
+          "scope_kind": "local_unit",
+          "scope": "Yamhill County returns; not a statewide total",
+          "before": null,
+          "after": "Christine Drazan 27,625; Tina Kotek 21,674; Brett Smith 1,462",
+          "change": "Unofficial reporting → certified county return."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.yamhillcounty.gov/DocumentCenter/View/21394/Certified-Official-Cumulative-Results?bidId=",
+          "title": "Certified official cumulative results",
+          "publisher": "Yamhill County Clerk, Elections Division",
+          "version": "November 25 report",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        },
+        {
+          "url": "https://www.yamhillcounty.gov/DocumentCenter/View/21395/Official-Certified-Canvass-Precinct-Results?bidId=",
+          "title": "Official certified precinct canvass",
+          "publisher": "Yamhill County Clerk, Elections Division",
+          "version": "November 25 report",
+          "sha256": null,
+          "checked_at": "2026-11-26"
+        }
+      ],
+      "dates": {
+        "published": null,
+        "effective": null,
+        "certified": null,
+        "printed": "11/25/2026 (report run date)",
+        "first_observed": "2026-11-26",
+        "last_checked": "2026-11-26T13:36:25Z"
+      },
+      "caveats": [
+        "November 25 is the report run date. The records do not separately state the first publication or certification act date or provide a preceding tally."
+      ]
     }
   ]
 }
