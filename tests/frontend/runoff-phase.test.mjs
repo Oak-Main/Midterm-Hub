@@ -153,3 +153,54 @@ test('built home page: runoff title, description budget, Event data and section 
   assert.doesNotMatch(home, /KEVYN-WRITE/);
   assert.equal((home.match(/download="">Calendar \(\.ics\)/g) ?? []).length, 2, 'LA and MS only');
 });
+
+const sampleBallotUrl = 'https://voterportal.sos.la.gov/sampleballot';
+const earlyVotingUrl = 'https://voterportal.sos.la.gov/earlyvoting';
+const georgiaLookupUrl = 'https://mvp.sos.ga.gov/s/';
+const countyElectionsUrl = 'https://dekalbcountyga.gov/departments/voter-registration-and-elections';
+
+function assertLouisianaActions(html) {
+  const sampleBallot = html.indexOf('href="' + sampleBallotUrl + '"');
+  const earlyVoting = html.indexOf('href="' + earlyVotingUrl + '"');
+  assert.ok(sampleBallot >= 0 && sampleBallot < earlyVoting, 'the ballot lookup comes before locations');
+  assert.match(html.slice(sampleBallot, earlyVoting), /If your ballot lists a contest/);
+  assert.match(html, /November 28–December 5, excluding Sunday November 29, 8:30 a\.m\.–6 p\.m\..{0,6}Central time/s);
+}
+
+test('Louisiana runoff guidance links to the ballot and parish locations and keeps local hours', () => {
+  const fragment = readFileSync(new URL('../../content/refresh/fragments/runoffs/la.html', import.meta.url), 'utf8');
+  assertLouisianaActions(fragment);
+  assert.match(fragment, /7 a\.m\.–8 p\.m\. Central time on Saturday December 12/);
+});
+
+test('built runoff desk and linked guides show the local next actions', { skip: freshExport ? false : 'no fresh static export' }, () => {
+  const readExport = path => readFileSync(new URL('../../out/' + path + '/index.html', import.meta.url), 'utf8');
+  const home = readFileSync(new URL('../../out/index.html', import.meta.url), 'utf8');
+  const card = state => {
+    const start = home.indexOf('data-state="' + state + '" data-runoff-phase=');
+    assert.notEqual(start, -1, state);
+    return home.slice(start, home.indexOf('</article>', start));
+  };
+
+  const louisiana = card('LA');
+  assertLouisianaActions(louisiana);
+  assert.ok(louisiana.includes('href="/states/la/#louisiana-runoff"'));
+  assertLouisianaActions(readExport('states/la'));
+
+  const georgia = card('GA');
+  assert.ok(georgia.includes('href="/states/ga/#doraville-runoff"'));
+  assert.match(georgia, /District 2, Post 2 At Large.*Advance voting ended November 25\. For the December 1 election/);
+  const lookup = georgia.indexOf('href="' + georgiaLookupUrl + '"');
+  assert.ok(lookup >= 0 && lookup < georgia.indexOf('Georgia general runoff calendar'));
+  assert.ok(georgia.includes('href="' + countyElectionsUrl + '"'));
+  for (const path of ['states/ga', 'elections/GA/georgia/da691886f7a6ce57']) {
+    const guide = readExport(path);
+    const doraville = guide.indexOf('id="doraville-runoff"');
+    assert.notEqual(doraville, -1, path);
+    const note = guide.slice(doraville, guide.indexOf('</p>', doraville));
+    assert.match(note, /Election Day is Tuesday, December 1, 2026\. Advance voting ended November 25/);
+    assert.ok(note.includes('href="' + georgiaLookupUrl + '"'), path);
+  }
+  const mississippi = card('MS');
+  assert.ok(!mississippi.includes(sampleBallotUrl) && !mississippi.includes(georgiaLookupUrl));
+});
