@@ -35,6 +35,7 @@ function RunoffCard({ card, today }: { card: DeskCard; today: string | null }) {
   const louisiana = card.state === "LA";
   const georgia = card.state === "GA";
   const guideHref = card.guideHref + (louisiana ? "#louisiana-runoff" : georgia ? "#doraville-runoff" : "");
+  const timeZone = louisiana ? " (Central time)" : "";
   return (
     <article className="border-t-2 border-secondary pt-4" data-state={card.state} data-runoff-phase={today ? runoffPhase(card, today) : "unknown"}>
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
@@ -46,9 +47,9 @@ function RunoffCard({ card, today }: { card: DeskCard; today: string | null }) {
       <p className={georgia ? "mt-3 rule-label" : "mt-1 rule-label"}>{georgia ? "Georgia general runoff calendar" : card.electionName}{card.conditional ? " · if required" : ""}</p>
       {status && <p className="mt-3 font-bold leading-snug">{status}</p>}
       <dl className="mt-3 grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[9.5rem_1fr]">
-        <dt className="font-bold">{card.windowLabel}</dt><dd>{card.windowText}{louisiana && " (Central time)"}</dd>
+        <dt className="font-bold">{card.windowLabel}</dt><dd>{card.windowText + timeZone}</dd>
         {card.absenteeText && <><dt className="font-bold">Absentee ballots</dt><dd>{card.absenteeText}</dd></>}
-        <dt className="font-bold">{louisiana ? "Election Day polls" : "Polls"}</dt><dd>{card.election_day_hours}{louisiana && " (Central time)"}</dd>
+        <dt className="font-bold">{louisiana ? "Election Day polls" : "Polls"}</dt><dd>{card.election_day_hours + timeZone}</dd>
         <dt className="font-bold">On the ballot</dt>
         <dd>{card.contests?.length
           ? <><ul className="list-disc pl-5">{card.contests.map(contest => <li key={contest.label}>{contest.label}</li>)}</ul>{card.contests_note && <p className="mt-1 text-muted-foreground">{card.contests_note}</p>}</>
